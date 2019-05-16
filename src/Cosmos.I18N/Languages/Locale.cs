@@ -24,6 +24,7 @@
         be,
         bg,
         ca,
+        ca_AD,
         zh_CN,
         zh_HK,
         zh_MO,
