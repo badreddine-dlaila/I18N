@@ -15,7 +15,7 @@ namespace Cosmos.I18N.Countries
 
         public static string GetAlpha2Code(this CountryCode code)
         {
-            return code.GetName();
+            return code.GetCountryAttr<Alpha2CodeAttribute>()?.Alpha2Code ?? code.GetName();
         }
 
         public static string GetAlpha3Code(this CountryCode code)
@@ -23,9 +23,9 @@ namespace Cosmos.I18N.Countries
             return code.GetCountryAttr<Alpha3CodeAttribute>().Alpha3Code;
         }
 
-        public static string GetCountryName(this CountryCode code)
+        public static string GetCountryOrRegionNameName(this CountryCode code)
         {
-            return code.GetCountryAttr<CountryNameAttribute>().Name;
+            return code.GetCountryAttr<CountryOrRegionNameAttribute>().Name;
         }
 
         private static TAttribute GetCountryAttr<TAttribute>(this CountryCode code) where TAttribute : Attribute
