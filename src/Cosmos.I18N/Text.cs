@@ -27,7 +27,7 @@ namespace Cosmos.I18N {
             if (FormatingParameters != null) {
                 text = string.Format(text, FormatingParameters);
             }
-
+            
             return text;
         }
 
