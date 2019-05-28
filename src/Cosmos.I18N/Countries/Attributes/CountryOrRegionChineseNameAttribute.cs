@@ -4,7 +4,7 @@ using System;
 namespace Cosmos.I18N.Countries
 {
     [AttributeUsage(AttributeTargets.Field)]
-    public class CountryOrRegionNameAttribute : Attribute
+    public class CountryOrRegionChineseNameAttribute : Attribute
     {
         public string Name { get; }
 
@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Countries
 
         public CountryType Type { get; }
 
-        public CountryOrRegionNameAttribute(string name, CountryType type)
+        public CountryOrRegionChineseNameAttribute(string name, CountryType type)
         {
             Name = name;
             Type = type;
