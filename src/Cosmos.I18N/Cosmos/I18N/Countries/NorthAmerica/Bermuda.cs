@@ -5,7 +5,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// 旧称萨摩斯岛，隶属于大不列颠及北爱尔兰联合王国的海外自治领 <br />
     /// Cosmos i18n code: i18n_country_baimuda
     /// </summary>
-    public class Bermuda
+    public static class Bermuda
     {
         private static readonly CountryInfo _country;
 

@@ -1,6 +1,6 @@
 namespace Cosmos.I18N.Countries.Africa
 {
-    public class CentralAfrican
+    public static class CentralAfrican
     {
         private static readonly CountryInfo _country;
 

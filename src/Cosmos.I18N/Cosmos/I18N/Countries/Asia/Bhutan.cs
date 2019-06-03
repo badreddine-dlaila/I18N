@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 不丹（Kingdom of Bhutan，亚洲，BT，BTN，064），不丹王国 <br />
     /// Cosmos i18n code: i18n_country_budan
     /// </summary>
-    public class Bhutan
+    public static class Bhutan
     {
         private static readonly CountryInfo _country;
 

@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// 南非（The Republic of South Africa，非洲，ZA，ZAF，710），南非共和国 <br />
     /// Cosmos i18n code: i18n_country_nanfei
     /// </summary>
-    public class SouthAfrica
+    public static class SouthAfrica
     {
         private static readonly CountryInfo _country;
 

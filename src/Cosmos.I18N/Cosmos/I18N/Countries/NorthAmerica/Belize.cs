@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// 伯利兹（Belize，北美洲，BZ，BLZ，084） <br />
     /// Cosmos i18n code: i18n_country_bolizi
     /// </summary>
-    public class Belize
+    public static class Belize
     {
         private static readonly CountryInfo _country;
 

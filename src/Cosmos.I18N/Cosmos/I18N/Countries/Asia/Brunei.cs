@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 文莱 （Negara Brunei Darussalam，亚洲，BN，BRN，096），文莱达鲁萨兰国 <br />
     /// Cosmos i18n code: i18n_country_wenlai
     /// </summary>
-    public class Brunei
+    public static class Brunei
     {
         private static readonly CountryInfo _country;
 

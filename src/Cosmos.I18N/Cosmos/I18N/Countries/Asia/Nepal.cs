@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 尼泊尔（Federal Democratic Republic of Nepal，亚洲，NP，NPL，524），尼泊尔联邦民主共和国 <br />
     /// Cosmos i18n code: i18n_country_niboer
     /// </summary>
-    public class Nepal
+    public static class Nepal
     {
         private static readonly CountryInfo _country;
 

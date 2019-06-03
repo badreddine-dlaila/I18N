@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 蒙古国（Outer Mongolia，亚洲，MN，MNG，496），外蒙古 <br />
     /// Cosmos i18n code: i18n_country_waimenggu
     /// </summary>
-    public class Mongolia
+    public static class Mongolia
     {
         private static readonly CountryInfo _country;
 

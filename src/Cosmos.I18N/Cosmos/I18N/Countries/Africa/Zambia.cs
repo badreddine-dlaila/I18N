@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// 赞比亚（The Republic of Zambia，非洲，ZM，ZMB，894），赞比亚共和国 <br />
     /// Cosmos i18n code: i18n_country_zanbiya
     /// </summary>
-    public class Zambia
+    public static class Zambia
     {
         private static readonly CountryInfo _country;
 

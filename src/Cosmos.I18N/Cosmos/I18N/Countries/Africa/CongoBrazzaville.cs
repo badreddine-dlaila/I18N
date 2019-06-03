@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// 刚果（布）（The Republic of Congo，非洲，CG，COG，178），刚果共和国 <br />
     /// Cosmos i18n code: i18n_country_gangguobu
     /// </summary>
-    public class CongoBrazzaville
+    public static class CongoBrazzaville
     {
         private static readonly CountryInfo _country;
 
@@ -34,6 +34,6 @@ namespace Cosmos.I18N.Countries.Africa
         public static CountryInfo Instance => _country;
 
         public const string I18N_IDENTITY_CODE = "i18n_country_gangguobu";
-        
+
     }
 }

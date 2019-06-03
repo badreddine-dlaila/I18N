@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 黎巴嫩（The Republic of Lebanon，亚洲，LB，LBN，422），黎巴嫩共和国 <br />
     /// Cosmos i18n code: i18n_country_libanen
     /// </summary>
-    public class Lebanon
+    public static class Lebanon
     {
         private static readonly CountryInfo _country;
 

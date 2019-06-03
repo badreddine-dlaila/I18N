@@ -4,7 +4,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// 新加坡（Republic of Singapore，亚洲，SG，SGP，702），新加坡共和国 <br />
     /// Cosmos i18n code: i18n_country_xinjiapo
     /// </summary>
-    public static  class Singapore
+    public static class Singapore
     {
         private static readonly CountryInfo _country;
 

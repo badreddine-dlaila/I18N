@@ -521,21 +521,17 @@ namespace Cosmos.I18N.Countries
         FK,
 
         /// <summary>
-        /// Micronesia (Federated States of)
+        /// 密克罗尼西亚（The Federated States of Micronesia，大洋洲，FM，FSM，583） ，密克罗尼西亚联邦<br />
+        /// Cosmos i18n code: i18n_country_mikeluonixiya
         /// </summary>
-        [Alpha2Code("FM")]
-        [Alpha3Code("FSM")]
-        [CountryOrRegionName("Micronesia (Federated States of)")]
-        [UNCode("583")]
+        [I18NIdentityCode(Oceania.Micronesia.I18N_IDENTITY_CODE)]
         FM,
 
         /// <summary>
-        /// Faroe Islands
+        /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+        /// Cosmos i18n code: i18n_country_faluo
         /// </summary>
-        [Alpha2Code("FO")]
-        [Alpha3Code("FRO")]
-        [CountryOrRegionName("Faroe Islands")]
-        [UNCode("234")]
+        [I18NIdentityCode(Europe.Faroe.I18N_IDENTITY_CODE)]
         FO,
 
         /// <summary>
@@ -546,12 +542,10 @@ namespace Cosmos.I18N.Countries
         FR,
 
         /// <summary>
-        /// Gabon
+        /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
+        /// Cosmos i18n code: i18n_country_eguaduoer
         /// </summary>
-        [Alpha2Code("GA")]
-        [Alpha3Code("GAB")]
-        [CountryOrRegionName("Gabon")]
-        [UNCode("266")]
+        [I18NIdentityCode(Africa.Gabon.I18N_IDENTITY_CODE)]
         GA,
 
         /// <summary>
@@ -562,156 +556,122 @@ namespace Cosmos.I18N.Countries
         GB,
 
         /// <summary>
-        /// Grenada
+        /// 格林纳达（Grenada，北美洲，GD，GRD，308） <br />
+        /// Cosmos i18n code: i18n_country_gelinnada
         /// </summary>
-        [Alpha2Code("GD")]
-        [Alpha3Code("GRD")]
-        [CountryOrRegionName("Grenada")]
-        [UNCode("308")]
+        [I18NIdentityCode(NorthAmerica.Grenada.I18N_IDENTITY_CODE)]
         GD,
 
         /// <summary>
-        /// Georgia
+        /// 格鲁吉亚（Georgia，亚洲，GE，GEO，268） <br />
+        /// Cosmos i18n code: i18n_country_gelujiya
         /// </summary>
-        [Alpha2Code("GE")]
-        [Alpha3Code("GEO")]
-        [CountryOrRegionName("Georgia")]
-        [UNCode("268")]
+        [I18NIdentityCode(Asia.Georgia.I18N_IDENTITY_CODE)]
         GE,
 
         /// <summary>
-        /// French Guiana
+        /// 法属圭亚那（Guyane Francaise，南美洲，GF，GUF，254） <br />
+        /// Cosmos i18n code: i18n_country_guiyana
         /// </summary>
-        [Alpha2Code("GF")]
-        [Alpha3Code("GUF")]
-        [CountryOrRegionName("French Guiana")]
-        [UNCode("254")]
+        [I18NIdentityCode(SouthAmerica.Guiana.I18N_IDENTITY_CODE)]
         GF,
 
         /// <summary>
-        /// Guernsey
+        /// 根西岛（Bailiwick of Guernsey，欧洲，GG，GGY，831） <br />
+        /// Cosmos i18n code: i18n_country_genxidao
         /// </summary>
-        [Alpha2Code("GG")]
-        [Alpha3Code("GGY")]
-        [CountryOrRegionName("Guernsey")]
-        [UNCode("831")]
+        [I18NIdentityCode(Europe.Guernsey.I18N_IDENTITY_CODE)]
         GG,
 
         /// <summary>
-        /// Ghana
+        /// 加纳（The Republic of Ghana，非洲，GH，GHA，288），加纳共和国 <br />
+        /// Cosmos i18n code: i18n_country_jiana
         /// </summary>
-        [Alpha2Code("GH")]
-        [Alpha3Code("GHA")]
-        [CountryOrRegionName("Ghana")]
-        [UNCode("288")]
+        [I18NIdentityCode(Africa.Ghana.I18N_IDENTITY_CODE)]
         GH,
 
         /// <summary>
-        /// Gibraltar
+        /// 直布罗陀（Gibraltar，欧洲，GI，GIB，292） <br />
+        /// Cosmos i18n code: i18n_country_zhibuluotuo
         /// </summary>
-        [Alpha2Code("GI")]
-        [Alpha3Code("GIB")]
-        [CountryOrRegionName("Gibraltar")]
-        [UNCode("292")]
+        [I18NIdentityCode(Europe.Gibraltar.I18N_IDENTITY_CODE)]
         GI,
 
         /// <summary>
-        /// Greenland
+        /// 格陵兰岛（Greenland，北美洲，GL，GRL，304） <br />
+        /// Cosmos i18n code: i18n_country_gelinlan
         /// </summary>
-        [Alpha2Code("GL")]
-        [Alpha3Code("GRL")]
-        [CountryOrRegionName("Greenland")]
-        [UNCode("304")]
+        [I18NIdentityCode(NorthAmerica.Greenland.I18N_IDENTITY_CODE)]
         GL,
 
         /// <summary>
-        /// Gambia
+        /// 冈比亚（Republic of The Gambia，非洲，GM，GMB，270），冈比亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_gangbiya
         /// </summary>
-        [Alpha2Code("GM")]
-        [Alpha3Code("GMB")]
-        [CountryOrRegionName("Gambia")]
-        [UNCode("270")]
+        [I18NIdentityCode(Africa.Gambia.I18N_IDENTITY_CODE)]
         GM,
 
         /// <summary>
-        /// Guinea
+        /// 几内亚（The Republic of Guinea，非洲，GN，GIN，324），几内亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_jineiya
         /// </summary>
-        [Alpha2Code("GN")]
-        [Alpha3Code("GIN")]
-        [CountryOrRegionName("Guinea")]
-        [UNCode("324")]
+        [I18NIdentityCode(Africa.Guinea.I18N_IDENTITY_CODE)]
         GN,
 
         /// <summary>
-        /// Guadeloupe
+        /// 瓜德罗普（Guadeloupe，北美洲，GP，GLP，312） <br />
+        /// Cosmos i18n code: i18n_country_guadeluopu
         /// </summary>
-        [Alpha2Code("GP")]
-        [Alpha3Code("GLP")]
-        [CountryOrRegionName("Guadeloupe")]
-        [UNCode("312")]
+        [I18NIdentityCode(NorthAmerica.Guadeloupe.I18N_IDENTITY_CODE)]
         GP,
 
         /// <summary>
-        /// Equatorial Guinea
+        /// 赤道几内亚（The Republic of Equatorial Guinea，非洲，GQ，GNQ，226），赤道几内亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_chidaojineiya
         /// </summary>
-        [Alpha2Code("GQ")]
-        [Alpha3Code("GNQ")]
-        [CountryOrRegionName("Equatorial Guinea")]
-        [UNCode("226")]
+        [I18NIdentityCode(Africa.EquatorialGuinea.I18N_IDENTITY_CODE)]
         GQ,
 
         /// <summary>
-        /// Greece
+        /// 希腊（The Republic of Greece，欧洲，GR，GRC，300），希腊共和国 <br />
+        /// Cosmos i18n code: i18n_country_xila
         /// </summary>
-        [Alpha2Code("GR")]
-        [Alpha3Code("GRC")]
-        [CountryOrRegionName("Greece")]
-        [UNCode("300")]
+        [I18NIdentityCode(Europe.Greece.I18N_IDENTITY_CODE)]
         GR,
 
         /// <summary>
-        /// South Georgia and the South Sandwich Islands
+        /// 南乔治亚岛和南桑威奇群岛（South Georgia and The South Sandwich Islands，南美洲，GS，SGS，239） <br />
+        /// Cosmos i18n code: i18n_country_nanqiaozhiya
         /// </summary>
-        [Alpha2Code("GS")]
-        [Alpha3Code("SGS")]
-        [CountryOrRegionName("South Georgia and the South Sandwich Islands")]
-        [UNCode("239")]
+        [I18NIdentityCode(SouthAmerica.SGSSI.I18N_IDENTITY_CODE)]
         GS,
 
         /// <summary>
-        /// Guatemala
+        /// 危地马拉（The Republic of Guatemala，北美洲，GT，GTM，320），危地马拉共和国 <br />
+        /// Cosmos i18n code: i18n_country_weidimala
         /// </summary>
-        [Alpha2Code("GT")]
-        [Alpha3Code("GTM")]
-        [CountryOrRegionName("Guatemala")]
-        [UNCode("320")]
+        [I18NIdentityCode(NorthAmerica.Guatemala.I18N_IDENTITY_CODE)]
         GT,
 
         /// <summary>
-        /// Guam
+        /// 关岛（The Territory of Guam，大洋洲，GU，GUM，316） <br />
+        /// Cosmos i18n code: i18n_country_guandao
         /// </summary>
-        [Alpha2Code("GU")]
-        [Alpha3Code("GUM")]
-        [CountryOrRegionName("Guam")]
-        [UNCode("316")]
+        [I18NIdentityCode(Oceania.Guam.I18N_IDENTITY_CODE)]
         GU,
 
         /// <summary>
-        /// Guinea-Bissau
+        /// 几内亚比绍（The Republic of Guinea-Bissau，非洲，GW，GNB，624），几内亚比绍共和国 <br />
+        /// Cosmos i18n code: i18n_country_jineiyabishao
         /// </summary>
-        [Alpha2Code("GW")]
-        [Alpha3Code("GNB")]
-        [CountryOrRegionName("Guinea-Bissau")]
-        [UNCode("624")]
+        [I18NIdentityCode(Africa.GuineaBissau.I18N_IDENTITY_CODE)]
         GW,
 
         /// <summary>
-        /// Guyana
+        /// 圭亚那（Cooperative Republic of Guyana，南美洲，GY，GUY，328），圭亚那合作共和国 <br />
+        /// Cosmos i18n code: i18n_country_guiyana
         /// </summary>
-        [Alpha2Code("GY")]
-        [Alpha3Code("GUY")]
-        [CountryOrRegionName("Guyana")]
-        [UNCode("328")]
+        [I18NIdentityCode(SouthAmerica.Guyana.I18N_IDENTITY_CODE)]
         GY,
 
         /// <summary>
@@ -724,167 +684,131 @@ namespace Cosmos.I18N.Countries
         HK,
 
         /// <summary>
-        /// Heard Island and McDonald Islands
+        /// 赫德岛和麦克唐纳群岛（Heard Island and McDonald Islands，亚洲，HM，HMD，334） <br />
+        /// Cosmos i18n code: i18n_country_hedemaiketang
         /// </summary>
-        [Alpha2Code("HM")]
-        [Alpha3Code("HMD")]
-        [CountryOrRegionName("Heard Island and McDonald Islands")]
-        [UNCode("334")]
+        [I18NIdentityCode(Asia.HIMI.I18N_IDENTITY_CODE)]
         HM,
 
         /// <summary>
-        /// Honduras
+        /// 洪都拉斯（The Republic of Honduras，南美洲，HN，HND，340），洪都拉斯共和国 <br />
+        /// Cosmos i18n code: i18n_country_hongdulasi
         /// </summary>
-        [Alpha2Code("HN")]
-        [Alpha3Code("HND")]
-        [CountryOrRegionName("Honduras")]
-        [UNCode("340")]
+        [I18NIdentityCode(SouthAmerica.Honduras.I18N_IDENTITY_CODE)]
         HN,
 
         /// <summary>
-        /// Croatia
+        /// 克罗地亚（Republic of Croatia，欧洲，HR，HRV，191），克罗地亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_keluodiya
         /// </summary>
-        [Alpha2Code("HR")]
-        [Alpha3Code("HRV")]
-        [CountryOrRegionName("Croatia")]
-        [UNCode("191")]
+        [I18NIdentityCode(Europe.Croatia.I18N_IDENTITY_CODE)]
         HR,
 
         /// <summary>
-        /// Haiti
+        /// 海地（The Republic of Haiti，北美洲，HT，HTI，332），海地共和国 <br />
+        /// Cosmos i18n code: i18n_country_haidi
         /// </summary>
-        [Alpha2Code("HT")]
-        [Alpha3Code("HTI")]
-        [CountryOrRegionName("Haiti")]
-        [UNCode("332")]
+        [I18NIdentityCode(NorthAmerica.Haiti.I18N_IDENTITY_CODE)]
         HT,
 
         /// <summary>
-        /// Hungary
+        /// 匈牙利（Hungary，欧洲，HU，HUN，348） <br />
+        /// Cosmos i18n code: i18n_country_xiongyali
         /// </summary>
-        [Alpha2Code("HU")]
-        [Alpha3Code("HUN")]
-        [CountryOrRegionName("Hungary")]
-        [UNCode("348")]
+        [I18NIdentityCode(Europe.Hungary.I18N_IDENTITY_CODE)]
         HU,
 
         /// <summary>
-        /// Indonesia
+        /// 印度尼西亚（The Republic of Indonesia，亚洲，ID，IDN，360），印度尼西亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_yindunixiya
         /// </summary>
-        [Alpha2Code("ID")]
-        [Alpha3Code("IDN")]
-        [CountryOrRegionName("Indonesia")]
-        [UNCode("360")]
+        [I18NIdentityCode(Asia.Indonesia.I18N_IDENTITY_CODE)]
         ID,
 
         /// <summary>
-        /// Ireland
+        /// 爱尔兰（Republic of Ireland，欧洲，IE，IRL，372），爱尔兰共和国 <br />
+        /// Cosmos i18n code: i18n_country_aierlan
         /// </summary>
-        [Alpha2Code("IE")]
-        [Alpha3Code("IRL")]
-        [CountryOrRegionName("Ireland")]
-        [UNCode("372")]
+        [I18NIdentityCode(Europe.Ireland.I18N_IDENTITY_CODE)]
         IE,
 
         /// <summary>
-        /// Israel
+        /// 以色列（The State of Israel，亚洲，IL，ISR，376），以色列国 <br />
+        /// Cosmos i18n code: i18n_country_yiselie
         /// </summary>
-        [Alpha2Code("IL")]
-        [Alpha3Code("ISR")]
-        [CountryOrRegionName("Israel")]
-        [UNCode("376")]
+        [I18NIdentityCode(Asia.Israel.I18N_IDENTITY_CODE)]
         IL,
 
         /// <summary>
-        /// Isle of Man
+        /// 马恩岛（Isle of Man，欧洲，IM，IMN，833），英属马恩岛 <br />
+        /// Cosmos i18n code: i18n_country_maendao
         /// </summary>
-        [Alpha2Code("IM")]
-        [Alpha3Code("IMN")]
-        [CountryOrRegionName("Isle of Man")]
-        [UNCode("833")]
+        [I18NIdentityCode(Europe.Mann.I18N_IDENTITY_CODE)]
         IM,
 
         /// <summary>
-        /// India
+        /// 印度（Republic of India，亚洲，IN，IND，356），印度共和国 <br />
+        /// Cosmos i18n code: i18n_country_yindu
         /// </summary>
-        [Alpha2Code("IN")]
-        [Alpha3Code("IND")]
-        [CountryOrRegionName("India")]
-        [UNCode("356")]
+        [I18NIdentityCode(Asia.India.I18N_IDENTITY_CODE)]
         IN,
 
         /// <summary>
-        /// British Indian Ocean Territory
+        /// 英属印度洋领地（British Indian Ocean Territory，亚洲，IO，IOT，086） <br />
+        /// Cosmos i18n code: i18n_country_yingshuying
         /// </summary>
-        [Alpha2Code("IO")]
-        [Alpha3Code("IOT")]
-        [CountryOrRegionName("British Indian Ocean Territory")]
-        [UNCode("086")]
+        [I18NIdentityCode(Asia.BritishIndianOceanTerritory.I18N_IDENTITY_CODE)]
         IO,
 
         /// <summary>
-        /// Iraq
+        /// 伊拉克（Republic Of Iraq，亚洲，IQ，IRQ，368），伊拉克共和国 <br />
+        /// Cosmos i18n code: i18n_country_yilake
         /// </summary>
-        [Alpha2Code("IQ")]
-        [Alpha3Code("IRQ")]
-        [CountryOrRegionName("Iraq")]
-        [UNCode("368")]
+        [I18NIdentityCode(Asia.Iraq.I18N_IDENTITY_CODE)]
         IQ,
 
         /// <summary>
-        /// Iran (Islamic Republic of)
+        /// 伊朗（The Islamic Republic of Iran，亚洲，IR，IRN，364），伊朗伊斯兰共和国 <br />
+        /// Cosmos i18n code: i18n_country_yilang
         /// </summary>
-        [Alpha2Code("IR")]
-        [Alpha3Code("IRN")]
-        [CountryOrRegionName("Iran (Islamic Republic of)")]
-        [UNCode("364")]
+        [I18NIdentityCode(Asia.Iran.I18N_IDENTITY_CODE)]
         IR,
 
         /// <summary>
-        /// Iceland
+        /// 冰岛（The Republic of Iceland，欧洲，IS，ISL，352），冰岛共和国 <br />
+        /// Cosmos i18n code: i18n_country_bingdao
         /// </summary>
-        [Alpha2Code("IS")]
-        [Alpha3Code("ISL")]
-        [CountryOrRegionName("Iceland")]
-        [UNCode("352")]
+        [I18NIdentityCode(Europe.Iceland.I18N_IDENTITY_CODE)]
         IS,
 
         /// <summary>
-        /// Italy
+        /// 意大利（The Republic of Italy，欧洲，IT，ITA，380），意大利共和国 <br />
+        /// Cosmos i18n code: i18n_country_yidali
         /// </summary>
-        [Alpha2Code("IT")]
-        [Alpha3Code("ITA")]
-        [CountryOrRegionName("Italy")]
-        [UNCode("380")]
+        [I18NIdentityCode(Europe.Italy.I18N_IDENTITY_CODE)]
         IT,
 
         /// <summary>
-        /// Jersey
+        /// 泽西（Bailiwick of Jersey，欧洲，JE，JEY，832），泽西岛 <br />
+        /// Cosmos i18n code: i18n_country_zexi
         /// </summary>
-        [Alpha2Code("JE")]
-        [Alpha3Code("JEY")]
-        [CountryOrRegionName("Jersey")]
-        [UNCode("832")]
+        [I18NIdentityCode(Europe.Jersey.I18N_IDENTITY_CODE)]
         JE,
 
         /// <summary>
-        /// Jamaica
+        /// 牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+        /// Cosmos i18n code: i18n_country_yamaijia
         /// </summary>
-        [Alpha2Code("JM")]
-        [Alpha3Code("JAM")]
-        [CountryOrRegionName("Jamaica")]
-        [UNCode("388")]
+        [I18NIdentityCode(NorthAmerica.Jamaica.I18N_IDENTITY_CODE)]
         JM,
 
         /// <summary>
-        /// Jordan
+        /// 约旦（The Hashemite Kingdom of Jordan，亚洲，JO，JOR，400），约旦哈希姆王国 <br />
+        /// Cosmos i18n code: i18n_country_yuedan
         /// </summary>
-        [Alpha2Code("JO")]
-        [Alpha3Code("JOR")]
-        [CountryOrRegionName("Jordan")]
-        [UNCode("400")]
+        [I18NIdentityCode(Asia.Jordan.I18N_IDENTITY_CODE)]
         JO,
-        
+
         /// <summary>
         /// 日本（Japan，亚洲，JP，JPN，392），日本国 <br />
         /// Cosmos i18n code: i18n_country_riben
@@ -893,300 +817,234 @@ namespace Cosmos.I18N.Countries
         JP,
 
         /// <summary>
-        /// Kenya
+        /// 肯尼亚（The Republic Of Kenya，非洲，KE，KEN，404），肯尼亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_kenniya
         /// </summary>
-        [Alpha2Code("KE")]
-        [Alpha3Code("KEN")]
-        [CountryOrRegionName("Kenya")]
-        [UNCode("404")]
+        [I18NIdentityCode(Africa.Kenya.I18N_IDENTITY_CODE)]
         KE,
 
         /// <summary>
-        /// Kyrgyzstan
+        /// 吉尔吉斯斯坦（The Kyrgyz Republic/Kyrgyzstan，亚洲，KG，KGZ，417），吉尔吉斯共和国 <br />
+        /// Cosmos i18n code: i18n_country_jierjisi
         /// </summary>
-        [Alpha2Code("KG")]
-        [Alpha3Code("KGZ")]
-        [CountryOrRegionName("Kyrgyzstan")]
-        [UNCode("417")]
+        [I18NIdentityCode(Asia.Kyrgyzstan.I18N_IDENTITY_CODE)]
         KG,
 
         /// <summary>
-        /// Cambodia
+        /// 柬埔寨（The Kingdom of Cambodia，亚洲，KH，KHM，116），柬埔寨王国 <br />
+        /// Cosmos i18n code: i18n_country_jipuzhai
         /// </summary>
-        [Alpha2Code("KH")]
-        [Alpha3Code("KHM")]
-        [CountryOrRegionName("Cambodia")]
-        [UNCode("116")]
+        [I18NIdentityCode(Asia.Cambodia.I18N_IDENTITY_CODE)]
         KH,
 
         /// <summary>
-        /// Kiribati
+        /// 基里巴斯（The Republic of Kiribati，大洋洲，KI，KIR，296），基里巴斯共和国 <br />
+        /// Cosmos i18n code: i18n_country_jilibasi
         /// </summary>
-        [Alpha2Code("KI")]
-        [Alpha3Code("KIR")]
-        [CountryOrRegionName("Kiribati")]
-        [UNCode("296")]
+        [I18NIdentityCode(Oceania.Kiribati.I18N_IDENTITY_CODE)]
         KI,
 
         /// <summary>
-        /// Comoros
+        /// 科摩罗（Union of Comoros，非洲，KM，COM，174），科摩罗联盟 <br />
+        /// Cosmos i18n code: i18n_country_kemoluo
         /// </summary>
-        [Alpha2Code("KM")]
-        [Alpha3Code("COM")]
-        [CountryOrRegionName("Comoros")]
-        [UNCode("174")]
+        [I18NIdentityCode(Africa.Comoros.I18N_IDENTITY_CODE)]
         KM,
 
         /// <summary>
-        /// Saint Kitts and Nevis
+        /// 圣基茨和尼维斯（The Federation of Saint Kitts and Nevis，北美洲，KN，KNA，659），圣基茨和尼维斯联邦 <br />
+        /// Cosmos i18n code: i18n_country_shengjiciniweisi
         /// </summary>
-        [Alpha2Code("KN")]
-        [Alpha3Code("KNA")]
-        [CountryOrRegionName("Saint Kitts and Nevis")]
-        [UNCode("659")]
+        [I18NIdentityCode(NorthAmerica.SaintKittsAndNevis.I18N_IDENTITY_CODE)]
         KN,
 
         /// <summary>
-        /// North Korea
+        /// 朝鲜（Democratic People's Republic of Korea，亚洲，KP，PRK，408），朝鲜民主主义人民共和国 <br />
+        /// Cosmos i18n code: i18n_country_chaoxian
         /// </summary>
-        [Alpha2Code("KP")]
-        [Alpha3Code("PRK")]
-        [CountryOrRegionName("North Korea")]
-        [UNCode("408")]
+        [I18NIdentityCode(Asia.NorthKorea.I18N_IDENTITY_CODE)]
         KP,
 
         /// <summary>
-        /// South Korea
+        /// 韩国（Republic Of Korea，亚洲，KR，KOR，410），大韩民国 <br />
+        /// Cosmos i18n code: i18n_country_hanguo
         /// </summary>
-        [Alpha2Code("KR")]
-        [Alpha3Code("KOR")]
-        [CountryOrRegionName("South Korea")]
-        [UNCode("410")]
+        [I18NIdentityCode(Asia.SouthKorea.I18N_IDENTITY_CODE)]
         KR,
 
         /// <summary>
-        /// Kuwait
+        /// 科威特（The State of Kuwait，亚洲，KW，KWT，414），科威特国 <br />
+        /// Cosmos i18n code: i18n_country_keweite
         /// </summary>
-        [Alpha2Code("KW")]
-        [Alpha3Code("KWT")]
-        [CountryOrRegionName("Kuwait")]
-        [UNCode("414")]
+        [I18NIdentityCode(Asia.Kuwait.I18N_IDENTITY_CODE)]
         KW,
 
         /// <summary>
-        /// Cayman Islands
+        /// 开曼群岛（Cayman Islands，北美洲，KY，CYM，136） <br />
+        /// Cosmos i18n code: i18n_country_kaiman
         /// </summary>
-        [Alpha2Code("KY")]
-        [Alpha3Code("CYM")]
-        [CountryOrRegionName("Cayman Islands")]
-        [UNCode("136")]
+        [I18NIdentityCode(NorthAmerica.CaymanIslands.I18N_IDENTITY_CODE)]
         KY,
 
         /// <summary>
-        /// Kazakhstan
+        /// 哈萨克斯坦（ The Republic of Kazakhstan，亚洲，KZ，KAZ，398），哈萨克斯坦共和国 <br />
+        /// Cosmos i18n code: i18n_country_hasakesitan
         /// </summary>
-        [Alpha2Code("KZ")]
-        [Alpha3Code("KAZ")]
-        [CountryOrRegionName("Kazakhstan")]
-        [UNCode("398")]
+        [I18NIdentityCode(Asia.Kazakhstan.I18N_IDENTITY_CODE)]
         KZ,
 
         /// <summary>
-        /// Laos
+        /// 老挝（Lao People's Democratic Republic，亚洲，LA，LAO，418），老挝人民民主共和国 <br />
+        /// Cosmos i18n code: i18n_country_laowo
         /// </summary>
-        [Alpha2Code("LA")]
-        [Alpha3Code("LAO")]
-        [CountryOrRegionName("Lao PDR")]
-        [UNCode("418")]
+        [I18NIdentityCode(Asia.LaoPDR.I18N_IDENTITY_CODE)]
         LA,
 
         /// <summary>
-        /// Lebanon
+        /// 黎巴嫩（The Republic of Lebanon，亚洲，LB，LBN，422），黎巴嫩共和国 <br />
+        /// Cosmos i18n code: i18n_country_libanen
         /// </summary>
-        [Alpha2Code("LB")]
-        [Alpha3Code("LBN")]
-        [CountryOrRegionName("Lebanon")]
-        [UNCode("422")]
+        [I18NIdentityCode(Asia.Lebanon.I18N_IDENTITY_CODE)]
         LB,
 
         /// <summary>
-        /// Saint Lucia
+        /// 圣卢西亚（Republic Of Iraq，北美洲，LC，LCA，662） <br />
+        /// Cosmos i18n code: i18n_country_shengluxiya
         /// </summary>
-        [Alpha2Code("LC")]
-        [Alpha3Code("LCA")]
-        [CountryOrRegionName("Saint Lucia")]
-        [UNCode("662")]
+        [I18NIdentityCode(NorthAmerica.SaintLucia.I18N_IDENTITY_CODE)]
         LC,
 
         /// <summary>
-        /// Liechtenstein
+        /// 列支敦士登（Principality of Liechtenstein，欧洲，LI，LIE，438），列支敦士登公国 <br />
+        /// Cosmos i18n code: i18n_country_liezhidunshideng
         /// </summary>
-        [Alpha2Code("LI")]
-        [Alpha3Code("LIE")]
-        [CountryOrRegionName("Liechtenstein")]
-        [UNCode("438")]
+        [I18NIdentityCode(Europe.Liechtenstein.I18N_IDENTITY_CODE)]
         LI,
 
         /// <summary>
-        /// Sri Lanka
+        /// 斯里兰卡（The Democratic Socialist Republic of Sri Lanka，亚洲，LK，LKA，144），斯里兰卡民主社会主义共和国 <br />
+        /// Cosmos i18n code: i18n_country_sililanka
         /// </summary>
-        [Alpha2Code("LK")]
-        [Alpha3Code("LKA")]
-        [CountryOrRegionName("Sri Lanka")]
-        [UNCode("144")]
+        [I18NIdentityCode(Asia.SriLanka.I18N_IDENTITY_CODE)]
         LK,
 
         /// <summary>
-        /// Liberia
+        /// 利比里亚（Republic Of Liberia，非洲，LR，LBR，430），利比里亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_libiliya
         /// </summary>
-        [Alpha2Code("LR")]
-        [Alpha3Code("LBR")]
-        [CountryOrRegionName("Liberia")]
-        [UNCode("430")]
+        [I18NIdentityCode(Africa.Liberia.I18N_IDENTITY_CODE)]
         LR,
 
         /// <summary>
-        /// Lesotho
+        /// 莱索托（Kingdom of Lesotho，非洲，LS，LSO，426），莱索托王国 <br />
+        /// Cosmos i18n code: i18n_country_laisuotuo
         /// </summary>
-        [Alpha2Code("LS")]
-        [Alpha3Code("LSO")]
-        [CountryOrRegionName("Lesotho")]
-        [UNCode("426")]
+        [I18NIdentityCode(Africa.Lesotho.I18N_IDENTITY_CODE)]
         LS,
 
         /// <summary>
-        /// Lithuania
+        /// 立陶宛（The Republic of Lithuania，欧洲，LT，LTU，440），立陶宛共和国 <br />
+        /// Cosmos i18n code: i18n_country_litaowan
         /// </summary>
-        [Alpha2Code("LT")]
-        [Alpha3Code("LTU")]
-        [CountryOrRegionName("Lithuania")]
-        [UNCode("440")]
+        [I18NIdentityCode(Europe.Lithuania.I18N_IDENTITY_CODE)]
         LT,
 
         /// <summary>
-        /// Luxembourg
+        /// 卢森堡（The Grand Duchy of Luxembourg，欧洲，LU，LUX，442），卢森堡大公国 <br />
+        /// Cosmos i18n code: i18n_country_lusenbao
         /// </summary>
-        [Alpha2Code("LU")]
-        [Alpha3Code("LUX")]
-        [CountryOrRegionName("Luxembourg")]
-        [UNCode("442")]
+        [I18NIdentityCode(Europe.Luxembourg.I18N_IDENTITY_CODE)]
         LU,
 
         /// <summary>
-        /// Latvia
+        /// 拉脱维亚（The Republic of Latvia，欧洲，LV，LVA，428），拉脱维亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_latuoweiya
         /// </summary>
-        [Alpha2Code("LV")]
-        [Alpha3Code("LVA")]
-        [CountryOrRegionName("Latvia")]
-        [UNCode("428")]
+        [I18NIdentityCode(Europe.Latvia.I18N_IDENTITY_CODE)]
         LV,
 
         /// <summary>
-        /// Libya
+        /// 利比亚（State of Libya，非洲，LY，LBY，434），利比亚国 <br />
+        /// Cosmos i18n code: i18n_country_libiya
         /// </summary>
-        [Alpha2Code("LY")]
-        [Alpha3Code("LBY")]
-        [CountryOrRegionName("Libya")]
-        [UNCode("434")]
+        [I18NIdentityCode(Africa.Libya.I18N_IDENTITY_CODE)]
         LY,
 
         /// <summary>
-        /// Morocco
+        /// 摩洛哥（The Kingdom of Morocco，非洲，MA，MAR，504），摩洛哥王国 <br />
+        /// Cosmos i18n code: i18n_country_moluoge
         /// </summary>
-        [Alpha2Code("MA")]
-        [Alpha3Code("MAR")]
-        [CountryOrRegionName("Morocco")]
-        [UNCode("504")]
+        [I18NIdentityCode(Africa.Morocco.I18N_IDENTITY_CODE)]
         MA,
 
         /// <summary>
-        /// Monaco
+        /// 摩纳哥（The Principality of Monaco，欧洲，MC，MCO，492），摩纳哥公国 <br />
+        /// Cosmos i18n code: i18n_country_monage
         /// </summary>
-        [Alpha2Code("MC")]
-        [Alpha3Code("MCO")]
-        [CountryOrRegionName("Monaco")]
-        [UNCode("492")]
+        [I18NIdentityCode(Europe.Monaco.I18N_IDENTITY_CODE)]
         MC,
 
         /// <summary>
-        /// Moldova (Republic of)
+        /// 摩尔多瓦（Republic of Moldova，欧洲，MD，MDA，498），摩尔多瓦共和国 <br />
+        /// Cosmos i18n code: i18n_country_moerduowa
         /// </summary>
-        [Alpha2Code("MD")]
-        [Alpha3Code("MDA")]
-        [CountryOrRegionName("Moldova (Republic of)")]
-        [UNCode("498")]
+        [I18NIdentityCode(Europe.Moldova.I18N_IDENTITY_CODE)]
         MD,
 
         /// <summary>
-        /// Montenegro
+        /// 黑山（Montenegro，欧洲，ME，MNE，499），黑山共和国 <br />
+        /// Cosmos i18n code: i18n_country_heishan
         /// </summary>
-        [Alpha2Code("ME")]
-        [Alpha3Code("MNE")]
-        [CountryOrRegionName("Montenegro")]
-        [UNCode("499")]
+        [I18NIdentityCode(Europe.Montenegro.I18N_IDENTITY_CODE)]
         ME,
 
         /// <summary>
-        /// Saint Martin (French part)
+        /// 法属圣马丁（Saint Martin (French part)，北美洲，MF，MAF，663），圣马丁行政区 <br />
+        /// Cosmos i18n code: i18n_country_shengmading
         /// </summary>
-        [Alpha2Code("MF")]
-        [Alpha3Code("MAF")]
-        [CountryOrRegionName("Saint Martin (French part)")]
-        [UNCode("663")]
+        [I18NIdentityCode(NorthAmerica.SaintMartinFrenchPart.I18N_IDENTITY_CODE)]
         MF,
 
         /// <summary>
-        /// Madagascar
+        /// 马达加斯加（The Republic of Madagascar，非洲，MG，MDG，450），马达加斯加共和国 <br />
+        /// Cosmos i18n code: i18n_country_madajiasijia
         /// </summary>
-        [Alpha2Code("MG")]
-        [Alpha3Code("MDG")]
-        [CountryOrRegionName("Madagascar")]
-        [UNCode("450")]
+        [I18NIdentityCode(Africa.Madagascar.I18N_IDENTITY_CODE)]
         MG,
 
         /// <summary>
-        /// Marshall Islands
+        /// 马绍尔群岛（The Republic of Marshall Islands，大洋洲，MH，MHL，584），马绍尔群岛共和国 <br />
+        /// Cosmos i18n code: i18n_country_mashaoer
         /// </summary>
-        [Alpha2Code("MH")]
-        [Alpha3Code("MHL")]
-        [CountryOrRegionName("Marshall Islands")]
-        [UNCode("584")]
+        [I18NIdentityCode(Oceania.MarshallIslands.I18N_IDENTITY_CODE)]
         MH,
 
         /// <summary>
-        /// Macedonia (the former Yugoslav Republic of)
+        /// 北马其顿（The Republic of North Macedonia，欧洲，MK，MKD，807），北马其顿共和国 <br />
+        /// Cosmos i18n code: i18n_country_maqidun
         /// </summary>
-        [Alpha2Code("MK")]
-        [Alpha3Code("MKD")]
-        [CountryOrRegionName("Macedonia (the former Yugoslav Republic of)")]
-        [UNCode("807")]
+        [I18NIdentityCode(Europe.Macedonia.I18N_IDENTITY_CODE)]
         MK,
 
         /// <summary>
-        /// Mali
+        /// 马里（The Republic of Mali，非洲，ML，MLI，466），马里共和国 <br />
+        /// Cosmos i18n code: i18n_country_mali
         /// </summary>
-        [Alpha2Code("ML")]
-        [Alpha3Code("MLI")]
-        [CountryOrRegionName("Mali")]
-        [UNCode("466")]
+        [I18NIdentityCode(Africa.Mali.I18N_IDENTITY_CODE)]
         ML,
 
         /// <summary>
-        /// Myanmar
+        /// 缅甸（The Republic of the Union of Myanmar，亚洲，MM，MMR，104），缅甸联邦共和国 <br />
+        /// Cosmos i18n code: i18n_country_miandian
         /// </summary>
-        [Alpha2Code("MM")]
-        [Alpha3Code("MMR")]
-        [CountryOrRegionName("Myanmar")]
-        [UNCode("104")]
+        [I18NIdentityCode(Asia.Myanmar.I18N_IDENTITY_CODE)]
         MM,
 
         /// <summary>
-        /// Mongolia
+        /// 蒙古国（Outer Mongolia，亚洲，MN，MNG，496），外蒙古 <br />
+        /// Cosmos i18n code: i18n_country_waimenggu
         /// </summary>
-        [Alpha2Code("MN")]
-        [Alpha3Code("MNG")]
-        [CountryOrRegionName("Mongolia")]
-        [UNCode("496")]
+        [I18NIdentityCode(Asia.Mongolia.I18N_IDENTITY_CODE)]
         MN,
 
         /// <summary>
@@ -1199,155 +1057,122 @@ namespace Cosmos.I18N.Countries
         MO,
 
         /// <summary>
-        /// Northern Mariana Islands
+        /// 北马里亚那群岛（Commonwealth of the Northern Mariana Islands，大洋洲，MP，MNP，580），北马里亚纳群岛自由邦 <br />
+        /// Cosmos i18n code: i18n_country_beimaliyana
         /// </summary>
-        [Alpha2Code("MP")]
-        [Alpha3Code("MNP")]
-        [CountryOrRegionName("Northern Mariana Islands")]
-        [UNCode("580")]
+        [I18NIdentityCode(Oceania.NorthernMarianaIslands.I18N_IDENTITY_CODE)]
         MP,
 
         /// <summary>
-        /// Martinique
+        /// 马提尼克岛（Martinique，北美洲，MQ，MTQ，474），法国的海外大区 <br />
+        /// Cosmos i18n code: i18n_country_matinike
         /// </summary>
-        [Alpha2Code("MQ")]
-        [Alpha3Code("MTQ")]
-        [CountryOrRegionName("Martinique")]
-        [UNCode("474")]
+        [I18NIdentityCode(NorthAmerica.Martinique.I18N_IDENTITY_CODE)]
         MQ,
 
         /// <summary>
-        /// Mauritania
+        /// 毛里塔尼亚（The Islamic Republic of Mauritania，非洲，MR，MR，478），毛里塔尼亚伊斯兰共和国 <br />
+        /// Cosmos i18n code: i18n_country_maolitaniya
         /// </summary>
-        [Alpha2Code("MR")]
-        [Alpha3Code("MRT")]
-        [CountryOrRegionName("Mauritania")]
-        [UNCode("478")]
+        [I18NIdentityCode(Africa.Mauritania.I18N_IDENTITY_CODE)]
         MR,
 
         /// <summary>
-        /// Montserrat
+        /// 蒙特塞拉特（Montserrat，北美洲，MS，MSR，500） <br />
+        /// Cosmos i18n code: i18n_country_mengtesailate
         /// </summary>
-        [Alpha2Code("MS")]
-        [Alpha3Code("MSR")]
-        [CountryOrRegionName("Montserrat")]
-        [UNCode("500")]
+        [I18NIdentityCode(NorthAmerica.Montserrat.I18N_IDENTITY_CODE)]
         MS,
 
         /// <summary>
-        /// Malta
+        /// 马耳他（Republic of Malta，欧洲，MT，MLT，470），马耳他共和国 <br />
+        /// Cosmos i18n code: i18n_country_maerta
         /// </summary>
-        [Alpha2Code("MT")]
-        [Alpha3Code("MLT")]
-        [CountryOrRegionName("Malta")]
-        [UNCode("470")]
+        [I18NIdentityCode(Europe.Malta.I18N_IDENTITY_CODE)]
         MT,
 
         /// <summary>
-        /// Mauritius
+        /// 毛里求斯（The Republic of Mauritius，非洲，MU，MUS，480），毛里求斯共和国 <br />
+        /// Cosmos i18n code: i18n_country_maoliqiusi
         /// </summary>
-        [Alpha2Code("MU")]
-        [Alpha3Code("MUS")]
-        [CountryOrRegionName("Mauritius")]
-        [UNCode("480")]
+        [I18NIdentityCode(Africa.Mauritius.I18N_IDENTITY_CODE)]
         MU,
 
         /// <summary>
-        /// Maldives
+        /// 马尔代夫（The Republic of Maldives，亚洲，MV，MDV，462），马尔代夫共和国 <br />
+        /// Cosmos i18n code: i18n_country_maerdaifu
         /// </summary>
-        [Alpha2Code("MV")]
-        [Alpha3Code("MDV")]
-        [CountryOrRegionName("Maldives")]
-        [UNCode("462")]
+        [I18NIdentityCode(Asia.Maldives.I18N_IDENTITY_CODE)]
         MV,
 
         /// <summary>
-        /// Malawi
+        /// 马拉维（The Republic of Malawi，非洲，MW，MWI，454），马拉维共和国 <br />
+        /// Cosmos i18n code: i18n_country_malawei
         /// </summary>
-        [Alpha2Code("MW")]
-        [Alpha3Code("MWI")]
-        [CountryOrRegionName("Malawi")]
-        [UNCode("454")]
+        [I18NIdentityCode(Africa.Malawi.I18N_IDENTITY_CODE)]
         MW,
 
         /// <summary>
-        /// Mexico
+        /// 墨西哥（The United Mexican States，北美洲，MX，MEX，484），墨西哥合众国 <br />
+        /// Cosmos i18n code: i18n_country_moxige
         /// </summary>
-        [Alpha2Code("MX")]
-        [Alpha3Code("MEX")]
-        [CountryOrRegionName("Mexico")]
-        [UNCode("484")]
+        [I18NIdentityCode(NorthAmerica.Mexico.I18N_IDENTITY_CODE)]
         MX,
 
         /// <summary>
-        /// Malaysia
+        /// 大马（Malaysia，亚洲，MY，MYS，458），马来西亚 <br />
+        /// Cosmos i18n code: i18n_country_malaixiya
         /// </summary>
-        [Alpha3Code("MYS")]
-        [CountryOrRegionName("Malaysia")]
-        [UNCode("458")]
+        [I18NIdentityCode(Asia.Malaysia.I18N_IDENTITY_CODE)]
         MY,
 
         /// <summary>
-        /// Mozambique
+        /// 莫桑比克（The Republic of Mozambique，非洲，MZ，MOZ，508），莫桑比克共和国 <br />
+        /// Cosmos i18n code: i18n_country_mosangbike
         /// </summary>
-        [Alpha2Code("MZ")]
-        [Alpha3Code("MOZ")]
-        [CountryOrRegionName("Mozambique")]
-        [UNCode("508")]
+        [I18NIdentityCode(Africa.Mozambique.I18N_IDENTITY_CODE)]
         MZ,
 
         /// <summary>
-        /// Namibia
+        /// 纳米比亚（The Republic of Namibia，非洲，NA，NAM，516），纳米比亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_manibiya
         /// </summary>
-        [Alpha2Code("NA")]
-        [Alpha3Code("NAM")]
-        [CountryOrRegionName("Namibia")]
-        [UNCode("516")]
+        [I18NIdentityCode(Africa.Namibia.I18N_IDENTITY_CODE)]
         NA,
 
         /// <summary>
-        /// New Caledonia
+        /// 新喀里多尼亚（New Caledonia，大洋洲，NC，NCL，540） <br />
+        /// Cosmos i18n code: i18n_country_xinkaliduoniya
         /// </summary>
-        [Alpha2Code("NC")]
-        [Alpha3Code("NCL")]
-        [CountryOrRegionName("New Caledonia")]
-        [UNCode("540")]
+        [I18NIdentityCode(Oceania.NewCaledonia.I18N_IDENTITY_CODE)]
         NC,
 
         /// <summary>
-        /// Niger
+        /// 尼日尔（The Republic of Niger，非洲，NE，NER，562），尼日尔共和国 <br />
+        /// Cosmos i18n code: i18n_country_nirier
         /// </summary>
-        [Alpha2Code("NE")]
-        [Alpha3Code("NER")]
-        [CountryOrRegionName("Niger")]
-        [UNCode("562")]
+        [I18NIdentityCode(Africa.Niger.I18N_IDENTITY_CODE)]
         NE,
 
         /// <summary>
-        /// Norfolk Island
+        /// 诺福克岛（Norfolk Island，大洋洲，NF，NFK，574） <br />
+        /// Cosmos i18n code: i18n_country_nuofuke
         /// </summary>
-        [Alpha2Code("NF")]
-        [Alpha3Code("NFK")]
-        [CountryOrRegionName("Norfolk Island")]
-        [UNCode("574")]
+        [I18NIdentityCode(Oceania.NorfolkIsland.I18N_IDENTITY_CODE)]
         NF,
 
         /// <summary>
-        /// Nigeria
+        /// 尼日利亚（The Republic of Madagascar，非洲，NG，NGA，566，尼日利亚联邦共和国 <br />
+        /// Cosmos i18n code: i18n_country_niriliya
         /// </summary>
-        [Alpha2Code("NG")]
-        [Alpha3Code("NGA")]
-        [CountryOrRegionName("Niger")]
-        [UNCode("566")]
+        [I18NIdentityCode(Africa.Nigeria.I18N_IDENTITY_CODE)]
         NG,
 
         /// <summary>
-        /// Nicaragua
+        /// 尼加拉瓜（The Republic of Nicaragua，南美洲，NI，NIC，558），尼加拉瓜共和国 <br />
+        /// Cosmos i18n code: i18n_country_nijialagua
         /// </summary>
-        [Alpha2Code("NI")]
-        [Alpha3Code("NIC")]
-        [CountryOrRegionName("Nicaragua")]
-        [UNCode("558")]
+        [I18NIdentityCode(SouthAmerica.Nicaragua.I18N_IDENTITY_CODE)]
         NI,
 
         /// <summary>
@@ -1365,210 +1190,164 @@ namespace Cosmos.I18N.Countries
         NO,
 
         /// <summary>
-        /// Nepal
+        /// 尼泊尔（Federal Democratic Republic of Nepal，亚洲，NP，NPL，524），尼泊尔联邦民主共和国 <br />
+        /// Cosmos i18n code: i18n_country_niboer
         /// </summary>
-        [Alpha2Code("NP")]
-        [Alpha3Code("NPL")]
-        [CountryOrRegionName("Nepal")]
-        [UNCode("524")]
+        [I18NIdentityCode(Asia.Nepal.I18N_IDENTITY_CODE)]
         NP,
 
         /// <summary>
-        /// Nauru
+        /// 瑙鲁（The Republic of Nauru，大洋洲，NR，NRU，520），瑙鲁共和国 <br />
+        /// Cosmos i18n code: i18n_country_manu
         /// </summary>
-        [Alpha2Code("NR")]
-        [Alpha3Code("NRU")]
-        [CountryOrRegionName("Nauru")]
-        [UNCode("520")]
+        [I18NIdentityCode(Oceania.Nauru.I18N_IDENTITY_CODE)]
         NR,
 
         /// <summary>
-        /// Niue
+        /// 纽埃（Niue，大洋洲，NU，NIU，570） <br />
+        /// Cosmos i18n code: i18n_country_niuai
         /// </summary>
-        [Alpha2Code("NU")]
-        [Alpha3Code("NIU")]
-        [CountryOrRegionName("Niue")]
-        [UNCode("570")]
+        [I18NIdentityCode(Oceania.Niue.I18N_IDENTITY_CODE)]
         NU,
 
         /// <summary>
-        /// New Zealand
+        /// 新西兰（New Zealand，大洋洲，NZ，NZL，554） <br />
+        /// Cosmos i18n code: i18n_country_xinxilan
         /// </summary>
-        [Alpha2Code("NZ")]
-        [Alpha3Code("NZL")]
-        [CountryOrRegionName("New Zealand")]
-        [UNCode("554")]
+        [I18NIdentityCode(Oceania.NewZealand.I18N_IDENTITY_CODE)]
         NZ,
 
         /// <summary>
-        /// Oman
+        /// 阿曼（Sultanate of Oman，亚洲，OM，OMN，512），阿曼苏丹国 <br />
+        /// Cosmos i18n code: i18n_country_aman
         /// </summary>
-        [Alpha2Code("OM")]
-        [Alpha3Code("OMN")]
-        [CountryOrRegionName("Oman")]
-        [UNCode("512")]
+        [I18NIdentityCode(Asia.Oman.I18N_IDENTITY_CODE)]
         OM,
 
         /// <summary>
-        /// Panama
+        /// 巴拿马（The Republic of Panama，北美洲，PA，PAN，591），巴拿马共和国 <br />
+        /// Cosmos i18n code: i18n_country_banama
         /// </summary>
-        [Alpha2Code("PA")]
-        [Alpha3Code("PAN")]
-        [CountryOrRegionName("Panama")]
-        [UNCode("591")]
+        [I18NIdentityCode(NorthAmerica.Panama.I18N_IDENTITY_CODE)]
         PA,
 
         /// <summary>
-        /// Peru
+        /// 秘鲁（The Republic of Peru，南美洲，PE，PER，604），秘鲁共和国 <br />
+        /// Cosmos i18n code: i18n_country_bilu
         /// </summary>
-        [Alpha2Code("PE")]
-        [Alpha3Code("PER")]
-        [CountryOrRegionName("Peru")]
-        [UNCode("604")]
+        [I18NIdentityCode(SouthAmerica.Peru.I18N_IDENTITY_CODE)]
         PE,
 
         /// <summary>
-        /// French Polynesia
+        /// 波利尼西亚（French Polynesia，大洋洲，PF，PYF，258），法属波利尼西亚 <br />
+        /// Cosmos i18n code: i18n_country_bolinixiya
         /// </summary>
-        [Alpha2Code("PF")]
-        [Alpha3Code("PYF")]
-        [CountryOrRegionName("French Polynesia")]
-        [UNCode("258")]
+        [I18NIdentityCode(Oceania.Polynesia.I18N_IDENTITY_CODE)]
         PF,
 
         /// <summary>
-        /// Papua New Guinea
+        /// 巴布亚新几内亚（The Independent State of Papua New Guinea，大洋洲，PG，PNG，598），巴布亚新几内亚独立国 <br />
+        /// Cosmos i18n code: i18n_country_baxin
         /// </summary>
-        [Alpha2Code("PG")]
-        [Alpha3Code("PNG")]
-        [CountryOrRegionName("Papua New Guinea")]
-        [UNCode("598")]
+        [I18NIdentityCode(Oceania.PapuaNewGuinea.I18N_IDENTITY_CODE)]
         PG,
 
         /// <summary>
-        /// Philippines
+        /// 菲律宾（Republic of the Philippines，亚洲，PH，PHL，6080），菲律宾共和国 <br />
+        /// Cosmos i18n code: i18n_country_felvbin
         /// </summary>
-        [Alpha2Code("PH")]
-        [Alpha3Code("PHL")]
-        [CountryOrRegionName("Philippines")]
-        [UNCode("608")]
+        [I18NIdentityCode(Asia.Philippines.I18N_IDENTITY_CODE)]
         PH,
 
         /// <summary>
-        /// Pakistan
+        /// 巴基斯坦（Islamic Republic of Pakistan，亚洲，PK，PAK，586），巴基斯坦伊斯兰共和国 <br />
+        /// Cosmos i18n code: i18n_country_bajisitan
         /// </summary>
-        [Alpha2Code("PK")]
-        [Alpha3Code("PAK")]
-        [CountryOrRegionName("Pakistan")]
-        [UNCode("586")]
+        [I18NIdentityCode(Asia.Pakistan.I18N_IDENTITY_CODE)]
         PK,
 
         /// <summary>
-        /// Poland
+        /// 波兰（The Republic Of Poland，欧洲，PL，POL，61），波兰共和国 <br />
+        /// Cosmos i18n code: i18n_country_bolan
         /// </summary>
-        [Alpha2Code("PL")]
-        [Alpha3Code("POL")]
-        [CountryOrRegionName("Poland")]
-        [UNCode("616")]
+        [I18NIdentityCode(Europe.Poland.I18N_IDENTITY_CODE)]
         PL,
 
         /// <summary>
-        /// Saint Pierre and Miquelon
+        /// 圣皮埃尔和密克隆群岛（The Islands of Saint Pierre and Miquelon，北美洲，PM，SPM，666），法国海外领土 <br />
+        /// Cosmos i18n code: i18n_country_shengyiaiermkl
         /// </summary>
-        [Alpha2Code("PM")]
-        [Alpha3Code("SPM")]
-        [CountryOrRegionName("Saint Pierre and Miquelon")]
-        [UNCode("666")]
+        [I18NIdentityCode(NorthAmerica.SaintPierreAndMiquelon.I18N_IDENTITY_CODE)]
         PM,
 
         /// <summary>
-        /// Pitcairn
+        /// 皮特肯岛（Pitcairn Islands，大洋洲，PN，PCN，612），皮特凯恩群岛 <br />
+        /// Cosmos i18n code: i18n_country_piteken
         /// </summary>
-        [Alpha2Code("PN")]
-        [Alpha3Code("PCN")]
-        [CountryOrRegionName("Pitcairn")]
-        [UNCode("612")]
+        [I18NIdentityCode(Oceania.Pitcairn.I18N_IDENTITY_CODE)]
         PN,
 
         /// <summary>
-        /// Puerto Rico
+        /// 波多黎各（The Commonwealth of Puerto Rico，北美洲，PR，PRI，630），波多黎各自治邦 <br />
+        /// Cosmos i18n code: i18n_country_boduolige
         /// </summary>
-        [Alpha2Code("PR")]
-        [Alpha3Code("PRI")]
-        [CountryOrRegionName("Puerto Rico")]
-        [UNCode("630")]
+        [I18NIdentityCode(NorthAmerica.PuertoRico.I18N_IDENTITY_CODE)]
         PR,
 
         /// <summary>
-        /// Palestine, State of
+        /// 巴勒斯坦（The State of Palestine，亚洲，PS，PSE，275），巴勒斯坦国 <br />
+        /// Cosmos i18n code: i18n_country_balesitan
         /// </summary>
-        [Alpha2Code("PS")]
-        [Alpha3Code("PSE")]
-        [CountryOrRegionName("Palestine, State of")]
-        [UNCode("275")]
+        [I18NIdentityCode(Asia.Palestine.I18N_IDENTITY_CODE)]
         PS,
 
         /// <summary>
-        /// Portugal
+        /// 葡萄牙（The Portuguese Republic，欧洲，PT，PRT，620），葡萄牙共和国 <br />
+        /// Cosmos i18n code: i18n_country_putapya
         /// </summary>
-        [Alpha2Code("PT")]
-        [Alpha3Code("PRT")]
-        [CountryOrRegionName("Portugal")]
-        [UNCode("620")]
+        [I18NIdentityCode(Europe.Portugal.I18N_IDENTITY_CODE)]
         PT,
 
         /// <summary>
-        /// Palau
+        /// 帕劳（The Republic of Palau，大洋洲，PW，PLW，585），帕劳共和国 <br />
+        /// Cosmos i18n code: i18n_country_palao
         /// </summary>
-        [Alpha2Code("PW")]
-        [Alpha3Code("PLW")]
-        [CountryOrRegionName("Palau")]
-        [UNCode("585")]
+        [I18NIdentityCode(Oceania.Palau.I18N_IDENTITY_CODE)]
         PW,
 
         /// <summary>
-        /// Paraguay
+        /// 巴拉圭（Republic Of Paraguay，南美洲，PY，PRY，600），巴拉圭共和国 <br />
+        /// Cosmos i18n code: i18n_country_balagui
         /// </summary>
-        [Alpha2Code("PY")]
-        [Alpha3Code("PRY")]
-        [CountryOrRegionName("Paraguay")]
-        [UNCode("600")]
+        [I18NIdentityCode(SouthAmerica.Paraguay.I18N_IDENTITY_CODE)]
         PY,
 
         /// <summary>
-        /// Qatar
+        /// 卡塔尔（State of Qatar，亚洲，QA，QAT，634），卡塔尔国 <br />
+        /// Cosmos i18n code: i18n_country_kataer
         /// </summary>
-        [Alpha2Code("QA")]
-        [Alpha3Code("QAT")]
-        [CountryOrRegionName("Qatar")]
-        [UNCode("634")]
+        [I18NIdentityCode(Asia.Qatar.I18N_IDENTITY_CODE)]
         QA,
 
         /// <summary>
-        /// Réunion
+        /// 留尼汪（Reunion Island，非洲，RE，REU，638），留尼旺岛 <br />
+        /// Cosmos i18n code: i18n_country_liuniwang
         /// </summary>
-        [Alpha2Code("RE")]
-        [Alpha3Code("REU")]
-        [CountryOrRegionName("Réunion")]
-        [UNCode("638")]
+        [I18NIdentityCode(Africa.Réunion.I18N_IDENTITY_CODE)]
         RE,
 
         /// <summary>
-        /// Romania
+        /// 罗马尼亚（Romania，欧洲，RO，ROU，642） <br />
+        /// Cosmos i18n code: i18n_country_luomaniya
         /// </summary>
-        [Alpha2Code("RO")]
-        [Alpha3Code("ROU")]
-        [CountryOrRegionName("Romania")]
-        [UNCode("642")]
+        [I18NIdentityCode(Europe.Romania.I18N_IDENTITY_CODE)]
         RO,
 
         /// <summary>
-        /// Serbia
+        /// 塞尔维亚（The Republic of Serbia，欧洲，RS，SRB，688），塞尔维亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_saierweiya
         /// </summary>
-        [Alpha2Code("RS")]
-        [Alpha3Code("SRB")]
-        [CountryOrRegionName("Serbia")]
-        [UNCode("688")]
+        [I18NIdentityCode(Europe.Serbia.I18N_IDENTITY_CODE)]
         RS,
 
         /// <summary>
@@ -1579,327 +1358,255 @@ namespace Cosmos.I18N.Countries
         RU,
 
         /// <summary>
-        /// Rwanda
+        /// 卢旺达（The Republic of Rwanda，非洲，RW，RWA，646），卢旺达共和国 <br />
+        /// Cosmos i18n code: i18n_country_luwangda
         /// </summary>
-        [Alpha2Code("RW")]
-        [Alpha3Code("RWA")]
-        [CountryOrRegionName("Rwanda")]
-        [UNCode("646")]
+        [I18NIdentityCode(Africa.Rwanda.I18N_IDENTITY_CODE)]
         RW,
 
         /// <summary>
-        /// Saudi Arabia
+        /// 沙特（Kingdom of Saudi Arabia，亚洲，SA，SAU，682），沙特阿拉伯王国 <br />
+        /// Cosmos i18n code: i18n_country_shate
         /// </summary>
-        [Alpha2Code("SA")]
-        [Alpha3Code("SAU")]
-        [CountryOrRegionName("Saudi Arabia")]
-        [UNCode("682")]
+        [I18NIdentityCode(Asia.SaudiArabia.I18N_IDENTITY_CODE)]
         SA,
 
         /// <summary>
-        /// Solomon Islands
+        /// 所罗门群岛（Solomon Islands，大洋洲，SB，SLB，090） <br />
+        /// Cosmos i18n code: i18n_country_suoluomen
         /// </summary>
-        [Alpha2Code("SB")]
-        [Alpha3Code("SLB")]
-        [CountryOrRegionName("Solomon Islands")]
-        [UNCode("090")]
+        [I18NIdentityCode(Oceania.SolomonIslands.I18N_IDENTITY_CODE)]
         SB,
 
         /// <summary>
-        /// Seychelles
+        /// 塞舌尔（Republic of Seychelles，非洲，SC，SYC，690），塞舌尔共和国 <br />
+        /// Cosmos i18n code: i18n_country_saisheer
         /// </summary>
-        [Alpha2Code("SC")]
-        [Alpha3Code("SYC")]
-        [CountryOrRegionName("Seychelles")]
-        [UNCode("690")]
+        [I18NIdentityCode(Africa.Seychelles.I18N_IDENTITY_CODE)]
         SC,
 
         /// <summary>
-        /// Sudan
+        /// 苏丹（Republic of the Sudan，非洲，SD，SDN，736），苏丹共和国 <br />
+        /// Cosmos i18n code: i18n_country_sudan
         /// </summary>
-        [Alpha2Code("SD")]
-        [Alpha3Code("SDN")]
-        [CountryOrRegionName("Sudan")]
-        [UNCode("736")]
+        [I18NIdentityCode(Africa.Sudan.I18N_IDENTITY_CODE)]
         SD,
 
         /// <summary>
-        /// Sweden
+        /// 瑞典（The Kingdom of Sweden，欧洲，SE，SWE，752），瑞典王国 <br />
+        /// Cosmos i18n code: i18n_country_ruidian
         /// </summary>
-        [Alpha2Code("SE")]
-        [Alpha3Code("SWE")]
-        [CountryOrRegionName("Sweden")]
-        [UNCode("752")]
+        [I18NIdentityCode(Europe.Sweden.I18N_IDENTITY_CODE)]
         SE,
 
         /// <summary>
-        /// Singapore
+        /// 新加坡（Republic of Singapore，亚洲，SG，SGP，702），新加坡共和国 <br />
+        /// Cosmos i18n code: i18n_country_xinjiapo
         /// </summary>
-        [Alpha2Code("SG")]
-        [Alpha3Code("SGP")]
-        [CountryOrRegionName("Singapore")]
-        [UNCode("702")]
+        [I18NIdentityCode(Asia.Singapore.I18N_IDENTITY_CODE)]
         SG,
 
         /// <summary>
-        /// Saint Helena, Ascension and Tristan da Cunha
+        /// 圣赫勒拿、阿森松与特里斯坦达库尼亚（Saint Helena, Ascension and Tristan da Cunha，非洲，SH，SHN，654） <br />
+        /// Cosmos i18n code: i18n_country_shenghelena
         /// </summary>
-        [Alpha2Code("SH")]
-        [Alpha3Code("SHN")]
-        [CountryOrRegionName("Saint Helena, Ascension and Tristan da Cunha")]
-        [UNCode("654")]
+        [I18NIdentityCode(Africa.SaintHelena.I18N_IDENTITY_CODE)]
         SH,
 
         /// <summary>
-        /// Slovenia
+        /// 斯洛文尼亚（The Republic of Slovenia，欧洲，SI，SVN，705），斯洛文尼亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_sinuowenniya
         /// </summary>
-        [Alpha2Code("SI")]
-        [Alpha3Code("SVN")]
-        [CountryOrRegionName("Slovenia")]
-        [UNCode("705")]
+        [I18NIdentityCode(Europe.Slovenia.I18N_IDENTITY_CODE)]
         SI,
 
         /// <summary>
-        /// Svalbard and Jan Mayen
+        /// 斯瓦尔巴群岛（The Svalbard archipelago，欧洲，SJ，SJM，744） <br />
+        /// Cosmos i18n code: i18n_country_siwaerba
         /// </summary>
-        [Alpha2Code("SJ")]
-        [Alpha3Code("SJM")]
-        [CountryOrRegionName("Svalbard and Jan Mayen")]
-        [UNCode("744")]
+        [I18NIdentityCode(Europe.SvalbardAndJanMayen.I18N_IDENTITY_CODE)]
         SJ,
 
         /// <summary>
-        /// Slovakia
+        /// 斯洛伐克（The Slovak Republic，欧洲，SK，SVK，703），斯洛伐克共和国 <br />
+        /// Cosmos i18n code: i18n_country_siluofake
         /// </summary>
-        [Alpha2Code("SK")]
-        [Alpha3Code("SVK")]
-        [CountryOrRegionName("Slovakia")]
-        [UNCode("703")]
+        [I18NIdentityCode(Europe.Slovakia.I18N_IDENTITY_CODE)]
         SK,
 
         /// <summary>
-        /// Sierra Leone
+        /// 塞拉利昂（The Republic of Sierra Leone，非洲，SL，SLE，694），塞拉利昂共和国 <br />
+        /// Cosmos i18n code: i18n_country_sailaliang
         /// </summary>
-        [Alpha2Code("SL")]
-        [Alpha3Code("SLE")]
-        [CountryOrRegionName("Sierra Leone")]
-        [UNCode("694")]
+        [I18NIdentityCode(Africa.SierraLeone.I18N_IDENTITY_CODE)]
         SL,
 
         /// <summary>
-        /// San Marino
+        /// 圣马力诺（The Republic of San Marino，欧洲，SM，SMR，674），圣马力诺共和国 <br />
+        /// Cosmos i18n code: i18n_country_shengmalinuo
         /// </summary>
-        [Alpha2Code("SM")]
-        [Alpha3Code("SMR")]
-        [CountryOrRegionName("San Marino")]
-        [UNCode("674")]
+        [I18NIdentityCode(Europe.SanMarino.I18N_IDENTITY_CODE)]
         SM,
 
         /// <summary>
-        /// Senegal
+        /// 塞内加尔（The Republic of Senegal，非洲，SN，SEN，686），塞内加尔共和国 <br />
+        /// Cosmos i18n code: i18n_country_saineijiaer
         /// </summary>
-        [Alpha2Code("SN")]
-        [Alpha3Code("SEN")]
-        [CountryOrRegionName("Senegal")]
-        [UNCode("686")]
+        [I18NIdentityCode(Africa.Senegal.I18N_IDENTITY_CODE)]
         SN,
 
         /// <summary>
-        /// Somalia
+        /// 索马里（The Federal Republic of Somalia，非洲，SO，SOM，706），索马里联邦共和国 <br />
+        /// Cosmos i18n code: i18n_country_suomali
         /// </summary>
-        [Alpha2Code("SO")]
-        [Alpha3Code("SOM")]
-        [CountryOrRegionName("Somalia")]
-        [UNCode("706")]
+        [I18NIdentityCode(Africa.Somalia.I18N_IDENTITY_CODE)]
         SO,
 
         /// <summary>
-        /// Suriname
+        /// 苏里南（The Republic of Suriname，非洲，SR，SUR，740），苏里南共和国 <br />
+        /// Cosmos i18n code: i18n_country_sulinan
         /// </summary>
-        [Alpha2Code("SR")]
-        [Alpha3Code("SUR")]
-        [CountryOrRegionName("Suriname")]
-        [UNCode("740")]
+        [I18NIdentityCode(Africa.Suriname.I18N_IDENTITY_CODE)]
         SR,
 
         /// <summary>
-        /// South Sudan
+        /// 南苏丹（The Republic of South Sudan，非洲，SS，SSD，728），南苏丹共和国 <br />
+        /// Cosmos i18n code: i18n_country_nansudan
         /// </summary>
-        [Alpha2Code("SS")]
-        [Alpha3Code("SSD")]
-        [CountryOrRegionName("South Sudan")]
-        [UNCode("728")]
+        [I18NIdentityCode(Africa.SouthSudan.I18N_IDENTITY_CODE)]
         SS,
 
         /// <summary>
-        /// Sao Tome and Principe
+        /// 圣多美和普林西比（The Democratic Republic of Sao Tome and Principe，非洲，ST，STP，678），圣多美和普林西比民主共和国 <br />
+        /// Cosmos i18n code: i18n_country_shengduomeiplxb
         /// </summary>
-        [Alpha2Code("ST")]
-        [Alpha3Code("STP")]
-        [CountryOrRegionName("Sao Tome and Principe")]
-        [UNCode("678")]
+        [I18NIdentityCode(Africa.SaoTomeAndPrincipe.I18N_IDENTITY_CODE)]
         ST,
 
         /// <summary>
-        /// El Salvador
+        /// 萨尔瓦多（The Democratic Republic of Sao Tome and Principe，非洲，SV，SLV，222），萨尔瓦多共和国 <br />
+        /// Cosmos i18n code: i18n_country_saerwaduo
         /// </summary>
-        [Alpha2Code("SV")]
-        [Alpha3Code("SLV")]
-        [CountryOrRegionName("El Salvador")]
-        [UNCode("222")]
+        [I18NIdentityCode(NorthAmerica.ElSalvador.I18N_IDENTITY_CODE)]
         SV,
 
         /// <summary>
-        /// Sint Maarten (Dutch part)
+        /// 荷兰属圣马丁（Sint Maarten (Dutch part)，北美洲，SX，SXM，534） <br />
+        /// Cosmos i18n code: i18n_country_shengmadingdp
         /// </summary>
-        [Alpha2Code("SX")]
-        [Alpha3Code("SXM")]
-        [CountryOrRegionName("Sint Maarten (Dutch part)")]
-        [UNCode("534")]
+        [I18NIdentityCode(NorthAmerica.SintMaartenDutchPart.I18N_IDENTITY_CODE)]
         SX,
 
         /// <summary>
-        /// Syrian Arab Republic
+        /// 叙利亚（The Syrian Arab Republic，亚洲，SY，SYR，760），阿拉伯叙利亚共和国 <br />
+        /// Cosmos i18n code: i18n_country_xuliya
         /// </summary>
-        [Alpha2Code("SY")]
-        [Alpha3Code("SYR")]
-        [CountryOrRegionName("Syrian Arab Republic")]
-        [UNCode("760")]
+        [I18NIdentityCode(Asia.Syrian.I18N_IDENTITY_CODE)]
         SY,
 
         /// <summary>
-        /// Swaziland
+        /// 斯威士兰（The Kingdom of Swaziland，非洲，SZ，SWZ，748），斯威士兰王国 <br />
+        /// Cosmos i18n code: i18n_country_siweishilan
         /// </summary>
-        [Alpha2Code("SZ")]
-        [Alpha3Code("SWZ")]
-        [CountryOrRegionName("Swaziland")]
-        [UNCode("748")]
+        [I18NIdentityCode(Africa.Swaziland.I18N_IDENTITY_CODE)]
         SZ,
 
         /// <summary>
-        /// Turks and Caicos Islands
+        /// 特克斯和凯科斯群岛（The Turks and Caicos Islands，北美洲，TC，TCA，796） <br />
+        /// Cosmos i18n code: i18n_country_tekesikks
         /// </summary>
-        [Alpha2Code("TC")]
-        [Alpha3Code("TCA")]
-        [CountryOrRegionName("Turks and Caicos Islands")]
-        [UNCode("796")]
+        [I18NIdentityCode(NorthAmerica.TurksAndCaicosIslands.I18N_IDENTITY_CODE)]
         TC,
 
         /// <summary>
-        /// Chad
+        /// 乍得（Republic of Chad，非洲，TD，TCD，148），乍得共和国 <br />
+        /// Cosmos i18n code: i18n_country_zhade
         /// </summary>
-        [Alpha2Code("TD")]
-        [Alpha3Code("TCD")]
-        [CountryOrRegionName("Chad")]
-        [UNCode("148")]
+        [I18NIdentityCode(Africa.Chad.I18N_IDENTITY_CODE)]
         TD,
 
         /// <summary>
-        /// French Southern Territories
+        /// 法属南部领地（French Southern Territories，非洲，TF，ATF，260） <br />
+        /// Cosmos i18n code: i18n_country_faguonanbulingdi
         /// </summary>
-        [Alpha2Code("TF")]
-        [Alpha3Code("ATF")]
-        [CountryOrRegionName("French Southern Territories")]
-        [UNCode("260")]
+        [I18NIdentityCode(Africa.FrenchSouthernTerritories.I18N_IDENTITY_CODE)]
         TF,
 
         /// <summary>
-        /// Togo
+        /// 多哥（French Southern Territories，非洲，TG，TGO，768），多哥共和国 <br />
+        /// Cosmos i18n code: i18n_country_duoge
         /// </summary>
-        [Alpha2Code("TG")]
-        [Alpha3Code("TGO")]
-        [CountryOrRegionName("Togo")]
-        [UNCode("768")]
+        [I18NIdentityCode(Africa.Togo.I18N_IDENTITY_CODE)]
         TG,
 
         /// <summary>
-        /// Thailand
+        /// 泰国（The Kingdom of Thailand，亚洲，TH，THA，764），泰王国 <br />
+        /// Cosmos i18n code: i18n_country_taiguo
         /// </summary>
-        [Alpha2Code("TH")]
-        [Alpha3Code("THA")]
-        [CountryOrRegionName("Thailand")]
-        [UNCode("764")]
+        [I18NIdentityCode(Asia.Thailand.I18N_IDENTITY_CODE)]
         TH,
 
         /// <summary>
-        /// Tajikistan
+        /// 塔吉克斯坦（The Republic of Tajikistan，亚洲，TJ，TJK，762），塔吉克斯坦共和国 <br />
+        /// Cosmos i18n code: i18n_country_tajikesitan
         /// </summary>
-        [Alpha2Code("TJ")]
-        [Alpha3Code("TJK")]
-        [CountryOrRegionName("Tajikistan")]
-        [UNCode("762")]
+        [I18NIdentityCode(Asia.Tajikistan.I18N_IDENTITY_CODE)]
         TJ,
 
         /// <summary>
-        /// Tokelau
+        /// 托克劳群岛（Tokelau，大洋洲，TK，TKL，772） <br />
+        /// Cosmos i18n code: i18n_country_tuokelao
         /// </summary>
-        [Alpha2Code("TK")]
-        [Alpha3Code("TKL")]
-        [CountryOrRegionName("Tokelau")]
-        [UNCode("772")]
+        [I18NIdentityCode(Oceania.Tokelau.I18N_IDENTITY_CODE)]
         TK,
 
         /// <summary>
-        /// East Timor
+        /// 东帝汶（Democratic Republic of Timor-Leste，亚洲，TL，TLS，626），东帝汶民主共和国 <br />
+        /// Cosmos i18n code: i18n_country_dongdiwen
         /// </summary>
-        [Alpha2Code("TL")]
-        [Alpha3Code("TLS")]
-        [CountryOrRegionName("East Timor")]
-        [UNCode("626")]
+        [I18NIdentityCode(Asia.EastTimor.I18N_IDENTITY_CODE)]
         TL,
 
         /// <summary>
-        /// Turkmenistan
+        /// 土库曼（Turkmenistan，亚洲，TM，TKM，795），土库曼斯坦 <br />
+        /// Cosmos i18n code: i18n_country_tukumansitan
         /// </summary>
-        [Alpha2Code("TM")]
-        [Alpha3Code("TKM")]
-        [CountryOrRegionName("Turkmenistan")]
-        [UNCode("795")]
+        [I18NIdentityCode(Asia.Turkmenistan.I18N_IDENTITY_CODE)]
         TM,
 
         /// <summary>
-        /// Tunisia
+        /// 突尼斯（The Republic of Tunisia，非洲，TN，TUN，788），突尼斯共和国 <br />
+        /// Cosmos i18n code: i18n_country_tunisi
         /// </summary>
-        [Alpha2Code("TN")]
-        [Alpha3Code("TUN")]
-        [CountryOrRegionName("Tunisia")]
-        [UNCode("788")]
+        [I18NIdentityCode(Africa.Tunisia.I18N_IDENTITY_CODE)]
         TN,
 
         /// <summary>
-        /// Tonga
+        /// 汤加（The Kingdom of Tonga，大洋洲，TO，TN，776），汤加王国 <br />
+        /// Cosmos i18n code: i18n_country_tangjia
         /// </summary>
-        [Alpha2Code("TO")]
-        [Alpha3Code("TON")]
-        [CountryOrRegionName("Tonga")]
-        [UNCode("776")]
+        [I18NIdentityCode(Oceania.Tonga.I18N_IDENTITY_CODE)]
         TO,
 
         /// <summary>
-        /// Turkey
+        /// 土耳其（The Republic of Turkey，亚洲，TR，TUR，792），土耳其共和国 <br />
+        /// Cosmos i18n code: i18n_country_tuerqi
         /// </summary>
-        [Alpha2Code("TR")]
-        [Alpha3Code("TUR")]
-        [CountryOrRegionName("Turkey")]
-        [UNCode("792")]
+        [I18NIdentityCode(Asia.Turkey.I18N_IDENTITY_CODE)]
         TR,
 
         /// <summary>
-        /// Trinidad and Tobago
+        /// 特立尼达和多巴哥（Republic of Trinidad and Tobago，北美洲，TT，TTO，780），特立尼达和多巴哥共和国 <br />
+        /// Cosmos i18n code: i18n_country_telinidaduobage
         /// </summary>
-        [Alpha2Code("TT")]
-        [Alpha3Code("TTO")]
-        [CountryOrRegionName("Trinidad and Tobago")]
-        [UNCode("780")]
+        [I18NIdentityCode(NorthAmerica.TrinidadAndTobago.I18N_IDENTITY_CODE)]
         TT,
 
         /// <summary>
-        /// Tuvalu
+        /// 图瓦卢（Tuvalu，大洋洲，TV，TUV，798） <br />
+        /// Cosmos i18n code: i18n_country_tuwalu
         /// </summary>
-        [Alpha2Code("TV")]
-        [Alpha3Code("TUV")]
-        [CountryOrRegionName("Tuvalu")]
-        [UNCode("798")]
+        [I18NIdentityCode(Oceania.Tuvalu.I18N_IDENTITY_CODE)]
         TV,
 
         /// <summary>
@@ -1912,39 +1619,31 @@ namespace Cosmos.I18N.Countries
         TW,
 
         /// <summary>
-        /// Tanzania, United Republic of
+        /// 坦桑尼亚（The United Republic of Tanzania，非洲，TZ，TZA，834），坦桑尼亚联合共和国 <br />
+        /// Cosmos i18n code: i18n_country_tansangniya
         /// </summary>
-        [Alpha2Code("TZ")]
-        [Alpha3Code("TZA")]
-        [CountryOrRegionName("Tanzania, United Republic of")]
-        [UNCode("834")]
+        [I18NIdentityCode(Africa.Tanzania.I18N_IDENTITY_CODE)]
         TZ,
 
         /// <summary>
-        /// Ukraine
+        /// 乌克兰（Ukraine，欧洲，UA，UKR，804） <br />
+        /// Cosmos i18n code: i18n_country_wukelan
         /// </summary>
-        [Alpha2Code("UA")]
-        [Alpha3Code("UKR")]
-        [CountryOrRegionName("Ukraine")]
-        [UNCode("804")]
+        [I18NIdentityCode(Europe.Ukraine.I18N_IDENTITY_CODE)]
         UA,
 
         /// <summary>
-        /// Uganda
+        /// 乌干达（The Republic of Uganda，非洲，UG，UGA，800），乌干达共和国 <br />
+        /// Cosmos i18n code: i18n_country_wuganda
         /// </summary>
-        [Alpha2Code("UG")]
-        [Alpha3Code("UGA")]
-        [CountryOrRegionName("Uganda")]
-        [UNCode("800")]
+        [I18NIdentityCode(Africa.Uganda.I18N_IDENTITY_CODE)]
         UG,
 
         /// <summary>
-        /// United States Minor Outlying Islands
+        /// 美国本土外小岛屿（United States Minor Outlying Islands，北美洲，UM，UMI，581） <br />
+        /// Cosmos i18n code: i18n_country_meiguoum
         /// </summary>
-        [Alpha2Code("UM")]
-        [Alpha3Code("UMI")]
-        [CountryOrRegionName("United States Minor Outlying Islands")]
-        [UNCode("581")]
+        [I18NIdentityCode(NorthAmerica.UnitedStatesMinorOutlyingIslands.I18N_IDENTITY_CODE)]
         UM,
 
         /// <summary>
@@ -1955,120 +1654,94 @@ namespace Cosmos.I18N.Countries
         US,
 
         /// <summary>
-        /// Uruguay
+        /// 乌拉圭（The Oriental Republic of Uruguay，南美洲，UY，URY，858），乌拉圭东岸共和国 <br />
+        /// Cosmos i18n code: i18n_country_wulagui
         /// </summary>
-        [Alpha2Code("UY")]
-        [Alpha3Code("URY")]
-        [CountryOrRegionName("Uruguay")]
-        [UNCode("858")]
+        [I18NIdentityCode(SouthAmerica.Uruguay.I18N_IDENTITY_CODE)]
         UY,
 
         /// <summary>
-        /// Uzbekistan
+        /// 乌兹别克斯坦（The Republic Of Uzbekistan，亚洲，UZ，UZB，860），乌兹别克斯坦共和国 <br />
+        /// Cosmos i18n code: i18n_country_wuzibiekesitan
         /// </summary>
-        [Alpha2Code("UZ")]
-        [Alpha3Code("UZB")]
-        [CountryOrRegionName("Uzbekistan")]
-        [UNCode("860")]
+        [I18NIdentityCode(Asia.Uzbekistan.I18N_IDENTITY_CODE)]
         UZ,
 
         /// <summary>
-        /// Vatican City Holy See
+        /// 梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
+        /// Cosmos i18n code: i18n_country_fandigang
         /// </summary>
-        [Alpha2Code("VA")]
-        [Alpha3Code("VAT")]
-        [CountryOrRegionName("Holy See (Vatican City State)")]
-        [UNCode("336")]
+        [I18NIdentityCode(Europe.HolySee.I18N_IDENTITY_CODE)]
         VA,
 
         /// <summary>
-        /// Saint Vincent and the Grenadines
+        /// 圣文森特和格林纳丁斯（Saint Vincent and the Grenadines，北美洲，VC，VCT，670） <br />
+        /// Cosmos i18n code: i18n_country_shengwensenteglnds
         /// </summary>
-        [Alpha2Code("VC")]
-        [Alpha3Code("VCT")]
-        [CountryOrRegionName("Saint Vincent and the Grenadines")]
-        [UNCode("670")]
+        [I18NIdentityCode(NorthAmerica.StVAndG.I18N_IDENTITY_CODE)]
         VC,
 
         /// <summary>
-        /// Venezuela (Bolivarian Republic of)
+        /// 委内瑞拉（Bolivarian Republic of Venezuela，南美洲，VE，VEN，862），委内瑞拉玻利瓦尔共和国 <br />
+        /// Cosmos i18n code: i18n_country_weineiruila
         /// </summary>
-        [Alpha2Code("VE")]
-        [Alpha3Code("VEN")]
-        [CountryOrRegionName("Venezuela (Bolivarian Republic)")]
-        [UNCode("862")]
+        [I18NIdentityCode(SouthAmerica.Venezuela.I18N_IDENTITY_CODE)]
         VE,
 
         /// <summary>
-        /// Virgin Islands (British)
+        /// 维尔京群岛（The British Virgin Islands，北美洲，VG，VGB，092），英属维尔京群岛 <br />
+        /// Cosmos i18n code: i18n_country_yingshuweierjing
         /// </summary>
-        [Alpha2Code("VG")]
-        [Alpha3Code("VGB")]
-        [CountryOrRegionName("Virgin Islands (British)")]
-        [UNCode("092")]
+        [I18NIdentityCode(NorthAmerica.VirginIslandsBritish.I18N_IDENTITY_CODE)]
         VG,
 
         /// <summary>
-        /// Virgin Islands (U.S.)
+        /// 美属维尔京群岛（The United States Virgin Islands，北美洲，VI，VIR，850） <br />
+        /// Cosmos i18n code: i18n_country_meishuweierjing
         /// </summary>
-        [Alpha2Code("VI")]
-        [Alpha3Code("VIR")]
-        [CountryOrRegionName("Virgin Islands (U.S.)")]
-        [UNCode("850")]
+        [I18NIdentityCode(NorthAmerica.VirginIslandsUS.I18N_IDENTITY_CODE)]
         VI,
 
         /// <summary>
-        /// Viet Nam
+        /// 越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
+        /// Cosmos i18n code: i18n_country_yuenan
         /// </summary>
-        [Alpha2Code("VN")]
-        [Alpha3Code("VNM")]
-        [CountryOrRegionName("Viet Nam")]
-        [UNCode("704")]
+        [I18NIdentityCode(Asia.VietNam.I18N_IDENTITY_CODE)]
         VN,
 
         /// <summary>
-        /// Vanuatu
+        /// 瓦努阿图（The Republic of Vanuatu，大洋洲，VU，VUT，548），瓦努阿图共和国 <br />
+        /// Cosmos i18n code: i18n_country_wanuatu
         /// </summary>
-        [Alpha2Code("VU")]
-        [Alpha3Code("VUT")]
-        [CountryOrRegionName("Vanuatu")]
-        [UNCode("548")]
+        [I18NIdentityCode(Oceania.Vanuatu.I18N_IDENTITY_CODE)]
         VU,
 
         /// <summary>
-        /// Wallis and Futuna
+        /// 瓦利斯和富图纳群岛（Wallis and Futuna Islands，大洋洲，WF，WLF，876） <br />
+        /// Cosmos i18n code: i18n_country_walisi
         /// </summary>
-        [Alpha2Code("WF")]
-        [Alpha3Code("WLF")]
-        [CountryOrRegionName("Wallis and Futuna")]
-        [UNCode("876")]
+        [I18NIdentityCode(Oceania.WallisAndFutuna.I18N_IDENTITY_CODE)]
         WF,
 
         /// <summary>
-        /// Samoa
+        /// 萨摩亚（The Independent State of Samoa，大洋洲，WS，WSM，882），萨摩亚独立国 <br />
+        /// Cosmos i18n code: i18n_country_samoya
         /// </summary>
-        [Alpha2Code("WS")]
-        [Alpha3Code("WSM")]
-        [CountryOrRegionName("Samoa")]
-        [UNCode("882")]
+        [I18NIdentityCode(Oceania.Samoa.I18N_IDENTITY_CODE)]
         WS,
 
         /// <summary>
-        /// Kosovo
+        /// 科索沃（Kosovo，欧洲，XK，XKX，838），科索沃自治省 <br />
+        /// Cosmos i18n code: i18n_country_kesuowo
         /// </summary>
-        [Alpha2Code("XK")]
-        [Alpha3Code("XKX")]
-        [CountryOrRegionName("Kosovo")]
-        [UNCode("838")]
+        [I18NIdentityCode(Europe.Kosovo.I18N_IDENTITY_CODE)]
         XK,
 
         /// <summary>
-        /// Yemen
+        /// 也门（The Republic Of Yemen，亚洲，YE，YEM，887），也门共和国 <br />
+        /// Cosmos i18n code: i18n_country_yemen
         /// </summary>
-        [Alpha2Code("YE")]
-        [Alpha3Code("YEM")]
-        [CountryOrRegionName("Yemen")]
-        [UNCode("887")]
+        [I18NIdentityCode(Asia.Yemen.I18N_IDENTITY_CODE)]
         YE,
 
         /// <summary>
