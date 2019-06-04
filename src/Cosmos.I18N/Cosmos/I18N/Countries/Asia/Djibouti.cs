@@ -1,7 +1,7 @@
 namespace Cosmos.I18N.Countries.Asia
 {
     /// <summary>
-    /// 吉布提（The Republic of Djibouti，非洲，BI，BDI，108），吉布提共和国 <br />
+    /// 吉布提（The Republic of Djibouti，亚洲，BI，BDI，108），吉布提共和国 <br />
     /// Cosmos i18n code: i18n_country_balin
     /// </summary>
     public static class Djibouti
@@ -28,7 +28,7 @@ namespace Cosmos.I18N.Countries.Asia
         }
 
         /// <summary>
-        /// 吉布提（The Republic of Djibouti，非洲，BI，BDI，108），吉布提共和国 <br />
+        /// 吉布提（The Republic of Djibouti，亚洲，BI，BDI，108），吉布提共和国 <br />
         /// Cosmos i18n code: i18n_country_balin
         /// </summary>
         public static CountryInfo Instance => _country;

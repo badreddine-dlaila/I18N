@@ -404,7 +404,7 @@ namespace Cosmos.I18N.Countries
         Czechia,
 
         /// <summary>
-        /// 吉布提（The Republic of Djibouti，非洲，BI，BDI，108），吉布提共和国 <br />
+        /// 吉布提（The Republic of Djibouti，亚洲，BI，BDI，108），吉布提共和国 <br />
         /// Cosmos i18n code: i18n_country_balin
         /// </summary>
         [I18NIdentityCode(Asia.Djibouti.I18N_IDENTITY_CODE)]
