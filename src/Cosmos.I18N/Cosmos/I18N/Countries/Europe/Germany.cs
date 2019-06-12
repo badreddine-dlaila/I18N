@@ -1,7 +1,7 @@
 namespace Cosmos.I18N.Countries.Europe
 {
     /// <summary>
-    /// 德国（TThe Federal Republic of Germany，欧洲，DE，DEU，276），德意志联邦共和国 <br />
+    /// 德国（The Federal Republic of Germany，欧洲，DE，DEU，276），德意志联邦共和国 <br />
     /// Cosmos i18n code: i18n_country_deguo
     /// </summary>
     public static class Germany
@@ -28,7 +28,7 @@ namespace Cosmos.I18N.Countries.Europe
         }
 
         /// <summary>
-        /// 德国（TThe Federal Republic of Germany，欧洲，DE，DEU，276），德意志联邦共和国 <br />
+        /// 德国（The Federal Republic of Germany，欧洲，DE，DEU，276），德意志联邦共和国 <br />
         /// Cosmos i18n code: i18n_country_deguo
         /// </summary>
         public static CountryInfo Instance => _country;

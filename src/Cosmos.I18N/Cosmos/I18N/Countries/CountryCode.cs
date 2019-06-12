@@ -1048,7 +1048,7 @@ namespace Cosmos.I18N.Countries
         MN,
 
         /// <summary>
-        /// 澳门（Macao, SAR China，亚洲，HK，HKG，344），中华人民共和国澳门特别行政区 <br />
+        /// 澳门（Macao, SAR China，亚洲，MO，MAC，446），中华人民共和国澳门特别行政区 <br />
         /// 澳门，中华人民共和国的一部分 <br />
         /// Macao, a part of China <br />
         /// Cosmos i18n code: i18n_country_cnhaomen
@@ -1610,7 +1610,7 @@ namespace Cosmos.I18N.Countries
         TV,
 
         /// <summary>
-        /// 台湾（Macao, SAR China，亚洲，TW，TWN，158），中华人民共和国台湾省 <br />
+        /// 台湾（Taiwan, China，亚洲，TW，TWN，158），中华人民共和国台湾省 <br />
         /// 台湾，中华人民共和国的一部分 <br />
         /// Taiwan, a part of China <br />
         /// Cosmos i18n code: i18n_country_cnhtaiwan

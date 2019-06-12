@@ -1,7 +1,7 @@
 namespace Cosmos.I18N.Countries.Asia
 {
     /// <summary>
-    /// 澳门（Macao, SAR China，亚洲，HK，HKG，344），中华人民共和国澳门特别行政区 <br />
+    /// 澳门（Macao, SAR China，亚洲，MO，MAC，446），中华人民共和国澳门特别行政区 <br />
     /// 澳门，中华人民共和国的一部分 <br />
     /// Macao, a part of China <br />
     /// Cosmos i18n code: i18n_country_aomen
@@ -30,7 +30,7 @@ namespace Cosmos.I18N.Countries.Asia
         }
 
         /// <summary>
-        /// 澳门（Macao, SAR China，亚洲，HK，HKG，344），中华人民共和国澳门特别行政区 <br />
+        /// 澳门（Macao, SAR China，亚洲，MO，MAC，446），中华人民共和国澳门特别行政区 <br />
         /// 澳门，中华人民共和国的一部分 <br />
         /// Macao, a part of China <br />
         /// Cosmos i18n code: i18n_country_aomen
