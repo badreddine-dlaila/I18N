@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// </summary>
     public static class CotedIvoire
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static CotedIvoire()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Africa
         /// 科特迪瓦 （The Republic of Côte d'Ivoire，非洲，CI，CIV，384），科特迪瓦共和国 <br />
         /// Cosmos i18n code: i18n_country_ketediwa
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_ketediwa";
     }
 }

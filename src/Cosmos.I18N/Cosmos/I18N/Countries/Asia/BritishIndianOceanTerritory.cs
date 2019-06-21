@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// </summary>
     public static class BritishIndianOceanTerritory
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static BritishIndianOceanTerritory()
@@ -29,8 +30,13 @@ namespace Cosmos.I18N.Countries.Asia
         /// 英属印度洋领地（British Indian Ocean Territory，亚洲，IO，IOT，086） <br />
         /// Cosmos i18n code: i18n_country_yingshuying
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_yingshuying";
     }
 }

@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// </summary>
     public static class Guadeloupe
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Guadeloupe()
@@ -29,8 +30,13 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 瓜德罗普（Guadeloupe，北美洲，GP，GLP，312） <br />
         /// Cosmos i18n code: i18n_country_guadeluopu
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_guadeluopu";
     }
 }

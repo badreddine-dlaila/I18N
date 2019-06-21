@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// </summary>
     public static class CongoBrazzaville
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static CongoBrazzaville()
@@ -31,9 +32,13 @@ namespace Cosmos.I18N.Countries.Africa
         /// 刚果（布）（The Republic of Congo，非洲，CG，COG，178），刚果共和国 <br />
         /// Cosmos i18n code: i18n_country_gangguobu
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_gangguobu";
-
     }
 }

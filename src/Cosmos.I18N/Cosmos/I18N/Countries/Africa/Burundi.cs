@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// </summary>
     public static class Burundi
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Burundi()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Africa
         /// 布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
         /// Cosmos i18n code: i18n_country_balin
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_balin";
     }
 }

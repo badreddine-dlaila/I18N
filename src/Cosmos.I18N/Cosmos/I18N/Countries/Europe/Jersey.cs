@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class Jersey
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Jersey()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Europe
         /// 泽西（Bailiwick of Jersey，欧洲，JE，JEY，832），泽西岛 <br />
         /// Cosmos i18n code: i18n_country_zexi
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_zexi";
     }
 }

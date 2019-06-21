@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// </summary>
     public static class TurksAndCaicosIslands
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static TurksAndCaicosIslands()
@@ -29,8 +30,13 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 特克斯和凯科斯群岛（The Turks and Caicos Islands，北美洲，TC，TCA，796） <br />
         /// Cosmos i18n code: i18n_country_tekesikks
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_tekesikks";
     }
 }

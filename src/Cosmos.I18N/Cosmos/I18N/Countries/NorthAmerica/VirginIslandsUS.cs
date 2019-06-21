@@ -4,8 +4,10 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// 美属维尔京群岛（The United States Virgin Islands，北美洲，VI，VIR，850） <br />
     /// Cosmos i18n code: i18n_country_meishuweierjing
     /// </summary>
+    // ReSharper disable once InconsistentNaming
     public static class VirginIslandsUS
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static VirginIslandsUS()
@@ -30,8 +32,13 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 美属维尔京群岛（The United States Virgin Islands，北美洲，VI，VIR，850） <br />
         /// Cosmos i18n code: i18n_country_meishuweierjing
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_meishuweierjing";
     }
 }

@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class Gibraltar
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Gibraltar()
@@ -29,8 +30,13 @@ namespace Cosmos.I18N.Countries.Europe
         /// 直布罗陀（Gibraltar，欧洲，GI，GIB，292） <br />
         /// Cosmos i18n code: i18n_country_zhibuluotuo
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_zhibuluotuo";
     }
 }

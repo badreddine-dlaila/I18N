@@ -7,6 +7,7 @@ namespace Cosmos.I18N.Countries.Oceania
     /// </summary>
     public static class AmericanSamoa
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static AmericanSamoa()
@@ -20,6 +21,7 @@ namespace Cosmos.I18N.Countries.Oceania
                 Alpha2Code = "AS",
                 Alpha3Code = "ASM",
                 Name = "American Samoa",
+                Alias = "Eastern Samoa",
                 ChineseName = "美属萨摩亚群岛",
                 ChineseAlias = "美属萨摩亚领地",
                 Continent = Continent.Oceania,
@@ -32,8 +34,13 @@ namespace Cosmos.I18N.Countries.Oceania
         /// 美属萨摩亚领地<br />
         /// Cosmos i18n code: i18n_country_ussamoya
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_ussamoya";
     }
 }

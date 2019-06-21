@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Oceania
     /// </summary>
     public static class Guam
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Guam()
@@ -19,7 +20,7 @@ namespace Cosmos.I18N.Countries.Oceania
                 Alpha2Code = "GU",
                 Alpha3Code = "GUM",
                 Name = "The Territory of Guam",
-                ShorterForm = "Ecuador",
+                ShorterForm = "Guam",
                 ChineseName = "关岛",
                 ChineseAlias = "自由天堂",
                 Continent = Continent.Oceania,
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Oceania
         /// 关岛（The Territory of Guam，大洋洲，GU，GUM，316） <br />
         /// Cosmos i18n code: i18n_country_guandao
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_guandao";
     }
 }

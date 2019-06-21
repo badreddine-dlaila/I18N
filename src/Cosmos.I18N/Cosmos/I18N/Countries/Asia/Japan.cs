@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// </summary>
     public static class Japan
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Japan()
@@ -30,8 +31,13 @@ namespace Cosmos.I18N.Countries.Asia
         /// 日本（Japan，亚洲，JP，JPN，392），日本国 <br />
         /// Cosmos i18n code: i18n_country_riben
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_riben";
     }
 }

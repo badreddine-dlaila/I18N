@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// </summary>
     public static class Dominican
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Dominican()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 多米尼加（The Dominican Republic，北美洲，DO，DOM，214），多米尼加共和国 <br />
         /// Cosmos i18n code: i18n_country_duominijia
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_duominijia";
     }
 }

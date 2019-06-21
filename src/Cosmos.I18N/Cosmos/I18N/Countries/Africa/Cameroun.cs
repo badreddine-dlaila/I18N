@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Africa
     /// </summary>
     public static class Cameroun
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Cameroun()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Africa
         /// 喀麦隆（Republic of Cameroon，非洲，CM，CRM，120），喀麦隆共和国 <br />
         /// Cosmos i18n code: i18n_country_kamailong
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_kamailong";
     }
 }

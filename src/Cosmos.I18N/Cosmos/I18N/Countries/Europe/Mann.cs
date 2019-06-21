@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class Mann
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Mann()
@@ -31,8 +32,13 @@ namespace Cosmos.I18N.Countries.Europe
         /// 马恩岛（Isle of Man，欧洲，IM，IMN，833），英属马恩岛 <br />
         /// Cosmos i18n code: i18n_country_maendao
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_maendao";
     }
 }

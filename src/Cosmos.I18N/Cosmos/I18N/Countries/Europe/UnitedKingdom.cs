@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class UnitedKingdom
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static UnitedKingdom()
@@ -32,8 +33,13 @@ namespace Cosmos.I18N.Countries.Europe
         /// 英国（United Kingdom of Great Britain and Northern Ireland，欧洲，GB，GBR，826），大不列颠及北爱尔兰联合王国 <br />
         /// Cosmos i18n code: i18n_country_yingguo
         /// </summary>
+        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// I18N
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_yingguo";
     }
 }

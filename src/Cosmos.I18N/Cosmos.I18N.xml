@@ -4,6 +4,38 @@
         <name>Cosmos.I18N</name>
     </assembly>
     <members>
+        <member name="T:Cosmos.I18N.Core.AliasInShortAttribute">
+            <summary>
+            AliasInShort Attribute
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Core.AliasInShortAttribute.Alias">
+            <summary>
+            Alias
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.AliasInShortAttribute.#ctor(System.String)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Core.AliasInShortAttribute"/>
+            </summary>
+            <param name="alias"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Core.IgnoreRegionAttribute">
+            <summary>
+            Ignore Region Attribute
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Core.RegionFlagAttribute">
+            <summary>
+            Region Flag Attribute
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.RegionFlagAttribute.#ctor(System.String)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Core.RegionFlagAttribute"/>
+            </summary>
+            <param name="flag"></param>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Algeria">
             <summary>
             阿尔及利亚（People's Democratic Republic of Algeria，非洲，DZ，DZA，012），阿尔及利亚民主人民共和国 <br />
@@ -14,6 +46,11 @@
             <summary>
             阿尔及利亚（People's Democratic Republic of Algeria，非洲，DZ，DZA，012），阿尔及利亚民主人民共和国 <br />
             Cosmos i18n code: i18n_country_aerjiliya
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Algeria.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Angola">
@@ -28,6 +65,11 @@
             Cosmos i18n code: i18n_country_angela
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Angola.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Benin">
             <summary>
             贝宁（The Republic of Benin，非洲，BJ，BEN，204），贝宁共和国 <br />
@@ -38,6 +80,11 @@
             <summary>
             贝宁（The Republic of Benin，非洲，BJ，BEN，204），贝宁共和国 <br />
             Cosmos i18n code: i18n_country_beining
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Benin.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Botswana">
@@ -52,6 +99,11 @@
             Cosmos i18n code: i18n_country_boziwana
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Botswana.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.BurkinaFaso">
             <summary>
             布基纳法索（Burkina Faso，非洲，BF，BFA，854） <br />
@@ -62,6 +114,11 @@
             <summary>
             布基纳法索（Burkina Faso，非洲，BF，BFA，854） <br />
             Cosmos i18n code: i18n_country_bujinafaso
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.BurkinaFaso.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Burundi">
@@ -76,6 +133,11 @@
             Cosmos i18n code: i18n_country_balin
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Burundi.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Cameroun">
             <summary>
             喀麦隆（Republic of Cameroon，非洲，CM，CRM，120），喀麦隆共和国 <br />
@@ -86,6 +148,11 @@
             <summary>
             喀麦隆（Republic of Cameroon，非洲，CM，CRM，120），喀麦隆共和国 <br />
             Cosmos i18n code: i18n_country_kamailong
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Cameroun.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.CapeVerde">
@@ -100,10 +167,20 @@
             Cosmos i18n code: i18n_country_fodejiao
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.CapeVerde.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="P:Cosmos.I18N.Countries.Africa.CentralAfrican.Instance">
             <summary>
             中非（Central African Republic，非洲，CF，COD，180），中非共和国 <br />
             Cosmos i18n code: i18n_country_zhongfei
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.CentralAfrican.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Chad">
@@ -118,6 +195,11 @@
             Cosmos i18n code: i18n_country_zhade
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Chad.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Comoros">
             <summary>
             科摩罗（Union of Comoros，非洲，KM，COM，174），科摩罗联盟 <br />
@@ -128,6 +210,11 @@
             <summary>
             科摩罗（Union of Comoros，非洲，KM，COM，174），科摩罗联盟 <br />
             Cosmos i18n code: i18n_country_kemoluo
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Comoros.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.CongoBrazzaville">
@@ -142,6 +229,11 @@
             Cosmos i18n code: i18n_country_gangguobu
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.CongoBrazzaville.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.CongoKinshasa">
             <summary>
             刚果（金）（The Democratic Republic of the Congo，非洲，CD，CAF，140），刚果民主共和国 <br />
@@ -152,6 +244,11 @@
             <summary>
             刚果（金）（The Democratic Republic of the Congo，非洲，CD，CAF，140），刚果民主共和国 <br />
             Cosmos i18n code: i18n_country_gangguojin
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.CongoKinshasa.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.CotedIvoire">
@@ -166,6 +263,11 @@
             Cosmos i18n code: i18n_country_ketediwa
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.CotedIvoire.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Egypt">
             <summary>
             埃及（The Arab Republic of Egypt，非洲，EG，EGY，818），阿拉伯埃及共和国 <br />
@@ -178,6 +280,11 @@
             Cosmos i18n code: i18n_country_aiji
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.Egypt.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.EquatorialGuinea">
             <summary>
             赤道几内亚（The Republic of Equatorial Guinea，非洲，GQ，GNQ，226），赤道几内亚共和国 <br />
@@ -188,6 +295,11 @@
             <summary>
             赤道几内亚（The Republic of Equatorial Guinea，非洲，GQ，GNQ，226），赤道几内亚共和国 <br />
             Cosmos i18n code: i18n_country_chidaojineiya
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.EquatorialGuinea.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Africa.Eritrea">
@@ -502,6 +614,11 @@
             Cosmos i18n code: i18n_country_shenghelena
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Africa.SaintHelena.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Africa.SaoTomeAndPrincipe">
             <summary>
             圣多美和普林西比（The Democratic Republic of Sao Tome and Principe，非洲，ST，STP，678），圣多美和普林西比民主共和国 <br />
@@ -786,6 +903,11 @@
             Cosmos i18n code: i18n_country_yingshuying
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.BritishIndianOceanTerritory.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Asia.Brunei">
             <summary>
             文莱 （Negara Brunei Darussalam，亚洲，BN，BRN，096），文莱达鲁萨兰国 <br />
@@ -821,6 +943,485 @@
             中国（People's Republic of China，亚洲，CN，CNH，156），中华人民共和国 <br />
             Cosmos i18n code: i18n_country_china
             </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.China.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Asia.ChinaRegions">
+            <summary>
+            China regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Beijing">
+            <summary>
+            北京
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Tianjin">
+            <summary>
+            天津
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Hebei">
+            <summary>
+            河北
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Shanxi">
+            <summary>
+            山西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.InnerMongoria">
+            <summary>
+            内蒙古
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Neimenggu">
+            <summary>
+            内蒙古
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Liaoning">
+            <summary>
+            辽宁
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Jilin">
+            <summary>
+            吉林
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Heilongjiang">
+            <summary>
+            黑龙江
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Shanghai">
+            <summary>
+            上海
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Jiangsu">
+            <summary>
+            江苏
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Zhejiang">
+            <summary>
+            浙江
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Anhui">
+            <summary>
+            安徽
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Fjian">
+            <summary>
+            福建
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Jianxi">
+            <summary>
+            江西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Henan">
+            <summary>
+            河南
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Shandong">
+            <summary>
+            山东
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Hubei">
+            <summary>
+            湖北
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Hunan">
+            <summary>
+            湖南
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Guangdong">
+            <summary>
+            广东
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Guangxi">
+            <summary>
+            广西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Hainan">
+            <summary>
+            海南
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Chongqing">
+            <summary>
+            重庆
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Sichuan">
+            <summary>
+            四川
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Guizhou">
+            <summary>
+            贵州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Yunnan">
+            <summary>
+            云南
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Tibet">
+            <summary>
+            西藏
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Xizang">
+            <summary>
+            西藏
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Shaanxi">
+            <summary>
+            陕西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Gansu">
+            <summary>
+            甘肃
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Qinghai">
+            <summary>
+            青海
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Ningxia">
+            <summary>
+            宁夏
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Taiwan">
+            <summary>
+            Taiwan, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.HongKong">
+            <summary>
+            HongKong, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Xianggang">
+            <summary>
+            香港
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Macao">
+            <summary>
+            Macao, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Aomen">
+            <summary>
+            澳门
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Asia.ChinaRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.HongKong">
+            <summary>
+            HongKong, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.HongKongCode">
+            <summary>
+            Code of HongKong, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.Macao">
+            <summary>
+            Macao, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.MacaoCode">
+            <summary>
+            Code of Macao, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.Taiwan">
+            <summary>
+            Taiwan, a part of China.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Asia.ChinaRegions.Special.TaiwanCode">
+            <summary>
+            Code of Taiwan, a part of China.
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues">
+            <summary>
+            Enum values for China regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Beijing">
+            <summary>
+            北京
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Tianjin">
+            <summary>
+            天津
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Hebei">
+            <summary>
+            河北
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Shanxi">
+            <summary>
+            山西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.InnerMongoria">
+            <summary>
+            内蒙古自治区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Liaoning">
+            <summary>
+            辽宁
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Jilin">
+            <summary>
+            吉林
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Heilongjiang">
+            <summary>
+            黑龙江
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Shanghai">
+            <summary>
+            上海
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Jiangsu">
+            <summary>
+            江苏
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Zhejiang">
+            <summary>
+            浙江
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Anhui">
+            <summary>
+            安徽
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Fujian">
+            <summary>
+            福建
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Jiangxi">
+            <summary>
+            江西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Henan">
+            <summary>
+            河南
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Shandong">
+            <summary>
+            山东
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Hubei">
+            <summary>
+            湖北
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Hunan">
+            <summary>
+            湖南
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Guangdong">
+            <summary>
+            广东
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Guangxi">
+            <summary>
+            广西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Hainan">
+            <summary>
+            海南
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Chongqing">
+            <summary>
+            重庆
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Sichuan">
+            <summary>
+            四川
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Guizhou">
+            <summary>
+            贵州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Yunnan">
+            <summary>
+            云南
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Tibet">
+            <summary>
+            西藏
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Shaanxi">
+            <summary>
+            陕西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Gansu">
+            <summary>
+            甘肃
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Qinghai">
+            <summary>
+            青海
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Ningxia">
+            <summary>
+            宁夏
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Xinjiang">
+            <summary>
+            新疆
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Taiwan">
+            <summary>
+            Taiwan, China<br />
+            中华人民共和国台湾省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.HongKong">
+            <summary>
+            HongKong, China<br />
+            中华人民共和国香港特别行政区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Macao">
+            <summary>
+            Macao, China<br />
+            中华人民共和国澳门特别行政区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues.Unknown">
+            <summary>
+            Unknown<br />未知
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.ToRegionCode(Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues"/> to region code likes 'TW', 'SH'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.ToFullRegionCode(Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues"/> to full region code likes 'CN-TW', 'CN-SH'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.ToCountry(Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.ToCountryCode(Cosmos.I18N.Countries.Asia.ChinaRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of China
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of China
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.GetMainlandRegionCodes">
+            <summary>
+            获得大陆地区的地区代号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.GetSpecialDistrictRegionCodes">
+            <summary>
+            获得特别行政区地区代号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Asia.ChinaRegions.GetEndolandRegionCodes">
+            <summary>
+            获得内陆地区的地区代号
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.Asia.ChristmasIsland">
             <summary>
@@ -986,6 +1587,11 @@
             <summary>
             日本（Japan，亚洲，JP，JPN，392），日本国 <br />
             Cosmos i18n code: i18n_country_riben
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Asia.Japan.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Asia.Jordan">
@@ -4632,6 +5238,11 @@
             Cosmos i18n code: i18n_country_zhibuluotuo
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Gibraltar.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Greece">
             <summary>
             希腊（The Republic of Greece，欧洲，GR，GRC，300），希腊共和国 <br />
@@ -4654,6 +5265,11 @@
             <summary>
             根西岛（Bailiwick of Guernsey，欧洲，GG，GGY，831） <br />
             Cosmos i18n code: i18n_country_genxidao
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Guernsey.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.HolySee">
@@ -4726,6 +5342,11 @@
             <summary>
             泽西（Bailiwick of Jersey，欧洲，JE，JEY，832），泽西岛 <br />
             Cosmos i18n code: i18n_country_zexi
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Jersey.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Kosovo">
@@ -4822,6 +5443,11 @@
             <summary>
             马恩岛（Isle of Man，欧洲，IM，IMN，833），英属马恩岛 <br />
             Cosmos i18n code: i18n_country_maendao
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Mann.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Moldova">
@@ -5052,6 +5678,533 @@
             Cosmos i18n code: i18n_country_yingguo
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdom.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions">
+            <summary>
+            United Kingdom Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.England">
+            <summary>
+            英格兰
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.NorthernIreland">
+            <summary>
+            北爱尔兰
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Scottland">
+            <summary>
+            苏格兰
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Wales">
+            <summary>
+            威尔士
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Alderney">
+            <summary>
+            奥尔德尼岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Guernsey">
+            <summary>
+            Bailiwick of Guernsey
+            <br />
+            根西岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Jersey">
+            <summary>
+            Bailiwick of Jersey
+            <br />
+            泽西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Mann">
+            <summary>
+            Isle of Man
+            <br />
+            英属马恩岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Gibraltar">
+            <summary>
+            Gibraltar
+            <br />
+            直布罗陀
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Bermuda">
+            <summary>
+            The Bermuda Islands
+            <br />
+            百慕大群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.CaymanIslands">
+            <summary>
+            Cayman Islands
+            <br />
+            开曼群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.TurksAndCaicosIslands">
+            <summary>
+            The Turks and Caicos Islands
+            <br />
+            特克斯和凯科斯群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.BritishVirginIslands">
+            <summary>
+            The British Virgin Islands
+            <br />
+            英属维尔金群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Anguilla">
+            <summary>
+            Anguilla
+            <br />
+            安圭拉
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Montserrat">
+            <summary>
+            Montserrat
+            <br />
+            蒙特塞拉特
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.SaintHelena">
+            <summary>
+            Saint Helena, Ascension and Tristan da Cunha
+            <br />
+            圣赫勒拿、阿森松与特里斯坦达库尼亚
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.SGSSI">
+            <summary>
+            South Georgia and The South Sandwich Islands
+            <br />
+            南乔治亚岛和南桑威奇群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.BritishIndianOceanTerritory">
+            <summary>
+            British Indian Ocean Territory
+            <br />
+            英属印度洋领地
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Pitcairn">
+            <summary>
+            Pitcairn Islands
+            <br />
+            皮特凯恩群岛
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Guernsey">
+            <summary>
+            Bailiwick of Guernsey
+            <br />
+            根西岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.GuernseyCode">
+            <summary>
+            Bailiwick of Guernsey
+            <br />
+            根西岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Jersey">
+            <summary>
+            Bailiwick of Jersey
+            <br />
+            泽西
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.JerseyCode">
+            <summary>
+            Bailiwick of Jersey
+            <br />
+            泽西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Mann">
+            <summary>
+            Isle of Man
+            <br />
+            英属马恩岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.MannCode">
+            <summary>
+            Isle of Man
+            <br />
+            英属马恩岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Gibraltar">
+            <summary>
+            Gibraltar
+            <br />
+            直布罗陀
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.GibraltarCode">
+            <summary>
+            Gibraltar
+            <br />
+            直布罗陀
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Bermuda">
+            <summary>
+            The Bermuda Islands
+            <br />
+            百慕大群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.BermudaCode">
+            <summary>
+            The Bermuda Islands
+            <br />
+            百慕大群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.CaymanIslands">
+            <summary>
+            Cayman Islands
+            <br />
+            开曼群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.CaymanIslandsCode">
+            <summary>
+            Cayman Islands
+            <br />
+            开曼群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.TurksAndCaicosIslands">
+            <summary>
+            The Turks and Caicos Islands
+            <br />
+            特克斯和凯科斯群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.TurksAndCaicosIslandsCode">
+            <summary>
+            The Turks and Caicos Islands
+            <br />
+            特克斯和凯科斯群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.BritishVirginIslands">
+            <summary>
+            The British Virgin Islands
+            <br />
+            英属维尔金群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.BritishVirginIslandsCode">
+            <summary>
+            The British Virgin Islands
+            <br />
+            英属维尔金群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Anguilla">
+            <summary>
+            Anguilla
+            <br />
+            安圭拉
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.AnguillaCode">
+            <summary>
+            Anguilla
+            <br />
+            安圭拉
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Montserrat">
+            <summary>
+            Montserrat
+            <br />
+            蒙特塞拉特
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.MontserratCode">
+            <summary>
+            Montserrat
+            <br />
+            蒙特塞拉特
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.SaintHelena">
+            <summary>
+            Saint Helena, Ascension and Tristan da Cunha
+            <br />
+            圣赫勒拿、阿森松与特里斯坦达库尼亚
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.SaintHelenaCode">
+            <summary>
+            Saint Helena, Ascension and Tristan da Cunha
+            <br />
+            圣赫勒拿、阿森松与特里斯坦达库尼亚
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.SGSSI">
+            <summary>
+            South Georgia and The South Sandwich Islands
+            <br />
+            南乔治亚岛和南桑威奇群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.SGSSICode">
+            <summary>
+            South Georgia and The South Sandwich Islands
+            <br />
+            南乔治亚岛和南桑威奇群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.BritishIndianOceanTerritory">
+            <summary>
+            British Indian Ocean Territory
+            <br />
+            英属印度洋领地
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.BritishIndianOceanTerritoryCode">
+            <summary>
+            British Indian Ocean Territory
+            <br />
+            英属印度洋领地
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.Pitcairn">
+            <summary>
+            Pitcairn Islands
+            <br />
+            皮特凯恩群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.Special.PitcairnCode">
+            <summary>
+            Pitcairn Islands
+            <br />
+            皮特凯恩群岛
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues">
+            <summary>
+            Enum values for United Kingdom regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.England">
+            <summary>
+            英格兰
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.NorthernIreland">
+            <summary>
+            北爱尔兰
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Scottland">
+            <summary>
+            苏格兰
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Wales">
+            <summary>
+            威尔士
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Alderney">
+            <summary>
+            奥尔德尼岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Guernsey">
+            <summary>
+            Bailiwick of Guernsey
+            <br />
+            根西岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Jersey">
+            <summary>
+            Bailiwick of Jersey
+            <br />
+            泽西
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Mann">
+            <summary>
+            Isle of Man
+            <br />
+            英属马恩岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Gibraltar">
+            <summary>
+            Gibraltar
+            <br />
+            直布罗陀
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Bermuda">
+            <summary>
+            The Bermuda Islands
+            <br />
+            百慕大群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.CaymanIslands">
+            <summary>
+            Cayman Islands
+            <br />
+            开曼群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.TurksAndCaicosIslands">
+            <summary>
+            The Turks and Caicos Islands
+            <br />
+            特克斯和凯科斯群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.BritishVirginIslands">
+            <summary>
+            The British Virgin Islands
+            <br />
+            英属维尔金群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Anguilla">
+            <summary>
+            Anguilla
+            <br />
+            安圭拉
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Montserrat">
+            <summary>
+            Montserrat
+            <br />
+            蒙特塞拉特
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.SaintHelena">
+            <summary>
+            Saint Helena, Ascension and Tristan da Cunha
+            <br />
+            圣赫勒拿、阿森松与特里斯坦达库尼亚
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.SGSSI">
+            <summary>
+            South Georgia and The South Sandwich Islands
+            <br />
+            南乔治亚岛和南桑威奇群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.BritishIndianOceanTerritory">
+            <summary>
+            British Indian Ocean Territory
+            <br />
+            英属印度洋领地
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Pitcairn">
+            <summary>
+            Pitcairn Islands
+            <br />
+            皮特凯恩群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues"/> to region code likes 'ENG', 'ALD', 'GI'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues"/> to full region code likes 'GB-ENG', 'GB-ALD', 'GB-GI'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.ToCountry(Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.ToCountryCode(Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of United States
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of United States
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.GetOverseasRegionCodes">
+            <summary>
+            Get overseas region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.UnitedKingdomRegions.GetMainRegionCodes">
+            <summary>
+            Get main region code
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Anguilla">
             <summary>
             安圭拉（Anguilla，北美洲，AI，AIA，660），英国海外领土 <br />
@@ -5062,6 +6215,11 @@
             <summary>
             安圭拉（Anguilla，北美洲，AI，AIA，660），英国海外领土 <br />
             Cosmos i18n code: i18n_country_anguila
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.Anguilla.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.AntiguaAndBarbuda">
@@ -5126,16 +6284,21 @@
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Bermuda">
             <summary>
-            百慕大（The Bermuda Islands，北美洲，BI，BDI，108），百慕大群岛 <br />
+            百慕大（The Bermuda Islands，北美洲，BM，BMU，060），百慕大群岛 <br />
             旧称萨摩斯岛，隶属于大不列颠及北爱尔兰联合王国的海外自治领 <br />
             Cosmos i18n code: i18n_country_baimuda
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.NorthAmerica.Bermuda.Instance">
             <summary>
-            百慕大（The Bermuda Islands，北美洲，BI，BDI，108），百慕大群岛 <br />
+            百慕大（The Bermuda Islands，北美洲，BM，BMU，060），百慕大群岛 <br />
             旧称萨摩斯岛，隶属于大不列颠及北爱尔兰联合王国的海外自治领 <br />
             Cosmos i18n code: i18n_country_baimuda
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.Bermuda.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Bonaire">
@@ -5172,6 +6335,11 @@
             <summary>
             开曼群岛（Cayman Islands，北美洲，KY，CYM，136） <br />
             Cosmos i18n code: i18n_country_kaiman
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CaymanIslands.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.CostaRica">
@@ -5234,6 +6402,11 @@
             Cosmos i18n code: i18n_country_duominijia
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.Dominican.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.ElSalvador">
             <summary>
             萨尔瓦多（The Democratic Republic of Sao Tome and Principe，非洲，SV，SLV，222），萨尔瓦多共和国 <br />
@@ -5280,6 +6453,11 @@
             <summary>
             瓜德罗普（Guadeloupe，北美洲，GP，GLP，312） <br />
             Cosmos i18n code: i18n_country_guadeluopu
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.Guadeloupe.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Guatemala">
@@ -5354,6 +6532,11 @@
             Cosmos i18n code: i18n_country_mengtesailate
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.Montserrat.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Panama">
             <summary>
             巴拿马（The Republic of Panama，北美洲，PA，PAN，591），巴拿马共和国 <br />
@@ -5376,6 +6559,11 @@
             <summary>
             波多黎各（The Commonwealth of Puerto Rico，北美洲，PR，PRI，630），波多黎各自治邦 <br />
             Cosmos i18n code: i18n_country_boduolige
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.PuertoRico.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.SaintBarts">
@@ -5462,6 +6650,11 @@
             Cosmos i18n code: i18n_country_shengwensenteglnds
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.StVAndG.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.TrinidadAndTobago">
             <summary>
             特立尼达和多巴哥（Republic of Trinidad and Tobago，北美洲，TT，TTO，780），特立尼达和多巴哥共和国 <br />
@@ -5486,6 +6679,11 @@
             Cosmos i18n code: i18n_country_tekesikks
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.TurksAndCaicosIslands.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStates">
             <summary>
             美国（United States of America，北美洲，US，USA，840），美利坚合众国 <br />
@@ -5496,6 +6694,11 @@
             <summary>
             美国（United States of America，北美洲，US，USA，840），美利坚合众国 <br />
             Cosmos i18n code: i18n_country_meiguo
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStates.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesMinorOutlyingIslands">
@@ -5510,6 +6713,713 @@
             Cosmos i18n code: i18n_country_meiguoum
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesMinorOutlyingIslands.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions">
+            <summary>
+            United States regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Alabama">
+            <summary>
+            亚拉巴马州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Alaska">
+            <summary>
+            阿拉斯加州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Arkansas">
+            <summary>
+            阿肯色州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.California">
+            <summary>
+            加利福尼亚州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Colorado">
+            <summary>
+            科罗拉多州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Connecticut">
+            <summary>
+            康涅狄格州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Delaware">
+            <summary>
+            特拉华州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Florida">
+            <summary>
+            佛罗里达州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Georgia">
+            <summary>
+            乔治亚州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Hawaii">
+            <summary>
+            夏威夷州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Idaho">
+            <summary>
+            爱德华州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Illinois">
+            <summary>
+            伊利诺伊州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Indiana">
+            <summary>
+            印第安纳州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Iowa">
+            <summary>
+            衣阿华州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Kansas">
+            <summary>
+            堪萨斯州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Kentucky">
+            <summary>
+            肯塔基州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Louisiana">
+            <summary>
+            路易斯安那州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Maine">
+            <summary>
+            缅因州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Maryland">
+            <summary>
+            马里兰州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Massachusetts">
+            <summary>
+            马塞诸塞州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Michigan">
+            <summary>
+            密歇根州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Minnesota">
+            <summary>
+            明尼苏达州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Mississippi">
+            <summary>
+            密西西比州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Montana">
+            <summary>
+            蒙大拿州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Nebraska">
+            <summary>
+            内布拉斯加州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Nevada">
+            <summary>
+            内华达州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NewHampshire">
+            <summary>
+            新罕布什尔州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NewJersey">
+            <summary>
+            新泽西州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NewMexico">
+            <summary>
+            新墨西哥州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NewYork">
+            <summary>
+            纽约州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NorthCarolina">
+            <summary>
+            北卡罗来纳州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NorthDakota">
+            <summary>
+            北达科他州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Ohio">
+            <summary>
+            俄亥俄州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Oklahoma">
+            <summary>
+            俄克拉荷马州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Oregon">
+            <summary>
+            俄勒冈州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Pennsylvania">
+            <summary>
+            宾夕法尼亚州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.RhodeIsland">
+            <summary>
+            罗德岛州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.SouthCarolina">
+            <summary>
+            南卡罗来纳州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.SouthDakota">
+            <summary>
+            南达科他州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Tennessee">
+            <summary>
+            田纳西州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Texas">
+            <summary>
+            得克萨斯州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Utah">
+            <summary>
+            犹他州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Vermont">
+            <summary>
+            佛蒙特州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Virginia">
+            <summary>
+            弗吉尼亚州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Washington">
+            <summary>
+            华盛顿州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.WashingtonDC">
+            <summary>
+            华盛顿哥伦比亚特区（首都）
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.WestVirginia">
+            <summary>
+            西弗吉尼亚州
+            </summary>\
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Wisconsin">
+            <summary>
+            威斯康辛州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Wyoming">
+            <summary>
+            怀俄明州
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.VirginIslands">
+            <summary>
+            The United States Virgin Islands<br />
+            美属维尔金群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.NorthernMarianaIslands">
+            <summary>
+            Commonwealth of the Northern Mariana Islands<br />
+            北马里亚纳群岛自由邦
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.PuertoRico">
+            <summary>
+            The Commonwealth of Puerto Rico<br />
+            波多黎各自治邦
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Guam">
+            <summary>
+            The Territory of Guam<br />
+            关岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EasternSamoa">
+            <summary>
+            American Samoa / Eastern Samoa<br />
+            美属萨摩亚群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.MinorOutlyingIslands">
+            <summary>
+            United States Minor Outlying Islands<br />
+            美国本土外小岛屿
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.VirginIslands">
+            <summary>
+            The United States Virgin Islands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.VirginIslandsCode">
+            <summary>
+            The United States Virgin Islands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.NorthernMarianaIslands">
+            <summary>
+            Commonwealth of the Northern Mariana Islands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.NorthernMarianaIslandsCode">
+            <summary>
+            Commonwealth of the Northern Mariana Islands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.PuertoRico">
+            <summary>
+            The Commonwealth of Puerto Rico
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.PuertoRicoCode">
+            <summary>
+            The Commonwealth of Puerto Rico
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.Guam">
+            <summary>
+            The Territory of Guam
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.GuamCode">
+            <summary>
+            The Territory of Guam
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.EasternSamoa">
+            <summary>
+            American Samoa / Eastern Samoa
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.EasternSamoaCode">
+            <summary>
+            American Samoa / Eastern Samoa
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.MinorOutlyingIslands">
+            <summary>
+            United States Minor Outlying Islands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.Special.MinorOutlyingIslandsCode">
+            <summary>
+            United States Minor Outlying Islands
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues">
+            <summary>
+            Enum values for United States regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Alabama">
+            <summary>
+            亚拉巴马州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Alaska">
+            <summary>
+            阿拉斯加州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Arkansas">
+            <summary>
+            阿肯色州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.California">
+            <summary>
+            加利福尼亚州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Colorado">
+            <summary>
+            科罗拉多州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Connecticut">
+            <summary>
+            康涅狄格州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Delaware">
+            <summary>
+            特拉华州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Florida">
+            <summary>
+            佛罗里达州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Georgia">
+            <summary>
+            乔治亚州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Hawaii">
+            <summary>
+            夏威夷州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Idaho">
+            <summary>
+            爱德华州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Illinois">
+            <summary>
+            伊利诺伊州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Indiana">
+            <summary>
+            印第安纳州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Iowa">
+            <summary>
+            衣阿华州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Kansas">
+            <summary>
+            堪萨斯州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Kentucky">
+            <summary>
+            肯塔基州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Louisiana">
+            <summary>
+            路易斯安那州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Maine">
+            <summary>
+            缅因州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Maryland">
+            <summary>
+            马里兰州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Massachusetts">
+            <summary>
+            马塞诸塞州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Michigan">
+            <summary>
+            密歇根州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Minnesota">
+            <summary>
+            明尼苏达州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Mississippi">
+            <summary>
+            密西西比州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Montana">
+            <summary>
+            蒙大拿州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Nebraska">
+            <summary>
+            内布拉斯加州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Nevada">
+            <summary>
+            内华达州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NewHampshire">
+            <summary>
+            新罕布什尔州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NewJersey">
+            <summary>
+            新泽西州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NewMexico">
+            <summary>
+            新墨西哥州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NewYork">
+            <summary>
+            纽约州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NorthCarolina">
+            <summary>
+            北卡罗来纳州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NorthDakota">
+            <summary>
+            北达科他州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Ohio">
+            <summary>
+            俄亥俄州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Oklahoma">
+            <summary>
+            俄克拉荷马州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Oregon">
+            <summary>
+            俄勒冈州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Pennsylvania">
+            <summary>
+            宾夕法尼亚州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.RhodeIsland">
+            <summary>
+            罗德岛州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.SouthCarolina">
+            <summary>
+            南卡罗来纳州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.SouthDakota">
+            <summary>
+            南达科他州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Tennessee">
+            <summary>
+            田纳西州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Texas">
+            <summary>
+            得克萨斯州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Utah">
+            <summary>
+            犹他州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Vermont">
+            <summary>
+            佛蒙特州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Virginia">
+            <summary>
+            弗吉尼亚州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Washington">
+            <summary>
+            华盛顿州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.WashingtonDC">
+            <summary>
+            华盛顿哥伦比亚特区（首都）
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.WestVirginia">
+            <summary>
+            西弗吉尼亚州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Wisconsin">
+            <summary>
+            威斯康辛州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Wyoming">
+            <summary>
+            怀俄明州
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.VirginIslands">
+            <summary>
+            The United States Virgin Islands<br />
+            美属维尔金群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.NorthernMarianaIslands">
+            <summary>
+            Commonwealth of the Northern Mariana Islands<br />
+            北马里亚纳群岛自由邦
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.PuertoRico">
+            <summary>
+            The Commonwealth of Puerto Rico<br />
+            波多黎各自治邦
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Guam">
+            <summary>
+            The Territory of Guam<br />
+            关岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.EasternSamoa">
+            <summary>
+            American Samoa / Eastern Samoa<br />
+            美属萨摩亚群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.MinorOutlyingIslands">
+            <summary>
+            United States Minor Outlying Islands<br />
+            美国本土外小岛屿
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.ToRegionCode(Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues"/> to region code likes 'NY', 'GU', 'WDC'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.ToFullRegionCode(Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues"/> to full region code likes 'US-NY', 'US-GU', 'US-WDC'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.ToCountry(Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.ToCountryCode(Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of United States
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of United States
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.GetOverseasRegionCodes">
+            <summary>
+            Get overseas region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.UnitedStatesRegions.GetMainRegionCodes">
+            <summary>
+            Get main region code
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.VirginIslandsBritish">
             <summary>
             维尔京群岛（The British Virgin Islands，北美洲，VG，VGB，092），英属维尔京群岛 <br />
@@ -5520,6 +7430,11 @@
             <summary>
             维尔京群岛（The British Virgin Islands，北美洲，VG，VGB，092），英属维尔京群岛 <br />
             Cosmos i18n code: i18n_country_yingshuweierjing
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.VirginIslandsBritish.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.VirginIslandsUS">
@@ -5534,6 +7449,11 @@
             Cosmos i18n code: i18n_country_meishuweierjing
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.VirginIslandsUS.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.AmericanSamoa">
             <summary>
             美属萨摩亚群岛（American Samoa，大洋洲，AS，ASM，016），阿根廷共和国 <br />
@@ -5546,6 +7466,11 @@
             美属萨摩亚群岛（American Samoa，大洋洲，AS，ASM，016），阿根廷共和国 <br />
             美属萨摩亚领地<br />
             Cosmos i18n code: i18n_country_ussamoya
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AmericanSamoa.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.Australia">
@@ -5594,6 +7519,11 @@
             <summary>
             关岛（The Territory of Guam，大洋洲，GU，GUM，316） <br />
             Cosmos i18n code: i18n_country_guandao
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.Guam.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.Kiribati">
@@ -5704,6 +7634,11 @@
             Cosmos i18n code: i18n_country_beimaliyana
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.NorthernMarianaIslands.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.Palau">
             <summary>
             帕劳（The Republic of Palau，大洋洲，PW，PLW，585），帕劳共和国 <br />
@@ -5738,6 +7673,11 @@
             <summary>
             皮特肯岛（Pitcairn Islands，大洋洲，PN，PCN，612），皮特凯恩群岛 <br />
             Cosmos i18n code: i18n_country_piteken
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.Pitcairn.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.Polynesia">
@@ -6002,6 +7942,11 @@
             <summary>
             南乔治亚岛和南桑威奇群岛（South Georgia and The South Sandwich Islands，南美洲，GS，SGS，239） <br />
             Cosmos i18n code: i18n_country_nanqiaozhiya
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.SGSSI.I18N_IDENTITY_CODE">
+            <summary>
+            I18N
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.SouthAmerica.Uruguay">
