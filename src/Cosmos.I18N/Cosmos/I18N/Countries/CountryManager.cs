@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace Cosmos.I18N.Countries
 {
+    /// <summary>
+    /// Country Manager
+    /// </summary>
     public static partial class CountryManager
     {
         private static readonly Dictionary<Country, CountryCode> _nameAndCodeMap;
@@ -16,17 +19,32 @@ namespace Cosmos.I18N.Countries
             _countryInfoCache = InitOpts.Map3;
         }
 
+        /// <summary>
+        /// Gets <see cref="CountryInfo"/> via <see cref="Country"/>.
+        /// </summary>
+        /// <param name="country"></param>
+        /// <returns></returns>
         public static CountryInfo GetCountryInfo(Country country)
         {
             return _countryInfoCache[country];
         }
 
+        /// <summary>
+        /// Gets <see cref="CountryInfo"/> via <see cref="CountryCode"/>.
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         public static CountryInfo GetCountryInfo(CountryCode code)
         {
             var country = _codeAndNameMap[code];
             return _countryInfoCache[country];
         }
 
+        /// <summary>
+        /// Gets <see cref="CountryInfo"/> via AlphaCode2 or AlphaCode3
+        /// </summary>
+        /// <param name="alphaCode"></param>
+        /// <returns></returns>
         public static CountryInfo GetCountryInfo(string alphaCode)
         {
             if (string.IsNullOrWhiteSpace(alphaCode))
@@ -49,11 +67,21 @@ namespace Cosmos.I18N.Countries
             return null;
         }
 
+        /// <summary>
+        /// Gets <see cref="Country"/> from <see cref="CountryCode"/>.
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         public static Country GetCountryEnum(CountryCode code)
         {
             return _codeAndNameMap[code];
         }
 
+        /// <summary>
+        /// Gets <see cref="CountryCode"/> from <see cref="Country"/>.
+        /// </summary>
+        /// <param name="country"></param>
+        /// <returns></returns>
         public static CountryCode GetCountryCode(Country country)
         {
             return _nameAndCodeMap[country];

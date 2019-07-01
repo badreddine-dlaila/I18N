@@ -83,7 +83,7 @@ namespace Cosmos.I18N.Countries
                 {Country.GuineaBissau, CountryCode.GW},
                 {Country.EquatorialGuinea, CountryCode.GQ},
                 {Country.Ghana, CountryCode.GH},
-                {Country.Georgia, CountryCode.GI},
+                {Country.Gibraltar, CountryCode.GI},
                 {Country.Gambia, CountryCode.GM},
                 {Country.Guadeloupe, CountryCode.GP},
                 {Country.Guatemala, CountryCode.GT},
