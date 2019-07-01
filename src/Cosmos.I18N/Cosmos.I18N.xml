@@ -5016,6 +5016,66 @@
             Cosmos i18n code: i18n_country_jinbabuwei
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.Countries.CountryManager">
+            <summary>
+            Country Manager
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetCountryInfo(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Gets <see cref="T:Cosmos.I18N.Countries.CountryInfo"/> via <see cref="T:Cosmos.I18N.Countries.Country"/>.
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetCountryInfo(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Gets <see cref="T:Cosmos.I18N.Countries.CountryInfo"/> via <see cref="T:Cosmos.I18N.Countries.CountryCode"/>.
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetCountryInfo(System.String)">
+            <summary>
+            Gets <see cref="T:Cosmos.I18N.Countries.CountryInfo"/> via AlphaCode2 or AlphaCode3
+            </summary>
+            <param name="alphaCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetCountryEnum(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Gets <see cref="T:Cosmos.I18N.Countries.Country"/> from <see cref="T:Cosmos.I18N.Countries.CountryCode"/>.
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetCountryCode(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Gets <see cref="T:Cosmos.I18N.Countries.CountryCode"/> from <see cref="T:Cosmos.I18N.Countries.Country"/>.
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.CountryManager.Expose">
+            <summary>
+            Expose information
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryManager.Expose.CountOfCountryAndCodeMap">
+            <summary>
+            To count the Country-CountryCode mapping
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryManager.Expose.CountOfCodeAndCountryMap">
+            <summary>
+            To count the CountryCode-Country mapping
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryManager.Expose.CountOfCountryAndInfoMap">
+            <summary>
+            To count the Country-CountryInfo mapping
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.AlandIslands">
             <summary>
             奥兰群岛（Aland Island，欧洲，AX，ALA，248），奥兰自治省 <br />
@@ -5052,6 +5112,111 @@
             Cosmos i18n code: i18n_country_andaoer
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.AndorraRegions">
+            <summary>
+            Andorra Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.AndorraLaVella">
+            <summary>
+            Andorra la Vella
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.Canillo">
+            <summary>
+            Canillo
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.Massana">
+            <summary>
+            Massana
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.SantJuliaDeLoria">
+            <summary>
+            Sant Julia de Loria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.Encamp">
+            <summary>
+            Encamp
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.LesEscaldesEngordany">
+            <summary>
+            Les Escaldes-Engordany
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AndorraRegions.Ordino">
+            <summary>
+            Ordino
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues">
+            <summary>
+            Enum values for Andorra regions.
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.AndorraLaVella">
+            <summary>
+            Andorra la Vella
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.Canillo">
+            <summary>
+            Canillo
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.Massana">
+            <summary>
+            Massana
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.SantJuliaDeLoria">
+            <summary>
+            Sant Julia de Loria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.Encamp">
+            <summary>
+            Encamp
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.LesEscaldesEngordany">
+            <summary>
+            Les Escaldes-Engordany
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.Ordino">
+            <summary>
+            Ordino
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AndorraRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AndorraRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.AndorraRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AndorraRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Armenia">
             <summary>
             亚美尼亚（Armenia，欧洲，AM，ARM，051），亚美尼亚共和国<br />
@@ -5076,6 +5241,131 @@
             Cosmos i18n code: i18n_country_aodili
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.AustriaRegions">
+            <summary>
+            Austria regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Burgenland">
+            <summary>
+            Burgenland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Kärnten">
+            <summary>
+            Carinthia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Niederösterreich">
+            <summary>
+            Lower Austria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Oberösterreich">
+            <summary>
+            Upper Austria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Salzburg">
+            <summary>
+            Salzburg
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Steiermark">
+            <summary>
+            Styria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Tirol">
+            <summary>
+            Tyrol
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Vorarlberg">
+            <summary>
+            Vorarlberg
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.AustriaRegions.Wien">
+            <summary>
+            Vienna
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues">
+            <summary>
+            Enum values for Austria regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Burgenland">
+            <summary>
+            Burgenland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Kärnten">
+            <summary>
+            Carinthia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Niederösterreich">
+            <summary>
+            Lower Austria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Oberösterreich">
+            <summary>
+            Upper Austria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Salzburg">
+            <summary>
+            Salzburg
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Steiermark">
+            <summary>
+            Styria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Tirol">
+            <summary>
+            Tyrol
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Vorarlberg">
+            <summary>
+            Vorarlberg
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Wien">
+            <summary>
+            Vienna
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AustriaRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues"/> to region code likes 'ACT', 'NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AustriaRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.AustriaRegions.EnumValues"/> to full region code likes 'AU-ACT', 'AU-NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.AustriaRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Belarus">
             <summary>
             白俄罗斯（Republic of Belarus，欧洲，BY，BLR，112），白俄罗斯共和国 <br />
@@ -5099,6 +5389,81 @@
             比利时（The Kingdom of Belgium，欧洲，BE，BEL，056），比利时王国 <br />
             Cosmos i18n code: i18n_country_bilishi
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.BelgiumRegions">
+            <summary>
+            Belgium Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.BelgiumRegions.Bruxelles">
+            <summary>
+            Bruxelles
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.BelgiumRegions.DeutschsprachigeGemeinschaft">
+            <summary>
+            Deutschsprachige Gemeinschaft
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.BelgiumRegions.VlaamseGemeenschap">
+            <summary>
+            Vlaamse Gemeenschap
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.BelgiumRegions.CommunautéFrançaise">
+            <summary>
+            Communauté Française
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues">
+            <summary>
+            Enum values for Belgium regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues.Bruxelles">
+            <summary>
+            Bruxelles
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues.DeutschsprachigeGemeinschaft">
+            <summary>
+            Deutschsprachige Gemeinschaft
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues.VlaamseGemeenschap">
+            <summary>
+            Vlaamse Gemeenschap
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues.CommunautéFrançaise">
+            <summary>
+            Communauté Française
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.BelgiumRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.BelgiumRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.BelgiumRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.BelgiumRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.BosniaAndHerzegovina">
             <summary>
@@ -5201,6 +5566,288 @@
             芬兰（The Republic of Finland，欧洲，FI，FIN，246），芬兰共和国 <br />
             Cosmos i18n code: i18n_country_fenlan
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.FinlandRegions">
+            <summary>
+            Finland Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.SouthKarelia">
+            <summary>
+            South Karelia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.SouthernOstrobothnia">
+            <summary>
+            Southern Ostrobothnia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.SouthernSavonia">
+            <summary>
+            Southern Savonia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Kainuu">
+            <summary>
+            Kainuu
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.TavastiaProper">
+            <summary>
+            Tavastia Proper
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.CentralOstrobothnia">
+            <summary>
+            Central Ostrobothnia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.CentralFinland">
+            <summary>
+            Central Finland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Kymenlaakso">
+            <summary>
+            Kymenlaakso
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Lapland">
+            <summary>
+            Lapland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Pirkanmaa">
+            <summary>
+            Pirkanmaa
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Ostrobothnia">
+            <summary>
+            Ostrobothnia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.NorthKarelia">
+            <summary>
+            North Karelia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.NorthernOstrobothnia">
+            <summary>
+            Northern Ostrobothnia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.NorthernSavonia">
+            <summary>
+            Northern Savonia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.PäijänneTavastia">
+            <summary>
+            Päijänne Tavastia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Satakunta">
+            <summary>
+            Satakunta
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Uusimaa">
+            <summary>
+            Uusimaa
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.SouthwestFinland">
+            <summary>
+            Southwest Finland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.AlandIslands">
+            <summary>
+            Aland Islands
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.FinlandRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Special.Aland">
+            <summary>
+            Aland Island
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.FinlandRegions.Special.AlandCode">
+            <summary>
+            Aland Island
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues">
+            <summary>
+            Cnum values for China regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.SouthKarelia">
+            <summary>
+            South Karelia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.SouthernOstrobothnia">
+            <summary>
+            Southern Ostrobothnia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.SouthernSavonia">
+            <summary>
+            Southern Savonia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Kainuu">
+            <summary>
+            Kainuu
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.TavastiaProper">
+            <summary>
+            Tavastia Proper
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.CentralOstrobothnia">
+            <summary>
+            Central Ostrobothnia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.CentralFinland">
+            <summary>
+            Central Finland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Kymenlaakso">
+            <summary>
+            Kymenlaakso
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Lapland">
+            <summary>
+            Lapland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Pirkanmaa">
+            <summary>
+            Pirkanmaa
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Ostrobothnia">
+            <summary>
+            Ostrobothnia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.NorthKarelia">
+            <summary>
+            North Karelia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.NorthernOstrobothnia">
+            <summary>
+            Northern Ostrobothnia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.NorthernSavonia">
+            <summary>
+            Northern Savonia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.PäijänneTavastia">
+            <summary>
+            Päijänne Tavastia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Satakunta">
+            <summary>
+            Satakunta
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Uusimaa">
+            <summary>
+            Uusimaa
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.SouthwestFinland">
+            <summary>
+            Southwest Finland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Aland">
+            <summary>
+            Aland Island
+            <br />
+            FI-AX, also, FI-01
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.ToCountry(Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.ToCountryCode(Cosmos.I18N.Countries.Europe.FinlandRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of Finland
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of Finland
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.GetMainRegionCodes">
+            <summary>
+            获得主要地区的地区代号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.FinlandRegions.GetOverseasRegionCodes">
+            <summary>
+            获得海外地区代号
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.France">
             <summary>
@@ -6324,6 +6971,211 @@
             加拿大（Canada，北美洲，CA，CAN，124），英联邦成员国 <br />
             Cosmos i18n code: i18n_country_jianada
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions">
+            <summary>
+            Canada Regions
+            <br />
+            Reference to: https://baike.baidu.com/item/%E5%8A%A0%E6%8B%BF%E5%A4%A7/145973
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Alberta">
+            <summary>
+            Alberta
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.BritishColumbia">
+            <summary>
+            British Columbia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Manitoba">
+            <summary>
+            Manitoba
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NewBrunswick">
+            <summary>
+            New Brunswick
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NeufundlandAndLabrador">
+            <summary>
+            Neufundland and Labrador
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NovaScotia">
+            <summary>
+            Nova Scotia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Ontario">
+            <summary>
+            Ontario
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.PrinceEdwardIsland">
+            <summary>
+            Prince Edward Island
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Québec">
+            <summary>
+            Québec
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Saskatchewan">
+            <summary>
+            Saskatchewan
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NorthwestTerritories">
+            <summary>
+            Northwest Territories
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Nunavut">
+            <summary>
+            Nunavut
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.Yukon">
+            <summary>
+            Yukon
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues">
+            <summary>
+            Enum values for Canada regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Alberta">
+            <summary>
+            Alberta
+            <br />
+            阿尔伯塔省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.BritishColumbia">
+            <summary>
+            British Columbia
+            <br />
+            不列颠哥伦比亚省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Manitoba">
+            <summary>
+            Manitoba
+            <br />
+            曼尼托巴省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NewBrunswick">
+            <summary>
+            New Brunswick
+            <br />
+            新不伦瑞克省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NeufundlandAndLabrador">
+            <summary>
+            Neufundland and Labrador
+            <br />
+            纽芬兰与拉布拉多省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NovaScotia">
+            <summary>
+            Nova Scotia
+            <br />
+            新斯科舍省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Ontario">
+            <summary>
+            Ontario
+            <br />
+            安大略省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.PrinceEdwardIsland">
+            <summary>
+            Prince Edward Island
+            <br />
+            爱德华王子岛省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Québec">
+            <summary>
+            Québec
+            <br />
+            魁北克省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Saskatchewan">
+            <summary>
+            Saskatchewan
+            <br />
+            萨斯喀彻温省
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NorthwestTerritories">
+            <summary>
+            Northwest Territories
+            <br />
+            西北地区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Nunavut">
+            <summary>
+            Nunavut
+            <br />
+            努纳武特地区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Yukon">
+            <summary>
+            Yukon
+            <br />
+            育空地区
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.ToRegionCode(Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues"/> to region code likes 'AB', 'YT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.ToFullRegionCode(Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues"/> to full region code likes 'CA-AB', 'CA-YT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.GetProvincesRegionCodes">
+            <summary>
+            获得加拿大省代号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.GetTerritoriesRegionCodes">
+            <summary>
+            获得加拿大地区号
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.CaymanIslands">
             <summary>
@@ -7484,6 +8336,256 @@
             澳大利亚（The Commonwealth of Australia，大洋洲，AU，AUS，036），澳大利亚联邦 <br />
             Cosmos i18n code: i18n_country_aodaliya
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Oceania.AustraliaRegions">
+            <summary>
+            Australia regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.AustralianCapitalTerritory">
+            <summary>
+            Australian Capital Territory
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.NewSouthWales">
+            <summary>
+            New South Wales
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.NorthernTerritory">
+            <summary>
+            Northern Territory
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Queensland">
+            <summary>
+            Queensland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.SouthAustralia">
+            <summary>
+            South Australia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Tasmania">
+            <summary>
+            Tasmania
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Victoria">
+            <summary>
+            Victoria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.WesternAustralia">
+            <summary>
+            Western Australia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.CoralSeaIslands">
+            <summary>
+            删除海群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.AshmoreAndCartierIslands">
+            <summary>
+            阿什莫尔和卡捷岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.CocosIslands">
+            <summary>
+            科科斯群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.HeardIslandAndMcDonaldIslands">
+            <summary>
+            赫德岛及麦唐纳群岛
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.ChristmasIsland">
+            <summary>
+            Christmas Island
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.NorfolkIsland">
+            <summary>
+            Norfolk Island
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.NorfolkIsland">
+            <summary>
+            NorfolkIsland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.NorfolkIslandCode">
+            <summary>
+            NorfolkIsland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.ChristmasIsland">
+            <summary>
+            ChristmasIsland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.ChristmasIslandCode">
+            <summary>
+            ChristmasIsland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.CocosIslands">
+            <summary>
+            CocosIslands
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Oceania.AustraliaRegions.Special.CocosIslandsCode">
+            <summary>
+            CocosIslands
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues">
+            <summary>
+            Enum values for Australia regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.AustralianCapitalTerritory">
+            <summary>
+            Australian Capital Territory
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.NewSouthWales">
+            <summary>
+            New South Wales
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.NorthernTerritory">
+            <summary>
+            Northern Territory
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.Queensland">
+            <summary>
+            Queensland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.SouthAustralia">
+            <summary>
+            South Australia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.Tasmania">
+            <summary>
+            Tasmania
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.Victoria">
+            <summary>
+            Victoria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.WesternAustralia">
+            <summary>
+            Western Australia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.CoralSeaIslands">
+            <summary>
+            删除海群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.AshmoreAndCartierIslands">
+            <summary>
+            阿什莫尔和卡捷岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.CocosIslands">
+            <summary>
+            科科斯群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.HeardIslandAndMcDonaldIslands">
+            <summary>
+            赫德岛及麦唐纳群岛
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.ChristmasIsland">
+            <summary>
+            Christmas Island
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.NorfolkIsland">
+            <summary>
+            Norfolk Island
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.ToRegionCode(Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues"/> to region code likes 'ACT', 'NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.ToFullRegionCode(Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues"/> to full region code likes 'AU-ACT', 'AU-NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.ToCountry(Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.ToCountryCode(Cosmos.I18N.Countries.Oceania.AustraliaRegions.EnumValues)">
+            <summary>
+            Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of Australia
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of Australia
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.GetMainlandRegionCodes">
+            <summary>
+            获得本土地区的地区代号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Oceania.AustraliaRegions.GetOverseasRegionCodes">
+            <summary>
+            获得海外属地地区代号
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.Oceania.CookIslands">
             <summary>

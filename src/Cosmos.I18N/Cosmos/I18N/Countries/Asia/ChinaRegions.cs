@@ -521,7 +521,7 @@ namespace Cosmos.I18N.Countries.Asia
             /// <summary>
             /// Unknown<br />未知
             /// </summary>
-            [IgnoreRegionAttribute]
+            [IgnoreRegion]
             [AliasInShort("??")]
             Unknown = 99,
         }
