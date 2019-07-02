@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class Finland
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Finland()

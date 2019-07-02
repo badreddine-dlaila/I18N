@@ -5873,6 +5873,201 @@
             Cosmos i18n code: i18n_country_deguo
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.GermanyRegions">
+            <summary>
+            Germany Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.BadenWürttemberg">
+            <summary>
+            Baden-Württemberg
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Bayern">
+            <summary>
+            Bayern, Bavaria
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Berlin">
+            <summary>
+            Berlin
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Brandenburg">
+            <summary>
+            Brandenburg
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Bremen">
+            <summary>
+            Bremen
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Hamburg">
+            <summary>
+            Hamburg
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Hessen">
+            <summary>
+            Hessen, Hesse
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.MecklenburgVorpommern">
+            <summary>
+            Mecklenburg-Vorpommern
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Niedersachsen">
+            <summary>
+            Niedersachsen, Lower Saxony
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.NordrheinWestfalen">
+            <summary>
+            Nordrhein-Westfalen, North Rhine-Westphalia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.RheinlandPfalz">
+            <summary>
+            Rheinland-Pfalz, Rhineland-Palatinate
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Saarland">
+            <summary>
+            Saarland
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Sachsen">
+            <summary>
+            Sachsen, Saxony
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.SachsenAnhalt">
+            <summary>
+            Sachsen-Anhalt
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.SchleswigHolstein">
+            <summary>
+            Schleswig-Holstein
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.GermanyRegions.Thüringen">
+            <summary>
+            Thüringen
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues">
+            <summary>
+            Enum values for Germany regions.
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.BadenWürttemberg">
+            <summary>
+            Baden-Württemberg
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Bayern">
+            <summary>
+            Bayern, Bavaria
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Berlin">
+            <summary>
+            Berlin
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Brandenburg">
+            <summary>
+            Brandenburg
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Bremen">
+            <summary>
+            Bremen
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Hamburg">
+            <summary>
+            Hamburg
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Hessen">
+            <summary>
+            Hessen, Hesse
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.MecklenburgVorpommern">
+            <summary>
+            Mecklenburg-Vorpommern
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Niedersachsen">
+            <summary>
+            Niedersachsen, Lower Saxony
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.NordrheinWestfalen">
+            <summary>
+            Nordrhein-Westfalen, North Rhine-Westphalia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.RheinlandPfalz">
+            <summary>
+            Rheinland-Pfalz, Rhineland-Palatinate
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Saarland">
+            <summary>
+            Saarland
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Sachsen">
+            <summary>
+            Sachsen, Saxony
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.SachsenAnhalt">
+            <summary>
+            Sachsen-Anhalt
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.SchleswigHolstein">
+            <summary>
+            Schleswig-Holstein
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Thüringen">
+            <summary>
+            Thüringen
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.GermanyRegions.ToRegionCode(Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.GermanyRegions.ToFullRegionCode(Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.Europe.GermanyRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.GermanyRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Gibraltar">
             <summary>
             直布罗陀（Gibraltar，欧洲，GI，GIB，292） <br />
@@ -8913,6 +9108,311 @@
             巴西（The Federative Republic of Brazil，南美洲，BR，BRA，076），巴西联邦共和国 <br />
             Cosmos i18n code: i18n_country_baxi
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions">
+            <summary>
+            Brazil Regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Acre">
+            <summary>
+            Acre
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Alagoas">
+            <summary>
+            Alagoas
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Amazonas">
+            <summary>
+            Amazonas
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Amapá">
+            <summary>
+            Amapá
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Bahia">
+            <summary>
+            Bahia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Ceará">
+            <summary>
+            Ceará
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.DistritoFederal">
+            <summary>
+            Distrito Federal
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EspíritoSanto">
+            <summary>
+            Espírito Santo
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Goiás">
+            <summary>
+            Goiás
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Maranhão">
+            <summary>
+            Maranhão
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.MinasGerais">
+            <summary>
+            Minas Gerais
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.MatoGrossoDoSul">
+            <summary>
+            Mato Grosso do Sul
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.MatoGrosso">
+            <summary>
+            Mato Grosso
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Pará">
+            <summary>
+            Pará
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Paraíba">
+            <summary>
+            Paraíba
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Pernambuco">
+            <summary>
+            Pernambuco
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Piauí">
+            <summary>
+            Piauí
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Paraná">
+            <summary>
+            Paraná
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.RioDeJaneiro">
+            <summary>
+            Rio de Janeiro
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.RioGrandeDoNorte">
+            <summary>
+            Rio Grande do Norte
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Rondônia">
+            <summary>
+            Rondônia
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Roraima">
+            <summary>
+            Roraima
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.RioGrandeDoSul">
+            <summary>
+            Rio Grande do Sul
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.SantaCatarina">
+            <summary>
+            Santa Catarina
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Sergipe">
+            <summary>
+            Sergipe
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.SãoPaulo">
+            <summary>
+            São Paulo
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.Tocantins">
+            <summary>
+            Tocantins
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues">
+            <summary>
+            Enum values for Brazil regions
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Acre">
+            <summary>
+            Acre
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Alagoas">
+            <summary>
+            Alagoas
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Amazonas">
+            <summary>
+            Amazonas
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Amapá">
+            <summary>
+            Amapá
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Bahia">
+            <summary>
+            Bahia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Ceará">
+            <summary>
+            Ceará
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.DistritoFederal">
+            <summary>
+            Distrito Federal
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.EspíritoSanto">
+            <summary>
+            Espírito Santo
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Goiás">
+            <summary>
+            Goiás
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Maranhão">
+            <summary>
+            Maranhão
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.MinasGerais">
+            <summary>
+            Minas Gerais
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.MatoGrossoDoSul">
+            <summary>
+            Mato Grosso do Sul
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.MatoGrosso">
+            <summary>
+            Mato Grosso
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Pará">
+            <summary>
+            Pará
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Paraíba">
+            <summary>
+            Paraíba
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Pernambuco">
+            <summary>
+            Pernambuco
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Piauí">
+            <summary>
+            Piauí
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Paraná">
+            <summary>
+            Paraná
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.RioDeJaneiro">
+            <summary>
+            Rio de Janeiro
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.RioGrandeDoNorte">
+            <summary>
+            Rio Grande do Norte
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Rondônia">
+            <summary>
+            Rondônia
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Roraima">
+            <summary>
+            Roraima
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.RioGrandeDoSul">
+            <summary>
+            Rio Grande do Sul
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.SantaCatarina">
+            <summary>
+            Santa Catarina
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Sergipe">
+            <summary>
+            Sergipe
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.SãoPaulo">
+            <summary>
+            São Paulo
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Tocantins">
+            <summary>
+            Tocantins
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.ToRegionCode(Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues"/> to region code likes 'ACT', 'NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.ToFullRegionCode(Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.EnumValues"/> to full region code likes 'AU-ACT', 'AU-NT'.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.SouthAmerica.BrazilRegions.GetAllRegonCodes">
+            <summary>
+            Get all region code
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Countries.SouthAmerica.Chile">
             <summary>
