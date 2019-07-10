@@ -56,10 +56,10 @@ namespace Cosmos.I18N.Countries
         Albania,
 
         /// <summary>
-        /// 亚美尼亚（Armenia，欧洲，AM，ARM，051），亚美尼亚共和国<br />
+        /// 亚美尼亚（Armenia，亚洲，AM，ARM，051），亚美尼亚共和国<br />
         /// Cosmos i18n code: i18n_country_yameiniya
         /// </summary>
-        [I18NIdentityCode(Europe.Armenia.I18N_IDENTITY_CODE)]
+        [I18NIdentityCode(Asia.Armenia.I18N_IDENTITY_CODE)]
         Armenia,
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Cosmos.I18N.Countries
         Bulgaria,
 
         /// <summary>
-        /// 巴林（The Kingdom of Bahrain ，非洲，BH，BHR，048），巴林王国 <br />
+        /// 巴林（The Kingdom of Bahrain ，亚洲，BH，BHR，048），巴林王国 <br />
         /// Cosmos i18n code: i18n_country_balin
         /// </summary>
         [I18NIdentityCode(Asia.Bahrain.I18N_IDENTITY_CODE)]

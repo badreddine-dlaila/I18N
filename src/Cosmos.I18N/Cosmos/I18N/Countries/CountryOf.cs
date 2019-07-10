@@ -7,7 +7,7 @@ namespace Cosmos.I18N.Countries
         public static CountryInfo Algeria => Africa.Algeria.Instance;
         public static CountryInfo AntiguaAndBarbuda => NorthAmerica.AntiguaAndBarbuda.Instance;
         public static CountryInfo Anguilla => NorthAmerica.Anguilla.Instance;
-        public static CountryInfo Armenia => Europe.Armenia.Instance;
+        public static CountryInfo Armenia => Asia.Armenia.Instance;
         public static CountryInfo Angola => Africa.Angola.Instance;
         public static CountryInfo Antarctica => global::Cosmos.I18N.Countries.Antarctica.Antarctique.Instance;
         public static CountryInfo Antarctique => global::Cosmos.I18N.Countries.Antarctica.Antarctique.Instance;
