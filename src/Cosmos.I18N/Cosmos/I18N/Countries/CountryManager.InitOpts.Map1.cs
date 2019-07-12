@@ -244,6 +244,7 @@ namespace Cosmos.I18N.Countries
                 {Country.UnitedStates, CountryCode.US},
                 {Country.UnitedStatesMinorOutlyingIslands, CountryCode.UM},
                 {Country.UnitedArabEmirates, CountryCode.AE},
+                {Country.Uzbekistan, CountryCode.UZ},
                 {Country.Venezuela, CountryCode.VE},
                 {Country.VietNam, CountryCode.VN},
                 {Country.VirginIslandsBritish, CountryCode.VG},

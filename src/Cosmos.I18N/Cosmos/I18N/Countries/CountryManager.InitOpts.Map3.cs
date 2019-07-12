@@ -245,6 +245,7 @@ namespace Cosmos.I18N.Countries
                 {Country.UnitedStates, NorthAmerica.UnitedStates.Instance},
                 {Country.UnitedStatesMinorOutlyingIslands, NorthAmerica.UnitedStatesMinorOutlyingIslands.Instance},
                 {Country.Uruguay, SouthAmerica.Uruguay.Instance},
+                {Country.Uzbekistan, Asia.Uzbekistan.Instance},
                 {Country.Venezuela, SouthAmerica.Venezuela.Instance},
                 {Country.VietNam, Asia.VietNam.Instance},
                 {Country.VirginIslandsBritish, NorthAmerica.VirginIslandsBritish.Instance},

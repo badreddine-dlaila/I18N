@@ -240,6 +240,7 @@ namespace Cosmos.I18N.Countries
                 {CountryCode.UM, Country.UnitedStatesMinorOutlyingIslands},
                 {CountryCode.US, Country.UnitedStates},
                 {CountryCode.UY, Country.Uruguay},
+                {CountryCode.UZ, Country.Uzbekistan},
                 {CountryCode.VA, Country.HolySee},
                 {CountryCode.VC, Country.StVAndG},
                 {CountryCode.VE, Country.Venezuela},

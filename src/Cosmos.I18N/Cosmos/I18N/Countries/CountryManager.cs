@@ -8,8 +8,11 @@ namespace Cosmos.I18N.Countries
     /// </summary>
     public static partial class CountryManager
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryCode> _nameAndCodeMap;
+        // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<CountryCode, Country> _codeAndNameMap;
+        // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryInfo> _countryInfoCache;
 
         static CountryManager()

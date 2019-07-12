@@ -1,8 +1,10 @@
 using Cosmos.I18N.Core;
-using EnumsNET;
 
 namespace Cosmos.I18N.Countries
 {
+    /// <summary>
+    /// Country
+    /// </summary>
     public enum Country
     {
         /// <summary>
@@ -632,6 +634,7 @@ namespace Cosmos.I18N.Countries
         /// Cosmos i18n code: i18n_country_nanqiaozhiya
         /// </summary>
         [I18NIdentityCode(SouthAmerica.SGSSI.I18N_IDENTITY_CODE)]
+        // ReSharper disable once InconsistentNaming
         SGSSI,
 
         /// <summary>
@@ -639,6 +642,7 @@ namespace Cosmos.I18N.Countries
         /// Cosmos i18n code: i18n_country_hedemaiketang
         /// </summary>
         [I18NIdentityCode(Asia.HIMI.I18N_IDENTITY_CODE)]
+        // ReSharper disable once InconsistentNaming
         HIMI,
 
         /// <summary>
@@ -858,6 +862,7 @@ namespace Cosmos.I18N.Countries
         /// Cosmos i18n code: i18n_country_laowo
         /// </summary>
         [I18NIdentityCode(Asia.LaoPDR.I18N_IDENTITY_CODE)]
+        // ReSharper disable once InconsistentNaming
         LaoPDR,
 
         /// <summary>
@@ -1584,49 +1589,49 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         [I18NIdentityCode(Asia.Thailand.I18N_IDENTITY_CODE)]
         Thailand,
-        
+
         /// <summary>
         /// 塔吉克斯坦（The Republic of Tajikistan，亚洲，TJ，TJK，762），塔吉克斯坦共和国 <br />
         /// Cosmos i18n code: i18n_country_tajikesitan
         /// </summary>
         [I18NIdentityCode(Asia.Tajikistan.I18N_IDENTITY_CODE)]
         Tajikistan,
-     
+
         /// <summary>
         /// 托克劳群岛（Tokelau，大洋洲，TK，TKL，772） <br />
         /// Cosmos i18n code: i18n_country_tuokelao
         /// </summary>
         [I18NIdentityCode(Oceania.Tokelau.I18N_IDENTITY_CODE)]
         Tokelau,
-        
+
         /// <summary>
         /// 东帝汶（Democratic Republic of Timor-Leste，亚洲，TL，TLS，626），东帝汶民主共和国 <br />
         /// Cosmos i18n code: i18n_country_dongdiwen
         /// </summary>
         [I18NIdentityCode(Asia.EastTimor.I18N_IDENTITY_CODE)]
         EastTimor,
-        
+
         /// <summary>
         /// 土库曼（Turkmenistan，亚洲，TM，TKM，795），土库曼斯坦 <br />
         /// Cosmos i18n code: i18n_country_tukumansitan
         /// </summary>
         [I18NIdentityCode(Asia.Turkmenistan.I18N_IDENTITY_CODE)]
         Turkmenistan,
-     
+
         /// <summary>
         /// 突尼斯（The Republic of Tunisia，非洲，TN，TUN，788），突尼斯共和国 <br />
         /// Cosmos i18n code: i18n_country_tunisi
         /// </summary>
         [I18NIdentityCode(Africa.Tunisia.I18N_IDENTITY_CODE)]
         Tunisia,
-        
+
         /// <summary>
         /// 汤加（The Kingdom of Tonga，大洋洲，TO，TN，776），汤加王国 <br />
         /// Cosmos i18n code: i18n_country_tangjia
         /// </summary>
         [I18NIdentityCode(Oceania.Tonga.I18N_IDENTITY_CODE)]
         Tonga,
-        
+
         /// <summary>
         /// 乌克兰（Ukraine，欧洲，UA，UKR，804） <br />
         /// Cosmos i18n code: i18n_country_wukelan
@@ -1716,6 +1721,7 @@ namespace Cosmos.I18N.Countries
         /// Cosmos i18n code: i18n_country_meishuweierjing
         /// </summary>
         [I18NIdentityCode(NorthAmerica.VirginIslandsUS.I18N_IDENTITY_CODE)]
+        // ReSharper disable once InconsistentNaming
         VirginIslandsUS,
 
         /// <summary>
