@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 科摩罗（Union of Comoros，非洲，KM，COM，174），科摩罗联盟 <br />
         /// Cosmos i18n code: i18n_country_kemoluo
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

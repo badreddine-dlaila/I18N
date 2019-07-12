@@ -30,7 +30,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 开曼群岛（Cayman Islands，北美洲，KY，CYM，136） <br />
         /// Cosmos i18n code: i18n_country_kaiman
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

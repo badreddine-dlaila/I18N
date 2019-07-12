@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 波多黎各（The Commonwealth of Puerto Rico，北美洲，PR，PRI，630），波多黎各自治邦 <br />
         /// Cosmos i18n code: i18n_country_boduolige
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

@@ -4,8 +4,10 @@ namespace Cosmos.I18N.Countries.Asia
     /// 老挝（Lao People's Democratic Republic，亚洲，LA，LAO，418），老挝人民民主共和国 <br />
     /// Cosmos i18n code: i18n_country_laowo
     /// </summary>
+    // ReSharper disable once InconsistentNaming
     public static class LaoPDR
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static LaoPDR()
@@ -33,6 +35,10 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// i18n
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_laowo";
     }
 }

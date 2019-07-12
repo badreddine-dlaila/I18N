@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Europe
         /// 根西岛（Bailiwick of Guernsey，欧洲，GG，GGY，831） <br />
         /// Cosmos i18n code: i18n_country_genxidao
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 科特迪瓦 （The Republic of Côte d'Ivoire，非洲，CI，CIV，384），科特迪瓦共和国 <br />
         /// Cosmos i18n code: i18n_country_ketediwa
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

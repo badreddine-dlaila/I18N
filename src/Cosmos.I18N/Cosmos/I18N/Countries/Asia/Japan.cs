@@ -31,7 +31,6 @@ namespace Cosmos.I18N.Countries.Asia
         /// 日本（Japan，亚洲，JP，JPN，392），日本国 <br />
         /// Cosmos i18n code: i18n_country_riben
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

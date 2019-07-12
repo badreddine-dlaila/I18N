@@ -8,6 +8,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// </summary>
     public static class Taiwan
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Taiwan()
@@ -37,6 +38,10 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// i18n
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_cnhtaiwan";
     }
 }

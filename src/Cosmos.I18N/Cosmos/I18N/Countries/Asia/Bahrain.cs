@@ -1,11 +1,12 @@
 namespace Cosmos.I18N.Countries.Asia
 {
     /// <summary>
-    /// 巴林（The Kingdom of Bahrain ，非洲，BH，BHR，048），巴林王国 <br />
+    /// 巴林（The Kingdom of Bahrain ，亚洲，BH，BHR，048），巴林王国 <br />
     /// Cosmos i18n code: i18n_country_balin
     /// </summary>
     public static class Bahrain
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Bahrain()
@@ -28,11 +29,15 @@ namespace Cosmos.I18N.Countries.Asia
         }
 
         /// <summary>
-        /// 巴林（The Kingdom of Bahrain ，非洲，BH，BHR，048），巴林王国 <br />
+        /// 巴林（The Kingdom of Bahrain ，亚洲，BH，BHR，048），巴林王国 <br />
         /// Cosmos i18n code: i18n_country_balin
         /// </summary>
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// i18n
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_balin";
     }
 }

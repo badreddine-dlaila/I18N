@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 多米尼加（The Dominican Republic，北美洲，DO，DOM，214），多米尼加共和国 <br />
         /// Cosmos i18n code: i18n_country_duominijia
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 美国（United States of America，北美洲，US，USA，840），美利坚合众国 <br />
         /// Cosmos i18n code: i18n_country_meiguo
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

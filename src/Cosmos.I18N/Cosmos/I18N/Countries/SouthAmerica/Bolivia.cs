@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
     /// </summary>
     public static class Bolivia
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Bolivia()

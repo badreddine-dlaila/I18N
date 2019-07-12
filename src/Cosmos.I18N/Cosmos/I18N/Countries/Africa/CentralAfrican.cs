@@ -1,5 +1,9 @@
 namespace Cosmos.I18N.Countries.Africa
 {
+    /// <summary>
+    /// 中非（Central African Republic，非洲，CF，COD，180），中非共和国 <br />
+    /// Cosmos i18n code: i18n_country_zhongfei
+    /// </summary>
     public static class CentralAfrican
     {
         // ReSharper disable once InconsistentNaming
@@ -27,7 +31,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 中非（Central African Republic，非洲，CF，COD，180），中非共和国 <br />
         /// Cosmos i18n code: i18n_country_zhongfei
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

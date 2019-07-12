@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// </summary>
     public static class Qatar
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Qatar()
@@ -33,6 +34,10 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// i18n
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_kataer";
     }
 }

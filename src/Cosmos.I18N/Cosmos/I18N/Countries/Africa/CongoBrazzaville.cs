@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 刚果（布）（The Republic of Congo，非洲，CG，COG，178），刚果共和国 <br />
         /// Cosmos i18n code: i18n_country_gangguobu
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

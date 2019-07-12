@@ -6,6 +6,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
     /// </summary>
     public static class Haiti
     {
+        // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         static Haiti()
@@ -33,6 +34,10 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// </summary>
         public static CountryInfo Instance => _country;
 
+        /// <summary>
+        /// 18n
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
         public const string I18N_IDENTITY_CODE = "i18n_country_haidi";
     }
 }

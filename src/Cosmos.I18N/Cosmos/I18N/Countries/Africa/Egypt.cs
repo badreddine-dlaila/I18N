@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 埃及（The Arab Republic of Egypt，非洲，EG，EGY，818），阿拉伯埃及共和国 <br />
         /// Cosmos i18n code: i18n_country_aiji
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

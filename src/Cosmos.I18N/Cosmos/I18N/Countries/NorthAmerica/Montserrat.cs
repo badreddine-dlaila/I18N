@@ -31,7 +31,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 蒙特塞拉特（Montserrat，北美洲，MS，MSR，500） <br />
         /// Cosmos i18n code: i18n_country_mengtesailate
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

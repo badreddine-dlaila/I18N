@@ -126,6 +126,26 @@ namespace Cosmos.I18N.Countries.Europe
         {
             return $"AD-{values.ToRegionCode()}";
         }
+        
+        /// <summary>
+        /// Convert to <see cref="Country"/>
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static Country ToCountry(this EnumValues value)
+        {
+            return Country.Andorra;
+        }
+
+        /// <summary>
+        /// Convert to <see cref="CountryCode"/>
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static CountryCode ToCountryCode(this EnumValues value)
+        {
+            return CountryCode.AD;
+        }
 
         #endregion
 

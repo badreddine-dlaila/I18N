@@ -30,7 +30,6 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 瓜德罗普（Guadeloupe，北美洲，GP，GLP，312） <br />
         /// Cosmos i18n code: i18n_country_guadeluopu
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>

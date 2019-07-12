@@ -32,7 +32,6 @@ namespace Cosmos.I18N.Countries.Africa
         /// 佛得角（Republic of Cape Verde，非洲，CV，CPV，132），佛得角共和国 <br />
         /// Cosmos i18n code: i18n_country_fodejiao
         /// </summary>
-        // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Instance => _country;
 
         /// <summary>
