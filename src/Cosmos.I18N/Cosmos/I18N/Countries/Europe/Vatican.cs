@@ -4,18 +4,18 @@ namespace Cosmos.I18N.Countries.Europe
     /// 梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
     /// Cosmos i18n code: i18n_country_fandigang
     /// </summary>
-    public static class HolySee
+    public static class Vatican
     {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static HolySee()
+        static Vatican()
         {
             _country = new CountryInfo
             {
-                Country = Country.Iraq,
+                Country = Country.Vatican,
                 CountryType = CountryType.Country,
-                BeongsToCountry = Country.Iraq,
+                BeongsToCountry = Country.Vatican,
                 UNCode = "336",
                 Alpha2Code = "VA",
                 Alpha3Code = "VAT",

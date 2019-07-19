@@ -2,7 +2,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
 {
     /// <summary>
     /// 玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-    /// Cosmos i18n code: i18n_country_balin
+    /// Cosmos i18n code: i18n_country_boliweiya
     /// </summary>
     public static class Bolivia
     {
@@ -34,6 +34,6 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         public static CountryInfo Instance => _country;
 
-        public const string I18N_IDENTITY_CODE = "i18n_country_balin";
+        public const string I18N_IDENTITY_CODE = "i18n_country_boliweiya";
     }
 }

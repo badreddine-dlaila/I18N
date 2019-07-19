@@ -214,7 +214,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-        /// Cosmos i18n code: i18n_country_balin
+        /// Cosmos i18n code: i18n_country_boliweiya
         /// </summary>
         [I18NIdentityCode(SouthAmerica.Bolivia.I18N_IDENTITY_CODE)]
         BO,
@@ -543,7 +543,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-        /// Cosmos i18n code: i18n_country_eguaduoer
+        /// Cosmos i18n code: i18n_country_jiapeng
         /// </summary>
         [I18NIdentityCode(Africa.Gabon.I18N_IDENTITY_CODE)]
         GA,
@@ -796,7 +796,7 @@ namespace Cosmos.I18N.Countries
         JE,
 
         /// <summary>
-        /// 牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+        /// 牙买加（Jamaica，北美洲，JM，JAM，388） <br />
         /// Cosmos i18n code: i18n_country_yamaijia
         /// </summary>
         [I18NIdentityCode(NorthAmerica.Jamaica.I18N_IDENTITY_CODE)]
@@ -1671,7 +1671,7 @@ namespace Cosmos.I18N.Countries
         /// 梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
         /// Cosmos i18n code: i18n_country_fandigang
         /// </summary>
-        [I18NIdentityCode(Europe.HolySee.I18N_IDENTITY_CODE)]
+        [I18NIdentityCode(Europe.Vatican.I18N_IDENTITY_CODE)]
         VA,
 
         /// <summary>
@@ -1706,7 +1706,7 @@ namespace Cosmos.I18N.Countries
         /// 越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
         /// Cosmos i18n code: i18n_country_yuenan
         /// </summary>
-        [I18NIdentityCode(Asia.VietNam.I18N_IDENTITY_CODE)]
+        [I18NIdentityCode(Asia.Vietnam.I18N_IDENTITY_CODE)]
         VN,
 
         /// <summary>

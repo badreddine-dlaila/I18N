@@ -181,7 +181,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-        /// Cosmos i18n code: i18n_country_balin
+        /// Cosmos i18n code: i18n_country_boliweiya
         /// </summary>
         public static CountryInfo Bolivia => SouthAmerica.Bolivia.Instance;
 
@@ -428,7 +428,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-        /// Cosmos i18n code: i18n_country_eguaduoer
+        /// Cosmos i18n code: i18n_country_jiapeng
         /// </summary>
         public static CountryInfo Gabon => Africa.Gabon.Instance;
 
@@ -572,7 +572,7 @@ namespace Cosmos.I18N.Countries
         /// 梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
         /// Cosmos i18n code: i18n_country_fandigang
         /// </summary>
-        public static CountryInfo HolySee => Europe.HolySee.Instance;
+        public static CountryInfo Vatican => Europe.Vatican.Instance;
 
         /// <summary>
         /// 以色列（The State of Israel，亚洲，IL，ISR，376），以色列国 <br />
@@ -631,7 +631,7 @@ namespace Cosmos.I18N.Countries
         public static CountryInfo Jersey => Europe.Jersey.Instance;
 
         /// <summary>
-        /// 牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+        /// 牙买加（Jamaica，北美洲，JM，JAM，388） <br />
         /// Cosmos i18n code: i18n_country_yamaijia
         /// </summary>
         public static CountryInfo Jamaica => NorthAmerica.Jamaica.Instance;
@@ -1476,7 +1476,7 @@ namespace Cosmos.I18N.Countries
         /// 越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
         /// Cosmos i18n code: i18n_country_yuenan
         /// </summary>
-        public static CountryInfo VietNam => Asia.VietNam.Instance;
+        public static CountryInfo Vietnam => Asia.Vietnam.Instance;
 
         /// <summary>
         /// 瓦努阿图（The Republic of Vanuatu，大洋洲，VU，VUT，548），瓦努阿图共和国 <br />

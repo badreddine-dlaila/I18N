@@ -8,7 +8,7 @@ namespace Cosmos.I18N.Countries.Asia
     /// <summary>
     /// VietNam Regions
     /// </summary>
-    public static class VietNamRegions
+    public static class VietnamRegions
     {
 
         #region Gets regions
@@ -725,7 +725,7 @@ namespace Cosmos.I18N.Countries.Asia
         #region Extension methods
 
         /// <summary>
-        /// Convert <see cref="VietNamRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+        /// Convert <see cref="VietnamRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
@@ -735,7 +735,7 @@ namespace Cosmos.I18N.Countries.Asia
         }
 
         /// <summary>
-        /// Convert <see cref="VietNamRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+        /// Convert <see cref="VietnamRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
@@ -751,7 +751,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// <returns></returns>
         public static Country ToCountry(this EnumValues value)
         {
-            return Country.VietNam;
+            return Country.Vietnam;
         }
 
         /// <summary>

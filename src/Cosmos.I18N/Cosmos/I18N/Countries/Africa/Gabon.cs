@@ -2,7 +2,7 @@ namespace Cosmos.I18N.Countries.Africa
 {
     /// <summary>
     /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-    /// Cosmos i18n code: i18n_country_eguaduoer
+    /// Cosmos i18n code: i18n_country_jiapeng
     /// </summary>
     public static class Gabon
     {
@@ -30,7 +30,7 @@ namespace Cosmos.I18N.Countries.Africa
 
         /// <summary>
         /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-        /// Cosmos i18n code: i18n_country_eguaduoer
+        /// Cosmos i18n code: i18n_country_jiapeng
         /// </summary>
         public static CountryInfo Instance => _country;
 

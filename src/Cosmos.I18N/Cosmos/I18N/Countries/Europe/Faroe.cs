@@ -1,5 +1,9 @@
 namespace Cosmos.I18N.Countries.Europe
 {
+    /// <summary>
+    /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+    /// Cosmos i18n code: i18n_country_faluo
+    /// </summary>
     public static class Faroe
     {
         // ReSharper disable once InconsistentNaming

@@ -1,7 +1,7 @@
 namespace Cosmos.I18N.Countries.NorthAmerica
 {
     /// <summary>
-    /// 牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+    /// 牙买加（Jamaica，北美洲，JM，JAM，388） <br />
     /// Cosmos i18n code: i18n_country_yamaijia
     /// </summary>
     public static class Jamaica
@@ -27,7 +27,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         }
 
         /// <summary>
-        /// 牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+        /// 牙买加（Jamaica，北美洲，JM，JAM，388） <br />
         /// Cosmos i18n code: i18n_country_yamaijia
         /// </summary>
         public static CountryInfo Instance => _country;

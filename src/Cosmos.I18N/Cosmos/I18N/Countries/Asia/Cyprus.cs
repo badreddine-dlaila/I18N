@@ -23,7 +23,7 @@ namespace Cosmos.I18N.Countries.Asia
                 ShorterForm = "Cyprus",
                 ChineseName = "塞浦路斯共和国",
                 ChineseShorterForm = "塞浦路斯",
-                Continent = Continent.Africa,
+                Continent = Continent.Asia,
                 I18NIdentityCode = I18N_IDENTITY_CODE,
             };
         }

@@ -3805,13 +3805,13 @@
         <member name="T:Cosmos.I18N.Countries.Africa.Gabon">
             <summary>
             加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-            Cosmos i18n code: i18n_country_eguaduoer
+            Cosmos i18n code: i18n_country_jiapeng
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.Africa.Gabon.Instance">
             <summary>
             加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-            Cosmos i18n code: i18n_country_eguaduoer
+            Cosmos i18n code: i18n_country_jiapeng
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Africa.Gabon.I18N_IDENTITY_CODE">
@@ -19420,697 +19420,697 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Cosmos.I18N.Countries.Asia.VietNam">
+        <member name="T:Cosmos.I18N.Countries.Asia.Vietnam">
             <summary>
             越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
             Cosmos i18n code: i18n_country_yuenan
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNam.Instance">
+        <member name="P:Cosmos.I18N.Countries.Asia.Vietnam.Instance">
             <summary>
             越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
             Cosmos i18n code: i18n_country_yuenan
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNam.I18N_IDENTITY_CODE">
+        <member name="F:Cosmos.I18N.Countries.Asia.Vietnam.I18N_IDENTITY_CODE">
             <summary>
             i18n
             </summary>
         </member>
-        <member name="T:Cosmos.I18N.Countries.Asia.VietNamRegions">
+        <member name="T:Cosmos.I18N.Countries.Asia.VietnamRegions">
             <summary>
             VietNam Regions
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.LaiChâu">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.LaiChâu">
             <summary>
             Lai Châu
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.LàoCai">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.LàoCai">
             <summary>
             Lào Cai
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HàGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HàGiang">
             <summary>
             Hà Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.CaoBằng">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.CaoBằng">
             <summary>
             Cao Bằng
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.SơnLa">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.SơnLa">
             <summary>
             Sơn La
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.YênBái">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.YênBái">
             <summary>
             Yên Bái
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TuyênQuang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TuyênQuang">
             <summary>
             Tuyên Quang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.LạngSơn">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.LạngSơn">
             <summary>
             Lạng Sơn
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.QuảngNinh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.QuảngNinh">
             <summary>
             Quảng Ninh
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HòaBình">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HòaBình">
             <summary>
             Hòa Bình
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.NinhBình">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.NinhBình">
             <summary>
             Ninh Bình
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TháiBình">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TháiBình">
             <summary>
             Thái Bình
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ThanhHóa">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ThanhHóa">
             <summary>
             Thanh Hóa
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.NghệAn">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.NghệAn">
             <summary>
             Nghệ An
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HàTĩnh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HàTĩnh">
             <summary>
             Hà Tĩnh
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.QuảngBình">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.QuảngBình">
             <summary>
             Quảng Bình
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.QuảngTrị">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.QuảngTrị">
             <summary>
             Quảng Trị
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ThừaThiênHuế">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ThừaThiênHuế">
             <summary>
             Thừa Thiên–Huế
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.QuảngNam">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.QuảngNam">
             <summary>
             Quảng Nam
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.KonTum">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.KonTum">
             <summary>
             Kon Tum
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.QuảngNgãi">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.QuảngNgãi">
             <summary>
             Quảng Ngãi
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.GiaLai">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.GiaLai">
             <summary>
             Gia Lai
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BìnhĐịnh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BìnhĐịnh">
             <summary>
             Bình Định
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.PhúYên">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.PhúYên">
             <summary>
             Phú Yên
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ĐắkLắk">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ĐắkLắk">
             <summary>
             Đắk Lắk
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.KhánhHòa">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.KhánhHòa">
             <summary>
             Khánh Hòa
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.LâmĐồng">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.LâmĐồng">
             <summary>
             Lâm Đồng
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.NinhThuận">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.NinhThuận">
             <summary>
             Ninh Thuận
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TâyNinh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TâyNinh">
             <summary>
             Tây Ninh
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ĐồngNai">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ĐồngNai">
             <summary>
             Đồng Nai
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BìnhThuận">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BìnhThuận">
             <summary>
             Bình Thuận
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.LongAn">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.LongAn">
             <summary>
             Long An
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BàRịaVũngTàu">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BàRịaVũngTàu">
             <summary>
             Bà Rịa–Vũng Tàu
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.AnGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.AnGiang">
             <summary>
             An Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ĐồngTháp">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ĐồngTháp">
             <summary>
             Đồng Tháp
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TiềnGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TiềnGiang">
             <summary>
             Tiền Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.KiênGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.KiênGiang">
             <summary>
             Kiên Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.VĩnhLong">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.VĩnhLong">
             <summary>
             Vĩnh Long
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BếnTre">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BếnTre">
             <summary>
             Bến Tre
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TràVinh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TràVinh">
             <summary>
             Trà Vinh
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.SócTrăng">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.SócTrăng">
             <summary>
             Sóc Trăng
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BắcKạn">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BắcKạn">
             <summary>
             Bắc Kạn
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BắcGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BắcGiang">
             <summary>
             Bắc Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BạcLiêu">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BạcLiêu">
             <summary>
             Bạc Liêu
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BắcNinh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BắcNinh">
             <summary>
             Bắc Ninh
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BìnhDương">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BìnhDương">
             <summary>
             Bình Dương
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.BìnhPhước">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.BìnhPhước">
             <summary>
             Bình Phước
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.CàMau">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.CàMau">
             <summary>
             Cà Mau
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HảiDương">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HảiDương">
             <summary>
             Hải Dương
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HàNam">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HàNam">
             <summary>
             Hà Nam
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HưngYên">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HưngYên">
             <summary>
             Hưng Yên
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.NamĐịnh">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.NamĐịnh">
             <summary>
             Nam Định
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.PhúThọ">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.PhúThọ">
             <summary>
             Phú Thọ
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.TháiNguyên">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.TháiNguyên">
             <summary>
             Thái Nguyên
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.VĩnhPhúc">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.VĩnhPhúc">
             <summary>
             Vĩnh Phúc
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ĐiệnBiên">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ĐiệnBiên">
             <summary>
             Điện Biên
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.ĐắkNông">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.ĐắkNông">
             <summary>
             Đắk Nông
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HậuGiang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HậuGiang">
             <summary>
             Hậu Giang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.CanTho">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.CanTho">
             <summary>
             Can Tho
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.DaNang">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.DaNang">
             <summary>
             Da Nang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.Hanoi">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.Hanoi">
             <summary>
             Hanoi
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.Haiphong">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.Haiphong">
             <summary>
             Haiphong
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.Asia.VietNamRegions.HoChiMinhCity">
+        <member name="P:Cosmos.I18N.Countries.Asia.VietnamRegions.HoChiMinhCity">
             <summary>
             Ho Chi Minh City
             </summary>
         </member>
-        <member name="T:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues">
+        <member name="T:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues">
             <summary>
             Enum values for VietNam regions.
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.LaiChâu">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.LaiChâu">
             <summary>
             Lai Châu
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.LàoCai">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.LàoCai">
             <summary>
             Lào Cai
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HàGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HàGiang">
             <summary>
             Hà Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.CaoBằng">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.CaoBằng">
             <summary>
             Cao Bằng
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.SơnLa">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.SơnLa">
             <summary>
             Sơn La
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.YênBái">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.YênBái">
             <summary>
             Yên Bái
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TuyênQuang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TuyênQuang">
             <summary>
             Tuyên Quang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.LạngSơn">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.LạngSơn">
             <summary>
             Lạng Sơn
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.QuảngNinh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.QuảngNinh">
             <summary>
             Quảng Ninh
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HòaBình">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HòaBình">
             <summary>
             Hòa Bình
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.NinhBình">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.NinhBình">
             <summary>
             Ninh Bình
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TháiBình">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TháiBình">
             <summary>
             Thái Bình
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ThanhHóa">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ThanhHóa">
             <summary>
             Thanh Hóa
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.NghệAn">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.NghệAn">
             <summary>
             Nghệ An
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HàTĩnh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HàTĩnh">
             <summary>
             Hà Tĩnh
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.QuảngBình">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.QuảngBình">
             <summary>
             Quảng Bình
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.QuảngTrị">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.QuảngTrị">
             <summary>
             Quảng Trị
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ThừaThiênHuế">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ThừaThiênHuế">
             <summary>
             Thừa Thiên–Huế
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.QuảngNam">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.QuảngNam">
             <summary>
             Quảng Nam
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.KonTum">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.KonTum">
             <summary>
             Kon Tum
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.QuảngNgãi">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.QuảngNgãi">
             <summary>
             Quảng Ngãi
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.GiaLai">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.GiaLai">
             <summary>
             Gia Lai
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BìnhĐịnh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BìnhĐịnh">
             <summary>
             Bình Định
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.PhúYên">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.PhúYên">
             <summary>
             Phú Yên
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ĐắkLắk">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ĐắkLắk">
             <summary>
             Đắk Lắk
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.KhánhHòa">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.KhánhHòa">
             <summary>
             Khánh Hòa
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.LâmĐồng">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.LâmĐồng">
             <summary>
             Lâm Đồng
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.NinhThuận">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.NinhThuận">
             <summary>
             Ninh Thuận
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TâyNinh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TâyNinh">
             <summary>
             Tây Ninh
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ĐồngNai">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ĐồngNai">
             <summary>
             Đồng Nai
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BìnhThuận">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BìnhThuận">
             <summary>
             Bình Thuận
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.LongAn">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.LongAn">
             <summary>
             Long An
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BàRịaVũngTàu">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BàRịaVũngTàu">
             <summary>
             Bà Rịa–Vũng Tàu
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.AnGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.AnGiang">
             <summary>
             An Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ĐồngTháp">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ĐồngTháp">
             <summary>
             Đồng Tháp
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TiềnGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TiềnGiang">
             <summary>
             Tiền Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.KiênGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.KiênGiang">
             <summary>
             Kiên Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.VĩnhLong">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.VĩnhLong">
             <summary>
             Vĩnh Long
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BếnTre">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BếnTre">
             <summary>
             Bến Tre
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TràVinh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TràVinh">
             <summary>
             Trà Vinh
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.SócTrăng">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.SócTrăng">
             <summary>
             Sóc Trăng
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BắcKạn">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BắcKạn">
             <summary>
             Bắc Kạn
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BắcGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BắcGiang">
             <summary>
             Bắc Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BạcLiêu">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BạcLiêu">
             <summary>
             Bạc Liêu
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BắcNinh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BắcNinh">
             <summary>
             Bắc Ninh
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BìnhDương">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BìnhDương">
             <summary>
             Bình Dương
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.BìnhPhước">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.BìnhPhước">
             <summary>
             Bình Phước
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.CàMau">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.CàMau">
             <summary>
             Cà Mau
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HảiDương">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HảiDương">
             <summary>
             Hải Dương
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HàNam">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HàNam">
             <summary>
             Hà Nam
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HưngYên">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HưngYên">
             <summary>
             Hưng Yên
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.NamĐịnh">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.NamĐịnh">
             <summary>
             Nam Định
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.PhúThọ">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.PhúThọ">
             <summary>
             Phú Thọ
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.TháiNguyên">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.TháiNguyên">
             <summary>
             Thái Nguyên
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.VĩnhPhúc">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.VĩnhPhúc">
             <summary>
             Vĩnh Phúc
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ĐiệnBiên">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ĐiệnBiên">
             <summary>
             Điện Biên
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.ĐắkNông">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.ĐắkNông">
             <summary>
             Đắk Nông
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HậuGiang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HậuGiang">
             <summary>
             Hậu Giang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.CanTho">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.CanTho">
             <summary>
             Can Tho
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.DaNang">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.DaNang">
             <summary>
             Da Nang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.Hanoi">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.Hanoi">
             <summary>
             Hanoi
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.Haiphong">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.Haiphong">
             <summary>
             Haiphong
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.HoChiMinhCity">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.HoChiMinhCity">
             <summary>
             Ho Chi Minh City
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues.Unknown">
+        <member name="F:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues.Unknown">
             <summary>
             Unknown
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Countries.Asia.VietNamRegions.ToRegionCode(Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues)">
+        <member name="M:Cosmos.I18N.Countries.Asia.VietnamRegions.ToRegionCode(Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues)">
             <summary>
-            Convert <see cref="T:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
+            Convert <see cref="T:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues"/> to region code likes 'DE', 'WAL'.
             </summary>
             <param name="values"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Countries.Asia.VietNamRegions.ToFullRegionCode(Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues)">
+        <member name="M:Cosmos.I18N.Countries.Asia.VietnamRegions.ToFullRegionCode(Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues)">
             <summary>
-            Convert <see cref="T:Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
+            Convert <see cref="T:Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues"/> to full region code likes 'BE-DE', 'BE-WAL'.
             </summary>
             <param name="values"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Countries.Asia.VietNamRegions.ToCountry(Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues)">
+        <member name="M:Cosmos.I18N.Countries.Asia.VietnamRegions.ToCountry(Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues)">
             <summary>
             Convert to <see cref="T:Cosmos.I18N.Countries.Country"/>
             </summary>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Countries.Asia.VietNamRegions.ToCountryCode(Cosmos.I18N.Countries.Asia.VietNamRegions.EnumValues)">
+        <member name="M:Cosmos.I18N.Countries.Asia.VietnamRegions.ToCountryCode(Cosmos.I18N.Countries.Asia.VietnamRegions.EnumValues)">
             <summary>
             Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
             </summary>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Countries.Asia.VietNamRegions.GetAllRegonCodes">
+        <member name="M:Cosmos.I18N.Countries.Asia.VietnamRegions.GetAllRegonCodes">
             <summary>
             Get all region code
             </summary>
@@ -20629,7 +20629,7 @@
         <member name="F:Cosmos.I18N.Countries.Country.Bolivia">
             <summary>
             玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_boliweiya
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Country.Bonaire">
@@ -20875,7 +20875,7 @@
         <member name="F:Cosmos.I18N.Countries.Country.Gabon">
             <summary>
             加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-            Cosmos i18n code: i18n_country_eguaduoer
+            Cosmos i18n code: i18n_country_jiapeng
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Country.Georgia">
@@ -21018,7 +21018,7 @@
             Cosmos i18n code: i18n_country_cnhxianggang
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Country.HolySee">
+        <member name="F:Cosmos.I18N.Countries.Country.Vatican">
             <summary>
             梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
             Cosmos i18n code: i18n_country_fandigang
@@ -21098,7 +21098,7 @@
         </member>
         <member name="F:Cosmos.I18N.Countries.Country.Jamaica">
             <summary>
-            牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+            牙买加（Jamaica，北美洲，JM，JAM，388） <br />
             Cosmos i18n code: i18n_country_yamaijia
             </summary>
         </member>
@@ -21916,7 +21916,7 @@
             Cosmos i18n code: i18n_country_meishuweierjing
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.Country.VietNam">
+        <member name="F:Cosmos.I18N.Countries.Country.Vietnam">
             <summary>
             越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
             Cosmos i18n code: i18n_country_yuenan
@@ -22146,7 +22146,7 @@
         <member name="F:Cosmos.I18N.Countries.CountryCode.BO">
             <summary>
             玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_boliweiya
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.CountryCode.BQ">
@@ -22428,7 +22428,7 @@
         <member name="F:Cosmos.I18N.Countries.CountryCode.GA">
             <summary>
             加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-            Cosmos i18n code: i18n_country_eguaduoer
+            Cosmos i18n code: i18n_country_jiapeng
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.CountryCode.GB">
@@ -22645,7 +22645,7 @@
         </member>
         <member name="F:Cosmos.I18N.Countries.CountryCode.JM">
             <summary>
-            牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+            牙买加（Jamaica，北美洲，JM，JAM，388） <br />
             Cosmos i18n code: i18n_country_yamaijia
             </summary>
         </member>
@@ -23800,7 +23800,7 @@
         <member name="P:Cosmos.I18N.Countries.CountryOf.Bolivia">
             <summary>
             玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_boliweiya
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.Bonaire">
@@ -24046,7 +24046,7 @@
         <member name="P:Cosmos.I18N.Countries.CountryOf.Gabon">
             <summary>
             加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
-            Cosmos i18n code: i18n_country_eguaduoer
+            Cosmos i18n code: i18n_country_jiapeng
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.Germany">
@@ -24183,7 +24183,7 @@
             Cosmos i18n code: i18n_country_xianggang
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryOf.HolySee">
+        <member name="P:Cosmos.I18N.Countries.CountryOf.Vatican">
             <summary>
             梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
             Cosmos i18n code: i18n_country_fandigang
@@ -24245,7 +24245,7 @@
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.Jamaica">
             <summary>
-            牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+            牙买加（Jamaica，北美洲，JM，JAM，388） <br />
             Cosmos i18n code: i18n_country_yamaijia
             </summary>
         </member>
@@ -25076,7 +25076,7 @@
             Cosmos i18n code: i18n_country_meishuweierjing
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryOf.VietNam">
+        <member name="P:Cosmos.I18N.Countries.CountryOf.Vietnam">
             <summary>
             越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
             Cosmos i18n code: i18n_country_yuenan
@@ -26636,6 +26636,29 @@
             Zealand
             </summary>
         </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.DenmarkRegions.Faroe">
+            <summary>
+            法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            Cosmos i18n code: i18n_country_faluo
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.DenmarkRegions.Special">
+            <summary>
+            Special regions
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.DenmarkRegions.Special.Faroe">
+            <summary>
+            法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            Cosmos i18n code: i18n_country_faluo
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.DenmarkRegions.Special.FaroeCode">
+            <summary>
+            法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            Cosmos i18n code: i18n_country_faluo
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.Europe.DenmarkRegions.EnumValues">
             <summary>
             Enum values for Denmark regions.
@@ -26664,6 +26687,12 @@
         <member name="F:Cosmos.I18N.Countries.Europe.DenmarkRegions.EnumValues.Zealand">
             <summary>
             Zealand
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.DenmarkRegions.EnumValues.Faroe">
+            <summary>
+            法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            Cosmos i18n code: i18n_country_faluo
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Europe.DenmarkRegions.EnumValues.Unknown">
@@ -26697,6 +26726,20 @@
             Convert to <see cref="T:Cosmos.I18N.Countries.CountryCode"/>
             </summary>
             <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.DenmarkRegions.FromSpecialRegions(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Convert from special regions of Denmark
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.Europe.DenmarkRegions.FromSpecialRegions(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Convert from special regions of Denmark
+            </summary>
+            <param name="code"></param>
             <returns></returns>
         </member>
         <member name="M:Cosmos.I18N.Countries.Europe.DenmarkRegions.GetAllRegonCodes">
@@ -26920,6 +26963,12 @@
             Get all region code
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.Faroe">
+            <summary>
+            法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            Cosmos i18n code: i18n_country_faluo
+            </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.Europe.Faroe.Instance">
             <summary>
@@ -28689,23 +28738,6 @@
         <member name="F:Cosmos.I18N.Countries.Europe.Guernsey.I18N_IDENTITY_CODE">
             <summary>
             I18N
-            </summary>
-        </member>
-        <member name="T:Cosmos.I18N.Countries.Europe.HolySee">
-            <summary>
-            梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
-            Cosmos i18n code: i18n_country_fandigang
-            </summary>
-        </member>
-        <member name="P:Cosmos.I18N.Countries.Europe.HolySee.Instance">
-            <summary>
-            梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
-            Cosmos i18n code: i18n_country_fandigang
-            </summary>
-        </member>
-        <member name="F:Cosmos.I18N.Countries.Europe.HolySee.I18N_IDENTITY_CODE">
-            <summary>
-            i18n
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Hungary">
@@ -35004,6 +35036,23 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.Vatican">
+            <summary>
+            梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
+            Cosmos i18n code: i18n_country_fandigang
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.Vatican.Instance">
+            <summary>
+            梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
+            Cosmos i18n code: i18n_country_fandigang
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Vatican.I18N_IDENTITY_CODE">
+            <summary>
+            i18n
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.CountriesExtensions">
             <summary>
             Countries Extensions
@@ -36986,6 +37035,11 @@
             Cosmos i18n code: i18n_country_saerwaduo
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.ElSalvador.I18N_IDENTITY_CODE">
+            <summary>
+            i18n
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Greenland">
             <summary>
             格陵兰岛（Greenland，北美洲，GL，GRL，304） <br />
@@ -37281,13 +37335,13 @@
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.Jamaica">
             <summary>
-            牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+            牙买加（Jamaica，北美洲，JM，JAM，388） <br />
             Cosmos i18n code: i18n_country_yamaijia
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.NorthAmerica.Jamaica.Instance">
             <summary>
-            牙买加（Republic Of Iraq，北美洲，JM，JAM，388） <br />
+            牙买加（Jamaica，北美洲，JM，JAM，388） <br />
             Cosmos i18n code: i18n_country_yamaijia
             </summary>
         </member>
@@ -41704,7 +41758,7 @@
         <member name="T:Cosmos.I18N.Countries.SouthAmerica.Bolivia">
             <summary>
             玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_boliweiya
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.SouthAmerica.Bolivia.Instance">

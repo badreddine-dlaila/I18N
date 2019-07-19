@@ -4,18 +4,18 @@ namespace Cosmos.I18N.Countries.Asia
     /// 越南（Socialist Republic of Vietnam，亚洲，VN，VNM，704），越南社会主义共和国 <br />
     /// Cosmos i18n code: i18n_country_yuenan
     /// </summary>
-    public static class VietNam
+    public static class Vietnam
     {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static VietNam()
+        static Vietnam()
         {
             _country = new CountryInfo
             {
-                Country = Country.VietNam,
+                Country = Country.Vietnam,
                 CountryType = CountryType.Country,
-                BeongsToCountry = Country.VietNam,
+                BeongsToCountry = Country.Vietnam,
                 UNCode = "704",
                 Alpha2Code = "VN",
                 Alpha3Code = "VNM",

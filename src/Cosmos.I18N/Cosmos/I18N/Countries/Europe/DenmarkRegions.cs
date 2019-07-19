@@ -10,7 +10,8 @@ namespace Cosmos.I18N.Countries.Europe
     /// </summary>
     public static class DenmarkRegions
     {
-           #region Gets regions
+
+        #region Gets regions
 
         /// <summary>
         /// Northern Denmark
@@ -36,8 +37,33 @@ namespace Cosmos.I18N.Countries.Europe
         /// Zealand
         /// </summary>
         public static EnumValues Zealand => EnumValues.Zealand;
-        
+
+        /// <summary>
+        /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+        /// Cosmos i18n code: i18n_country_faluo
+        /// </summary>
+        public static EnumValues Faroe => EnumValues.Faroe;
+
         #endregion
+
+        /// <summary>
+        /// Special regions
+        /// </summary>
+        public static class Special
+        {
+            /// <summary>
+            /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            /// Cosmos i18n code: i18n_country_faluo
+            /// </summary>
+            // ReSharper disable once MemberHidesStaticFromOuterClass
+            public static Country Faroe => Country.Faroe;
+
+            /// <summary>
+            /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            /// Cosmos i18n code: i18n_country_faluo
+            /// </summary>
+            public static CountryCode FaroeCode => CountryCode.FO;
+        }
 
         /// <summary>
         /// Enum values for Denmark regions.
@@ -48,31 +74,44 @@ namespace Cosmos.I18N.Countries.Europe
             /// Northern Denmark
             /// </summary>
             [AliasInShort("81")]
+            [RegionFlag("main")]
             NorthernDenmark,
 
             /// <summary>
             /// Central Denmark
             /// </summary>
             [AliasInShort("82")]
+            [RegionFlag("main")]
             CentralDenmark,
 
             /// <summary>
             /// Southern Denmark
             /// </summary>
             [AliasInShort("83")]
+            [RegionFlag("main")]
             SouthernDenmark,
 
             /// <summary>
             /// Capital Region
             /// </summary>
             [AliasInShort("84")]
+            [RegionFlag("main")]
             CapitalRegion,
 
             /// <summary>
             /// Zealand
             /// </summary>
             [AliasInShort("85")]
+            [RegionFlag("main")]
             Zealand,
+
+            /// <summary>
+            /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
+            /// Cosmos i18n code: i18n_country_faluo
+            /// </summary>
+            [AliasInShort("FO")]
+            [RegionFlag("overseas")]
+            Faroe,
 
             /// <summary>
             /// Unknown
@@ -111,7 +150,13 @@ namespace Cosmos.I18N.Countries.Europe
         /// <returns></returns>
         public static Country ToCountry(this EnumValues value)
         {
-            return Country.Denmark;
+            switch (value)
+            {
+                case EnumValues.Faroe:
+                    return Country.Faroe;
+                default:
+                    return Country.Denmark;
+            }
         }
 
         /// <summary>
@@ -121,7 +166,49 @@ namespace Cosmos.I18N.Countries.Europe
         /// <returns></returns>
         public static CountryCode ToCountryCode(this EnumValues value)
         {
-            return CountryCode.DK;
+            switch (value)
+            {
+                case EnumValues.Faroe:
+                    return CountryCode.FO;
+                default:
+                    return CountryCode.DK;
+            }
+        }
+
+        #endregion
+        
+            #region Static methods
+
+        /// <summary>
+        /// Convert from special regions of Denmark
+        /// </summary>
+        /// <param name="country"></param>
+        /// <returns></returns>
+        public static EnumValues FromSpecialRegions(Country country)
+        {
+            switch (country)
+            {
+                case Country.Faroe:
+                    return EnumValues.Faroe;
+                default:
+                    return EnumValues.Unknown;
+            }
+        }
+
+        /// <summary>
+        /// Convert from special regions of Denmark
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public static EnumValues FromSpecialRegions(CountryCode code)
+        {
+            switch (code)
+            {
+                case CountryCode.FO:
+                    return EnumValues.Faroe;
+                default:
+                    return EnumValues.Unknown;
+            }
         }
 
         #endregion
@@ -142,5 +229,6 @@ namespace Cosmos.I18N.Countries.Europe
         }
 
         #endregion
+
     }
 }
