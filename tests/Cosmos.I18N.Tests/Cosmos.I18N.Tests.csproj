@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Cosmos.I18N\Cosmos.I18N.csproj" />
+      <ProjectReference Include="..\..\src\Cosmos.I18N.Countries\Cosmos.I18N.Countries.csproj" />
     </ItemGroup>
 
 </Project>

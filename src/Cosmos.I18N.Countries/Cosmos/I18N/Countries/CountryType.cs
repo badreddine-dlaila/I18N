@@ -2,6 +2,9 @@
 
 namespace Cosmos.I18N.Countries
 {
+    /// <summary>
+    /// Country type
+    /// </summary>
     public enum CountryType
     {
         /// <summary>

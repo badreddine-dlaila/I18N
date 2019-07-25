@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.Core.I18NIdentityCodeAttribute">
+            <summary>
+            Attribute of cosmos i18n identity core
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Core.I18NIdentityCodeAttribute.IdentityCode">
+            <summary>
+            Identity code
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.I18NIdentityCodeAttribute.#ctor(System.String)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Core.I18NIdentityCodeAttribute"/>
+            </summary>
+            <param name="identityCode"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Core.IgnoreRegionAttribute">
+            <summary>
+            Ignore Region Attribute
+            </summary>
+        </member>
+    </members>
+</doc>

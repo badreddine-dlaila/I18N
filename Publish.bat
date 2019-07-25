@@ -10,6 +10,8 @@ for /R "nuget_pub" %%s in (*) do (
     del %%s
 )
 
+dotnet pack src/Cosmos.I18N.Abstractions -c Release -o ../../nuget_pub
+dotnet pack src/Cosmos.I18N.Countries -c Release -o ../../nuget_pub
 dotnet pack src/Cosmos.I18N -c Release -o ../../nuget_pub
 
 for /R "nuget_pub" %%s in (*symbols.nupkg) do (

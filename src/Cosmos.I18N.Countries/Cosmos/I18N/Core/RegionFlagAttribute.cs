@@ -8,6 +8,9 @@ namespace Cosmos.I18N.Core
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = true, Inherited = false)]
     public class RegionFlagAttribute : Attribute
     {
+        /// <summary>
+        /// Flag
+        /// </summary>
         public string Flag { get; }
 
         /// <summary>

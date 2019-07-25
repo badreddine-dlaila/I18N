@@ -149,7 +149,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         public static EnumValues Santander => EnumValues.Santander;
 
         /// <summary>
-        /// San Andrés & Providencia
+        /// San Andrés and Providencia
         /// </summary>
         public static EnumValues SanAndrésAndProvidencia => EnumValues.SanAndrésAndProvidencia;
 
@@ -348,7 +348,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
             Santander,
 
             /// <summary>
-            /// San Andrés & Providencia, SAP
+            /// San Andrés and Providencia, SAP
             /// </summary>
             [AliasInShort("SAP")]
             SanAndrésAndProvidencia,
