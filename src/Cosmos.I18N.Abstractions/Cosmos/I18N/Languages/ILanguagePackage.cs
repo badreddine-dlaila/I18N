@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Cosmos.I18N.Languages {
-    public interface ILanguagePackage : IDisposable {
+namespace Cosmos.I18N.Languages
+{
+    public interface ILanguagePackage : IDisposable
+    {
         Locale Language { get; }
         IReadOnlyDictionary<string, ILanguageResource> Resources { get; }
         void AddResource(ILanguageResource resource);

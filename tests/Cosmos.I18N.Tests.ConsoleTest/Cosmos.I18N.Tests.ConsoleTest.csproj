@@ -6,6 +6,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cosmos.I18N.Adapters.Json\Cosmos.I18N.Adapters.Json.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.I18N.Adapters.Xml\Cosmos.I18N.Adapters.Xml.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.I18N.RunsOn.Console\Cosmos.I18N.RunsOn.Console.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.I18N.Extensions.Console\Cosmos.I18N.Extensions.Console.csproj" />
   </ItemGroup>
 </Project>

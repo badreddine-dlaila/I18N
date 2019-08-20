@@ -4,20 +4,29 @@ using System.Globalization;
 using System.Linq;
 using EnumsNET;
 
-namespace Cosmos.I18N.Languages {
-    public class LanguageManager {
-        private readonly IList<Locale> _usedLanguages = new List<Locale>();
+namespace Cosmos.I18N.Languages
+{
+    public class LanguageManager : ILanguageManager, ILanguageManSetter
+    {
+        private readonly IList<Locale> _usedLanguages;
+        private readonly Dictionary<Locale, ILanguagePackage> _languagePackages;
         private readonly object _langObject = new object();
 
-        public LanguageManager() { }
+        public LanguageManager()
+        {
+            _usedLanguages = new List<Locale>();
+            _languagePackages = new Dictionary<Locale, ILanguagePackage>();
+        }
 
         #region Contains
 
-        public bool Contains(string langName) {
+        public bool Contains(string langName)
+        {
             return !string.IsNullOrWhiteSpace(langName) && Contains(langName.ToLocale());
         }
 
-        public bool Contains(Locale locale) {
+        public bool Contains(Locale locale)
+        {
             return _usedLanguages.Contains(locale);
         }
 
@@ -25,28 +34,48 @@ namespace Cosmos.I18N.Languages {
 
         #region Get language
 
-        public Locale GetLanguage(string langName) {
+        public Locale GetLanguage(string langName)
+        {
             if (string.IsNullOrWhiteSpace(langName)) return GetCurrentCultureLanguage();
             if (!Contains(langName)) return GetCurrentCultureLanguage();
             return langName.ToLocale();
         }
 
-        public Locale GetCurrentCultureLanguage() {
+        public Locale GetCurrentCultureLanguage()
+        {
             return CultureInfo.CurrentCulture.Name.ToLocale();
         }
 
         #endregion
 
-        #region Register used language
+        #region Get language package
 
-        public void RegisterUsedLangage(string lang) {
-            if (string.IsNullOrWhiteSpace(lang)) throw new ArgumentNullException(nameof(lang));
-            RegisterUsedLangage(lang.ToLocale());
+        public ILanguagePackage GetLanguagePackage(string langName)
+        {
+            return GetLanguagePackage(GetLanguage(langName));
         }
 
-        public void RegisterUsedLangage(Locale locale) {
-            lock (_langObject) {
-                if (!Contains(locale)) {
+        public ILanguagePackage GetLanguagePackage(Locale language)
+        {
+            return _languagePackages.TryGetValue(language, out var ret) ? ret : null;
+        }
+
+        #endregion
+        
+        #region Register used language
+
+        public void RegisterUsedLanguage(string lang)
+        {
+            if (string.IsNullOrWhiteSpace(lang)) throw new ArgumentNullException(nameof(lang));
+            RegisterUsedLanguage(lang.ToLocale());
+        }
+
+        public void RegisterUsedLanguage(Locale locale)
+        {
+            lock (_langObject)
+            {
+                if (!Contains(locale))
+                {
                     _usedLanguages.Add(locale);
                 }
             }
@@ -54,7 +83,26 @@ namespace Cosmos.I18N.Languages {
 
         #endregion
 
-        public override string ToString() {
+        #region Register language packages
+
+        void ILanguageManSetter.RegisterLanguagePackages(IEnumerable<ILanguagePackage> languagePackages)
+        {
+            if (languagePackages == null)
+            {
+                return;
+            }
+
+            foreach (var package in languagePackages)
+            {
+                if (_languagePackages.ContainsKey(package.Language)) continue;
+                _languagePackages.Add(package.Language, package);
+            }
+        }
+
+        #endregion
+
+        public override string ToString()
+        {
             return string.Join(",", _usedLanguages.Select(x => x.GetName()));
         }
     }

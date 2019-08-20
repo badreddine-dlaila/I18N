@@ -2,7 +2,7 @@
 using System.IO;
 using Cosmos.I18N.Adapters.Json;
 using Cosmos.I18N.Languages;
-using Cosmos.I18N.RunsOn.Console;
+using Cosmos.I18N.Extensions.Console;
 
 namespace Cosmos.I18N.Tests.ConsoleTest {
     class Program {

@@ -5,7 +5,7 @@ namespace Cosmos.I18N {
     public interface ILanguageServiceProvider {
         ILanguagePackage GetLanguagePackage(string langName);
         ILanguagePackage GetLanguagePackage(Locale language);
-        LanguageManager GetLanguageManager();
+        ILanguageManager GetLanguageManager();
         TranslationProcessor GetTranslationProcessor();
     }
 }
