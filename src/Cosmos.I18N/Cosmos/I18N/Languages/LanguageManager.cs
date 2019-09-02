@@ -61,7 +61,7 @@ namespace Cosmos.I18N.Languages
         }
 
         #endregion
-        
+
         #region Register used language
 
         public void RegisterUsedLanguage(string lang)
@@ -85,18 +85,26 @@ namespace Cosmos.I18N.Languages
 
         #region Register language packages
 
+        void ILanguageManSetter.RegisterLanguagePackage(ILanguagePackage languagePackage)
+        {
+            if (languagePackage == null)
+                return;
+
+            if (_languagePackages.ContainsKey(languagePackage.Language))
+                return;
+
+            _languagePackages.Add(languagePackage.Language, languagePackage);
+        }
+
         void ILanguageManSetter.RegisterLanguagePackages(IEnumerable<ILanguagePackage> languagePackages)
         {
             if (languagePackages == null)
-            {
                 return;
-            }
+
+            var setter = (ILanguageManSetter) this;
 
             foreach (var package in languagePackages)
-            {
-                if (_languagePackages.ContainsKey(package.Language)) continue;
-                _languagePackages.Add(package.Language, package);
-            }
+                setter.RegisterLanguagePackage(package);
         }
 
         #endregion

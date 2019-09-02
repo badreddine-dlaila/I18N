@@ -19,7 +19,7 @@ namespace Cosmos.I18N.Languages
         }
 
         public Locale BindingTo { get; set; }
-
+        
         public string Name { get; }
 
         public string ResourceKey => Name;

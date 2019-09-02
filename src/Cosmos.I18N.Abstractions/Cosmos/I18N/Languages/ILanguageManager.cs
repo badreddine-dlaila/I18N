@@ -10,6 +10,5 @@ namespace Cosmos.I18N.Languages
         ILanguagePackage GetLanguagePackage(Locale language);
         void RegisterUsedLanguage(string lang);
         void RegisterUsedLanguage(Locale locale);
-        
     }
 }

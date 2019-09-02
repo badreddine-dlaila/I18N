@@ -8,12 +8,14 @@ namespace Cosmos.I18N
     /// <summary>
     /// Text
     /// </summary>
-    public struct Text : IEquatable<Text>
+    public struct Text : IText, IEquatable<Text>
     {
         private Locale Language { get; set; }
         private string ResourceKey { get; set; }
         private string OriginText { get; set; }
         private object[] FormatingParameters { get; set; }
+
+        private readonly TranslationProcessor _translationProcessor;
 
         /// <summary>
         /// Create a new instance of <see cref="Text"/>.
@@ -21,7 +23,8 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="resourceKey"></param>
         /// <param name="language"></param>
-        public Text(string text, string resourceKey, Locale language) : this(text, resourceKey, language, null) { }
+        public Text(string text, string resourceKey, Locale language)
+            : this(text, resourceKey, language, null) { }
 
         /// <summary>
         /// Create a new instance of <see cref="Text"/>.
@@ -36,6 +39,36 @@ namespace Cosmos.I18N
             ResourceKey = resourceKey;
             OriginText = text;
             FormatingParameters = parameters;
+
+            _translationProcessor = StaticInstanceForILanguageServiceProvider.Instance.GetTranslationProcessor();
+        }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="resourceKey"></param>
+        /// <param name="language"></param>
+        public Text(TranslationProcessor processor, string text, string resourceKey, Locale language)
+            : this(processor, text, resourceKey, language, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="resourceKey"></param>
+        /// <param name="language"></param>
+        /// <param name="parameters"></param>
+        public Text(TranslationProcessor processor, string text, string resourceKey, Locale language, params object[] parameters)
+        {
+            Language = language;
+            ResourceKey = resourceKey;
+            OriginText = text;
+            FormatingParameters = parameters;
+
+            _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
         }
 
         /// <summary>
@@ -51,13 +84,9 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public override string ToString()
         {
-            var processor = StaticInstanceForILanguageServiceProvider.Instance.GetTranslationProcessor();
-            var text = processor.Translate(Language, ResourceKey, OriginText);
+            var text = _translationProcessor.Translate(Language, ResourceKey, OriginText);
             if (FormatingParameters != null)
-            {
                 text = string.Format(text, FormatingParameters);
-            }
-
             return text;
         }
 

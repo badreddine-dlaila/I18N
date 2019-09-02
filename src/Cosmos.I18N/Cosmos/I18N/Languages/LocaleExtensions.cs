@@ -13,7 +13,7 @@ namespace Cosmos.I18N.Languages
         public static Locale ToLocale(this string lang)
         {
             if (string.IsNullOrWhiteSpace(lang)) throw new ArgumentNullException(nameof(lang));
-            return Enums.GetMember<Locale>(lang, true).Value;
+            return EnumsNET.Enums.GetMember<Locale>(lang, true).Value;
         }
     }
 }
