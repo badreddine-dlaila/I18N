@@ -18,15 +18,22 @@ namespace Microsoft.Extensions.DependencyInjection
             var options = new I18NOptions();
             optionAct?.Invoke(options);
 
-//            var languageManager = new LanguageManager();
-//            foreach (var lang in options.RegisteredLanguages) languageManager.RegisterUsedLangage(lang);
-//            foreach (var package in options.LanguagePackages) services.AddSingleton(package.Value);
+            var languageManager = new LanguageManager();
+            var languageSetter = languageManager as ILanguageManSetter;
+            foreach (var lang in options.RegisteredLanguages) languageManager.RegisterUsedLanguage(lang);
+            foreach (var package in options.LanguagePackages)
+            {
+                var languagePackage = package.Value;
+                languageSetter.RegisterLanguagePackage(languagePackage);
+                services.AddSingleton(languagePackage);
+            }
 
-//            services.AddSingleton(languageManager);
+            services.AddSingleton(languageManager);
+            services.AddSingleton<ITextProvider, TextProvider>();
             services.AddSingleton<ILanguageServiceProvider, MsdiLanguageServiceProvider>();
             services.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ILanguagePackage>().ToDictionary(package => package.Language)));
             services.AddSingleton(provider => new StaticProviderHack(provider.GetRequiredService<ILanguageServiceProvider>()));
-
+           
             return services;
         }
     }

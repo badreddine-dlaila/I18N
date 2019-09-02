@@ -3,7 +3,7 @@ using Cosmos.I18N.Core;
 
 namespace Cosmos.I18N.Extensions.DependencyInjection.Core
 {
-    public class StaticProviderHack
+    internal class StaticProviderHack
     {
         public StaticProviderHack(ILanguageServiceProvider languageServiceProvider)
         {

@@ -13,7 +13,6 @@ namespace Cosmos.I18N.Extensions.Console.Core
 
         internal static I18NServiceCollection Initialize(I18NServiceCollection serviceImpl)
         {
-
             return serviceImpl;
         }
 
@@ -22,16 +21,24 @@ namespace Cosmos.I18N.Extensions.Console.Core
             if (services is I18NServiceCollection serviceImpl)
             {
                 var languageManager = serviceImpl.ExposeLanguageManager;
+                var languageSetter = languageManager as ILanguageManSetter;
                 foreach (var lang in serviceImpl.ExposeOptions.RegisteredLanguages) languageManager.RegisterUsedLanguage(lang);
-                foreach (var package in serviceImpl.ExposeOptions.LanguagePackages) serviceImpl.AddDependency(s => s.AddSingleton(package.Value));
+                foreach (var package in serviceImpl.ExposeOptions.LanguagePackages)
+                {
+                    var languagePackage = package.Value;
+                    languageSetter.RegisterLanguagePackage(languagePackage);
+                    serviceImpl.AddDependency(s => s.AddSingleton(languagePackage));
+                }
 
                 serviceImpl.AddDependency(s =>
                 {
                     s.AddSingleton(languageManager);
+                    s.AddSingleton<ITextProvider, TextProvider>();
                     s.AddSingleton<ILanguageServiceProvider, ConsoleLanguageServiceProvider>();
                     s.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ILanguagePackage>().ToDictionary(package => package.Language)));
+                    });
 
-                });
+
             }
 
             SetResolver(services.Build());
