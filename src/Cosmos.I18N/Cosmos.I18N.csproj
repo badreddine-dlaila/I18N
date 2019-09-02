@@ -26,6 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Cosmos.Extensions" Version="0.1.1-alpha3-123037" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
     <PackageReference Include="Enums.NET" Version="2.3.2" />
