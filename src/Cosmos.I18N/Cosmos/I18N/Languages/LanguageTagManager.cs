@@ -10,13 +10,13 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="langTag"></param>
         /// <returns></returns>
-        public static ILanguageTag Create(string langTag)
+        public static LanguageTag Create(string langTag)
         {
             if (string.IsNullOrWhiteSpace(langTag))
                 return default;
 
             if (LanguageTagCache.Contains(langTag))
-                return LanguageTagCache.Get(langTag);
+                return LanguageTagCache.Get<LanguageTag>(langTag);
 
             var instance = LanguageTagCreator.Create(langTag);
 
