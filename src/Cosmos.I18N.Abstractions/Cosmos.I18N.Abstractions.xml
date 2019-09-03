@@ -25,5 +25,116 @@
             Ignore Region Attribute
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.IText">
+            <summary>
+            Interface for text
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.IText.ToString">
+            <summary>
+            To string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.ITextProvider">
+            <summary>
+            Interface for Text Provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.ILanguageTag">
+            <summary>
+            Interface for language tag
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetLanguage">
+            <summary>
+            Returns the mandatory 2 character language subtag.
+            </summary>
+            <returns>A string describing a language subtag, or null if no such subtag present (indicating a null or error instance).</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.ToString">
+            <summary>
+            Returns a full language tag
+            </summary>
+            <returns>A string describing the full language tag or "" if null or error instance.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetExtlang">
+            <summary>
+            Returns the optional 3 character extlang subtag.
+            </summary>
+            <returns>A string describing a extlang subtag, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetScript">
+            <summary>
+            Returns the optional 4 character script subtag.
+            </summary>
+            <returns>A string describing a script subtag, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetRegion">
+            <summary>
+            Returns the optional 2 or 3 character region subtag.
+            </summary>
+            <returns>A string describing a region subtag, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetVariant">
+            <summary>
+            Returns zero or more optional variant subtags.
+            </summary>
+            <returns>An array of strings describing the variant subtags, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetExtension">
+            <summary>
+            Returns the optional extension subtag.
+            </summary>
+            <returns>A string describing an extension subtag, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetPrivateuse">
+            <summary>
+            Returns the optional privateuse subtag.
+            </summary>
+            <returns>A string describing a privateuse subtag, or null if no such subtag present.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetParent">
+            <summary>
+            Returns an object representing any logical parent of the tag.
+            </summary>
+            <returns>Parent object or null if no parent.</returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetMaxParents">
+            <summary>
+            Returns the maximum number of parents possible.
+            This is really a static value provided by the underlying impl.
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetCultureInfo">
+            <summary>
+            Corresponding CultureInfo instance, or null if the langtag is unsupported on this system.
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.GetNativeNameTitleCase">
+            <summary>
+            If the system supports a cultureinfo object for the language, this is the native name of 
+            the language suitable for user display, otherwise it is the language tag string.
+            </summary>
+        </member>
     </members>
 </doc>

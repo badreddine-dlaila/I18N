@@ -4,6 +4,41 @@
         <name>Cosmos.I18N</name>
     </assembly>
     <members>
+        <member name="T:Cosmos.I18N.Core.Extensions.ObjectExtensions">
+            <summary>
+            Object extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.Extensions.ObjectExtensions.EqualsSupportsNull(System.Object,System.Object)">
+            <summary>
+            Equals support null
+            </summary>
+            <param name="obj"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Core.Extensions.StringExtensions.IsSet(System.String)">
+            <summary>
+            String extension method to simplify testing for non-null/non-empty values.
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.Extensions.StringExtensions.UrlPrependPath(System.String,System.String)">
+            <summary>
+            Prepends a folder to the path part of the passed URL string.
+            </summary>
+            <param name="url">Either an absolute or relative URL string.</param>
+            <param name="folder">Folder part to be prepended. E.g. "account".</param>
+            <returns>Amended URL string.</returns>
+            <remarks>
+            Examples:
+            <para>
+            http://example.com , en -> http://example.com/en
+            http://example.com/ , en -> http://example.com/en
+            http://example.com/accounts , en -> http://example.com/en/accounts
+            / , en -> /en
+            </para>
+            </remarks>
+        </member>
         <member name="T:Cosmos.I18N.Core.II18NServiceCollection">
             <summary>
             Interface of i18n service collection
@@ -109,6 +144,319 @@
             <param name="originText"></param>
             <returns></returns>
         </member>
+        <member name="T:Cosmos.I18N.Languages.LanguageTag">
+            <summary>
+            Language tag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.Parent">
+            <summary>
+            Parent node of such language tag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.OriginalLanguageTag">
+            <summary>
+            Original language tag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.LowerCaseLanguageTag">
+            <summary>
+            Language tag in lower-case
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.Language">
+            <summary>
+            Language
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.Script">
+            <summary>
+            Script
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.Region">
+            <summary>
+            Region
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.PrivateUse">
+            <summary>
+            PrivateUse
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.GlobalKey">
+            <summary>
+            Globak key
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.CultureInfo">
+            <summary>
+            Culture info
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.NativeNameTitleCase">
+            <summary>
+            Native name in title-case
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Match(Cosmos.I18N.Languages.LanguageTag,Cosmos.I18N.Languages.MatchLevel)">
+            <summary>
+            Match
+            </summary>
+            <param name="appLanguage"></param>
+            <param name="matchLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Match(Cosmos.I18N.Languages.LanguageTag[],Cosmos.I18N.Languages.LanguageTag@,Cosmos.I18N.Languages.MatchLevel)">
+            <summary>
+            Match
+            </summary>
+            <param name="appLanguages"></param>
+            <param name="matchedTag"></param>
+            <param name="matchLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.GetTagFromUrl(System.String,System.UriKind,System.String@)">
+            <summary>
+            Helper for detecting a URL prefixed with a langtag part, and if found outputs
+            both the langtag and the URL with the prefix removed.
+            </summary>
+            <param name="url">Either an absolute or relative URL string, as specified by the uriKind parameter.</param>
+            <param name="kind">
+            Indicates the type of URI in the url parameter. If the URL is known to be relative, this method is more efficient if this 
+            parameter is set to UriKind.Relative.
+            </param>
+            <param name="urlPatched">
+            On success, set to the URL with the prefix path part removed.
+            On failure, set to value of url param.
+            </param>
+            <remarks>
+            This method does not check for the validity of the returned langtag other than
+            it matching the pattern of a langtag as supported by this LanguageTag class.
+            </remarks>
+            <returns>On success a langtag string, otherwise null.</returns>
+            <remarks>
+            <para>
+            For URL /zh-Hans/account/signup we return "zh-Hans" and output /account/signup.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.SetTagInUrl(System.String,System.UriKind,System.String)">
+            <summary>
+            Patches in the langtag into the passed url, replacing any extant langtag in the url if necessary.
+            </summary>
+            <param name="url">Either an absolute or relative URL string, as specified by the uriKind parameter.</param>
+            <param name="kind">
+            Indicates the type of URI in the url parameter. If the URL is known to be relative, this method is more efficient if this 
+            parameter is set to UriKind.Relative.
+            </param>
+            <param name="langtag">
+            Optional langtag to be patched into the URL, or null if any langtag 
+            to be removed from the URL.
+            </param>
+            <returns>UriBuilder containing the modified version of url.</returns>
+            <remarks>
+            <para>"http://example.com/account/signup"         , "en" -> "http://example.com/en/account/signup"</para>
+            <para>"http://example.com/zh-Hans/account/signup" , "en" -> "http://example.com/en/account/signup"</para>
+            </remarks>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.ToString">
+            <returns>
+            Language tag string.
+            Supports a subset of BCP 47 language tag spec corresponding to the Windows
+            support for language names, namely the following subtags:
+                language (mandatory, 2 alphachars)
+                script   (optional, 4 alphachars)
+                region   (optional, 2 alphachars | 3 decdigits)
+            Example tags supported:
+                "en"            [language]
+                "en-US"         [language + region]
+                "zh"            [language]
+                "zh-HK"         [language + region]
+                "zh-123"        [language + region]
+                "zh-Hant"       [language + script]
+                "zh-Hant-HK"    [language + script + region]
+                "en-GB-x-ABCD" [language + region + privateuse]
+            </returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Equals(Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Equals
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Equals(Cosmos.I18N.Languages.LanguageTag)">
+            <summary>
+            Equals
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.Equals(System.String)">
+            <summary>
+            Equals
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.CompareTo(Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            CompareTo
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.CompareTo(Cosmos.I18N.Languages.LanguageTag)">
+            <summary>
+            CompareTo
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTag.CompareTo(System.String)">
+            <summary>
+            CompareTo
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.MatchLevel">
+            <summary>
+            Match level for <see cref="T:Cosmos.I18N.Languages.LanguageTag"/>
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Languages.MatchLevel.ExactMatch">
+            <summary>
+            Only consider a match where language and script and region and private use parts matchs.
+            E.g. fr matches fr
+            E.g. zh-Hans-HK matches zh-Hans-HK
+            E.g. fr-FR-x-AAAA matches fr-FR-x-AAAA
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Languages.MatchLevel.DefaultRegion">
+            <summary>
+            Only consider a match where language and script parts match, one region is set and the other region is not.
+            E.g. fr matches fr-BE
+            E.g. zh-Hans-HK matches zh-Hans
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Languages.MatchLevel.ScriptMatch">
+            <summary>
+            Only consider a match where language and script parts match. Region part need not match.
+            E.g. fr-CA matches fr-BE
+            E.g. zh-Hant-HK matches zh-Hant-TW
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Languages.MatchLevel.LanguageMatch">
+            <summary>
+            Only consider a match where language matches. Script and region parts need not match.
+            E.g. zh-Hans-HK matches zh
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Languages.MatchLevel._MaxMatch">
+            <summary>
+            Only consider a match where language matches. Script and region parts need not match.
+            E.g. zh-Hans-HK matches zh
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.LanguageTagCache">
+            <summary>
+            LanguageTag Cache manager
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.LanguageTagManager">
+            <summary>
+            Manager for LanguageTag
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagManager.Create(System.String)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Languages.LanguageTag"/>
+            </summary>
+            <param name="langTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagMatcher.Match(Cosmos.I18N.Languages.LanguageTag,Cosmos.I18N.Languages.LanguageTag,Cosmos.I18N.Languages.MatchLevel)">
+            <summary>
+            Performs 'language matching' between lang described by this (A)
+            and language decibed by i_rhs (B). Essentially, returns an assessment of
+            how well a speaker of A will understand B.
+            The key points are as follows:
+              · The Script is almost as relevant as the language itself; that is, if
+                you speak a language but do not understand the script, you cannot
+                read that language. Thus a mismatch in Script should score low.
+              · The Region is less relevant than Script to understanding of language.
+                The one exception to this is where the Region has traditionally been
+                used to also indicate the Script. E.g.
+                    zh-CH -> Chinese (Simplified)  i.e. zh-Hans
+                    zh-TW -> Chinese (Traditional) i.e. zh-Hant
+                In these cases we normalize all legacy langtags to their new values
+                before matching. E.g. zh-CH is normalized to zh-Hans.
+            «LX113»
+            </summary>
+            <param name="leftLanguageTag"></param>
+            <param name="rightLanguageTag"></param>
+            <param name="matchLevel"></param>
+            <returns>
+            Returns a score on to what extent the two languages match. The value ranges from
+            100 (exact match) down to 0 (fundamental language tag mismatch), with values 
+            in between which may be used to compare quality of a match, larger the value
+            meaning better quality.
+            </returns>
+            <remarks>
+            Matching values:
+                                                         RHS
+            this                    lang    lang+script     lang+region     lang+script+region
+            ----------------------------------------------------------------------------------
+            lang                |   A       D               C               D
+            lang+script         |   D       A               D               B
+            lang+region         |   C       D               A               D
+            lang+script+region  |   D       B               D               A
+            
+            NB: For the purposes of the logic above, lang incorporates Language + PrivateUse subtags.
+            
+            A. Exact match (100)
+                All three subtags match.
+            B. Unbalanced Region Mismatch (99) [zh, zh-HK] [zh-Hans, zh-Hans-HK]
+                Language and Script match;
+                one side has Region set while the other doesn't.
+                Here there is the possibility that due to defaults Region matches.
+            C. Balanced Region Mismatch (98) [zh-IK, zh-HK] [zh-Hans-IK, zh-Hans-HK]
+                Language and Script match;
+                both sides have Region set but to different values.
+                Here there is NO possibility that Region matches.
+            D. Unbalanced Script Mismatch (97) [zh-HK, zh-Hant-HK]
+                Language matches, Region may match;
+                one side has Script set while the other doesn't.
+                Here there is the possibility that due to defaults Script matches.
+            E. Balanced Script Mismatch (96)
+                Language matches, Region may match;
+                both sides have Script set but to different values.
+                Here there is NO possibility that Script matches.
+            F. Language Mismatch (0)
+                Language doesn't match.
+            </remarks>
+            <seealso href="http://msdn.microsoft.com/en-us/library/windows/apps/jj673578.aspx"/>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagMatcher.Match(Cosmos.I18N.Languages.LanguageTag,Cosmos.I18N.Languages.LanguageTag[],Cosmos.I18N.Languages.LanguageTag@,Cosmos.I18N.Languages.MatchLevel)">
+            <summary>
+            Looks up in the passed collection of supported AppLanguages the language that is best matched
+            to this langtag. I.e. the written AppLanguage that a user understanding this langtag
+            will most-likely understand.
+            </summary>
+            <param name="leftLanguageTag"></param>
+            <param name="rightLanguageTags"></param>
+            <param name="matchedTag"></param>
+            <param name="matchLevel"></param>
+            <returns>Selected CultureInfoEx instance from the AppLanguages collection or null if there was no match.</returns>
+        </member>
         <member name="T:Cosmos.I18N.Text">
             <summary>
             Text
@@ -126,6 +474,25 @@
             <summary>
             Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
             </summary>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="processor"></param>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="processor"></param>
             <param name="text"></param>
             <param name="resourceKey"></param>
             <param name="language"></param>
@@ -155,6 +522,36 @@
             Equals
             </summary>
             <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.TextProvider">
+            <summary>
+            Default text provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.#ctor(Cosmos.I18N.Core.TranslationProcessor)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.TextProvider"/>
+            </summary>
+            <param name="translationProcessor"></param>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="resourceKey"></param>
+            <param name="language"></param>
+            <param name="parameters"></param>
             <returns></returns>
         </member>
     </members>
