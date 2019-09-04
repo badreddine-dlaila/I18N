@@ -38,7 +38,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// <summary>
         /// Neufundland and Labrador
         /// </summary>
-        public static EnumValues NeufundlandAndLabrador => EnumValues.NeufundlandAndLabrador;
+        public static EnumValues NewfoundlandAndLabrador => EnumValues.NewfoundlandAndLabrador;
 
         /// <summary>
         /// Nova Scotia
@@ -124,13 +124,13 @@ namespace Cosmos.I18N.Countries.NorthAmerica
             NewBrunswick,
 
             /// <summary>
-            /// Neufundland and Labrador
+            /// Newfoundland and Labrador
             /// <br />
             /// 纽芬兰与拉布拉多省
             /// </summary>
             [AliasInShort("NL")]
             [RegionFlag("provinces")]
-            NeufundlandAndLabrador,
+            NewfoundlandAndLabrador,
 
             /// <summary>
             /// Nova Scotia
