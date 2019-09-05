@@ -41,6 +41,15 @@ namespace Cosmos.I18N.Languages
 
         private CultureInfo CultureInfo { get; set; }
 
+        private string Alias { get; set; }
+
+        public LanguageTagBuilder SetAlias(string alias)
+        {
+            if (!string.IsNullOrWhiteSpace(alias))
+                Alias = alias;
+            return this;
+        }
+
         private void UpdateParent()
         {
             //load any parent:
@@ -79,7 +88,13 @@ namespace Cosmos.I18N.Languages
             //Update culture info
             UpdateCultureInfo();
 
-            return new LanguageTag(OriginalLanguageTag, Language, Script, Region, PrivateUse, Parent, CultureInfo);
+            var tag = new LanguageTag(OriginalLanguageTag, Language, Script, Region, PrivateUse, Parent, CultureInfo);
+
+            //Update alias
+            if (!string.IsNullOrWhiteSpace(Alias))
+                tag.UpdateAlias(Alias);
+
+            return tag;
         }
 
         #region Private static methods

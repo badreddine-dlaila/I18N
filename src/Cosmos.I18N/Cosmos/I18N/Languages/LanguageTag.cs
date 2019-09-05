@@ -40,6 +40,7 @@ namespace Cosmos.I18N.Languages
             NativeNameTitleCase = CultureInfo != null ? CultureInfo.TextInfo.ToTitleCase(CultureInfo.NativeName) : "OriginalLangTag";
 
             GlobalKey = $"po:{OriginalLanguageTag}".ToLowerInvariant();
+            Alias = OriginalLanguageTag;
         }
 
         /// <summary>
@@ -83,6 +84,11 @@ namespace Cosmos.I18N.Languages
         public string GlobalKey { get; }
 
         /// <summary>
+        /// Alias
+        /// </summary>
+        public string Alias { get; private set; }
+
+        /// <summary>
         /// Culture info
         /// </summary>
         public CultureInfo CultureInfo { get; }
@@ -91,6 +97,18 @@ namespace Cosmos.I18N.Languages
         /// Native name in title-case
         /// </summary>
         public string NativeNameTitleCase { get; }
+
+        /// <summary>
+        /// Update LanguageTag's alias
+        /// </summary>
+        /// <param name="alias"></param>
+        /// <exception cref="ArgumentNullException"></exception>
+        public void UpdateAlias(string alias)
+        {
+            if (alias.IsNullOrWhiteSpace())
+                throw new ArgumentNullException(nameof(alias));
+            Alias = alias;
+        }
 
         #region Match
 

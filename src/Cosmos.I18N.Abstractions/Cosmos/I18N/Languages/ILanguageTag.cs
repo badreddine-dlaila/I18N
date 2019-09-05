@@ -11,7 +11,6 @@ namespace Cosmos.I18N.Languages
         /// Returns the mandatory 2 character language subtag.
         /// </summary>
         /// <returns>A string describing a language subtag, or null if no such subtag present (indicating a null or error instance).</returns>
-
         string GetLanguage();
 
         /// <summary>
@@ -19,7 +18,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <returns>A string describing the full language tag or "" if null or error instance.</returns>
         string ToString();
-        
+
         /// <summary>
         /// Returns the optional 3 character extlang subtag.
         /// </summary>
@@ -37,7 +36,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <returns>A string describing a region subtag, or null if no such subtag present.</returns>
         string GetRegion();
-        
+
         /// <summary>
         /// Returns zero or more optional variant subtags.
         /// </summary>
@@ -55,7 +54,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <returns>A string describing a privateuse subtag, or null if no such subtag present.</returns>
         string GetPrivateuse();
-        
+
         /// <summary>
         /// Returns an object representing any logical parent of the tag.
         /// </summary>
@@ -78,5 +77,16 @@ namespace Cosmos.I18N.Languages
         /// the language suitable for user display, otherwise it is the language tag string.
         /// </summary>
         string GetNativeNameTitleCase();
+
+        /// <summary>
+        /// Gets alias of this LanguageTag
+        /// </summary>
+        string Alias { get; }
+
+        /// <summary>
+        /// Update this LanguageTag's alias
+        /// </summary>
+        /// <param name="alias"></param>
+        void UpdateAlias(string alias);
     }
 }
