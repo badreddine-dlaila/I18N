@@ -68,55 +68,55 @@ namespace Cosmos.I18N.Countries.Europe
             /// <summary>
             /// Burgenland
             /// </summary>
-            [AliasInShort("AT1")]
+            [AliasInShort("1")]
             Burgenland,
 
             /// <summary>
             /// Carinthia
             /// </summary>
-            [AliasInShort("AT2")]
+            [AliasInShort("2")]
             Kärnten,
 
             /// <summary>
             /// Lower Austria
             /// </summary>
-            [AliasInShort("AT3")]
+            [AliasInShort("3")]
             Niederösterreich,
 
             /// <summary>
             /// Upper Austria
             /// </summary>
-            [AliasInShort("AT4")]
+            [AliasInShort("4")]
             Oberösterreich,
 
             /// <summary>
             /// Salzburg
             /// </summary>
-            [AliasInShort("AT5")]
+            [AliasInShort("5")]
             Salzburg,
 
             /// <summary>
             /// Styria
             /// </summary>
-            [AliasInShort("AT6")]
+            [AliasInShort("6")]
             Steiermark,
 
             /// <summary>
             /// Tyrol
             /// </summary>
-            [AliasInShort("AT7")]
+            [AliasInShort("7")]
             Tirol,
 
             /// <summary>
             /// Vorarlberg
             /// </summary>
-            [AliasInShort("AT8")]
+            [AliasInShort("8")]
             Vorarlberg,
 
             /// <summary>
             /// Vienna
             /// </summary>
-            [AliasInShort("AT9")]
+            [AliasInShort("9")]
             Wien,
 
             /// <summary>
