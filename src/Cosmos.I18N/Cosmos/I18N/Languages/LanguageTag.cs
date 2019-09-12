@@ -21,7 +21,7 @@ namespace Cosmos.I18N.Languages
     /// <summary>
     /// Language tag
     /// </summary>
-    public class LanguageTag : ILanguageTag
+    public partial class LanguageTag : ILanguageTag
     {
         // ReSharper disable once UnusedMember.Local
         private LanguageTag() { }
@@ -244,6 +244,13 @@ namespace Cosmos.I18N.Languages
         int ILanguageTag.GetMaxParents() => 2;
         CultureInfo ILanguageTag.GetCultureInfo() => CultureInfo;
         string ILanguageTag.GetNativeNameTitleCase() => NativeNameTitleCase;
+
+        #endregion
+
+        #region Internal methods for instance
+
+        internal string GetOriginalLanguageTag() => OriginalLanguageTag;
+        
 
         #endregion
 

@@ -24,5 +24,36 @@ namespace Cosmos.I18N.Languages
 
             return instance;
         }
+
+        /// <summary>
+        /// Get an instance of LanguageTag
+        /// </summary>
+        /// <param name="langTag"></param>
+        /// <returns></returns>
+        public static LanguageTag Get(string langTag)
+        {
+            return TryGet(langTag, out var result) ? result : default;
+        }
+
+        /// <summary>
+        /// Try get an instance of LanguageTag
+        /// </summary>
+        /// <param name="langTag"></param>
+        /// <param name="result"></param>
+        /// <returns></returns>
+        public static bool TryGet(string langTag, out LanguageTag result)
+        {
+            result = default;
+
+            if (string.IsNullOrWhiteSpace(langTag))
+                return false;
+
+            if (!LanguageTagCache.Contains(langTag))
+                return false;
+
+            result = LanguageTagCache.Get<LanguageTag>(langTag);
+            return true;
+
+        }
     }
 }

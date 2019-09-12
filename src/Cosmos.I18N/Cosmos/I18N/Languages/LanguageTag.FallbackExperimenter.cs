@@ -176,6 +176,22 @@ namespace Cosmos.I18N.Languages
 
         #endregion
 
+        #region Contains
+
+        /// <summary>
+        /// Contains
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public bool Contains(LanguageTag languageTag)
+        {
+            if (languageTag == null)
+                return false;
+            return _items.ContainsGlobalKey(languageTag.GlobalKey);
+        }
+
+        #endregion
+
         /// <summary>
         /// Fallback item for fallback experimenter
         /// </summary>
@@ -217,6 +233,11 @@ namespace Cosmos.I18N.Languages
             /// Full level
             /// </summary>
             public int FullLevel { get; }
+
+            /// <summary>
+            /// Global key
+            /// </summary>
+            public string GlobalKey => Value.GlobalKey;
 
             /// <summary>
             /// 获得 LanguageTag 的完整度级别，该级别用于 Add 方法对同语言标记做优先级自动优化排列时的参考
@@ -286,6 +307,7 @@ namespace Cosmos.I18N.Languages
                     var max = this.Max(m => m.Priority);
                     item.Priority = max + 1;
                     base.Add(item);
+                    AddGlobalKeyCache(item.GlobalKey);
                     return;
                 }
 
@@ -306,7 +328,16 @@ namespace Cosmos.I18N.Languages
                 }
 
                 base.Add(item);
+                AddGlobalKeyCache(item.GlobalKey);
             }
+
+            private readonly List<string> _globalKeyList = new List<string>();
+
+            private void AddGlobalKeyCache(string globalKey)
+                => _globalKeyList.Add(globalKey);
+
+            public bool ContainsGlobalKey(string globalKey)
+                => !string.IsNullOrWhiteSpace(globalKey) && _globalKeyList.Contains(globalKey);
         }
     }
 }
