@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N.Core
 {
@@ -10,52 +10,59 @@ namespace Cosmos.I18N.Core
     /// </summary>
     public class TranslationProcessor
     {
-        private readonly Dictionary<Locale, ILanguagePackage> _languagePackages;
+        private readonly Dictionary<int, ITranslatePackage> _translatePackages;
 
         /// <summary>
         /// Create a new instance of <see cref="TranslationProcessor"/>
         /// </summary>
         /// <param name="dictionary"></param>
-        public TranslationProcessor(Dictionary<Locale, ILanguagePackage> dictionary)
+        public TranslationProcessor(Dictionary<int, ITranslatePackage> dictionary)
         {
-            _languagePackages = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
+            _translatePackages = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         }
 
         /// <summary>
         /// Translate
         /// </summary>
+        /// <param name="packageKey"></param>
         /// <param name="resourceKey"></param>
-        /// <param name="originText"></param>
+        /// <param name="strategy"></param>
         /// <returns></returns>
-        public virtual string Translate(string resourceKey, string originText)
+        public virtual string Translate(string packageKey, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
         {
-            var cluture = CultureInfo.CurrentCulture;
-            return Translate(cluture.Name, resourceKey, originText);
+            return Translate(LanguageTag.Current, packageKey, resourceKey, strategy);
         }
 
         /// <summary>
         /// Translate
         /// </summary>
-        /// <param name="langName"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="packageKey"></param>
         /// <param name="resourceKey"></param>
-        /// <param name="originText"></param>
+        /// <param name="strategy"></param>
         /// <returns></returns>
-        public virtual string Translate(string langName, string resourceKey, string originText)
+        public virtual string Translate(string languageTag, string packageKey, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
         {
-            return Translate(langName.ToLocale(), resourceKey, originText);
+            return LanguageTagManager.TryGet(languageTag, out var languageTagInstance)
+                ? Translate(languageTagInstance, packageKey, resourceKey, strategy)
+                : string.Empty;
         }
 
         /// <summary>
         /// Translate
         /// </summary>
-        /// <param name="language"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="packageKey"></param>
         /// <param name="resourceKey"></param>
-        /// <param name="originText"></param>
+        /// <param name="strategy"></param>
         /// <returns></returns>
-        public virtual string Translate(Locale language, string resourceKey, string originText)
+        public virtual string Translate(LanguageTag languageTag, string packageKey, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
         {
-            // ReSharper disable once InconsistentNaming
-            return _languagePackages.TryGetValue(language, out var __pkg) ? __pkg.Translate(resourceKey, originText) : string.Empty;
+            return _translatePackages.TryGetValue(packageKey.GetHashCode(), out var package)
+                ? package.TryGetTranslateValue(languageTag, resourceKey, out var translateValue, strategy)
+                    ? translateValue
+                    : string.Empty
+                : string.Empty;
         }
     }
 }

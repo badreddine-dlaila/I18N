@@ -3,7 +3,7 @@ using AspectCore.Extensions.DependencyInjection;
 using AspectCore.Injector;
 using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Extensions.Console.Core
@@ -12,14 +12,15 @@ namespace Cosmos.I18N.Extensions.Console.Core
     {
         private bool _hasBuild;
         private readonly IServiceCollection _services;
+        
         private readonly I18NOptions _options;
-        private readonly LanguageManager _languageManager;
+        private readonly TranslationManager _translationManager;
 
         public I18NServiceCollection(IServiceCollection services = null, I18NOptions options = null)
         {
             _services = services ?? new ServiceCollection();
             _options = options ?? new I18NOptions();
-            _languageManager = new LanguageManager();
+            _translationManager = new TranslationManager();
 
             AfterBuild(UpdateStaticResolver);
         }
@@ -85,7 +86,7 @@ namespace Cosmos.I18N.Extensions.Console.Core
 
         public I18NOptions ExposeOptions => _options;
 
-        public LanguageManager ExposeLanguageManager => _languageManager;
+        public TranslationManager ExposeTranslationManager => _translationManager;
 
         private static void UpdateStaticResolver(IServiceProvider resolver)
         {

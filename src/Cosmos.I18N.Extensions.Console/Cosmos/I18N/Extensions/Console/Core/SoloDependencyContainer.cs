@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Extensions.Console.Core
@@ -20,23 +20,24 @@ namespace Cosmos.I18N.Extensions.Console.Core
         {
             if (services is I18NServiceCollection serviceImpl)
             {
-                var languageManager = serviceImpl.ExposeLanguageManager;
-                var languageSetter = languageManager as ILanguageManSetter;
-                foreach (var lang in serviceImpl.ExposeOptions.RegisteredLanguages) languageManager.RegisterUsedLanguage(lang);
-                foreach (var package in serviceImpl.ExposeOptions.LanguagePackages)
+                var translationManager = serviceImpl.ExposeTranslationManager;
+                var translationSetter = translationManager as ITranslationManSetter;
+
+                foreach (var package in serviceImpl.ExposeOptions.TranslationPackages)
                 {
-                    var languagePackage = package.Value;
-                    languageSetter.RegisterLanguagePackage(languagePackage);
-                    serviceImpl.AddDependency(s => s.AddSingleton(languagePackage));
+                    var translationPackage = package.Value;
+                    translationSetter.RegisterPackage(translationPackage);
+                    serviceImpl.AddDependency(s => s.AddSingleton(translationPackage));
                 }
 
                 serviceImpl.AddDependency(s =>
                 {
-                    s.AddSingleton(languageManager);
+                    s.AddSingleton(translationManager);
+                    s.AddSingleton<ITranslationManager>(translationManager);
                     s.AddSingleton<ITextProvider, TextProvider>();
                     s.AddSingleton<ILanguageServiceProvider, ConsoleLanguageServiceProvider>();
-                    s.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ILanguagePackage>().ToDictionary(package => package.Language)));
-                    });
+                    s.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ITranslatePackage>().ToDictionary(package => package.PackageKey.GetHashCode())));
+                });
 
 
             }

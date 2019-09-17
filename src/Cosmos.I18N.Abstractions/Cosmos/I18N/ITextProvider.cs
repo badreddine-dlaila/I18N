@@ -11,19 +11,55 @@ namespace Cosmos.I18N
         /// Create
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
         /// <returns></returns>
-        IText Create(string text, string resourceKey, Locale language);
+        IText Create(string text, string packageKey);
 
         /// <summary>
         /// Create
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        IText Create(string text, string resourceKey, Locale language, params object[] parameters);
+        IText Create(string text, string packageKey, params object[] parameters);
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        IText Create(string text, string packageKey, string languageTag);
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        IText Create(string text, string packageKey, string languageTag, params object[] parameters);
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        IText Create(string text, string packageKey, ILanguageTag languageTag);
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        IText Create(string text, string packageKey, ILanguageTag languageTag, params object[] parameters);
     }
 }

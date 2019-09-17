@@ -1,5 +1,6 @@
 ﻿{
-  "Language": "zh_CN",
+  "PackageKey": "Main",
+  "Language": "zh-CN",
   "Name": "Main",
   "Contents": {
     "Hello world {0}": "你好，世界 {0:d}"

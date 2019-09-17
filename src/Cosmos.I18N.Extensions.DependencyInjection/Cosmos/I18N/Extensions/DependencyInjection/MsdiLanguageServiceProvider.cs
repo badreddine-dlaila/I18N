@@ -1,26 +1,24 @@
 ﻿using System;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N.Extensions.DependencyInjection
 {
     public class MsdiLanguageServiceProvider : ILanguageServiceProvider
     {
-        private readonly ILanguageManager _languageManager;
+        private readonly ITranslationManager _translationManager;
         private readonly TranslationProcessor _translationProcessor;
 
-        public MsdiLanguageServiceProvider(LanguageManager manager, TranslationProcessor processor)
+        public MsdiLanguageServiceProvider(ITranslationManager manager, TranslationProcessor processor)
         {
-            _languageManager = manager ?? throw new ArgumentNullException(nameof(manager));
+            _translationManager = manager ?? throw new ArgumentNullException(nameof(manager));
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
         }
-
-        public ILanguagePackage GetLanguagePackage(string langName) => _languageManager.GetLanguagePackage(langName);
-
-        public ILanguagePackage GetLanguagePackage(Locale language) => _languageManager.GetLanguagePackage(language);
         
-        public ILanguageManager GetLanguageManager() => _languageManager;
-
+        public ITranslatePackage GetTranslationPackage(string packageKey) => _translationManager.GetPackage(packageKey);
+     
+        public ITranslationManager GetTranslationManager() => _translationManager;
+        
         public TranslationProcessor GetTranslationProcessor() => _translationProcessor;
     }
 }

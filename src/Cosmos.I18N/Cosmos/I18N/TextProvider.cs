@@ -24,25 +24,98 @@ namespace Cosmos.I18N
         /// Create
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
         /// <returns></returns>
-        public IText Create(string text, string resourceKey, Locale language)
+        public IText Create(string text, string packageKey)
         {
-            return new Text(_translationProcessor, text, resourceKey, language);
+            return new Text(_translationProcessor, text, packageKey);
         }
 
         /// <summary>
         /// Create
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Create(string text, string resourceKey, Locale language, params object[] parameters)
+        public IText Create(string text, string packageKey, params object[] parameters)
         {
-            return new Text(_translationProcessor, text, resourceKey, language, parameters);
+            return new Text(_translationProcessor, text, packageKey, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, string languageTag)
+        {
+            return new Text(_translationProcessor, text, packageKey, languageTag);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, string languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, packageKey, languageTag, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, ILanguageTag languageTag)
+        {
+            return new Text(_translationProcessor, text, packageKey, languageTag);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, packageKey, languageTag, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, Locale locale)
+        {
+            return new Text(_translationProcessor, text, packageKey, locale);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Create(string text, string packageKey, Locale locale, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, packageKey, locale, parameters);
         }
     }
 }

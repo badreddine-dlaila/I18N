@@ -36132,7 +36132,7 @@
             New Brunswick
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NeufundlandAndLabrador">
+        <member name="P:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.NewfoundlandAndLabrador">
             <summary>
             Neufundland and Labrador
             </summary>
@@ -36210,9 +36210,9 @@
             新不伦瑞克省
             </summary>
         </member>
-        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NeufundlandAndLabrador">
+        <member name="F:Cosmos.I18N.Countries.NorthAmerica.CanadaRegions.EnumValues.NewfoundlandAndLabrador">
             <summary>
-            Neufundland and Labrador
+            Newfoundland and Labrador
             <br />
             纽芬兰与拉布拉多省
             </summary>

@@ -1,58 +1,123 @@
 ﻿using System;
 using System.Collections.Generic;
 using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Configurations {
-    public class I18NOptions {
-        private readonly Dictionary<Locale, ILanguagePackage> __languagePackages = new Dictionary<Locale, ILanguagePackage>();
-        private readonly List<Locale> __languageList = new List<Locale>();
+namespace Cosmos.I18N.Configurations
+{
+    /// <summary>
+    /// Cosmos i18n options
+    /// </summary>
+    public class I18NOptions
+    {
+        // ReSharper disable once InconsistentNaming
+        private readonly Dictionary<int, ITranslatePackage> __translationPackages = new Dictionary<int, ITranslatePackage>();
+
+        // ReSharper disable once InconsistentNaming
         private readonly object __lock_package = new object();
+
+        // ReSharper disable once InconsistentNaming
         private readonly object __lock_resource = new object();
-        private readonly object __lock2 = new object();
+
+        private readonly FallbackExperimenter _fallbackExperimenter = FallbackExperimenter.Default;
 
         #region Add package
 
-        public I18NOptions AddPackage(Func<ILanguagePackage> packageProvider) {
-            return AddPackage(packageProvider());
+        /// <summary>
+        /// Add translation package
+        /// </summary>
+        /// <param name="packageProvider"></param>
+        /// <param name="level"></param>
+        /// <param name="customMergeProvider"></param>
+        /// <returns></returns>
+        public I18NOptions AddPackage(Func<ITranslatePackage> packageProvider, MergeLevel level = MergeLevel.Level_1,
+            Func<ITranslatePackage, ITranslatePackage, ITranslatePackage> customMergeProvider = null)
+        {
+            return AddPackage(packageProvider(), level, customMergeProvider);
         }
 
-        public I18NOptions AddPackage(ILanguagePackage package) {
-            if (package == null) throw new ArgumentNullException(nameof(package));
-            lock (__lock_package) {
-                if (TryRegisterLanguageOnce(package.Language)) {
+        /// <summary>
+        /// Add translation package
+        /// </summary>
+        /// <param name="package"></param>
+        /// <param name="level"></param>
+        /// <param name="customMergeProvider"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public I18NOptions AddPackage(ITranslatePackage package, MergeLevel level = MergeLevel.Level_1,
+            Func<ITranslatePackage, ITranslatePackage, ITranslatePackage> customMergeProvider = null)
+        {
+            if (package == null)
+                throw new ArgumentNullException(nameof(package));
+            lock (__lock_package)
+            {
+                var hashOfPackageKey = package.PackageKey.GetHashCode();
+                if (__translationPackages.TryGetValue(hashOfPackageKey, out var packageInstance))
+                {
+                    var template = TranslatePackageMerger.Merge(packageInstance, package, level, customMergeProvider);
+                    __translationPackages[hashOfPackageKey] = template;
+                }
+                else
+                {
                     AddPackageInternal(package);
-                } else if (__languagePackages.TryGetValue(package.Language, out var pkg) && pkg.IsFuture()) {
-                    __languagePackages[package.Language] = package.Merge(__languagePackages[package.Language]);
-                } else {
-                    throw new ArgumentException($"Language package '{package.Language}' has been added.");
                 }
             }
 
             return this;
         }
 
-        private void AddPackageInternal(ILanguagePackage package) {
-            __languagePackages.Add(package.Language, package);
+        private void AddPackageInternal(ITranslatePackage package)
+        {
+            __translationPackages.Add(package.PackageKey.GetHashCode(), package);
         }
 
         #endregion
 
         #region Add resource
 
-        public I18NOptions AddResource(Locale language, Func<ILanguageResource> resourceProvider) {
-            return AddResource(language, resourceProvider());
+        /// <summary>
+        /// Add translation resource
+        /// </summary>
+        /// <param name="packageKey"></param>
+        /// <param name="resourceProvider"></param>
+        /// <returns></returns>
+        public I18NOptions AddResource(string packageKey, Func<ITranslateResource> resourceProvider)
+        {
+            return AddResource(packageKey, resourceProvider());
         }
 
-        public I18NOptions AddResource(Locale language, ILanguageResource resource) {
-            if (resource == null) throw new ArgumentNullException(nameof(resource));
-            lock (__lock_resource) {
-                if (TryRegisterLanguageOnce(language)) {
-                    var future = new FutureFillingPackage(language);
-                    future.AddResource(resource);
-                    AddPackageInternal(future);
-                } else if (__languagePackages.TryGetValue(language, out var package)) {
-                    package.AddResource(resource);
-                } else {
+        /// <summary>
+        /// Add translation resource
+        /// </summary>
+        /// <param name="packageKey"></param>
+        /// <param name="resource"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="InvalidOperationException"></exception>
+        public I18NOptions AddResource(string packageKey, ITranslateResource resource)
+        {
+            if (resource == null)
+                throw new ArgumentNullException(nameof(resource));
+            if (string.IsNullOrWhiteSpace(packageKey))
+                throw new ArgumentNullException(nameof(packageKey));
+            lock (__lock_resource)
+            {
+                var hashOfPackageKey = packageKey.GetHashCode();
+                if (TryRegisterLanguageTagOnce(resource.Binding))
+                {
+                    if (__translationPackages.TryGetValue(hashOfPackageKey, out var package))
+                    {
+                        package.AddResource(resource);
+                    }
+                    else
+                    {
+                        var future = new TranslatePackage(packageKey, _fallbackExperimenter);
+                        future.AddResource(resource);
+                        AddPackageInternal(future);
+                    }
+                }
+                else
+                {
                     throw new InvalidOperationException($"Something broken when add new resource '{resource.Name}'.");
                 }
             }
@@ -64,41 +129,86 @@ namespace Cosmos.I18N.Configurations {
 
         #region Expose readonly properties
 
-        public IReadOnlyDictionary<Locale, ILanguagePackage> LanguagePackages => __languagePackages;
-
-        public IReadOnlyList<Locale> RegisteredLanguages => __languageList;
+        /// <summary>
+        /// To gets a readonly translation package table
+        /// </summary>
+        // ReSharper disable once InconsistentlySynchronizedField
+        public IReadOnlyDictionary<int, ITranslatePackage> TranslationPackages => __translationPackages;
 
         #endregion
 
-        private bool TryRegisterLanguageOnce(Locale lang) {
-            bool ret = false;
-            if (!__languageList.Contains(lang)) {
-                lock (__lock2) {
-                    if (!__languageList.Contains(lang)) {
-                        __languageList.Add(lang);
-                        ret = true;
-                    }
-                }
-            }
+        private bool TryRegisterLanguageTagOnce(LanguageTag languageTag)
+        {
+            if (languageTag == null)
+                return false;
 
-            return ret;
+            if (_fallbackExperimenter.Contains(languageTag))
+                return true;
+
+            _fallbackExperimenter.RegisterTag(languageTag);
+
+            return true;
         }
 
         #region Add base path
 
+        /// <summary>
+        /// Path base
+        /// </summary>
         public string PathBase { get; private set; }
 
+        /// <summary>
+        /// Path segment
+        /// </summary>
         public string PathSegment { get; set; }
 
-        public I18NOptions SetPathBase(string path) {
+        /// <summary>
+        /// Set path base
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public I18NOptions SetPathBase(string path)
+        {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
             PathBase = path;
             return this;
         }
 
-        public I18NOptions SetPathSegment(string path) {
+        /// <summary>
+        /// Set path segment
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public I18NOptions SetPathSegment(string path)
+        {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
             PathSegment = path;
+            return this;
+        }
+
+        #endregion
+
+        #region Set default locale
+
+        /// <summary>
+        /// Gets or sets default locale
+        /// </summary>
+        public Locale DefaultLocale
+        {
+            get => LanguageTag.DefaultLocale;
+            set => LanguageTag.SetDefaultLocale(value);
+        }
+
+        /// <summary>
+        /// Sets default locale
+        /// </summary>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public I18NOptions SetDefaultLocale(Locale locale)
+        {
+            DefaultLocale = locale;
             return this;
         }
 

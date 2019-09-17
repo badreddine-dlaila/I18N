@@ -3,9 +3,9 @@ using System.Linq;
 using Cosmos.I18N;
 using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Languages;
 using Cosmos.I18N.Extensions.DependencyInjection;
 using Cosmos.I18N.Extensions.DependencyInjection.Core;
+using Cosmos.I18N.Translation;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -18,22 +18,23 @@ namespace Microsoft.Extensions.DependencyInjection
             var options = new I18NOptions();
             optionAct?.Invoke(options);
 
-            var languageManager = new LanguageManager();
-            var languageSetter = languageManager as ILanguageManSetter;
-            foreach (var lang in options.RegisteredLanguages) languageManager.RegisterUsedLanguage(lang);
-            foreach (var package in options.LanguagePackages)
+            var translationManager = new TranslationManager();
+            var translationSetter = translationManager as ITranslationManSetter;
+
+            foreach (var package in options.TranslationPackages)
             {
-                var languagePackage = package.Value;
-                languageSetter.RegisterLanguagePackage(languagePackage);
-                services.AddSingleton(languagePackage);
+                var translationPackage = package.Value;
+                translationSetter.RegisterPackage(translationPackage);
+                services.AddSingleton(translationPackage);
             }
 
-            services.AddSingleton(languageManager);
+            services.AddSingleton(translationManager);
+            services.AddSingleton<ITranslationManager>(translationManager);
             services.AddSingleton<ITextProvider, TextProvider>();
             services.AddSingleton<ILanguageServiceProvider, MsdiLanguageServiceProvider>();
-            services.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ILanguagePackage>().ToDictionary(package => package.Language)));
+            services.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ITranslatePackage>().ToDictionary(package => package.PackageKey.GetHashCode())));
             services.AddSingleton(provider => new StaticProviderHack(provider.GetRequiredService<ILanguageServiceProvider>()));
-           
+
             return services;
         }
     }

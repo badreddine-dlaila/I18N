@@ -1,6 +1,6 @@
 ﻿using System;
 using Cosmos.I18N.Configurations;
-using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Core
@@ -14,11 +14,11 @@ namespace Cosmos.I18N.Core
         /// Exposes options
         /// </summary>
         I18NOptions ExposeOptions { get; }
-
+        
         /// <summary>
-        /// Exposed language manager
+        /// Exposed translation manager
         /// </summary>
-        LanguageManager ExposeLanguageManager { get; }
+        TranslationManager ExposeTranslationManager { get; }
 
         /// <summary>
         /// Append option action

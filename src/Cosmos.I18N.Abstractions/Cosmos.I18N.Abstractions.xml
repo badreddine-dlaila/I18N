@@ -41,22 +41,58 @@
             Interface for Text Provider
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String)">
             <summary>
             Create
             </summary>
             <param name="text"></param>
-            <param name="resourceKey"></param>
-            <param name="language"></param>
+            <param name="packageKey"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Object[])">
             <summary>
             Create
             </summary>
             <param name="text"></param>
-            <param name="resourceKey"></param>
-            <param name="language"></param>
+            <param name="packageKey"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="languageTag"></param>
             <param name="parameters"></param>
             <returns></returns>
         </member>
@@ -135,6 +171,17 @@
             If the system supports a cultureinfo object for the language, this is the native name of 
             the language suitable for user display, otherwise it is the language tag string.
             </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.ILanguageTag.Alias">
+            <summary>
+            Gets alias of this LanguageTag
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.ILanguageTag.UpdateAlias(System.String)">
+            <summary>
+            Update this LanguageTag's alias
+            </summary>
+            <param name="alias"></param>
         </member>
     </members>
 </doc>

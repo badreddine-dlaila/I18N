@@ -10,8 +10,9 @@ namespace Cosmos.I18N
     /// </summary>
     public struct Text : IText, IEquatable<Text>
     {
-        private Locale Language { get; set; }
-        private string ResourceKey { get; set; }
+        private LanguageTag LanguageTag { get; set; }
+
+        private string PackageKey { get; set; }
         private string OriginText { get; set; }
         private object[] FormatingParameters { get; set; }
 
@@ -21,22 +22,67 @@ namespace Cosmos.I18N
         /// Create a new instance of <see cref="Text"/>.
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
-        public Text(string text, string resourceKey, Locale language)
-            : this(text, resourceKey, language, null) { }
+        /// <param name="packageKey"></param>
+        public Text(string text, string packageKey)
+            : this(text, packageKey, LanguageTag.Current, null) { }
 
         /// <summary>
         /// Create a new instance of <see cref="Text"/>.
         /// </summary>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
         /// <param name="parameters"></param>
-        public Text(string text, string resourceKey, Locale language, params object[] parameters)
+        public Text(string text, string packageKey, params object[] parameters)
+            : this(text, packageKey, LanguageTag.Current, parameters) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        public Text(string text, string packageKey, string languageTag)
+            : this(text, packageKey, languageTag, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        public Text(string text, string packageKey, ILanguageTag languageTag)
+            : this(text, packageKey, languageTag, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        public Text(string text, string packageKey, Locale locale)
+            : this(text, packageKey, locale.GetLanguageTagText(), null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        public Text(string text, string packageKey, string languageTag, params object[] parameters)
+            : this(text, packageKey, LanguageTagManager.Get(languageTag), parameters) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        public Text(string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
         {
-            Language = language;
-            ResourceKey = resourceKey;
+            LanguageTag = languageTag as LanguageTag ?? LanguageTag.Current;
+            PackageKey = packageKey;
             OriginText = text;
             FormatingParameters = parameters;
 
@@ -46,30 +92,102 @@ namespace Cosmos.I18N
         /// <summary>
         /// Create a new instance of <see cref="Text"/>.
         /// </summary>
-        /// <param name="processor"></param>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
-        public Text(TranslationProcessor processor, string text, string resourceKey, Locale language)
-            : this(processor, text, resourceKey, language, null) { }
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        /// <param name="parameters"></param>
+        public Text(string text, string packageKey, Locale locale, params object[] parameters)
+            : this(text, packageKey, locale.GetLanguageTagText(), parameters) { }
 
         /// <summary>
         /// Create a new instance of <see cref="Text"/>.
         /// </summary>
         /// <param name="processor"></param>
         /// <param name="text"></param>
-        /// <param name="resourceKey"></param>
-        /// <param name="language"></param>
+        /// <param name="packageKey"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey)
+            : this(processor, text, packageKey, LanguageTag.Current, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
         /// <param name="parameters"></param>
-        public Text(TranslationProcessor processor, string text, string resourceKey, Locale language, params object[] parameters)
+        public Text(TranslationProcessor processor, string text, string packageKey, params object[] parameters)
+            : this(processor, text, packageKey, LanguageTag.Current, parameters) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, string languageTag)
+            : this(processor, text, packageKey, languageTag, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, ILanguageTag languageTag)
+            : this(processor, text, packageKey, languageTag, null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, Locale locale)
+            : this(processor, text, packageKey, locale.GetLanguageTagText(), null) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, string languageTag, params object[] parameters)
+            : this(processor, text, packageKey, LanguageTagManager.Get(languageTag), parameters) { }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
         {
-            Language = language;
-            ResourceKey = resourceKey;
+            LanguageTag = languageTag as LanguageTag ?? LanguageTag.Current;
+            PackageKey = packageKey;
             OriginText = text;
             FormatingParameters = parameters;
 
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
         }
+
+        /// <summary>
+        /// Create a new instance of <see cref="Text"/>.
+        /// </summary>
+        /// <param name="processor"></param>
+        /// <param name="text"></param>
+        /// <param name="packageKey"></param>
+        /// <param name="locale"></param>
+        /// <param name="parameters"></param>
+        public Text(TranslationProcessor processor, string text, string packageKey, Locale locale, params object[] parameters)
+            : this(processor, text, packageKey, locale.GetLanguageTagText(), parameters) { }
+
 
         /// <summary>
         /// Convert to String
@@ -84,7 +202,7 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public override string ToString()
         {
-            var text = _translationProcessor.Translate(Language, ResourceKey, OriginText);
+            var text = _translationProcessor.Translate(LanguageTag, PackageKey, OriginText);
             if (FormatingParameters != null)
                 text = string.Format(text, FormatingParameters);
             return text;
@@ -103,8 +221,9 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public bool Equals(Text other)
         {
-            return Language == other.Language &&
-                   ResourceKey == other.ResourceKey &&
+            return LanguageTag != null && other.LanguageTag != null &&
+                   LanguageTag.Equals(other.LanguageTag) &&
+                   PackageKey == other.PackageKey &&
                    OriginText == other.OriginText &&
                    FormatingParameters.EqualsSupportsNull(other.FormatingParameters);
         }

@@ -64,5 +64,16 @@ namespace Cosmos.I18N.Core.Extensions
 
             return sb.ToString();
         }
+
+        public static bool IsDifferentFrom(this string left, string right)
+        {
+            if (string.IsNullOrWhiteSpace(left))
+                return true;
+
+            if (string.IsNullOrWhiteSpace(right))
+                return true;
+
+            return string.Compare(left, right, StringComparison.OrdinalIgnoreCase) != 0;
+        }
     }
 }
