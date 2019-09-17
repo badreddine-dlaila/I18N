@@ -26,6 +26,16 @@ namespace Cosmos.I18N.Languages
         }
 
         /// <summary>
+        /// Create a new instance of <see cref="LanguageTag"/>
+        /// </summary>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public static LanguageTag Create(Locale locale)
+        {
+            return Create(locale.GetLanguageTagText());
+        }
+
+        /// <summary>
         /// Get an instance of LanguageTag
         /// </summary>
         /// <param name="langTag"></param>
@@ -33,6 +43,16 @@ namespace Cosmos.I18N.Languages
         public static LanguageTag Get(string langTag)
         {
             return TryGet(langTag, out var result) ? result : default;
+        }
+
+        /// <summary>
+        /// Get an instance of LanguageTag
+        /// </summary>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public static LanguageTag Get(Locale locale)
+        {
+            return TryGet(locale, out var result) ? result : default;
         }
 
         /// <summary>
@@ -53,7 +73,17 @@ namespace Cosmos.I18N.Languages
 
             result = LanguageTagCache.Get<LanguageTag>(langTag);
             return true;
+        }
 
+        /// <summary>
+        /// Try get an instance of LanguageTag
+        /// </summary>
+        /// <param name="locale"></param>
+        /// <param name="result"></param>
+        /// <returns></returns>
+        public static bool TryGet(Locale locale, out LanguageTag result)
+        {
+            return TryGet(locale.GetLanguageTagText(), out result);
         }
     }
 }

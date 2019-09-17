@@ -31,6 +31,11 @@ namespace Cosmos.I18N.Languages
             }
         }
 
+        public static LanguageTag Create(Locale locale)
+        {
+            return Create(locale.GetLanguageTagText());
+        }
+
         #region Private static methods for normalize language tags
 
         private static readonly string[,] _normalizeLangTags =
@@ -54,6 +59,6 @@ namespace Cosmos.I18N.Languages
         }
 
         #endregion
-        
+
     }
 }

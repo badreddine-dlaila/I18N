@@ -10,6 +10,8 @@ namespace Cosmos.I18N.Languages
     /// </summary>
     public class FallbackExperimenter
     {
+        private static readonly FallbackExperimenter _defaultExperimenter = new FallbackExperimenter();
+
         private readonly FallbackItemList _items = new FallbackItemList();
         private readonly Dictionary<int, List<FallbackItem>> _cachedResults = new Dictionary<int, List<FallbackItem>>();
         private readonly object _cacheLockObj = new object();
@@ -304,7 +306,9 @@ namespace Cosmos.I18N.Languages
                 if (!sameLanguageItems.Any())
                 {
                     //there's no same [Language] in list
-                    var max = this.Max(m => m.Priority);
+                    var max = sameLanguageItems.Count == 0
+                        ? 0
+                        : this.Max(m => m.Priority);
                     item.Priority = max + 1;
                     base.Add(item);
                     AddGlobalKeyCache(item.GlobalKey);
@@ -339,5 +343,10 @@ namespace Cosmos.I18N.Languages
             public bool ContainsGlobalKey(string globalKey)
                 => !string.IsNullOrWhiteSpace(globalKey) && _globalKeyList.Contains(globalKey);
         }
+
+        /// <summary>
+        /// Gets a default Fallback experimenter
+        /// </summary>
+        public static FallbackExperimenter Default => _defaultExperimenter;
     }
 }
