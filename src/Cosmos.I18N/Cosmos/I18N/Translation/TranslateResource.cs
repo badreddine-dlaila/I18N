@@ -5,9 +5,9 @@ using Cosmos.I18N.Languages;
 namespace Cosmos.I18N.Translation
 {
     /// <summary>
-    /// Translate reource
+    /// Translate resource
     /// </summary>
-    public class TranslateResource : ITranslateResource
+    public partial class TranslateResource : ITranslateResource
     {
         private readonly LanguageTag _languageTag;
 
@@ -67,7 +67,7 @@ namespace Cosmos.I18N.Translation
             {
                 var k = Key(resourceKey);
 
-                if (_l.ContainsKey(k))
+                if (Contains(k))
                     _l[k] = resourceTargetValue;
                 else
                     _l.Add(k, resourceTargetValue);
@@ -84,7 +84,7 @@ namespace Cosmos.I18N.Translation
             {
                 var k = Key(resourceKey);
 
-                if (_l.ContainsKey(k))
+                if (Contains(k))
                     _l.Remove(k);
             }
         }
@@ -99,7 +99,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="resourceKey"></param>
         /// <returns></returns>
         // ReSharper disable once InconsistentlySynchronizedField
-        public bool CanTranslate(string resourceKey) => _l.ContainsKey(Key(resourceKey));
+        public bool CanTranslate(string resourceKey) => Contains(resourceKey);
 
         /// <summary>
         /// Translation...

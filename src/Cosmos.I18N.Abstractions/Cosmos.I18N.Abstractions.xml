@@ -183,5 +183,10 @@
             </summary>
             <param name="alias"></param>
         </member>
+        <member name="T:Cosmos.I18N.Languages.Locale">
+            <summary>
+            Locale enum, to create language tag quickly
+            </summary>
+        </member>
     </members>
 </doc>

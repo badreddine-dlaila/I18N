@@ -10,7 +10,7 @@ namespace Cosmos.I18N.Translation
     /// <summary>
     /// Default implementation of translate package
     /// </summary>
-    public class TranslatePackage : ITranslatePackage
+    public partial class TranslatePackage : ITranslatePackage
     {
         private readonly FallbackExperimenter _fallbackExperimenter;
         private readonly Dictionary<string, ITranslateResource> _langAndResourceMapCache;
@@ -103,8 +103,11 @@ namespace Cosmos.I18N.Translation
                 if (_resources.ContainsKey(resource.Binding))
                     return;
 
-                _resources.Add(resource.Binding, resource);
-                _usedLanguageTags.Add(resource.Binding);
+                if (TryRegisterLanguageTagOnceAgain(resource.Binding))
+                {
+                    _resources.Add(resource.Binding, resource);
+                    _usedLanguageTags.Add(resource.Binding);
+                }
             }
         }
 
@@ -119,6 +122,19 @@ namespace Cosmos.I18N.Translation
 
             foreach (var resource in resources)
                 AddResource(resource);
+        }
+
+        private bool TryRegisterLanguageTagOnceAgain(LanguageTag languageTag)
+        {
+            if (languageTag == null)
+                return false;
+
+            if (_fallbackExperimenter.Contains(languageTag))
+                return true;
+
+            _fallbackExperimenter.RegisterTag(languageTag);
+
+            return true;
         }
 
         #endregion
