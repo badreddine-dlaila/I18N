@@ -30,6 +30,11 @@
             Interface for text
             </summary>
         </member>
+        <member name="P:Cosmos.I18N.IText.CustomFormatProvider">
+            <summary>
+            Gets or sets custom format provider
+            </summary>
+        </member>
         <member name="M:Cosmos.I18N.IText.ToString">
             <summary>
             To string.
@@ -93,6 +98,107 @@
             <param name="text"></param>
             <param name="packageKey"></param>
             <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String})">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
             <param name="parameters"></param>
             <returns></returns>
         </member>

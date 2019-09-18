@@ -29,8 +29,9 @@ namespace Cosmos.I18N.Tests.ConsoleTest
 
                 Console.WriteLine("Current LanguageTag ===========");
 
+                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now)); //en-US
                 LanguageTagCoreManager.UpdateTag("zh-CN");
-                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now));
+                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now)); //zn-CN
 
                 Console.WriteLine("Fallback LanguageTag ==========");
                 Console.WriteLine(new Text("Hello world {0}", "Main", "en-CA", DateTime.Now));
@@ -39,6 +40,12 @@ namespace Cosmos.I18N.Tests.ConsoleTest
                 LanguageTagCoreManager.UpdateTagChangedHandler(DisplayNewLanguageTag);
                 LanguageTagCoreManager.UpdateTag("zh-CN");
                 LanguageTagCoreManager.UpdateTag("zh-TW");
+
+                Console.WriteLine("Without Parameters ===========");
+                Console.WriteLine(new Text("Hello world {0}", "Main")); //zn-CN
+
+                Console.WriteLine("Custom Translate Format Provider ===========");
+                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now) {CustomFormatProvider = CustomFormatProvider}); //zn-CN
             }
             catch (Exception exception)
             {
@@ -55,6 +62,11 @@ namespace Cosmos.I18N.Tests.ConsoleTest
         {
             Console.WriteLine($"before: {handle.PreviousValue}"); //zh-CN
             Console.WriteLine($"after: {handle.CurrentValue}"); //zh-TW
+        }
+
+        static string CustomFormatProvider(string packageKey, ILanguageTag languageTag, string text, object[] parameters)
+        {
+            return $"Custom format result: {string.Format(text, parameters)}, LangTag: {languageTag}";
         }
     }
 }

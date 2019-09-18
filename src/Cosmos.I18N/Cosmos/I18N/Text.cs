@@ -87,6 +87,7 @@ namespace Cosmos.I18N
             FormatingParameters = parameters;
 
             _translationProcessor = StaticInstanceForILanguageServiceProvider.Instance.GetTranslationProcessor();
+            CustomFormatProvider = (packageKeyArg, languageTagArg, textArg, parametersArg) => string.Format(textArg, parametersArg);
         }
 
         /// <summary>
@@ -175,6 +176,7 @@ namespace Cosmos.I18N
             FormatingParameters = parameters;
 
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
+            CustomFormatProvider = (packageKeyArg, languageTagArg, textArg, parametersArg) => string.Format(textArg, parametersArg);
         }
 
         /// <summary>
@@ -188,6 +190,10 @@ namespace Cosmos.I18N
         public Text(TranslationProcessor processor, string text, string packageKey, Locale locale, params object[] parameters)
             : this(processor, text, packageKey, locale.GetLanguageTagText(), parameters) { }
 
+        /// <summary>
+        /// Gets or sets custom format provider
+        /// </summary>
+        public Func<string, ILanguageTag, string, object[], string> CustomFormatProvider { get; set; }
 
         /// <summary>
         /// Convert to String
@@ -204,7 +210,9 @@ namespace Cosmos.I18N
         {
             var text = _translationProcessor.Translate(LanguageTag, PackageKey, OriginText);
             if (FormatingParameters != null)
-                text = string.Format(text, FormatingParameters);
+                text = CustomFormatProvider == null
+                    ? string.Format(text, FormatingParameters)
+                    : CustomFormatProvider(PackageKey, LanguageTag, OriginText, FormatingParameters);
             return text;
         }
 
