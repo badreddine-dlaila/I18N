@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
@@ -31,7 +32,7 @@ namespace Cosmos.I18N.Configurations
         /// <param name="customMergeProvider"></param>
         /// <returns></returns>
         public I18NOptions AddPackage(Func<ITranslatePackage> packageProvider, MergeLevel level = MergeLevel.Level_1,
-            Func<ITranslatePackage, ITranslatePackage, ITranslatePackage> customMergeProvider = null)
+            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null)
         {
             return AddPackage(packageProvider(), level, customMergeProvider);
         }
@@ -45,7 +46,7 @@ namespace Cosmos.I18N.Configurations
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public I18NOptions AddPackage(ITranslatePackage package, MergeLevel level = MergeLevel.Level_1,
-            Func<ITranslatePackage, ITranslatePackage, ITranslatePackage> customMergeProvider = null)
+            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null)
         {
             if (package == null)
                 throw new ArgumentNullException(nameof(package));
@@ -125,18 +126,6 @@ namespace Cosmos.I18N.Configurations
             return this;
         }
 
-        #endregion
-
-        #region Expose readonly properties
-
-        /// <summary>
-        /// To gets a readonly translation package table
-        /// </summary>
-        // ReSharper disable once InconsistentlySynchronizedField
-        public IReadOnlyDictionary<int, ITranslatePackage> TranslationPackages => __translationPackages;
-
-        #endregion
-
         private bool TryRegisterLanguageTagOnce(LanguageTag languageTag)
         {
             if (languageTag == null)
@@ -149,6 +138,18 @@ namespace Cosmos.I18N.Configurations
 
             return true;
         }
+
+        #endregion
+
+        #region Expose readonly properties
+
+        /// <summary>
+        /// To gets a readonly translation package table
+        /// </summary>
+        // ReSharper disable once InconsistentlySynchronizedField
+        public IReadOnlyDictionary<int, ITranslatePackage> TranslationPackages => __translationPackages;
+
+        #endregion
 
         #region Add base path
 
@@ -190,7 +191,7 @@ namespace Cosmos.I18N.Configurations
 
         #endregion
 
-        #region Set default locale
+        #region Set Default Locale
 
         /// <summary>
         /// Gets or sets default locale
@@ -209,6 +210,52 @@ namespace Cosmos.I18N.Configurations
         public I18NOptions SetDefaultLocale(Locale locale)
         {
             DefaultLocale = locale;
+            return this;
+        }
+
+        #endregion
+
+        #region Set CurrentLanguageTag Changed Handler
+
+        internal Action<AsyncLocalValueChangedArgs<string>> LanguageTagChangedHandler { get; private set; } = null;
+
+        /// <summary>
+        /// Set LanguageTag changed handler
+        /// </summary>
+        /// <param name="languageTagChangedHandler"></param>
+        /// <returns></returns>
+        public I18NOptions SetLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler)
+        {
+            if (languageTagChangedHandler != null)
+            {
+                LanguageTagChangedHandler = languageTagChangedHandler;
+            }
+
+            return this;
+        }
+
+        /// <summary>
+        /// Append LanguageTag changed handler
+        /// </summary>
+        /// <param name="languageTagChangedHandler"></param>
+        /// <returns></returns>
+        public I18NOptions AppendLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler)
+        {
+            if (languageTagChangedHandler != null)
+            {
+                LanguageTagChangedHandler += languageTagChangedHandler;
+            }
+
+            return this;
+        }
+
+        /// <summary>
+        /// Remove all LanguageTag changed handler
+        /// </summary>
+        /// <returns></returns>
+        public I18NOptions RemoveLanguageTagChangedHandler()
+        {
+            LanguageTagChangedHandler = null;
             return this;
         }
 

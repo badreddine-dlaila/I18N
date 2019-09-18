@@ -9,18 +9,22 @@
             Cosmos i18n options
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddPackage(System.Func{Cosmos.I18N.Translation.ITranslatePackage})">
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddPackage(System.Func{Cosmos.I18N.Translation.ITranslatePackage},Cosmos.I18N.Translation.MergeLevel,System.Func{Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackage})">
             <summary>
             Add translation package
             </summary>
             <param name="packageProvider"></param>
+            <param name="level"></param>
+            <param name="customMergeProvider"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddPackage(Cosmos.I18N.Translation.ITranslatePackage)">
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddPackage(Cosmos.I18N.Translation.ITranslatePackage,Cosmos.I18N.Translation.MergeLevel,System.Func{Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackage})">
             <summary>
             Add translation package
             </summary>
             <param name="package"></param>
+            <param name="level"></param>
+            <param name="customMergeProvider"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
@@ -72,6 +76,38 @@
             <param name="path"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:Cosmos.I18N.Configurations.I18NOptions.DefaultLocale">
+            <summary>
+            Gets or sets default locale
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.SetDefaultLocale(Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Sets default locale
+            </summary>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.SetLanguageTagChangedHandler(System.Action{System.Threading.AsyncLocalValueChangedArgs{System.String}})">
+            <summary>
+            Set LanguageTag changed handler
+            </summary>
+            <param name="languageTagChangedHandler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AppendLanguageTagChangedHandler(System.Action{System.Threading.AsyncLocalValueChangedArgs{System.String}})">
+            <summary>
+            Append LanguageTag changed handler
+            </summary>
+            <param name="languageTagChangedHandler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.RemoveLanguageTagChangedHandler">
+            <summary>
+            Remove all LanguageTag changed handler
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Core.Extensions.ObjectExtensions">
             <summary>
@@ -154,6 +190,23 @@
             After build
             </summary>
             <param name="providerAct"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Core.LanguageTagCoreManager">
+            <summary>
+            LanguageTag core manager
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.LanguageTagCoreManager.UpdateTagChangedHandler(System.Action{System.Threading.AsyncLocalValueChangedArgs{System.String}})">
+            <summary>
+            Update Current LanguageTag Changed handler
+            </summary>
+            <param name="languageTagChangedHandler"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Core.LanguageTagCoreManager.UpdateTag(System.String)">
+            <summary>
+            Update Current LanguageTag
+            </summary>
+            <param name="languageTag"></param>
         </member>
         <member name="T:Cosmos.I18N.Core.StaticInstanceForILanguageServiceProvider">
             <summary>
@@ -435,6 +488,16 @@
             <param name="other"></param>
             <returns></returns>
         </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.DefaultLocaleStr">
+            <summary>
+            Default locale string
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Languages.LanguageTag.DefaultLocale">
+            <summary>
+            Default locale
+            </summary>
+        </member>
         <member name="P:Cosmos.I18N.Languages.LanguageTag.Current">
             <summary>
             Get current language tag
@@ -609,6 +672,13 @@
             <param name="langTag"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagManager.Create(Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Languages.LanguageTag"/>
+            </summary>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
         <member name="M:Cosmos.I18N.Languages.LanguageTagManager.Get(System.String)">
             <summary>
             Get an instance of LanguageTag
@@ -616,11 +686,26 @@
             <param name="langTag"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagManager.Get(Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Get an instance of LanguageTag
+            </summary>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
         <member name="M:Cosmos.I18N.Languages.LanguageTagManager.TryGet(System.String,Cosmos.I18N.Languages.LanguageTag@)">
             <summary>
             Try get an instance of LanguageTag
             </summary>
             <param name="langTag"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagManager.TryGet(Cosmos.I18N.Languages.Locale,Cosmos.I18N.Languages.LanguageTag@)">
+            <summary>
+            Try get an instance of LanguageTag
+            </summary>
+            <param name="locale"></param>
             <param name="result"></param>
             <returns></returns>
         </member>
@@ -697,6 +782,25 @@
             <param name="matchedTag"></param>
             <param name="matchLevel"></param>
             <returns>Selected CultureInfoEx instance from the AppLanguages collection or null if there was no match.</returns>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.LocaleExtensions">
+            <summary>
+            Locale extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LocaleExtensions.AsLanguageTag(Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Languages.Locale"/> to <see cref="T:Cosmos.I18N.Languages.LanguageTag"/>.
+            </summary>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LocaleExtensions.AsLocale(Cosmos.I18N.Languages.LanguageTag)">
+            <summary>
+            Convert <see cref="T:Cosmos.I18N.Languages.LanguageTag"/> to <see cref="T:Cosmos.I18N.Languages.Locale"/>.
+            </summary>
+            <param name="languageTag"></param>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Templates.ILocalizationTemplate">
             <summary>
@@ -784,6 +888,14 @@
             <param name="packageKey"></param>
             <param name="languageTag"></param>
         </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
+        </member>
         <member name="M:Cosmos.I18N.Text.#ctor(System.String,System.String,System.String,System.Object[])">
             <summary>
             Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
@@ -800,6 +912,15 @@
             <param name="text"></param>
             <param name="packageKey"></param>
             <param name="languageTag"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
             <param name="parameters"></param>
         </member>
         <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String)">
@@ -837,6 +958,15 @@
             <param name="packageKey"></param>
             <param name="languageTag"></param>
         </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="processor"></param>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
+        </member>
         <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String,System.String,System.Object[])">
             <summary>
             Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
@@ -855,6 +985,16 @@
             <param name="text"></param>
             <param name="packageKey"></param>
             <param name="languageTag"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Text.#ctor(Cosmos.I18N.Core.TranslationProcessor,System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Text"/>.
+            </summary>
+            <param name="processor"></param>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
             <param name="parameters"></param>
         </member>
         <member name="M:Cosmos.I18N.Text.op_Implicit(Cosmos.I18N.Text)~System.String">
@@ -946,6 +1086,25 @@
             <param name="text"></param>
             <param name="packageKey"></param>
             <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="locale"></param>
             <param name="parameters"></param>
             <returns></returns>
         </member>
@@ -1066,6 +1225,24 @@
             <param name="strategy"></param>
             <returns></returns>
         </member>
+        <member name="T:Cosmos.I18N.Translation.ITranslatePackageMergeOps">
+            <summary>
+            Translate package merge ops
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslatePackageMergeOps.ExposeResource">
+            <summary>
+            Expose translate resource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslatePackageMergeOps.Merge(Cosmos.I18N.Translation.ITranslateResource,System.Func{Cosmos.I18N.Translation.ITranslateResourceMergeOps,System.ValueTuple{System.Boolean,Cosmos.I18N.Translation.ITranslateResource}})">
+            <summary>
+            Merge
+            </summary>
+            <param name="other"></param>
+            <param name="sourceMergeFunc"></param>
+        </member>
         <member name="T:Cosmos.I18N.Translation.ITranslateResource">
             <summary>
             Interface for TranslateResource
@@ -1093,6 +1270,45 @@
             Translate...
             </summary>
             <param name="resourceKey"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Translation.ITranslateResourceMergeOps">
+            <summary>
+            Translate resource merge ops
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslateResourceMergeOps.ExposeLibrary">
+            <summary>
+            Expose library of translation resource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslateResourceMergeOps.Merge(System.String,System.String)">
+            <summary>
+            Merge translate resource
+            </summary>
+            <param name="resourceKey"></param>
+            <param name="resourceTargetValue"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslateResourceMergeOps.Merge(System.Int32,System.String)">
+            <summary>
+            Merge translate resource
+            </summary>
+            <param name="hashOfResourceKey"></param>
+            <param name="resourceTargetValue"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslateResourceMergeOps.Contains(System.String)">
+            <summary>
+            Contains
+            </summary>
+            <param name="resourceKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslateResourceMergeOps.Contains(System.Int32)">
+            <summary>
+            Contains
+            </summary>
+            <param name="hashOfResourceKey"></param>
             <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Translation.ITranslationManager">
@@ -1167,6 +1383,9 @@
             <param name="translateResources"></param>
         </member>
         <member name="T:Cosmos.I18N.Translation.TranslatePackage">
+            <summary>
+            Default implementation of translate package
+            </summary>
             <summary>
             Default implementation of translate package
             </summary>
@@ -1272,9 +1491,108 @@
             <param name="strategy"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackage.Cosmos#I18N#Translation#ITranslatePackageMergeOps#ExposeResource">
+            <summary>
+            Expose translate resource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackage.Cosmos#I18N#Translation#ITranslatePackageMergeOps#Merge(Cosmos.I18N.Translation.ITranslateResource,System.Func{Cosmos.I18N.Translation.ITranslateResourceMergeOps,System.ValueTuple{System.Boolean,Cosmos.I18N.Translation.ITranslateResource}})">
+            <summary>
+            Merge
+            </summary>
+            <param name="other"></param>
+            <param name="sourceMergeFunc"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Translation.TranslatePackageMerger">
+            <summary>
+            Translation package merger
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.Merge(Cosmos.I18N.Translation.ITranslatePackage,Cosmos.I18N.Translation.ITranslatePackage,Cosmos.I18N.Translation.MergeLevel,System.Func{Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackage})">
+            <summary>
+            Merge
+            </summary>
+            <param name="source">源 Translation Package，将合并到此包内</param>
+            <param name="other">需要合并的素材 Translation Package，合并后此包将抛弃</param>
+            <param name="level">合并级别</param>
+            <param name="customMergeProvider">自定义合并方法提供者程序</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.MergeInLevel1(Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps)">
+            <summary>
+            Level 1 merge
+            (1) left 和 right 不能为空
+            (2) 获取 right 的 TranslationResource 清单
+            (3) 检测 right Translation Resource 和 right LanguageTag
+            (4) 如果 left Translation Resource 包含 right LanguageTag，跳过
+            (5) 此时 left Translation Resource 不包含 right LanguageTag，将 right Translation Resource 传入 Core Merge 1
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.MergeInLevel2(Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps)">
+            <summary>
+            Level 2 merge
+            (1) left 和 right 不能为空
+            (2) 获取 right 的 TranslationResource 清单
+            (3) 检测 right Translation Resource 和 right LanguageTag
+            (4) 将 right Translation Resource 传入 Core Merge 2
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.MergeLevel1CoreFunc(Cosmos.I18N.Translation.ITranslateResource)">
+            <summary>
+            Core Merge 1
+            当 resource 为 null 时，表示 TranslatePackage 内不包含该 LanguageTag 的资源，此时直接返回 Other TranslateResource (1)
+            当 resource 不为 null，表示 TranslatePackage 内包含该 LanguageTag 的资源，此时直接跳过，并原样返回 resource (2)
+            </summary>
+            <param name="otherResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.MergeLevel2CoreFunc(Cosmos.I18N.Translation.ITranslateResource)">
+            <summary>
+            Core Merge 2
+            当 resource 为 null 时，表示 TranslatePackage 内不包含该 LanguageTag 的资源，此时直接返回 Other TranslateResource (1)
+            当 resource 不为 null，表示 TranslatePackage 内包含该 LanguageTag 的资源，此时将所有 resource 不包含、但 other 包含的 Translation value 合并进 resource，并返回 resource (2)
+            如果 other 不支持合并操作，则跳过 Merge (*)
+            </summary>
+            <param name="otherResource"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Translation.MergeLevel">
+            <summary>
+            Merge level for translation package
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Translation.MergeLevel.Level_1">
+            <summary>
+            Level 1
+            <br />
+            粗颗粒
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Translation.MergeLevel.Level_2">
+            <summary>
+            Level 2
+            <br />
+            细颗粒
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Translation.MergeLevel.Custom">
+            <summary>
+            Custom<br />
+            自定义
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Translation.TranslateResource">
             <summary>
-            Translate reource
+            Translate resource
+            </summary>
+            <summary>
+            Translate resource
             </summary>
         </member>
         <member name="M:Cosmos.I18N.Translation.TranslateResource.#ctor(Cosmos.I18N.Languages.LanguageTag,System.String)">
@@ -1328,6 +1646,40 @@
             Translation...
             </summary>
             <param name="resourceKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResource.Cosmos#I18N#Translation#ITranslateResourceMergeOps#ExposeLibrary">
+            <summary>
+            Expose library of translation resource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResource.Cosmos#I18N#Translation#ITranslateResourceMergeOps#Merge(System.String,System.String)">
+            <summary>
+            Merge translate resource
+            </summary>
+            <param name="resourceKey"></param>
+            <param name="resourceTargetValue"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResource.Cosmos#I18N#Translation#ITranslateResourceMergeOps#Merge(System.Int32,System.String)">
+            <summary>
+            Merge translate resource
+            </summary>
+            <param name="hashOfResourceKey"></param>
+            <param name="resourceTargetValue"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResource.Contains(System.String)">
+            <summary>
+            Contains
+            </summary>
+            <param name="resourceKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResource.Contains(System.Int32)">
+            <summary>
+            Contains
+            </summary>
+            <param name="hashOfResourceKey"></param>
             <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Translation.TranslateResourceFactory">
