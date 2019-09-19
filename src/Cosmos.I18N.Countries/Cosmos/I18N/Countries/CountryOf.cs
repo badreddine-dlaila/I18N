@@ -153,7 +153,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-        /// Cosmos i18n code: i18n_country_balin
+        /// Cosmos i18n code: i18n_country_bulongdi
         /// </summary>
         // ReSharper disable once ConvertToAutoProperty
         public static CountryInfo Burundi => Africa.Burundi.Instance;

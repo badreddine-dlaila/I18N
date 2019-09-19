@@ -189,7 +189,7 @@ namespace Cosmos.I18N.Countries
 
         /// <summary>
         /// 布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-        /// Cosmos i18n code: i18n_country_balin
+        /// Cosmos i18n code: i18n_country_bulongdi
         /// </summary>
         [I18NIdentityCode(Africa.Burundi.I18N_IDENTITY_CODE)]
         Burundi,
