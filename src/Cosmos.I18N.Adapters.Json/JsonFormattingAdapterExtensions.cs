@@ -9,8 +9,11 @@ namespace Cosmos.I18N.Adapters.Json
     {
         public static II18NServiceCollection AddJsonResourceFrom(this II18NServiceCollection services, string path, bool referenceToBasePath = true)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
-            if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
+            if (services == null)
+                throw new ArgumentNullException(nameof(services));
+
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentNullException(nameof(path));
 
             if (PathHelper.IsSeveralPath(path))
             {

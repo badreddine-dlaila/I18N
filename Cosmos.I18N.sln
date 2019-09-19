@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Extensions.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Extensions.DependencyInjection", "src\Cosmos.I18N.Extensions.DependencyInjection\Cosmos.I18N.Extensions.DependencyInjection.csproj", "{3D541B57-5DB1-47F6-8AFA-A6A93B06115E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridges", "Bridges", "{691F123F-69C3-4459-9D8C-73EA15BE3957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Bridges.AbpBridge.I18N", "src\Cosmos.Bridges.AbpBridge.I18N\Cosmos.Bridges.AbpBridge.I18N.csproj", "{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,10 @@ Global
 		{3D541B57-5DB1-47F6-8AFA-A6A93B06115E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D541B57-5DB1-47F6-8AFA-A6A93B06115E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D541B57-5DB1-47F6-8AFA-A6A93B06115E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +110,8 @@ Global
 		{1AE7F370-6A21-4183-8ECA-610EF191BEC3} = {433A7648-49A2-4200-BF02-B59998B987A3}
 		{B02E4417-7F01-47C4-82F1-1144631AB0FE} = {1AE7F370-6A21-4183-8ECA-610EF191BEC3}
 		{3D541B57-5DB1-47F6-8AFA-A6A93B06115E} = {1AE7F370-6A21-4183-8ECA-610EF191BEC3}
+		{691F123F-69C3-4459-9D8C-73EA15BE3957} = {433A7648-49A2-4200-BF02-B59998B987A3}
+		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9} = {691F123F-69C3-4459-9D8C-73EA15BE3957}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B9488C4-C201-471B-A20A-A376048032AD}
