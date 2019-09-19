@@ -5,6 +5,7 @@ using Cosmos.I18N.Adapters.Json;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Extensions.Console;
 using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N.Tests.ConsoleTest
 {
@@ -46,6 +47,9 @@ namespace Cosmos.I18N.Tests.ConsoleTest
 
                 Console.WriteLine("Custom Translate Format Provider ===========");
                 Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now) {CustomFormatProvider = CustomFormatProvider}); //zn-CN
+
+                Console.WriteLine("Anonymous ==============================");
+                Console.WriteLine(new Text("Hello anonymous world {0}", TranslationManager.ANONYMOUS_PACKAGE_KEY, DateTime.Now)); //zn-CN
             }
             catch (Exception exception)
             {

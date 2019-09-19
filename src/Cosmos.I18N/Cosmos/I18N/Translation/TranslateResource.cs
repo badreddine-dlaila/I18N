@@ -39,6 +39,7 @@ namespace Cosmos.I18N.Translation
             _languageTag = languageTag ?? throw new ArgumentNullException(nameof(languageTag));
             _l = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
             Name = resourceName;
+            IsAnonymous = resourceName == TranslationManager.ANONYMOUS_RESOURCE_NAME;
         }
 
         /// <summary>
@@ -108,6 +109,15 @@ namespace Cosmos.I18N.Translation
         /// <returns></returns>
         // ReSharper disable once InconsistentlySynchronizedField
         public string Translate(string resourceKey) => _l.TryGetValue(Key(resourceKey), out var resourceTargetValue) ? resourceTargetValue : string.Empty;
+
+        #endregion
+
+        #region Is Anonymous
+
+        /// <summary>
+        /// To flag anonymous or not.
+        /// </summary>
+        public bool IsAnonymous { get; }
 
         #endregion
 

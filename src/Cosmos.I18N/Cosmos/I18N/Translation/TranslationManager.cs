@@ -9,14 +9,35 @@ namespace Cosmos.I18N.Translation
     public class TranslationManager : ITranslationManager, ITranslationManSetter
     {
         private readonly Dictionary<int, ITranslatePackage> _translatePackages;
+        private static readonly int _hashOfAnonymousPackageKey = ANONYMOUS_PACKAGE_KEY.GetHashCode();
         private readonly object _translateLockObj = new object();
+
+        /// <summary>
+        /// Anonymous Package Key
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
+        public const string ANONYMOUS_PACKAGE_KEY = "__anonymous_package_key";
+
+        /// <summary>
+        /// Anonymous Resource Name
+        /// </summary>
+        // ReSharper disable once InconsistentNaming
+        public const string ANONYMOUS_RESOURCE_NAME = "AnonymousResource";
+
+        /// <summary>
+        /// Hashcode of Anonymous Package Key
+        /// </summary>
+        public static int HashOfAnonymousPackageKey => _hashOfAnonymousPackageKey;
 
         /// <summary>
         /// Create a new instance of <see cref="TranslationManager"/>
         /// </summary>
         public TranslationManager()
         {
-            _translatePackages = new Dictionary<int, ITranslatePackage>();
+            _translatePackages = new Dictionary<int, ITranslatePackage>
+            {
+                {_hashOfAnonymousPackageKey, new TranslatePackage(ANONYMOUS_PACKAGE_KEY, FallbackExperimenter.Default)}
+            };
         }
 
         #region Current language tag
@@ -53,6 +74,14 @@ namespace Cosmos.I18N.Translation
         {
             if (translatePackage == null)
                 return;
+
+            if (translatePackage.IsAnonymous)
+            {
+                var left = _translatePackages[_hashOfAnonymousPackageKey];
+                var right = translatePackage;
+                TranslatePackageMerger.Merge(left, right, MergeLevel.Level_2);
+                return;
+            }
 
             if (Contains(translatePackage.PackageKey))
                 return;
@@ -95,6 +124,15 @@ namespace Cosmos.I18N.Translation
             if (string.IsNullOrWhiteSpace(packageKey))
                 return default;
             return _translatePackages.TryGetValue(packageKey.GetHashCode(), out var package) ? package : default;
+        }
+
+        /// <summary>
+        /// Get anonymous translation package
+        /// </summary>
+        /// <returns></returns>
+        public ITranslatePackage GetAnonymousPackage()
+        {
+            return _translatePackages[_hashOfAnonymousPackageKey];
         }
 
         #endregion
@@ -167,6 +205,26 @@ namespace Cosmos.I18N.Translation
         public ITranslateResource GetResource(string packageKey, LanguageTag languageTag)
         {
             return GetPackage(packageKey)?.GetResource(languageTag);
+        }
+
+        /// <summary>
+        /// Get translation resource
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public ITranslateResource GetAnonymousResource(string languageTag)
+        {
+            return GetAnonymousPackage()?.GetResource(languageTag);
+        }
+
+        /// <summary>
+        /// Get translation resource
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public ITranslateResource GetAnonymousResource(LanguageTag languageTag)
+        {
+            return GetAnonymousPackage()?.GetResource(languageTag);
         }
 
         #endregion

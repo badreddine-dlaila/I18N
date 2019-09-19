@@ -152,6 +152,16 @@ namespace Cosmos.I18N.Translation
 
             return (false, (ITranslateResource) resource); //(2)
         };
+
+        /// <summary>
+        /// Anonymous merge core func
+        /// 当 resource 为 null 时，表示 TranslatePackage 内不包含该 LanguageTag 的资源，此时直接返回 Other TranslateResource (1)
+        /// 当 resource 不为 null，表示 TranslatePackage 内包含该 LanguageTag 的资源，此时将所有 resource 不包含、但 other 包含的 Translation value 合并进 resource，并返回 resource (2)
+        /// 如果 other 不支持合并操作，则跳过 Merge (*)
+        /// </summary>
+        /// <param name="otherResource"></param>
+        /// <returns></returns>
+        internal static Func<ITranslateResourceMergeOps, (bool, ITranslateResource)> AnonymousMergeCoreFunc(ITranslateResource otherResource) => MergeLevel2CoreFunc(otherResource);
     }
 
     /// <summary>

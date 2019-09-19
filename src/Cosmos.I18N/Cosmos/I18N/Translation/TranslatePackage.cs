@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Core.Extensions;
 using Cosmos.I18N.Languages;
 
 namespace Cosmos.I18N.Translation
@@ -35,6 +34,7 @@ namespace Cosmos.I18N.Translation
             _usedLanguageTags = new List<LanguageTag>();
 
             PackageKey = packageKey;
+            IsAnonymous = packageKey == TranslationManager.ANONYMOUS_PACKAGE_KEY;
         }
 
         #region Get package info
@@ -95,6 +95,18 @@ namespace Cosmos.I18N.Translation
             if (resource == null)
                 return;
 
+            if (resource.IsAnonymous)
+            {
+                if (!IsAnonymous)
+                    throw new InvalidOperationException("Anonymous translate resource cannot be added into non-anonymous package.");
+
+                AddAnonymousResource(resource);
+                return;
+            }
+
+            if (IsAnonymous)
+                throw new InvalidOperationException("Anonymous translate package can only be added anonymous resource.");
+
             if (_resources.ContainsKey(resource.Binding))
                 return;
 
@@ -109,6 +121,12 @@ namespace Cosmos.I18N.Translation
                     _usedLanguageTags.Add(resource.Binding);
                 }
             }
+        }
+
+        private void AddAnonymousResource(ITranslateResource resource)
+        {
+            var ops = (ITranslatePackageMergeOps) this;
+            ops.Merge(resource, TranslatePackageMerger.AnonymousMergeCoreFunc(resource));
         }
 
         /// <summary>
@@ -381,6 +399,15 @@ namespace Cosmos.I18N.Translation
                     return TranslationGetter.FallbackMode(languageTag, resourceKey, out translateValue, _resources, _fallbackExperimenter);
             }
         }
+
+        #endregion
+
+        #region Is Anonymous
+
+        /// <summary>
+        /// To flag anonymous or not.
+        /// </summary>
+        public bool IsAnonymous { get; }
 
         #endregion
 

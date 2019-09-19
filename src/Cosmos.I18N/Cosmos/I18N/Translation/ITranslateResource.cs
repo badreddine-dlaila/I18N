@@ -30,5 +30,10 @@ namespace Cosmos.I18N.Translation
         /// <param name="resourceKey"></param>
         /// <returns></returns>
         string Translate(string resourceKey);
+
+        /// <summary>
+        /// To flag anonymous or not.
+        /// </summary>
+        bool IsAnonymous { get; }
     }
 }

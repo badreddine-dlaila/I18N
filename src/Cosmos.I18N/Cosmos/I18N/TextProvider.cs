@@ -1,6 +1,7 @@
 using System;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N
 {
@@ -259,5 +260,217 @@ namespace Cosmos.I18N
             };
         }
 
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, string languageTag)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, string languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, ILanguageTag languageTag)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, ILanguageTag languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Locale locale)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="locale"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Locale locale, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale, parameters);
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, parameters)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="languageTag"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="locale"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="formatProvider"></param>
+        /// <param name="locale"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale, params object[] parameters)
+        {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale, parameters)
+            {
+                CustomFormatProvider = formatProvider
+            };
+        }
     }
 }

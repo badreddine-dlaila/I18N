@@ -9,6 +9,11 @@
             Cosmos i18n options
             </summary>
         </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.#ctor">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Configurations.I18NOptions"/>
+            </summary>
+        </member>
         <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddPackage(System.Func{Cosmos.I18N.Translation.ITranslatePackage},Cosmos.I18N.Translation.MergeLevel,System.Func{Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackageMergeOps,Cosmos.I18N.Translation.ITranslatePackage})">
             <summary>
             Add translation package
@@ -45,6 +50,15 @@
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
             <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.AddAnonymousResource(Cosmos.I18N.Translation.ITranslateResource)">
+            <summary>
+            Add anonymous translation resource
+            </summary>
+            <param name="resource"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
         </member>
         <member name="P:Cosmos.I18N.Configurations.I18NOptions.TranslationPackages">
             <summary>
@@ -269,10 +283,42 @@
             <param name="strategy"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Core.TranslationProcessor.AnonymousTranslate(System.String,Cosmos.I18N.Translation.AttemptStrategy)">
+            <summary>
+            Translate
+            </summary>
+            <param name="resourceKey"></param>
+            <param name="strategy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Core.TranslationProcessor.AnonymousTranslate(System.String,System.String,Cosmos.I18N.Translation.AttemptStrategy)">
+            <summary>
+            Translate in anonymous
+            </summary>
+            <param name="languageTag"></param>
+            <param name="resourceKey"></param>
+            <param name="strategy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Core.TranslationProcessor.AnonymousTranslate(Cosmos.I18N.Languages.LanguageTag,System.String,Cosmos.I18N.Translation.AttemptStrategy)">
+            <summary>
+            Translate in anonymous
+            </summary>
+            <param name="languageTag"></param>
+            <param name="resourceKey"></param>
+            <param name="strategy"></param>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.ILanguageServiceProvider">
             <summary>
             Interface for Language service provider
             </summary>
+        </member>
+        <member name="M:Cosmos.I18N.ILanguageServiceProvider.GetTranslationPackage">
+            <summary>
+            Get anonymous translation package
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Cosmos.I18N.ILanguageServiceProvider.GetTranslationPackage(System.String)">
             <summary>
@@ -802,6 +848,43 @@
             <param name="languageTag"></param>
             <returns></returns>
         </member>
+        <member name="T:Cosmos.I18N.Templates.AnonymousLocalizationTemplate">
+            <summary>
+            Anonymous Localization Template
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.#ctor">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Templates.AnonymousLocalizationTemplate"/>
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Templates.AnonymousLocalizationTemplate"/>
+            </summary>
+            <param name="language"></param>
+            <param name="contents"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.PackageKey">
+            <summary>
+            Belongs to package key
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.Language">
+            <summary>
+            Language tag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.Name">
+            <summary>
+            Name, also means resource name.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Templates.AnonymousLocalizationTemplate.Contents">
+            <summary>
+            Contents
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Templates.ILocalizationTemplate">
             <summary>
             Interface for localization template
@@ -826,6 +909,19 @@
             <summary>
             Contents
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Templates.LocalizationTemplateExtensions">
+            <summary>
+            Extensions for Localization Template
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Templates.LocalizationTemplateExtensions.IsAnonymousTemplate(Cosmos.I18N.Templates.ILocalizationTemplate)">
+            <summary>
+            Is such template an anonymous template
+            </summary>
+            <param name="template"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
         </member>
         <member name="T:Cosmos.I18N.Templates.StandardLocalizationTemplate">
             <summary>
@@ -997,6 +1093,11 @@
             <param name="locale"></param>
             <param name="parameters"></param>
         </member>
+        <member name="P:Cosmos.I18N.Text.CustomFormatProvider">
+            <summary>
+            Gets or sets custom format provider
+            </summary>
+        </member>
         <member name="M:Cosmos.I18N.Text.op_Implicit(Cosmos.I18N.Text)~System.String">
             <summary>
             Convert to String
@@ -1104,6 +1205,228 @@
             </summary>
             <param name="text"></param>
             <param name="packageKey"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String})">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Create(System.String,System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="packageKey"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String})">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.TextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
             <param name="locale"></param>
             <param name="parameters"></param>
             <returns></returns>
@@ -1225,6 +1548,11 @@
             <param name="strategy"></param>
             <returns></returns>
         </member>
+        <member name="P:Cosmos.I18N.Translation.ITranslatePackage.IsAnonymous">
+            <summary>
+            To flag anonymous or not.
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Translation.ITranslatePackageMergeOps">
             <summary>
             Translate package merge ops
@@ -1271,6 +1599,11 @@
             </summary>
             <param name="resourceKey"></param>
             <returns></returns>
+        </member>
+        <member name="P:Cosmos.I18N.Translation.ITranslateResource.IsAnonymous">
+            <summary>
+            To flag anonymous or not.
+            </summary>
         </member>
         <member name="T:Cosmos.I18N.Translation.ITranslateResourceMergeOps">
             <summary>
@@ -1335,6 +1668,12 @@
             <param name="packageKey"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslationManager.GetAnonymousPackage">
+            <summary>
+            Get anonymous translation package
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Cosmos.I18N.Translation.ITranslationManager.GetResource(System.String,System.String)">
             <summary>
             Get translation resource
@@ -1348,6 +1687,20 @@
             Get translation resource
             </summary>
             <param name="packageKey"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslationManager.GetAnonymousResource(System.String)">
+            <summary>
+            Get translation resource
+            </summary>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.ITranslationManager.GetAnonymousResource(Cosmos.I18N.Languages.LanguageTag)">
+            <summary>
+            Get translation resource
+            </summary>
             <param name="languageTag"></param>
             <returns></returns>
         </member>
@@ -1491,6 +1844,11 @@
             <param name="strategy"></param>
             <returns></returns>
         </member>
+        <member name="P:Cosmos.I18N.Translation.TranslatePackage.IsAnonymous">
+            <summary>
+            To flag anonymous or not.
+            </summary>
+        </member>
         <member name="M:Cosmos.I18N.Translation.TranslatePackage.Cosmos#I18N#Translation#ITranslatePackageMergeOps#ExposeResource">
             <summary>
             Expose translate resource
@@ -1555,6 +1913,16 @@
         <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.MergeLevel2CoreFunc(Cosmos.I18N.Translation.ITranslateResource)">
             <summary>
             Core Merge 2
+            当 resource 为 null 时，表示 TranslatePackage 内不包含该 LanguageTag 的资源，此时直接返回 Other TranslateResource (1)
+            当 resource 不为 null，表示 TranslatePackage 内包含该 LanguageTag 的资源，此时将所有 resource 不包含、但 other 包含的 Translation value 合并进 resource，并返回 resource (2)
+            如果 other 不支持合并操作，则跳过 Merge (*)
+            </summary>
+            <param name="otherResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackageMerger.AnonymousMergeCoreFunc(Cosmos.I18N.Translation.ITranslateResource)">
+            <summary>
+            Anonymous merge core func
             当 resource 为 null 时，表示 TranslatePackage 内不包含该 LanguageTag 的资源，此时直接返回 Other TranslateResource (1)
             当 resource 不为 null，表示 TranslatePackage 内包含该 LanguageTag 的资源，此时将所有 resource 不包含、但 other 包含的 Translation value 合并进 resource，并返回 resource (2)
             如果 other 不支持合并操作，则跳过 Merge (*)
@@ -1648,6 +2016,11 @@
             <param name="resourceKey"></param>
             <returns></returns>
         </member>
+        <member name="P:Cosmos.I18N.Translation.TranslateResource.IsAnonymous">
+            <summary>
+            To flag anonymous or not.
+            </summary>
+        </member>
         <member name="M:Cosmos.I18N.Translation.TranslateResource.Cosmos#I18N#Translation#ITranslateResourceMergeOps#ExposeLibrary">
             <summary>
             Expose library of translation resource
@@ -1703,9 +2076,34 @@
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
+        <member name="M:Cosmos.I18N.Translation.TranslateResourceFactory.Create(Cosmos.I18N.Templates.AnonymousLocalizationTemplate)">
+            <summary>
+            Create Anonymous Localization Translate resource
+            </summary>
+            <param name="template"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
         <member name="T:Cosmos.I18N.Translation.TranslationManager">
             <summary>
             Translation manager
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Translation.TranslationManager.ANONYMOUS_PACKAGE_KEY">
+            <summary>
+            Anonymous Package Key
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Translation.TranslationManager.ANONYMOUS_RESOURCE_NAME">
+            <summary>
+            Anonymous Resource Name
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Translation.TranslationManager.HashOfAnonymousPackageKey">
+            <summary>
+            Hashcode of Anonymous Package Key
             </summary>
         </member>
         <member name="M:Cosmos.I18N.Translation.TranslationManager.#ctor">
@@ -1744,6 +2142,12 @@
             <param name="packageKey"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Translation.TranslationManager.GetAnonymousPackage">
+            <summary>
+            Get anonymous translation package
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Cosmos.I18N.Translation.TranslationManager.Cosmos#I18N#Translation#ITranslationManSetter#RegisterResource(System.String,Cosmos.I18N.Translation.ITranslateResource)">
             <summary>
             Register translation resource
@@ -1771,6 +2175,20 @@
             Get translation resource
             </summary>
             <param name="packageKey"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslationManager.GetAnonymousResource(System.String)">
+            <summary>
+            Get translation resource
+            </summary>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Translation.TranslationManager.GetAnonymousResource(Cosmos.I18N.Languages.LanguageTag)">
+            <summary>
+            Get translation resource
+            </summary>
             <param name="languageTag"></param>
             <returns></returns>
         </member>

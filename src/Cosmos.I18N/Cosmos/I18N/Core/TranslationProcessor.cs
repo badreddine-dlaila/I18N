@@ -64,5 +64,46 @@ namespace Cosmos.I18N.Core
                     : string.Empty
                 : string.Empty;
         }
+
+        /// <summary>
+        /// Translate
+        /// </summary>
+        /// <param name="resourceKey"></param>
+        /// <param name="strategy"></param>
+        /// <returns></returns>
+        public virtual string AnonymousTranslate(string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
+        {
+            return AnonymousTranslate(LanguageTag.Current, resourceKey, strategy);
+        }
+
+        /// <summary>
+        /// Translate in anonymous
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <param name="resourceKey"></param>
+        /// <param name="strategy"></param>
+        /// <returns></returns>
+        public virtual string AnonymousTranslate(string languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
+        {
+            return LanguageTagManager.TryGet(languageTag, out var languageTagInstance)
+                ? AnonymousTranslate(languageTagInstance, resourceKey, strategy)
+                : string.Empty;
+        }
+
+        /// <summary>
+        /// Translate in anonymous
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <param name="resourceKey"></param>
+        /// <param name="strategy"></param>
+        /// <returns></returns>
+        public virtual string AnonymousTranslate(LanguageTag languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
+        {
+            return _translatePackages.TryGetValue(TranslationManager.HashOfAnonymousPackageKey, out var package)
+                ? package.TryGetTranslateValue(languageTag, resourceKey, out var translateValue, strategy)
+                    ? translateValue
+                    : string.Empty
+                : string.Empty;
+        }
     }
 }

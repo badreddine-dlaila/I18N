@@ -100,5 +100,9 @@ namespace Cosmos.I18N.Translation
         /// <returns></returns>
         bool TryGetTranslateValue(LanguageTag languageTag, string resourceKey, out string translateValue, AttemptStrategy strategy = AttemptStrategy.Fallback);
 
+        /// <summary>
+        /// To flag anonymous or not.
+        /// </summary>
+        bool IsAnonymous { get; }
     }
 }

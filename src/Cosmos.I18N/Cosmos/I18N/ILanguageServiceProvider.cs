@@ -10,6 +10,12 @@ namespace Cosmos.I18N
     public interface ILanguageServiceProvider
     {
         /// <summary>
+        /// Get anonymous translation package
+        /// </summary>
+        /// <returns></returns>
+        ITranslatePackage GetTranslationPackage();
+        
+        /// <summary>
         /// Get translation package
         /// </summary>
         /// <param name="packageKey"></param>

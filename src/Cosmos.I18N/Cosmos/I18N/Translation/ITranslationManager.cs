@@ -28,6 +28,12 @@ namespace Cosmos.I18N.Translation
         ITranslatePackage GetPackage(string packageKey);
 
         /// <summary>
+        /// Get anonymous translation package
+        /// </summary>
+        /// <returns></returns>
+        ITranslatePackage GetAnonymousPackage();
+
+        /// <summary>
         /// Get translation resource
         /// </summary>
         /// <param name="packageKey"></param>
@@ -42,5 +48,19 @@ namespace Cosmos.I18N.Translation
         /// <param name="languageTag"></param>
         /// <returns></returns>
         ITranslateResource GetResource(string packageKey, LanguageTag languageTag);
+
+        /// <summary>
+        /// Get translation resource
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        ITranslateResource GetAnonymousResource(string languageTag);
+
+        /// <summary>
+        /// Get translation resource
+        /// </summary>
+        /// <param name="languageTag"></param>
+        /// <returns></returns>
+        ITranslateResource GetAnonymousResource(LanguageTag languageTag);
     }
 }

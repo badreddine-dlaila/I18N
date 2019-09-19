@@ -12,7 +12,7 @@ namespace Cosmos.I18N.Configurations
     public class I18NOptions
     {
         // ReSharper disable once InconsistentNaming
-        private readonly Dictionary<int, ITranslatePackage> __translationPackages = new Dictionary<int, ITranslatePackage>();
+        private readonly Dictionary<int, ITranslatePackage> __translationPackages;
 
         // ReSharper disable once InconsistentNaming
         private readonly object __lock_package = new object();
@@ -21,6 +21,17 @@ namespace Cosmos.I18N.Configurations
         private readonly object __lock_resource = new object();
 
         private readonly FallbackExperimenter _fallbackExperimenter = FallbackExperimenter.Default;
+
+        /// <summary>
+        /// Create a new instance of <see cref="I18NOptions"/>
+        /// </summary>
+        public I18NOptions()
+        {
+            __translationPackages = new Dictionary<int, ITranslatePackage>
+            {
+                {TranslationManager.HashOfAnonymousPackageKey, new TranslatePackage(TranslationManager.ANONYMOUS_PACKAGE_KEY, _fallbackExperimenter)}
+            };
+        }
 
         #region Add package
 
@@ -101,6 +112,9 @@ namespace Cosmos.I18N.Configurations
                 throw new ArgumentNullException(nameof(resource));
             if (string.IsNullOrWhiteSpace(packageKey))
                 throw new ArgumentNullException(nameof(packageKey));
+            if (resource.IsAnonymous)
+                throw new ArgumentException($"Anonymous translation resource should use method '{nameof(AddAnonymousResource)}'.");
+
             lock (__lock_resource)
             {
                 var hashOfPackageKey = packageKey.GetHashCode();
@@ -123,6 +137,32 @@ namespace Cosmos.I18N.Configurations
                 }
             }
 
+            return this;
+        }
+
+        /// <summary>
+        /// Add anonymous translation resource
+        /// </summary>
+        /// <param name="resource"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        public I18NOptions AddAnonymousResource(ITranslateResource resource)
+        {
+            if (resource == null)
+                throw new ArgumentNullException(nameof(resource));
+            if (!resource.IsAnonymous)
+                throw new ArgumentException($"Non-anonymous translation resource should use method '{nameof(AddResource)}'.");
+
+            lock (__lock_resource)
+            {
+                if (TryRegisterLanguageTagOnce(resource.Binding))
+                {
+                    var anonymousPackage = __translationPackages[TranslationManager.HashOfAnonymousPackageKey];
+                    anonymousPackage.AddResource(resource);
+                }
+            }
+            
             return this;
         }
 

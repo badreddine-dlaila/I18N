@@ -14,6 +14,8 @@ namespace Cosmos.I18N.Extensions.DependencyInjection
             _translationManager = manager ?? throw new ArgumentNullException(nameof(manager));
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
         }
+
+        public ITranslatePackage GetTranslationPackage() => _translationManager.GetAnonymousPackage();
         
         public ITranslatePackage GetTranslationPackage(string packageKey) => _translationManager.GetPackage(packageKey);
      

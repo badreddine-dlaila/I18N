@@ -2,6 +2,7 @@
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Core.Extensions;
 using Cosmos.I18N.Languages;
+using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N
 {
@@ -208,7 +209,9 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public override string ToString()
         {
-            var text = _translationProcessor.Translate(LanguageTag, PackageKey, OriginText);
+            var text = PackageKey == TranslationManager.ANONYMOUS_PACKAGE_KEY
+                ? _translationProcessor.AnonymousTranslate(LanguageTag, OriginText)
+                : _translationProcessor.Translate(LanguageTag, PackageKey, OriginText);
             if (FormatingParameters != null)
                 text = CustomFormatProvider == null
                     ? string.Format(text, FormatingParameters)

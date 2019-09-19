@@ -202,6 +202,146 @@
             <param name="parameters"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String})">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},System.String,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.ILanguageTag,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="languageTag"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale)">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.ITextProvider.Anonymous(System.String,System.Func{System.String,Cosmos.I18N.Languages.ILanguageTag,System.String,System.Object[],System.String},Cosmos.I18N.Languages.Locale,System.Object[])">
+            <summary>
+            Create
+            </summary>
+            <param name="text"></param>
+            <param name="formatProvider"></param>
+            <param name="locale"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Languages.ILanguageTag">
             <summary>
             Interface for language tag
