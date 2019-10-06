@@ -10,8 +10,10 @@ namespace Cosmos.I18N.Countries
     {
         // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryCode> _nameAndCodeMap;
+
         // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<CountryCode, Country> _codeAndNameMap;
+
         // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryInfo> _countryInfoCache;
 
@@ -88,6 +90,26 @@ namespace Cosmos.I18N.Countries
         public static CountryCode GetCountryCode(Country country)
         {
             return _nameAndCodeMap[country];
+        }
+
+        /// <summary>
+        /// Gets Continent
+        /// </summary>
+        /// <param name="country"></param>
+        /// <returns></returns>
+        public static Continent GetContinent(Country country)
+        {
+            return GetCountryInfo(country).Continent;
+        }
+
+        /// <summary>
+        /// Gets Continent
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public static Continent GetContinent(CountryCode code)
+        {
+            return GetCountryInfo(code).Continent;
         }
     }
 }
