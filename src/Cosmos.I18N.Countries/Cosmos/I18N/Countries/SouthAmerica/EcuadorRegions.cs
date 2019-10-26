@@ -79,6 +79,11 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         public static EnumValues ElOro => EnumValues.ElOro;
 
         /// <summary>
+        /// Pichincha
+        /// </summary>
+        public static EnumValues Pichincha => EnumValues.Pichincha;
+
+        /// <summary>
         /// Los Ríos
         /// </summary>
         public static EnumValues LosRíos => EnumValues.LosRíos;
@@ -212,6 +217,12 @@ namespace Cosmos.I18N.Countries.SouthAmerica
             /// </summary>
             [AliasInShort("O")]
             ElOro,
+            
+            /// <summary>
+            /// Pichincha
+            /// </summary>
+            [AliasInShort("P")]
+            Pichincha,
 
             /// <summary>
             /// Los Ríos

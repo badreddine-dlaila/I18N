@@ -350,7 +350,7 @@ namespace Cosmos.I18N.Countries
         CongoKinshasa,
 
         /// <summary>
-        /// 哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+        /// 哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
         /// Cosmos i18n code: i18n_country_gesidalijia
         /// </summary>
         [I18NIdentityCode(NorthAmerica.CostaRica.I18N_IDENTITY_CODE)]

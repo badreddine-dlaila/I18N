@@ -301,7 +301,7 @@ namespace Cosmos.I18N.Countries
         public static CountryInfo CookIslands => Oceania.CookIslands.Instance;
 
         /// <summary>
-        /// 哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+        /// 哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
         /// Cosmos i18n code: i18n_country_gesidalijia
         /// </summary>
         public static CountryInfo CostaRica => NorthAmerica.CostaRica.Instance;

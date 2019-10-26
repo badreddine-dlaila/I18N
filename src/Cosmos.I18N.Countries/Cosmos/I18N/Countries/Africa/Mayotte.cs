@@ -15,7 +15,7 @@ namespace Cosmos.I18N.Countries.Africa
             {
                 Country = Country.Mayotte,
                 CountryType = CountryType.Country,
-                BeongsToCountry = Country.Mayotte,
+                BeongsToCountry = Country.France,
                 UNCode = "175",
                 Alpha2Code = "YT",
                 Alpha3Code = "MYT",
