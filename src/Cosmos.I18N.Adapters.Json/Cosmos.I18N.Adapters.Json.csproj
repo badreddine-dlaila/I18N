@@ -6,6 +6,6 @@
     <ProjectReference Include="..\Cosmos.I18N\Cosmos.I18N.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
