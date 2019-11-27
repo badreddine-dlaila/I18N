@@ -215,7 +215,7 @@ namespace Cosmos.I18N
             if (FormatingParameters != null)
                 text = CustomFormatProvider == null
                     ? string.Format(text, FormatingParameters)
-                    : CustomFormatProvider(PackageKey, LanguageTag, OriginText, FormatingParameters);
+                    : CustomFormatProvider(PackageKey, LanguageTag, text, FormatingParameters);
             return text;
         }
 

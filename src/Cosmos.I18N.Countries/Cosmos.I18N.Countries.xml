@@ -1439,13 +1439,13 @@
         <member name="T:Cosmos.I18N.Countries.Africa.Burundi">
             <summary>
             布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_bulongdi
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.Africa.Burundi.Instance">
             <summary>
             布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_bulongdi
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Africa.Burundi.I18N_IDENTITY_CODE">
@@ -20609,7 +20609,7 @@
         <member name="F:Cosmos.I18N.Countries.Country.Burundi">
             <summary>
             布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_bulongdi
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.Country.Benin">
@@ -20747,7 +20747,7 @@
         </member>
         <member name="F:Cosmos.I18N.Countries.Country.CostaRica">
             <summary>
-            哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+            哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
             Cosmos i18n code: i18n_country_gesidalijia
             </summary>
         </member>
@@ -22120,7 +22120,7 @@
         <member name="F:Cosmos.I18N.Countries.CountryCode.BI">
             <summary>
             布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_bulongdi
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.CountryCode.BJ">
@@ -23611,6 +23611,20 @@
             <param name="country"></param>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetContinent(Cosmos.I18N.Countries.Country)">
+            <summary>
+            Gets Continent
+            </summary>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.CountryManager.GetContinent(Cosmos.I18N.Countries.CountryCode)">
+            <summary>
+            Gets Continent
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Countries.CountryManager.Expose">
             <summary>
             Expose information
@@ -23780,7 +23794,7 @@
         <member name="P:Cosmos.I18N.Countries.CountryOf.Burundi">
             <summary>
             布隆迪（The Republic of Burundi，非洲，BI，BDI，108），布隆迪共和国 <br />
-            Cosmos i18n code: i18n_country_balin
+            Cosmos i18n code: i18n_country_bulongdi
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.Benin">
@@ -23924,7 +23938,7 @@
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.CostaRica">
             <summary>
-            哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+            哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
             Cosmos i18n code: i18n_country_gesidalijia
             </summary>
         </member>
@@ -36329,13 +36343,13 @@
         </member>
         <member name="T:Cosmos.I18N.Countries.NorthAmerica.CostaRica">
             <summary>
-            哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+            哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
             Cosmos i18n code: i18n_country_gesidalijia
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.NorthAmerica.CostaRica.Instance">
             <summary>
-            哥斯达黎加（The Republic of Costa Rica，南美洲，CR，CRI，188），哥斯达黎加共和国 <br />
+            哥斯达黎加（The Republic of Costa Rica，北美洲，CR，CRI，188），哥斯达黎加共和国 <br />
             Cosmos i18n code: i18n_country_gesidalijia
             </summary>
         </member>
@@ -42917,6 +42931,11 @@
             El Oro
             </summary>
         </member>
+        <member name="P:Cosmos.I18N.Countries.SouthAmerica.EcuadorRegions.Pichincha">
+            <summary>
+            Pichincha
+            </summary>
+        </member>
         <member name="P:Cosmos.I18N.Countries.SouthAmerica.EcuadorRegions.LosRíos">
             <summary>
             Los Ríos
@@ -43035,6 +43054,11 @@
         <member name="F:Cosmos.I18N.Countries.SouthAmerica.EcuadorRegions.EnumValues.ElOro">
             <summary>
             El Oro
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.SouthAmerica.EcuadorRegions.EnumValues.Pichincha">
+            <summary>
+            Pichincha
             </summary>
         </member>
         <member name="F:Cosmos.I18N.Countries.SouthAmerica.EcuadorRegions.EnumValues.LosRíos">

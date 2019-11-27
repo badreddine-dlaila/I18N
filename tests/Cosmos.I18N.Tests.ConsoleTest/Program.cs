@@ -32,7 +32,7 @@ namespace Cosmos.I18N.Tests.ConsoleTest
 
                 Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now)); //en-US
                 LanguageTagCoreManager.UpdateTag("zh-CN");
-                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now)); //zn-CN
+                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now)); //zh-CN
 
                 Console.WriteLine("Fallback LanguageTag ==========");
                 Console.WriteLine(new Text("Hello world {0}", "Main", "en-CA", DateTime.Now));
@@ -43,10 +43,10 @@ namespace Cosmos.I18N.Tests.ConsoleTest
                 LanguageTagCoreManager.UpdateTag("zh-TW");
 
                 Console.WriteLine("Without Parameters ===========");
-                Console.WriteLine(new Text("Hello world {0}", "Main")); //zn-CN
+                Console.WriteLine(new Text("Hello world {0}", "Main")); //zh-CN
 
                 Console.WriteLine("Custom Translate Format Provider ===========");
-                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now) {CustomFormatProvider = CustomFormatProvider}); //zn-CN
+                Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now) {CustomFormatProvider = CustomFormatProvider}); //zh-CN
 
                 Console.WriteLine("Anonymous ==============================");
                 Console.WriteLine(new Text("Hello anonymous world {0}", TranslationManager.ANONYMOUS_PACKAGE_KEY, DateTime.Now)); //zn-CN
