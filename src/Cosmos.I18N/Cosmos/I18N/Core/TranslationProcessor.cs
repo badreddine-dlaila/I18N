@@ -102,8 +102,8 @@ namespace Cosmos.I18N.Core
             return _translatePackages.TryGetValue(TranslationManager.HashOfAnonymousPackageKey, out var package)
                 ? package.TryGetTranslateValue(languageTag, resourceKey, out var translateValue, strategy)
                     ? translateValue
-                    : string.Empty
-                : string.Empty;
+                    : resourceKey
+                : resourceKey;
         }
     }
 }
