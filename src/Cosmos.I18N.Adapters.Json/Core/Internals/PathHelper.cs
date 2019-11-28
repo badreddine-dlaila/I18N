@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Cosmos.I18N.Configurations;
 
-namespace Cosmos.I18N.Adapters.Json.Internals
+namespace Cosmos.I18N.Adapters.Json.Core.Internals
 {
     internal static class PathHelper
     {

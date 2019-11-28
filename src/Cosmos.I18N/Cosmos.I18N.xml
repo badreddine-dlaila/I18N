@@ -1743,6 +1743,12 @@
             Default implementation of translate package
             </summary>
         </member>
+        <member name="M:Cosmos.I18N.Translation.TranslatePackage.#ctor(Cosmos.I18N.Languages.FallbackExperimenter)">
+            <summary>
+            Create a new anonymous instance of <see cref="T:Cosmos.I18N.Translation.TranslatePackage"/>
+            </summary>
+            <param name="fallbackExperimenter"></param>
+        </member>
         <member name="M:Cosmos.I18N.Translation.TranslatePackage.#ctor(System.String,Cosmos.I18N.Languages.FallbackExperimenter)">
             <summary>
             Create a new instance of <see cref="T:Cosmos.I18N.Translation.TranslatePackage"/>

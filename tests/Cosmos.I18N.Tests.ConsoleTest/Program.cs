@@ -19,7 +19,8 @@ namespace Cosmos.I18N.Tests.ConsoleTest
             {
                 CosmosLocalization.Initialize()
                     .ToGlobal(c => c.SetPathBase(Directory.GetCurrentDirectory()).SetPathSegment("Resources/I18N"))
-                    .AddJsonResourceFrom("Main.*.json")
+                    .AddJsonResourceFrom("Main.*")
+                    .AddJsonAnonymousResourceFrom()
                     .AllDone();
 
                 Console.WriteLine("Basic =========================");
@@ -49,6 +50,7 @@ namespace Cosmos.I18N.Tests.ConsoleTest
                 Console.WriteLine(new Text("Hello world {0}", "Main", DateTime.Now) {CustomFormatProvider = CustomFormatProvider}); //zh-CN
 
                 Console.WriteLine("Anonymous ==============================");
+                LanguageTagCoreManager.UpdateTag("zh-CN");
                 Console.WriteLine(new Text("Hello anonymous world {0}", TranslationManager.ANONYMOUS_PACKAGE_KEY, DateTime.Now)); //zn-CN
             }
             catch (Exception exception)

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cosmos.I18N.Adapters.Json.Internals
+namespace Cosmos.I18N.Adapters.Json.Core.Internals
 {
     internal static class InternalLogger
     {
