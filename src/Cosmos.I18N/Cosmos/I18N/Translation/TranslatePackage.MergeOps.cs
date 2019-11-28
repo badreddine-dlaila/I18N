@@ -72,7 +72,7 @@ namespace Cosmos.I18N.Translation
                     throw new InvalidOperationException("Different language teg between the given resource 'Other' and the returned one from merge provider.");
                 }
 
-                AddResource(mergedResult.returnedResource);
+                AddResourceCore(mergedResult.returnedResource);
             }
         }
 

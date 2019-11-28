@@ -19,6 +19,13 @@ namespace Cosmos.I18N.Translation
         private readonly object _resourceLockObj = new object();
 
         /// <summary>
+        /// Create a new anonymous instance of <see cref="TranslatePackage"/>
+        /// </summary>
+        /// <param name="fallbackExperimenter"></param>
+        public TranslatePackage(FallbackExperimenter fallbackExperimenter) 
+            : this(TranslationManager.ANONYMOUS_PACKAGE_KEY, fallbackExperimenter) { }
+
+        /// <summary>
         /// Create a new instance of <see cref="TranslatePackage"/>
         /// </summary>
         /// <param name="packageKey"></param>
@@ -110,6 +117,20 @@ namespace Cosmos.I18N.Translation
             if (_resources.ContainsKey(resource.Binding))
                 return;
 
+            AddResourceCore(resource);
+        }
+        
+        private void AddAnonymousResource(ITranslateResource resource)
+        {
+            var ops = (ITranslatePackageMergeOps) this;
+            ops.Merge(resource, TranslatePackageMerger.AnonymousMergeCoreFunc(resource));
+        }
+
+        private void AddResourceCore(ITranslateResource resource)
+        {
+            if(resource == null)
+                return;
+            
             lock (_resourceLockObj)
             {
                 if (_resources.ContainsKey(resource.Binding))
@@ -122,13 +143,7 @@ namespace Cosmos.I18N.Translation
                 }
             }
         }
-
-        private void AddAnonymousResource(ITranslateResource resource)
-        {
-            var ops = (ITranslatePackageMergeOps) this;
-            ops.Merge(resource, TranslatePackageMerger.AnonymousMergeCoreFunc(resource));
-        }
-
+        
         /// <summary>
         /// Add resources
         /// </summary>
