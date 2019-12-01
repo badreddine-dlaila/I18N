@@ -243,6 +243,27 @@
             Gets instance
             </summary>
         </member>
+        <member name="T:Cosmos.I18N.Core.StaticInstanceForTextProvider">
+            <summary>
+            Static instance for language service provider
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Core.StaticInstanceForTextProvider._instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.StaticInstanceForTextProvider.SetInstance(Cosmos.I18N.ITextProvider)">
+            <summary>
+            Sets instance
+            </summary>
+            <param name="textProvider"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Core.StaticInstanceForTextProvider.Instance">
+            <summary>
+            Gets instance
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Core.TranslationProcessor">
             <summary>
             Translation processor

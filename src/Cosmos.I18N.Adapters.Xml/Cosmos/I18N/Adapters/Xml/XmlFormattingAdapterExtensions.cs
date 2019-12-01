@@ -1,16 +1,22 @@
 ﻿using System;
-using Cosmos.I18N.Adapters.Xml.Internals;
+using Cosmos.I18N.Adapters.Xml.Core.Internals;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Translation;
 
 namespace Cosmos.I18N.Adapters.Xml
 {
-    public static class XmlFormattingAdapterExtensions
+    public static partial class XmlFormattingAdapterExtensions
     {
         public static II18NServiceCollection AddXmlResourceFrom(this II18NServiceCollection services, string path, bool referenceToBasePath = true)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
-            if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
+            if (services == null) 
+                throw new ArgumentNullException(nameof(services));
+            
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentNullException(nameof(path));
+            
+            if (!path.ToLower().EndsWith(".xml"))
+                path += ".xml";
 
             if (PathHelper.IsSeveralPath(path))
             {
@@ -45,8 +51,7 @@ namespace Cosmos.I18N.Adapters.Xml
 
             return services;
         }
-
-
+        
         public static II18NServiceCollection AddXmlResource(this II18NServiceCollection services, string originContext)
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
@@ -61,7 +66,6 @@ namespace Cosmos.I18N.Adapters.Xml
             }
 
             return services;
-
         }
     }
 }

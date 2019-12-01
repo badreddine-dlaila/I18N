@@ -1,8 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\common.ns20-net461-net451.props" />
+
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0;net461;net451</TargetFrameworks>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.I18N.Adapters.Xml</AssemblyName>
+    <PackageId>Cosmos.I18N.Adapters.Xml</PackageId>
+    <Description>XML Adapter for Cosmos I18N library.</Description>
+  </PropertyGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\Cosmos.I18N\Cosmos.I18N.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Serialization.Xml" Version="0.1.1-beta3-133300" />
   </ItemGroup>
 </Project>

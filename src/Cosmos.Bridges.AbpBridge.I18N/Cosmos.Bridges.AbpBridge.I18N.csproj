@@ -1,20 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\build\common.props" />
+    <Import Project="..\..\build\common.ns20.props" />
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>7.2</LangVersion>
-        <RootNamespace />
+        <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup>
         <AssemblyName>Cosmos.Bridges.AbpBridge.I18N</AssemblyName>
         <PackageId>Cosmos.Bridges.AbpBridge.I18N</PackageId>
         <Description>Bridge between Cosmos.I18N and AbpFramework.Localization.</Description>
-        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -31,7 +26,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Cosmos.I18N.Adapters.Json\Cosmos.I18N.Adapters.Json.csproj" />
-      <ProjectReference Include="..\Cosmos.I18N\Cosmos.I18N.csproj" />
     </ItemGroup>
 
 </Project>

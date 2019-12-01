@@ -33,7 +33,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<ITextProvider, TextProvider>();
             services.AddSingleton<ILanguageServiceProvider, MsdiLanguageServiceProvider>();
             services.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ITranslatePackage>().ToDictionary(package => package.PackageKey.GetHashCode())));
-            services.AddSingleton(provider => new StaticProviderHack(provider.GetRequiredService<ILanguageServiceProvider>()));
+            services.AddSingleton(StaticProviderHack.New);
 
             return services;
         }

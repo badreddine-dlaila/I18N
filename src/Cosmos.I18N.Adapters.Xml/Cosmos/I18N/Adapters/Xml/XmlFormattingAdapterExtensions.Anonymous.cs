@@ -1,41 +1,41 @@
 using System;
-using Cosmos.I18N.Adapters.Json.Core.Internals;
+using Cosmos.I18N.Adapters.Xml.Core.Internals;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Adapters.Json
+namespace Cosmos.I18N.Adapters.Xml
 {
-    public static partial class JsonFormattingAdapterExtensions
+    public static partial class XmlFormattingAdapterExtensions
     {
-        public static II18NServiceCollection AddJsonAnonymousResourceFrom(this II18NServiceCollection services, string path = "Anonymous.*", bool referenceToBasePath = true)
+        public static II18NServiceCollection AddXmlAnonymousResourceFrom(this II18NServiceCollection services, string path = "Anonymous.*", bool referenceToBasePath = true)
         {
-            if (services == null)
+            if (services == null) 
                 throw new ArgumentNullException(nameof(services));
-
-            if (!path.ToLower().EndsWith(".json"))
-                path += ".json";
-
+            
             if (string.IsNullOrWhiteSpace(path))
                 throw new ArgumentNullException(nameof(path));
+            
+            if (!path.ToLower().EndsWith(".xml"))
+                path += ".xml";
 
             if (PathHelper.IsSeveralPath(path))
             {
                 foreach (var file in PathHelper.GetSeveralPathList(services.ExposeOptions, path))
                 {
-                    AddJsonAnonymousResourceFromOnce(services, file, false);
+                    AddXmlAnonymousResourceFromOnce(services, file, false);
                 }
 
                 return services;
             }
 
-            return AddJsonAnonymousResourceFromOnce(services, path, referenceToBasePath);
+            return AddXmlAnonymousResourceFromOnce(services, path, referenceToBasePath);
         }
 
-        private static II18NServiceCollection AddJsonAnonymousResourceFromOnce(II18NServiceCollection services, string path, bool referenceToBasePath)
+        private static II18NServiceCollection AddXmlAnonymousResourceFromOnce(II18NServiceCollection services, string path, bool referenceToBasePath)
         {
             try
             {
-                using (var adapter = new AnonymousJsonFileAdapter(PathHelper.Combine(services.ExposeOptions, path, referenceToBasePath)))
+                using (var adapter = new AnonymousXmlFileAdapter(PathHelper.Combine(services.ExposeOptions, path, referenceToBasePath)))
                 {
                     if (adapter.Process())
                     {
@@ -52,12 +52,12 @@ namespace Cosmos.I18N.Adapters.Json
             return services;
         }
 
-        public static II18NServiceCollection AddJsonAnonymousResource(this II18NServiceCollection services, string originContext)
+        public static II18NServiceCollection AddXmlAnonymousResource(this II18NServiceCollection services, string originContext)
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
             if (string.IsNullOrWhiteSpace(originContext)) throw new ArgumentNullException(nameof(originContext));
 
-            using (var adapter = new AnonymousJsonContentAdapter(originContext))
+            using (var adapter = new AnonymousXmlContentAdapter(originContext))
             {
                 if (adapter.Process())
                 {

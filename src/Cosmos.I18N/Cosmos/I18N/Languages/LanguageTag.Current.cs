@@ -1,6 +1,10 @@
 using System;
 using System.Threading;
 
+#if NET451
+
+#endif
+
 namespace Cosmos.I18N.Languages
 {
     public partial class LanguageTag
@@ -34,7 +38,7 @@ namespace Cosmos.I18N.Languages
         /// Get current language tag
         /// </summary>
         public static LanguageTag Current => GetCurrentLanguageTag();
-
+        
         private static AsyncLocal<string> _currentAsyncLocalLanguageTag = new AsyncLocal<string>();
 
         internal static void SetCurrentLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> handler)

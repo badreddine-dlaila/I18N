@@ -91,6 +91,7 @@ namespace Cosmos.I18N.Extensions.Console.Core
         private static void UpdateStaticResolver(IServiceProvider resolver)
         {
             StaticInstanceForILanguageServiceProvider.SetInstance(resolver.GetRequiredService<ILanguageServiceProvider>());
+            StaticInstanceForTextProvider.SetInstance(resolver.GetRequiredService<ITextProvider>());
         }
     }
 }

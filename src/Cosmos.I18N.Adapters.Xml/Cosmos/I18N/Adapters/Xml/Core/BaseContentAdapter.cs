@@ -2,22 +2,22 @@ using System;
 using System.Threading.Tasks;
 using Cosmos.I18N.Adapters.Formats;
 using Cosmos.I18N.Templates;
-using Newtonsoft.Json;
+using Cosmos.Serialization.Xml;
 
-namespace Cosmos.I18N.Adapters.Json.Core
+namespace Cosmos.I18N.Adapters.Xml.Core
 {
-    public class BaseContentAdapter<TTemplate> : IContentAdapter<string>, ISpeakAsJson<TTemplate>, IDisposable
+    public class BaseContentAdapter<TTemplate> : IContentAdapter<string>, ISpeakAsXml<TTemplate>, IDisposable
         where TTemplate : class, ILocalizationTemplate, new()
     {
         public string OriginContent { get; protected set; }
 
         protected TTemplate SpeakCache { get; set; }
 
-        public bool Process()
+        public virtual bool Process()
         {
             try
             {
-                SpeakCache = JsonConvert.DeserializeObject<TTemplate>(OriginContent);
+                SpeakCache = OriginContent.FromXml<TTemplate>();
             }
             catch
             {
@@ -27,9 +27,18 @@ namespace Cosmos.I18N.Adapters.Json.Core
             return true;
         }
 
-        public Task<bool> ProcessAsync()
+        public virtual async Task<bool> ProcessAsync()
         {
-            return Task.FromResult(Process());
+            try
+            {
+                SpeakCache = await OriginContent.FromXmlAsync<TTemplate>();
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
         }
 
 

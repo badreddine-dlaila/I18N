@@ -1,13 +1,14 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 using Cosmos.I18N.Adapters.Formats;
 using Cosmos.I18N.Templates;
-using Newtonsoft.Json;
 
-namespace Cosmos.I18N.Adapters.Json.Core
+namespace Cosmos.I18N.Adapters.Xml.Core
 {
-    public abstract class BaseFileAdapter<TTemplate> : IFileAdapter, ISpeakAsJson<TTemplate>, IDisposable
+    public abstract class BaseFileAdapter<TTemplate> : IFileAdapter, ISpeakAsXml<TTemplate>, IDisposable
         where TTemplate : class, ILocalizationTemplate, new()
     {
         public string Path { get; protected set; }
@@ -17,9 +18,10 @@ namespace Cosmos.I18N.Adapters.Json.Core
         {
             try
             {
-                if (!File.Exists(Path)) throw new InvalidOperationException($"Failed to read file '{Path}'.");
-                var text = File.ReadAllText(Path);
-                SpeakCache = JsonConvert.DeserializeObject<TTemplate>(text);
+                CheckFile();
+                using var reader = XmlReader.Create(Path);
+                var xs = new XmlSerializer(typeof(StandardLocalizationTemplate));
+                SpeakCache = (TTemplate) xs.Deserialize(reader);
             }
             catch
             {
@@ -32,6 +34,12 @@ namespace Cosmos.I18N.Adapters.Json.Core
         public virtual Task<bool> ProcessAsync()
         {
             return Task.FromResult(Process());
+        }
+
+        private void CheckFile()
+        {
+            if (!File.Exists(Path))
+                throw new InvalidOperationException($"Failed to read file '{Path}'.");
         }
 
         public TTemplate Speak()

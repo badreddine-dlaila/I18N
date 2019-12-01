@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cosmos.I18N.Adapters.Xml.Internals
+namespace Cosmos.I18N.Adapters.Xml.Core.Internals
 {
     internal static class InternalLogger
     {

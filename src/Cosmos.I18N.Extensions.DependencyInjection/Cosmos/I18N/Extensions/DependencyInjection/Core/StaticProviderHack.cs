@@ -1,14 +1,21 @@
 ﻿using System;
 using Cosmos.I18N.Core;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Extensions.DependencyInjection.Core
 {
     internal class StaticProviderHack
     {
-        public StaticProviderHack(ILanguageServiceProvider languageServiceProvider)
+        public StaticProviderHack(IServiceProvider provider)
         {
-            if (languageServiceProvider == null) throw new ArgumentNullException(nameof(languageServiceProvider));
-            StaticInstanceForILanguageServiceProvider.SetInstance(languageServiceProvider);
+            if (provider == null) throw new ArgumentNullException(nameof(provider));
+            StaticInstanceForILanguageServiceProvider.SetInstance(provider.GetRequiredService<ILanguageServiceProvider>());
+            StaticInstanceForTextProvider.SetInstance(provider.GetRequiredService<ITextProvider>());
+        }
+
+        public static StaticProviderHack New(IServiceProvider provider)
+        {
+            return new StaticProviderHack(provider);
         }
     }
 }

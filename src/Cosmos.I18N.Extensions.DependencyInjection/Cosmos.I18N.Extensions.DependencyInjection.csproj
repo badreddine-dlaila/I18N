@@ -1,20 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\build\common.props" />
+    <Import Project="..\..\build\common.ns20-net461-net451.props" />
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>7.2</LangVersion>
-        <RootNamespace />
+        <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0;net461;net451</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup>
-        <AssemblyName>Cosmos.I18N.RunsOn.AspNetCore</AssemblyName>
-        <PackageId>Cosmos.I18N.RunsOn.AspNetCore</PackageId>
-        <Description>Cosmos I18N library</Description>
-        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <AssemblyName>Cosmos.I18N.Extensions.DependencyInjection</AssemblyName>
+        <PackageId>Cosmos.I18N.Extensions.DependencyInjection</PackageId>
+        <Description>Microsoft Dependency Injection extension for Cosmos i18n.</Description>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,7 +17,17 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+        <PackageReference Include="Cosmos.Extensions.DependencyInjection" Version="0.1.1-beta3-133300" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.0' OR '$(TargetFramework)'=='netstandard2.1'">
+        <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.1" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' OR '$(TargetFramework)'=='net461'">
         <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='net451'">
+        <PackageReference Include="Microsoft.Extensions.Options" Version="1.1.2" />
     </ItemGroup>
 </Project>
