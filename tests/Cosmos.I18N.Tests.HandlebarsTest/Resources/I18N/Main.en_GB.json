@@ -1,0 +1,8 @@
+﻿{
+  "PackageKey": "Main",
+  "Language": "en-GB",
+  "Name": "Main",
+  "Contents": {
+    "Hello world {0}": "Hello, World {0:d}.GB"
+  }
+}

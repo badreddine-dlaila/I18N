@@ -1,0 +1,6 @@
+﻿{
+  "Language": "zh-CN",
+  "Contents": {
+    "Hello anonymous world {0}": "匿名的世界，你好 {0:d}"
+  }
+}
