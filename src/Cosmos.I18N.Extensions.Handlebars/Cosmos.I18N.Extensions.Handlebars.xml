@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Renderers.Handlebars</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.HandlebarsExtensions">
+            <summary>
+            Extensions for Handlebars
+            </summary>
+        </member>
+        <member name="M:Cosmos.HandlebarsExtensions.AddHandlebars(Cosmos.I18N.Core.II18NServiceCollection)">
+            <summary>
+            Add handlebars for Cosmos.I18N
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Handlebars.TranslateHelperRegister">
+            <summary>
+            Translate helper register
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Handlebars.TranslateHelperRegister.Register(System.IO.TextWriter,System.Object,System.Object[])">
+            <summary>
+            Register
+            </summary>
+            <param name="writer"></param>
+            <param name="context"></param>
+            <param name="arguments"></param>
+        </member>
+    </members>
+</doc>
