@@ -14,12 +14,9 @@ using Cosmos.I18N.Core.Extensions;
 //    region      opt, 2 alphachars(alpha2 code) or 3 decdigits, see Cosmos.I18N.Countries
 //    private use opt, -x- followed by 4 or more alphanumeric chars
 
-namespace Cosmos.I18N.Languages
-{
-    internal class LanguageTagBuilder
-    {
-        public LanguageTagBuilder(string originalLangTag, string language, string script, string region, string privateUse)
-        {
+namespace Cosmos.I18N.Languages {
+    internal class LanguageTagBuilder {
+        public LanguageTagBuilder(string originalLangTag, string language, string script, string region, string privateUse) {
             OriginalLanguageTag = NotNull(originalLangTag);
             Language = NotNull(language);
             Script = script;
@@ -43,15 +40,13 @@ namespace Cosmos.I18N.Languages
 
         private string Alias { get; set; }
 
-        public LanguageTagBuilder SetAlias(string alias)
-        {
+        public LanguageTagBuilder SetAlias(string alias) {
             if (!string.IsNullOrWhiteSpace(alias))
                 Alias = alias;
             return this;
         }
 
-        private void UpdateParent()
-        {
+        private void UpdateParent() {
             //load any parent:
             //l-s-r-p -> l-s-r
             //l-s-r   -> l-s
@@ -68,10 +63,8 @@ namespace Cosmos.I18N.Languages
                 Parent = default;
         }
 
-        private void UpdateCultureInfo()
-        {
-            try
-            {
+        private void UpdateCultureInfo() {
+            try {
                 if (PrivateUse.IsSet())
                     CultureInfo = new CultureInfo(OriginalLanguageTag.Replace($"-x-{PrivateUse}", string.Empty));
                 else
@@ -80,8 +73,7 @@ namespace Cosmos.I18N.Languages
             catch (ArgumentException) { }
         }
 
-        public LanguageTag Build()
-        {
+        public LanguageTag Build() {
             //Load any parent
             UpdateParent();
 
@@ -99,16 +91,14 @@ namespace Cosmos.I18N.Languages
 
         #region Private static methods
 
-        private static string NotNull(string originalText)
-        {
+        private static string NotNull(string originalText) {
             if (originalText.IsNullOrWhiteSpace())
                 throw new ArgumentNullException(nameof(originalText), $"Text '{originalText}' cannot be null or empty.");
             return originalText;
         }
 
-        private static LanguageTag GetParentLanguageTag(string langTag)
-        {
-            return LanguageTagManager.Create(langTag) as LanguageTag;
+        private static LanguageTag GetParentLanguageTag(string langTag) {
+            return LanguageTagManager.Create(langTag);
         }
 
         #endregion

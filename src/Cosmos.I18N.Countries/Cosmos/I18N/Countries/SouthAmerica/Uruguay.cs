@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 乌拉圭（The Oriental Republic of Uruguay，南美洲，UY，URY，858），乌拉圭东岸共和国 <br />
     /// Cosmos i18n code: i18n_country_wulagui
     /// </summary>
-    public static class Uruguay
-    {
+    public static class Uruguay {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Uruguay()
-        {
-            _country = new CountryInfo
-            {
+        static Uruguay() {
+            _country = new CountryInfo {
                 Country = Country.Uruguay,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Uruguay,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 土耳其（The Republic of Turkey，亚洲，TR，TUR，792），土耳其共和国 <br />
     /// Cosmos i18n code: i18n_country_tuerqi
     /// </summary>
-    public static class Turkey
-    {
+    public static class Turkey {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Turkey()
-        {
-            _country = new CountryInfo
-            {
+        static Turkey() {
+            _country = new CountryInfo {
                 Country = Country.Turkey,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Turkey,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 圣皮埃尔和密克隆群岛（The Islands of Saint Pierre and Miquelon，北美洲，PM，SPM，666），法国海外领土 <br />
     /// Cosmos i18n code: i18n_country_shengyiaiermkl
     /// </summary>
-    public static class SaintPierreAndMiquelon
-    {
+    public static class SaintPierreAndMiquelon {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaintPierreAndMiquelon()
-        {
-            _country = new CountryInfo
-            {
+        static SaintPierreAndMiquelon() {
+            _country = new CountryInfo {
                 Country = Country.SaintPierreAndMiquelon,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

@@ -3,17 +3,13 @@ using System.Linq;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Core
-{
-    internal static class TranslationGetter
-    {
+namespace Cosmos.I18N.Core {
+    internal static class TranslationGetter {
         public static bool FallbackMode(LanguageTag languageTagInstance, string resourceKey, out string result,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources, FallbackExperimenter experimenter)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources, FallbackExperimenter experimenter) {
             result = string.Empty;
 
-            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
-            {
+            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey)) {
                 result = resource.Translate(resourceKey);
                 return true;
             }
@@ -23,10 +19,8 @@ namespace Cosmos.I18N.Core
             if (!suitableTags.Any())
                 return false;
 
-            foreach (var tag in suitableTags)
-            {
-                if (resources.TryGetValue(tag, out resource) && resource.CanTranslate(resourceKey))
-                {
+            foreach (var tag in suitableTags) {
+                if (resources.TryGetValue(tag, out resource) && resource.CanTranslate(resourceKey)) {
                     result = resource.Translate(resourceKey);
                     return true;
                 }
@@ -36,20 +30,16 @@ namespace Cosmos.I18N.Core
         }
 
         public static bool SequenceMode(LanguageTag languageTagInstance, string resourceKey, out string result,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources) {
             result = string.Empty;
 
-            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
-            {
+            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey)) {
                 result = resource.Translate(resourceKey);
                 return true;
             }
 
-            foreach (var resource2 in resources)
-            {
-                if (resource2.Value.CanTranslate(resourceKey))
-                {
+            foreach (var resource2 in resources) {
+                if (resource2.Value.CanTranslate(resourceKey)) {
                     result = resource2.Value.Translate(resourceKey);
                     return true;
                 }
@@ -59,12 +49,10 @@ namespace Cosmos.I18N.Core
         }
 
         public static bool StrictMode(LanguageTag languageTagInstance, string resourceKey, out string result,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources) {
             result = string.Empty;
 
-            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
-            {
+            if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey)) {
                 result = resource.Translate(resourceKey);
                 return true;
             }

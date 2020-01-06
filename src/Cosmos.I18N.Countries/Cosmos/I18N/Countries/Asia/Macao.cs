@@ -1,20 +1,16 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 澳门（Macao, SAR China，亚洲，MO，MAC，446），中华人民共和国澳门特别行政区 <br />
     /// 澳门，中华人民共和国的一部分 <br />
     /// Macao, a part of China <br />
     /// Cosmos i18n code: i18n_country_aomen
     /// </summary>
-    public static class Macao
-    {
+    public static class Macao {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Macao()
-        {
-            _country = new CountryInfo
-            {
+        static Macao() {
+            _country = new CountryInfo {
                 Country = Country.Macao,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.China,

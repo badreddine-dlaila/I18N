@@ -1,10 +1,8 @@
 using System;
 using System.Text;
 
-namespace Cosmos.I18N.Core.Extensions
-{
-    internal static class StringExtensions
-    {
+namespace Cosmos.I18N.Core.Extensions {
+    internal static class StringExtensions {
         /// <summary>
         /// String extension method to simplify testing for non-null/non-empty values.
         /// </summary>
@@ -25,10 +23,8 @@ namespace Cosmos.I18N.Core.Extensions
         /// / , en -> /en
         /// </para>
         /// </remarks>
-        public static string UrlPrependPath(this string url, string folder)
-        {
-            if (!folder.IsSet())
-            {
+        public static string UrlPrependPath(this string url, string folder) {
+            if (!folder.IsSet()) {
                 return url;
             }
 
@@ -37,8 +33,7 @@ namespace Cosmos.I18N.Core.Extensions
             //       a valid absolute path. It'll be resolved to "file:///my-path/".
             Uri uri;
 
-            if (Uri.TryCreate(url, UriKind.Absolute, out uri) && !uri.IsFile)
-            {
+            if (Uri.TryCreate(url, UriKind.Absolute, out uri) && !uri.IsFile) {
                 var builder = new UriBuilder(url);
                 builder.Path = builder.Path.UrlPrependPath(folder);
                 return builder.Uri.ToString(); // Go via Uri to avoid port 80 being added.
@@ -46,16 +41,13 @@ namespace Cosmos.I18N.Core.Extensions
 
             // Url is relative.
             var sb = new StringBuilder(url.Length + folder.Length + 10);
-            if (folder[0] != '/')
-            {
+            if (folder[0] != '/') {
                 sb.Append("/");
             }
 
             sb.Append(folder);
-            if (url.IsSet() && url != "/")
-            {
-                if (url[0] != '/')
-                {
+            if (url.IsSet() && url != "/") {
+                if (url[0] != '/') {
                     sb.Append("/");
                 }
 
@@ -65,8 +57,7 @@ namespace Cosmos.I18N.Core.Extensions
             return sb.ToString();
         }
 
-        public static bool IsDifferentFrom(this string left, string right)
-        {
+        public static bool IsDifferentFrom(this string left, string right) {
             if (string.IsNullOrWhiteSpace(left))
                 return true;
 

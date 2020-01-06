@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 泽西（Bailiwick of Jersey，欧洲，JE，JEY，832），泽西岛 <br />
     /// Cosmos i18n code: i18n_country_zexi
     /// </summary>
-    public static class Jersey
-    {
+    public static class Jersey {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Jersey()
-        {
-            _country = new CountryInfo
-            {
+        static Jersey() {
+            _country = new CountryInfo {
                 Country = Country.Jersey,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

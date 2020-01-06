@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 梵蒂冈（Vatican City State，欧洲，VA，VAT，336），梵蒂冈城国 <br />
     /// Cosmos i18n code: i18n_country_fandigang
     /// </summary>
-    public static class Vatican
-    {
+    public static class Vatican {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Vatican()
-        {
-            _country = new CountryInfo
-            {
+        static Vatican() {
+            _country = new CountryInfo {
                 Country = Country.Vatican,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Vatican,

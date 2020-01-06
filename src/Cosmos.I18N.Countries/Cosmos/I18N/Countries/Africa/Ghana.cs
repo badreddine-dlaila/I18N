@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 加纳（The Republic of Ghana，非洲，GH，GHA，288），加纳共和国 <br />
     /// Cosmos i18n code: i18n_country_jiana
     /// </summary>
-    public static class Ghana
-    {
+    public static class Ghana {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Ghana()
-        {
-            _country = new CountryInfo
-            {
+        static Ghana() {
+            _country = new CountryInfo {
                 Country = Country.Ghana,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Ghana,

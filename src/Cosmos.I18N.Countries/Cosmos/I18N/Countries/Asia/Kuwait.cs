@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 科威特（The State of Kuwait，亚洲，KW，KWT，414），科威特国 <br />
     /// Cosmos i18n code: i18n_country_keweite
     /// </summary>
-    public static class Kuwait
-    {
+    public static class Kuwait {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Kuwait()
-        {
-            _country = new CountryInfo
-            {
+        static Kuwait() {
+            _country = new CountryInfo {
                 Country = Country.Kuwait,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Kuwait,

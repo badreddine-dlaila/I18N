@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 吉尔吉斯斯坦（The Kyrgyz Republic/Kyrgyzstan，亚洲，KG，KGZ，417），吉尔吉斯共和国 <br />
     /// Cosmos i18n code: i18n_country_jierjisi
     /// </summary>
-    public static class Kyrgyzstan
-    {
+    public static class Kyrgyzstan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Kyrgyzstan()
-        {
-            _country = new CountryInfo
-            {
+        static Kyrgyzstan() {
+            _country = new CountryInfo {
                 Country = Country.Kyrgyzstan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Kyrgyzstan,

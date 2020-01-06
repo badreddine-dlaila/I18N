@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using Cosmos.I18N.Core.Extensions;
 
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Fallback Experimenter for LanguageTag
     /// </summary>
-    public class FallbackExperimenter
-    {
+    public class FallbackExperimenter {
         private static readonly FallbackExperimenter _defaultExperimenter = new FallbackExperimenter();
 
         private readonly FallbackItemList _items = new FallbackItemList();
         private readonly Dictionary<int, List<FallbackItem>> _cachedResults = new Dictionary<int, List<FallbackItem>>();
         private readonly object _cacheLockObj = new object();
 
-        private static readonly List<MatchLevel> _matchLevels = new List<MatchLevel>
-        {
+        private static readonly List<MatchLevel> _matchLevels = new List<MatchLevel> {
             MatchLevel.ExactMatch,
             MatchLevel.DefaultRegion,
             MatchLevel.ScriptMatch,
@@ -31,8 +28,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="langTag"></param>
         /// <returns></returns>
-        public bool HasCachedResult(string langTag)
-        {
+        public bool HasCachedResult(string langTag) {
             if (langTag.IsNullOrWhiteSpace())
                 return false;
             var lowerCacheLanguageTag = langTag.Trim().ToLowerInvariant();
@@ -44,8 +40,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public bool HashCachedResult(LanguageTag languageTag)
-        {
+        public bool HashCachedResult(LanguageTag languageTag) {
             if (languageTag == null)
                 return false;
             return _cachedResults.ContainsKey(languageTag.GetHashCode());
@@ -58,8 +53,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="languageTag"></param>
         /// <exception cref="ArgumentNullException"></exception>
-        public void RegisterTag(LanguageTag languageTag)
-        {
+        public void RegisterTag(LanguageTag languageTag) {
             if (languageTag == null)
                 throw new ArgumentNullException(nameof(languageTag));
 
@@ -69,8 +63,7 @@ namespace Cosmos.I18N.Languages
             if (_items.Any(x => x.HashCodeCached == hashcode))
                 return;
 
-            lock (_cacheLockObj)
-            {
+            lock (_cacheLockObj) {
                 if (_items.Any(x => x.HashCodeCached == hashcode))
                     return;
 
@@ -88,8 +81,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IEnumerable<LanguageTag> GetSuitableTags(LanguageTag languageTag)
-        {
+        public IEnumerable<LanguageTag> GetSuitableTags(LanguageTag languageTag) {
             if (_cachedResults.TryGetValue(languageTag.GetHashCode(), out var results))
                 return results.Select(s => s.Value);
 
@@ -117,26 +109,21 @@ namespace Cosmos.I18N.Languages
             return Remember(languageTag, results);
         }
 
-        private IEnumerable<FallbackItem> Filter(List<FallbackItem> orderedItems, LanguageTag languageTag, MatchLevel matchLevel, List<int> skipHashCodes)
-        {
-            foreach (var item in orderedItems)
-            {
+        private IEnumerable<FallbackItem> Filter(List<FallbackItem> orderedItems, LanguageTag languageTag, MatchLevel matchLevel, List<int> skipHashCodes) {
+            foreach (var item in orderedItems) {
                 if (skipHashCodes.Contains(item.HashCodeCached))
                     continue;
                 var score = LanguageTagMatcher.Match(languageTag, item.Value, matchLevel);
 
-                if (score > 0)
-                {
+                if (score > 0) {
                     skipHashCodes.Add(item.HashCodeCached);
                     yield return item;
                 }
             }
         }
 
-        private IEnumerable<FallbackItem> Filter(List<FallbackItem> orderedItems, int priority, List<int> skipHashCodes)
-        {
-            foreach (var item in orderedItems)
-            {
+        private IEnumerable<FallbackItem> Filter(List<FallbackItem> orderedItems, int priority, List<int> skipHashCodes) {
+            foreach (var item in orderedItems) {
                 if (item.Priority >= priority)
                     continue;
 
@@ -148,24 +135,19 @@ namespace Cosmos.I18N.Languages
             }
         }
 
-        private void AddMostLessPriorityIfNeed(List<FallbackItem> results, List<int> skipHashCodes)
-        {
+        private void AddMostLessPriorityIfNeed(List<FallbackItem> results, List<int> skipHashCodes) {
             var minPriority = results.Min(m => m.Priority);
-            if (minPriority != MinPriorityOfItems)
-            {
+            if (minPriority != MinPriorityOfItems) {
                 var minItem = _items.FirstOrDefault(x => x.Priority == minPriority);
-                if (minItem != null && !skipHashCodes.Contains(minItem.HashCodeCached))
-                {
+                if (minItem != null && !skipHashCodes.Contains(minItem.HashCodeCached)) {
                     skipHashCodes.Add(minItem.HashCodeCached);
                     results.Add(minItem);
                 }
             }
         }
 
-        private IEnumerable<LanguageTag> Remember(LanguageTag left, List<FallbackItem> filteredItems)
-        {
-            lock (_cacheLockObj)
-            {
+        private IEnumerable<LanguageTag> Remember(LanguageTag left, List<FallbackItem> filteredItems) {
+            lock (_cacheLockObj) {
                 var hashcode = left.GetHashCode();
                 if (_cachedResults.ContainsKey(hashcode))
                     _cachedResults[hashcode] = filteredItems;
@@ -185,8 +167,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public bool Contains(LanguageTag languageTag)
-        {
+        public bool Contains(LanguageTag languageTag) {
             if (languageTag == null)
                 return false;
             return _items.ContainsGlobalKey(languageTag.GlobalKey);
@@ -197,14 +178,12 @@ namespace Cosmos.I18N.Languages
         /// <summary>
         /// Fallback item for fallback experimenter
         /// </summary>
-        private class FallbackItem
-        {
+        private class FallbackItem {
             /// <summary>
             /// Create a new instance for <see cref="FallbackItem"/>
             /// </summary>
             /// <param name="languageTag"></param>
-            public FallbackItem(LanguageTag languageTag)
-            {
+            public FallbackItem(LanguageTag languageTag) {
                 Value = languageTag ?? throw new ArgumentNullException(nameof(languageTag));
                 HashCodeCached = Value.GetHashCode();
                 FullLevel = GetFullLevel(Value);
@@ -253,8 +232,7 @@ namespace Cosmos.I18N.Languages
             /// </summary>
             /// <param name="languageTag"></param>
             /// <returns></returns>
-            private static int GetFullLevel(LanguageTag languageTag)
-            {
+            private static int GetFullLevel(LanguageTag languageTag) {
                 if (languageTag == null)
                     return -1;
 
@@ -280,15 +258,13 @@ namespace Cosmos.I18N.Languages
         /// <summary>
         /// Fallback item list for fallback experimenter
         /// </summary>
-        private class FallbackItemList : List<FallbackItem>
-        {
+        private class FallbackItemList : List<FallbackItem> {
             /// <summary>
             /// Add and fix priority<br />
             /// THIS WILL UPDATE ALL ITEM'S PRIORITY
             /// </summary>
             /// <param name="item"></param>
-            public new void Add(FallbackItem item)
-            {
+            public new void Add(FallbackItem item) {
                 if (item == null)
                     throw new ArgumentNullException(nameof(item));
 
@@ -303,8 +279,7 @@ namespace Cosmos.I18N.Languages
                 //step.1 get all same [Language] tag from items
                 var sameLanguageItems = this.Where(x => x.Value.Language == item.Value.Language).ToList();
 
-                if (!sameLanguageItems.Any())
-                {
+                if (!sameLanguageItems.Any()) {
                     //there's no same [Language] in list
                     var max = sameLanguageItems.Count == 0
                         ? 0
@@ -324,8 +299,7 @@ namespace Cosmos.I18N.Languages
                     nicePtr.Priority = minPriority++;
 
                 //step.3 update all item which priority greater than maxPriority
-                foreach (var nicePtr in this)
-                {
+                foreach (var nicePtr in this) {
                     if (nicePtr.Priority <= maxPriority)
                         continue;
                     nicePtr.Priority++;

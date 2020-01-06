@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 瑞士（Swiss Confederation，欧洲，CH，CHE，756），瑞士联邦 <br />
     /// Cosmos i18n code: i18n_country_ruishi
     /// </summary>
-    public static class Switzerland
-    {
+    public static class Switzerland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Switzerland()
-        {
-            _country = new CountryInfo
-            {
+        static Switzerland() {
+            _country = new CountryInfo {
                 Country = Country.Switzerland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Switzerland,

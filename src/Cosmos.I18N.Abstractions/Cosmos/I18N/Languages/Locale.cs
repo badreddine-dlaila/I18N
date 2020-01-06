@@ -1,13 +1,11 @@
 ﻿// ReSharper disable InconsistentNaming
 
 #pragma warning disable 1591
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Locale enum, to create language tag quickly
     /// </summary>
-    public enum Locale
-    {
+    public enum Locale {
         af,
         sq,
         ar,

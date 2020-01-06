@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 冰岛（The Republic of Iceland，欧洲，IS，ISL，352），冰岛共和国 <br />
     /// Cosmos i18n code: i18n_country_bingdao
     /// </summary>
-    public static class Iceland
-    {
+    public static class Iceland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Iceland()
-        {
-            _country = new CountryInfo
-            {
+        static Iceland() {
+            _country = new CountryInfo {
                 Country = Country.Iceland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Iceland,

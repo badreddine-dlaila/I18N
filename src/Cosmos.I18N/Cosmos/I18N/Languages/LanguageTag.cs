@@ -16,18 +16,15 @@ using Cosmos.I18N.Core.Extensions;
 //    region      opt, 2 alphachars(alpha2 code) or 3 decdigits, see Cosmos.I18N.Countries
 //    private use opt, -x- followed by 4 or more alphanumeric chars
 
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Language tag
     /// </summary>
-    public partial class LanguageTag : ILanguageTag
-    {
+    public partial class LanguageTag : ILanguageTag {
         // ReSharper disable once UnusedMember.Local
         private LanguageTag() { }
 
-        internal LanguageTag(string originalLanguageTag, string language, string script, string region, string privateUse, LanguageTag parent, CultureInfo cultureInfo)
-        {
+        internal LanguageTag(string originalLanguageTag, string language, string script, string region, string privateUse, LanguageTag parent, CultureInfo cultureInfo) {
             OriginalLanguageTag = originalLanguageTag;
             LowerCaseLanguageTag = originalLanguageTag.ToLowerInvariant();
             Language = language;
@@ -103,8 +100,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="alias"></param>
         /// <exception cref="ArgumentNullException"></exception>
-        public void UpdateAlias(string alias)
-        {
+        public void UpdateAlias(string alias) {
             if (alias.IsNullOrWhiteSpace())
                 throw new ArgumentNullException(nameof(alias));
             Alias = alias;
@@ -118,8 +114,7 @@ namespace Cosmos.I18N.Languages
         /// <param name="appLanguage"></param>
         /// <param name="matchLevel"></param>
         /// <returns></returns>
-        public int Match(LanguageTag appLanguage, MatchLevel matchLevel = MatchLevel.LanguageMatch)
-        {
+        public int Match(LanguageTag appLanguage, MatchLevel matchLevel = MatchLevel.LanguageMatch) {
             return LanguageTagMatcher.Match(this, appLanguage, matchLevel);
         }
 
@@ -130,8 +125,7 @@ namespace Cosmos.I18N.Languages
         /// <param name="matchedTag"></param>
         /// <param name="matchLevel"></param>
         /// <returns></returns>
-        public int Match(LanguageTag[] appLanguages, out LanguageTag matchedTag, MatchLevel matchLevel = MatchLevel.LanguageMatch)
-        {
+        public int Match(LanguageTag[] appLanguages, out LanguageTag matchedTag, MatchLevel matchLevel = MatchLevel.LanguageMatch) {
             return LanguageTagMatcher.Match(this, appLanguages, out matchedTag, matchLevel);
         }
 
@@ -162,19 +156,15 @@ namespace Cosmos.I18N.Languages
         /// For URL /zh-Hans/account/signup we return "zh-Hans" and output /account/signup.
         /// </para>
         /// </remarks>
-        public static string GetTagFromUrl(string url, UriKind kind, out string urlPatched)
-        {
+        public static string GetTagFromUrl(string url, UriKind kind, out string urlPatched) {
             // If url is possibly absolute
-            if (kind != UriKind.Relative)
-            {
+            if (kind != UriKind.Relative) {
                 // If absolute url (include host and optionally scheme)
-                if (Uri.TryCreate(url, UriKind.Absolute, out _))
-                {
+                if (Uri.TryCreate(url, UriKind.Absolute, out _)) {
                     var builder = new UriBuilder(url);
                     var newUrl = GetTagFromUrl(builder.Path, UriKind.Relative, out urlPatched);
                     // Match?
-                    if (newUrl != null)
-                    {
+                    if (newUrl != null) {
                         builder.Path = newUrl;
                         return builder.Uri.ToString(); // Go via Uri to avoid port 80 being added.
                     }
@@ -188,8 +178,7 @@ namespace Cosmos.I18N.Languages
             // Url is relative. Parse it.
             var match = Core.LanguageTagParseRegexUtils.MatchUrl(url);
             // If successful
-            if (match.Success && match.Groups.Count == 3)
-            {
+            if (match.Success && match.Groups.Count == 3) {
                 // Extract the langtag value.
                 var langtag = match.Groups[1].Value;
                 // Patch the url.
@@ -223,8 +212,7 @@ namespace Cosmos.I18N.Languages
         /// <para>"http://example.com/account/signup"         , "en" -> "http://example.com/en/account/signup"</para>
         /// <para>"http://example.com/zh-Hans/account/signup" , "en" -> "http://example.com/en/account/signup"</para>
         /// </remarks>
-        public static string SetTagInUrl(string url, UriKind kind, string langtag)
-        {
+        public static string SetTagInUrl(string url, UriKind kind, string langtag) {
             GetTagFromUrl(url, kind, out var urlPatched);
             return urlPatched.UrlPrependPath(langtag);
         }
@@ -250,7 +238,6 @@ namespace Cosmos.I18N.Languages
         #region Internal methods for instance
 
         internal string GetOriginalLanguageTag() => OriginalLanguageTag;
-        
 
         #endregion
 
@@ -288,8 +275,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public bool Equals(ILanguageTag other)
-        {
+        public bool Equals(ILanguageTag other) {
             return 0 == string.Compare(OriginalLanguageTag, other.ToString(), StringComparison.OrdinalIgnoreCase);
         }
 
@@ -299,8 +285,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public bool Equals(LanguageTag other)
-        {
+        public bool Equals(LanguageTag other) {
             return 0 == string.CompareOrdinal(LowerCaseLanguageTag, other.LowerCaseLanguageTag);
         }
 
@@ -309,8 +294,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public bool Equals(string other)
-        {
+        public bool Equals(string other) {
             var ltOther = LanguageTagCache.Get<LanguageTag>(other);
             return 0 == string.CompareOrdinal(LowerCaseLanguageTag, ltOther.LowerCaseLanguageTag);
         }
@@ -325,8 +309,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public int CompareTo(ILanguageTag other)
-        {
+        public int CompareTo(ILanguageTag other) {
             return string.Compare(OriginalLanguageTag, other.ToString(), StringComparison.OrdinalIgnoreCase);
         }
 
@@ -336,8 +319,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public int CompareTo(LanguageTag other)
-        {
+        public int CompareTo(LanguageTag other) {
             return string.CompareOrdinal(LowerCaseLanguageTag, other.LowerCaseLanguageTag);
         }
 
@@ -346,8 +328,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public int CompareTo(string other)
-        {
+        public int CompareTo(string other) {
             var ltOther = LanguageTagCache.Get<LanguageTag>(other);
             return string.CompareOrdinal(LowerCaseLanguageTag, ltOther.LowerCaseLanguageTag);
         }

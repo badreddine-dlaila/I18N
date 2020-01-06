@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 卢旺达（The Republic of Rwanda，非洲，RW，RWA，646），卢旺达共和国 <br />
     /// Cosmos i18n code: i18n_country_luwangda
     /// </summary>
-    public static class Rwanda
-    {
+    public static class Rwanda {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Rwanda()
-        {
-            _country = new CountryInfo
-            {
+        static Rwanda() {
+            _country = new CountryInfo {
                 Country = Country.Rwanda,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Rwanda,

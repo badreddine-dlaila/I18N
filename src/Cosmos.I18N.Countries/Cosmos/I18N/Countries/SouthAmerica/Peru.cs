@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 秘鲁（The Republic of Peru，南美洲，PE，PER，604），秘鲁共和国 <br />
     /// Cosmos i18n code: i18n_country_bilu
     /// </summary>
-    public static class Peru
-    {
+    public static class Peru {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Peru()
-        {
-            _country = new CountryInfo
-            {
+        static Peru() {
+            _country = new CountryInfo {
                 Country = Country.Peru,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Peru,

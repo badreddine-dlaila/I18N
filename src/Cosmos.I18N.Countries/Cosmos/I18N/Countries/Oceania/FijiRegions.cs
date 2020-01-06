@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// Fiji Regions
     /// </summary>
-    public static class FijiRegions
-    {
+    public static class FijiRegions {
 
         #region Gets regions
 
@@ -113,8 +111,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// <summary>
         /// Enum values for Fiji regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Namosi
             /// </summary>
@@ -244,8 +241,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -254,8 +250,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"FJ-{values.ToRegionCode()}";
         }
 
@@ -264,8 +259,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
+        public static Country ToCountry(this EnumValues value) {
             return Country.Fiji;
         }
 
@@ -274,8 +268,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
+        public static CountryCode ToCountryCode(this EnumValues value) {
             return CountryCode.FJ;
         }
 
@@ -290,8 +283,7 @@ namespace Cosmos.I18N.Countries.Oceania
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }

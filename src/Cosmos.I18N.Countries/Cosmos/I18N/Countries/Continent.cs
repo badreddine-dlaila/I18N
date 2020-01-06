@@ -1,10 +1,8 @@
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Continent
     /// </summary>
-    public enum Continent
-    {
+    public enum Continent {
         /// <summary>
         /// Asia
         /// </summary>

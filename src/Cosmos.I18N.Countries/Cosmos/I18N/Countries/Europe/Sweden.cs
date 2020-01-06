@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 瑞典（The Kingdom of Sweden，欧洲，SE，SWE，752），瑞典王国 <br />
     /// Cosmos i18n code: i18n_country_ruidian
     /// </summary>
-    public static class Sweden
-    {
+    public static class Sweden {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Sweden()
-        {
-            _country = new CountryInfo
-            {
+        static Sweden() {
+            _country = new CountryInfo {
                 Country = Country.Sweden,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Sweden,

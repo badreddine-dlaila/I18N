@@ -1,13 +1,11 @@
 ﻿using System;
 
-namespace Cosmos.I18N.Core
-{
+namespace Cosmos.I18N.Core {
     /// <summary>
     /// AliasInShort Attribute
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
-    public class AliasInShortAttribute : Attribute
-    {
+    public class AliasInShortAttribute : Attribute {
         /// <summary>
         /// Alias
         /// </summary>

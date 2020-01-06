@@ -11,13 +11,11 @@
 //    private use opt, -x- followed by 4 or more alphanumeric chars
 
 
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Match level for <see cref="LanguageTag"/>
     /// </summary>
-    public enum MatchLevel
-    {
+    public enum MatchLevel {
         /// <summary>
         /// Only consider a match where language and script and region and private use parts matchs.
         /// E.g. fr matches fr

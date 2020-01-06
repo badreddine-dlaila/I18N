@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 英属印度洋领地（British Indian Ocean Territory，亚洲，IO，IOT，086） <br />
     /// Cosmos i18n code: i18n_country_yingshuying
     /// </summary>
-    public static class BritishIndianOceanTerritory
-    {
+    public static class BritishIndianOceanTerritory {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static BritishIndianOceanTerritory()
-        {
-            _country = new CountryInfo
-            {
+        static BritishIndianOceanTerritory() {
+            _country = new CountryInfo {
                 Country = Country.BritishIndianOceanTerritory,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

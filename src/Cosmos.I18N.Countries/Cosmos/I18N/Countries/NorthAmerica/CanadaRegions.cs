@@ -3,15 +3,13 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// Canada Regions
     /// <br />
     /// Reference to: https://baike.baidu.com/item/%E5%8A%A0%E6%8B%BF%E5%A4%A7/145973
     /// </summary>
-    public static class CanadaRegions
-    {
+    public static class CanadaRegions {
 
         #region Gets regions
 
@@ -85,8 +83,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// <summary>
         /// Enum values for Canada regions
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Alberta
             /// <br />
@@ -219,8 +216,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -229,8 +225,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"CA-{values.ToRegionCode()}";
         }
 
@@ -248,8 +243,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }
@@ -258,8 +252,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 获得加拿大省代号
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetProvincesRegionCodes()
-        {
+        public static IEnumerable<string> GetProvincesRegionCodes() {
             foreach (var member in Filter("provinces"))
                 yield return member.Value.ToFullRegionCode();
         }
@@ -268,8 +261,7 @@ namespace Cosmos.I18N.Countries.NorthAmerica
         /// 获得加拿大地区号
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetTerritoriesRegionCodes()
-        {
+        public static IEnumerable<string> GetTerritoriesRegionCodes() {
             foreach (var member in Filter("territories"))
                 yield return member.Value.ToFullRegionCode();
         }

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 安提瓜和巴布达（Antigua and Barbuda，北美洲，AG，ATG，028） <br />
     /// Cosmos i18n code: i18n_country_andaguababuda
     /// </summary>
-    public static class AntiguaAndBarbuda
-    {
+    public static class AntiguaAndBarbuda {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static AntiguaAndBarbuda()
-        {
-            _country = new CountryInfo
-            {
+        static AntiguaAndBarbuda() {
+            _country = new CountryInfo {
                 Country = Country.AntiguaAndBarbuda,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.AntiguaAndBarbuda,

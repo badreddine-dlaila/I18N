@@ -1,13 +1,11 @@
 using System;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N
-{
+namespace Cosmos.I18N {
     /// <summary>
     /// Interface for Text Provider
     /// </summary>
-    public interface ITextProvider
-    {
+    public interface ITextProvider {
         /// <summary>
         /// Create
         /// </summary>

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 布韦岛（Bouvet Island，欧洲，BV，BVT，074） <br />
     /// Cosmos i18n code: i18n_country_buweidao
     /// </summary>
-    public static class BouvetIsland
-    {
+    public static class BouvetIsland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static BouvetIsland()
-        {
-            _country = new CountryInfo
-            {
+        static BouvetIsland() {
+            _country = new CountryInfo {
                 Country = Country.BouvetIsland,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Norway,

@@ -4,13 +4,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Default implementation of translate package
     /// </summary>
-    public partial class TranslatePackage : ITranslatePackage
-    {
+    public partial class TranslatePackage : ITranslatePackage {
         private readonly FallbackExperimenter _fallbackExperimenter;
         private readonly Dictionary<string, ITranslateResource> _langAndResourceMapCache;
         private readonly Dictionary<LanguageTag, ITranslateResource> _resources;
@@ -22,7 +20,7 @@ namespace Cosmos.I18N.Translation
         /// Create a new anonymous instance of <see cref="TranslatePackage"/>
         /// </summary>
         /// <param name="fallbackExperimenter"></param>
-        public TranslatePackage(FallbackExperimenter fallbackExperimenter) 
+        public TranslatePackage(FallbackExperimenter fallbackExperimenter)
             : this(TranslationManager.ANONYMOUS_PACKAGE_KEY, fallbackExperimenter) { }
 
         /// <summary>
@@ -30,8 +28,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="packageKey"></param>
         /// <param name="fallbackExperimenter"></param>
-        public TranslatePackage(string packageKey, FallbackExperimenter fallbackExperimenter)
-        {
+        public TranslatePackage(string packageKey, FallbackExperimenter fallbackExperimenter) {
             if (packageKey.IsNullOrWhiteSpace())
                 throw new ArgumentNullException(nameof(packageKey));
 
@@ -60,16 +57,14 @@ namespace Cosmos.I18N.Translation
 
         #region Has Resource
 
-        internal bool HasResource(ITranslateResource resource)
-        {
+        internal bool HasResource(ITranslateResource resource) {
             if (resource == null)
                 return false;
 
             return HasResource(resource.Binding);
         }
 
-        internal bool HasResource(string languageTag)
-        {
+        internal bool HasResource(string languageTag) {
             if (string.IsNullOrWhiteSpace(languageTag))
                 return false;
 
@@ -78,8 +73,7 @@ namespace Cosmos.I18N.Translation
             return HasResource(languageTagInstance);
         }
 
-        internal bool HasResource(LanguageTag languageTag)
-        {
+        internal bool HasResource(LanguageTag languageTag) {
             if (languageTag == null)
                 return false;
 
@@ -97,13 +91,11 @@ namespace Cosmos.I18N.Translation
         /// Add resource
         /// </summary>
         /// <param name="resource"></param>
-        public void AddResource(ITranslateResource resource)
-        {
+        public void AddResource(ITranslateResource resource) {
             if (resource == null)
                 return;
 
-            if (resource.IsAnonymous)
-            {
+            if (resource.IsAnonymous) {
                 if (!IsAnonymous)
                     throw new InvalidOperationException("Anonymous translate resource cannot be added into non-anonymous package.");
 
@@ -119,37 +111,32 @@ namespace Cosmos.I18N.Translation
 
             AddResourceCore(resource);
         }
-        
-        private void AddAnonymousResource(ITranslateResource resource)
-        {
+
+        private void AddAnonymousResource(ITranslateResource resource) {
             var ops = (ITranslatePackageMergeOps) this;
             ops.Merge(resource, TranslatePackageMerger.AnonymousMergeCoreFunc(resource));
         }
 
-        private void AddResourceCore(ITranslateResource resource)
-        {
-            if(resource == null)
+        private void AddResourceCore(ITranslateResource resource) {
+            if (resource == null)
                 return;
-            
-            lock (_resourceLockObj)
-            {
+
+            lock (_resourceLockObj) {
                 if (_resources.ContainsKey(resource.Binding))
                     return;
 
-                if (TryRegisterLanguageTagOnceAgain(resource.Binding))
-                {
+                if (TryRegisterLanguageTagOnceAgain(resource.Binding)) {
                     _resources.Add(resource.Binding, resource);
                     _usedLanguageTags.Add(resource.Binding);
                 }
             }
         }
-        
+
         /// <summary>
         /// Add resources
         /// </summary>
         /// <param name="resources"></param>
-        public void AddResources(IEnumerable<ITranslateResource> resources)
-        {
+        public void AddResources(IEnumerable<ITranslateResource> resources) {
             if (resources == null)
                 return;
 
@@ -157,8 +144,7 @@ namespace Cosmos.I18N.Translation
                 AddResource(resource);
         }
 
-        private bool TryRegisterLanguageTagOnceAgain(LanguageTag languageTag)
-        {
+        private bool TryRegisterLanguageTagOnceAgain(LanguageTag languageTag) {
             if (languageTag == null)
                 return false;
 
@@ -180,8 +166,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="languageTag"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public ITranslateResource GetResource(string languageTag)
-        {
+        public ITranslateResource GetResource(string languageTag) {
             if (string.IsNullOrWhiteSpace(languageTag))
                 return null;
 
@@ -216,8 +201,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="languageTag"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public ITranslateResource GetResource(LanguageTag languageTag)
-        {
+        public ITranslateResource GetResource(LanguageTag languageTag) {
             if (languageTag == null)
                 return default;
 
@@ -238,10 +222,8 @@ namespace Cosmos.I18N.Translation
             throw new ArgumentException($"Cannot resolve the resource by the given LanguageTag '{originalLanguageTag}'");
         }
 
-        private ITranslateResource CacheAndReturn(string languageTag, ITranslateResource resource)
-        {
-            lock (_resourceMapLockObj)
-            {
+        private ITranslateResource CacheAndReturn(string languageTag, ITranslateResource resource) {
+            lock (_resourceMapLockObj) {
                 if (_langAndResourceMapCache.ContainsKey(languageTag))
                     _langAndResourceMapCache[languageTag] = resource;
                 else
@@ -262,8 +244,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="resourceKey"></param>
         /// <param name="strategy"></param>
         /// <returns></returns>
-        public bool CanTranslate(string languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
-        {
+        public bool CanTranslate(string languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback) {
             if (string.IsNullOrWhiteSpace(languageTag))
                 return false;
 
@@ -273,8 +254,7 @@ namespace Cosmos.I18N.Translation
             if (!LanguageTagManager.TryGet(languageTag, out var languageTagInstance))
                 return false;
 
-            switch (strategy)
-            {
+            switch (strategy) {
                 case AttemptStrategy.Fallback:
                     return TranslationChecker.FallbackMode(languageTagInstance, resourceKey, _resources, _fallbackExperimenter);
 
@@ -296,16 +276,14 @@ namespace Cosmos.I18N.Translation
         /// <param name="resourceKey"></param>
         /// <param name="strategy"></param>
         /// <returns></returns>
-        public bool CanTranslate(LanguageTag languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback)
-        {
+        public bool CanTranslate(LanguageTag languageTag, string resourceKey, AttemptStrategy strategy = AttemptStrategy.Fallback) {
             if (languageTag == null)
                 return false;
 
             if (string.IsNullOrWhiteSpace(resourceKey))
                 return false;
 
-            switch (strategy)
-            {
+            switch (strategy) {
                 case AttemptStrategy.Fallback:
                     return TranslationChecker.FallbackMode(languageTag, resourceKey, _resources, _fallbackExperimenter);
 
@@ -352,8 +330,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="translateValue"></param>
         /// <param name="strategy"></param>
         /// <returns></returns>
-        public bool TryGetTranslateValue(string languageTag, string resourceKey, out string translateValue, AttemptStrategy strategy = AttemptStrategy.Fallback)
-        {
+        public bool TryGetTranslateValue(string languageTag, string resourceKey, out string translateValue, AttemptStrategy strategy = AttemptStrategy.Fallback) {
             translateValue = string.Empty;
 
             if (string.IsNullOrWhiteSpace(languageTag))
@@ -365,8 +342,7 @@ namespace Cosmos.I18N.Translation
             if (!LanguageTagManager.TryGet(languageTag, out var languageTagInstance))
                 return false;
 
-            switch (strategy)
-            {
+            switch (strategy) {
                 case AttemptStrategy.Fallback:
                     return TranslationGetter.FallbackMode(languageTagInstance, resourceKey, out translateValue, _resources, _fallbackExperimenter);
 
@@ -389,8 +365,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="translateValue"></param>
         /// <param name="strategy"></param>
         /// <returns></returns>
-        public bool TryGetTranslateValue(LanguageTag languageTag, string resourceKey, out string translateValue, AttemptStrategy strategy = AttemptStrategy.Fallback)
-        {
+        public bool TryGetTranslateValue(LanguageTag languageTag, string resourceKey, out string translateValue, AttemptStrategy strategy = AttemptStrategy.Fallback) {
             translateValue = string.Empty;
 
             if (languageTag == null)
@@ -399,8 +374,7 @@ namespace Cosmos.I18N.Translation
             if (string.IsNullOrWhiteSpace(resourceKey))
                 return false;
 
-            switch (strategy)
-            {
+            switch (strategy) {
                 case AttemptStrategy.Fallback:
                     return TranslationGetter.FallbackMode(languageTag, resourceKey, out translateValue, _resources, _fallbackExperimenter);
 

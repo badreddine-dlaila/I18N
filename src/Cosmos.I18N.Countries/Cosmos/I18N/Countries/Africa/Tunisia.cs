@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 突尼斯（The Republic of Tunisia，非洲，TN，TUN，788），突尼斯共和国 <br />
     /// Cosmos i18n code: i18n_country_tunisi
     /// </summary>
-    public static class Tunisia
-    {
+    public static class Tunisia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Tunisia()
-        {
-            _country = new CountryInfo
-            {
+        static Tunisia() {
+            _country = new CountryInfo {
                 Country = Country.Tunisia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Tunisia,

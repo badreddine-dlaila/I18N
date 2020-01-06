@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 圣文森特和格林纳丁斯（Saint Vincent and the Grenadines，北美洲，VC，VCT，670） <br />
     /// Cosmos i18n code: i18n_country_shengwensenteglnds
     /// </summary>
-    public static class StVAndG
-    {
+    public static class StVAndG {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static StVAndG()
-        {
-            _country = new CountryInfo
-            {
+        static StVAndG() {
+            _country = new CountryInfo {
                 Country = Country.StVAndG,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.StVAndG,

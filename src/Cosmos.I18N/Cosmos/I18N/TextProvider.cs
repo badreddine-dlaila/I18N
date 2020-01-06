@@ -3,21 +3,18 @@ using Cosmos.I18N.Core;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N
-{
+namespace Cosmos.I18N {
     /// <summary>
     /// Default text provider
     /// </summary>
-    public class TextProvider : ITextProvider
-    {
+    public class TextProvider : ITextProvider {
         private readonly TranslationProcessor _translationProcessor;
 
         /// <summary>
         /// Create a new instance of <see cref="TextProvider"/>
         /// </summary>
         /// <param name="translationProcessor"></param>
-        public TextProvider(TranslationProcessor translationProcessor)
-        {
+        public TextProvider(TranslationProcessor translationProcessor) {
             _translationProcessor = translationProcessor ?? throw new ArgumentNullException(nameof(translationProcessor));
         }
 
@@ -27,8 +24,7 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="packageKey"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey)
-        {
+        public IText Create(string text, string packageKey) {
             return new Text(_translationProcessor, text, packageKey);
         }
 
@@ -39,8 +35,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, params object[] parameters)
-        {
+        public IText Create(string text, string packageKey, params object[] parameters) {
             return new Text(_translationProcessor, text, packageKey, parameters);
         }
 
@@ -51,8 +46,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, string languageTag)
-        {
+        public IText Create(string text, string packageKey, string languageTag) {
             return new Text(_translationProcessor, text, packageKey, languageTag);
         }
 
@@ -64,8 +58,7 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, string languageTag, params object[] parameters)
-        {
+        public IText Create(string text, string packageKey, string languageTag, params object[] parameters) {
             return new Text(_translationProcessor, text, packageKey, languageTag, parameters);
         }
 
@@ -76,8 +69,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, ILanguageTag languageTag)
-        {
+        public IText Create(string text, string packageKey, ILanguageTag languageTag) {
             return new Text(_translationProcessor, text, packageKey, languageTag);
         }
 
@@ -89,8 +81,7 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
-        {
+        public IText Create(string text, string packageKey, ILanguageTag languageTag, params object[] parameters) {
             return new Text(_translationProcessor, text, packageKey, languageTag, parameters);
         }
 
@@ -101,8 +92,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, Locale locale)
-        {
+        public IText Create(string text, string packageKey, Locale locale) {
             return new Text(_translationProcessor, text, packageKey, locale);
         }
 
@@ -114,8 +104,7 @@ namespace Cosmos.I18N
         /// <param name="locale"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Create(string text, string packageKey, Locale locale, params object[] parameters)
-        {
+        public IText Create(string text, string packageKey, Locale locale, params object[] parameters) {
             return new Text(_translationProcessor, text, packageKey, locale, parameters);
         }
 
@@ -127,10 +116,8 @@ namespace Cosmos.I18N
         /// <param name="formatProvider"></param>
         /// <returns></returns>
         public IText Create(string text, string packageKey,
-            Func<string, ILanguageTag, string, object[], string> formatProvider)
-        {
-            return new Text(_translationProcessor, text, packageKey)
-            {
+            Func<string, ILanguageTag, string, object[], string> formatProvider) {
+            return new Text(_translationProcessor, text, packageKey) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -144,10 +131,8 @@ namespace Cosmos.I18N
         /// <param name="parameters"></param>
         /// <returns></returns>
         public IText Create(string text, string packageKey,
-            Func<string, ILanguageTag, string, object[], string> formatProvider, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, packageKey, parameters)
-            {
+            Func<string, ILanguageTag, string, object[], string> formatProvider, params object[] parameters) {
+            return new Text(_translationProcessor, text, packageKey, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -161,10 +146,8 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <returns></returns>
         public IText Create(string text, string packageKey,
-            Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag)
-        {
-            return new Text(_translationProcessor, text, packageKey, languageTag)
-            {
+            Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag) {
+            return new Text(_translationProcessor, text, packageKey, languageTag) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -180,10 +163,8 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public IText Create(string text, string packageKey,
             Func<string, ILanguageTag, string, object[], string> formatProvider,
-            string languageTag, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, packageKey, languageTag, parameters)
-            {
+            string languageTag, params object[] parameters) {
+            return new Text(_translationProcessor, text, packageKey, languageTag, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -197,10 +178,8 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <returns></returns>
         public IText Create(string text, string packageKey,
-            Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag)
-        {
-            return new Text(_translationProcessor, text, packageKey, languageTag)
-            {
+            Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag) {
+            return new Text(_translationProcessor, text, packageKey, languageTag) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -216,10 +195,8 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public IText Create(string text, string packageKey,
             Func<string, ILanguageTag, string, object[], string> formatProvider,
-            ILanguageTag languageTag, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, packageKey, languageTag, parameters)
-            {
+            ILanguageTag languageTag, params object[] parameters) {
+            return new Text(_translationProcessor, text, packageKey, languageTag, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -233,10 +210,8 @@ namespace Cosmos.I18N
         /// <param name="locale"></param>
         /// <returns></returns>
         public IText Create(string text, string packageKey,
-            Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale)
-        {
-            return new Text(_translationProcessor, text, packageKey, locale)
-            {
+            Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale) {
+            return new Text(_translationProcessor, text, packageKey, locale) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -252,10 +227,8 @@ namespace Cosmos.I18N
         /// <returns></returns>
         public IText Create(string text, string packageKey,
             Func<string, ILanguageTag, string, object[], string> formatProvider,
-            Locale locale, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, packageKey, locale, parameters)
-            {
+            Locale locale, params object[] parameters) {
+            return new Text(_translationProcessor, text, packageKey, locale, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -266,8 +239,7 @@ namespace Cosmos.I18N
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        public IText Anonymous(string text)
-        {
+        public IText Anonymous(string text) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY);
         }
 
@@ -277,8 +249,7 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, params object[] parameters)
-        {
+        public IText Anonymous(string text, params object[] parameters) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, parameters);
         }
 
@@ -288,8 +259,7 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, string languageTag)
-        {
+        public IText Anonymous(string text, string languageTag) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag);
         }
 
@@ -300,8 +270,7 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, string languageTag, params object[] parameters)
-        {
+        public IText Anonymous(string text, string languageTag, params object[] parameters) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters);
         }
 
@@ -311,8 +280,7 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, ILanguageTag languageTag)
-        {
+        public IText Anonymous(string text, ILanguageTag languageTag) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag);
         }
 
@@ -323,8 +291,7 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, ILanguageTag languageTag, params object[] parameters)
-        {
+        public IText Anonymous(string text, ILanguageTag languageTag, params object[] parameters) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters);
         }
 
@@ -334,8 +301,7 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Locale locale)
-        {
+        public IText Anonymous(string text, Locale locale) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale);
         }
 
@@ -346,8 +312,7 @@ namespace Cosmos.I18N
         /// <param name="locale"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Locale locale, params object[] parameters)
-        {
+        public IText Anonymous(string text, Locale locale, params object[] parameters) {
             return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale, parameters);
         }
 
@@ -357,10 +322,8 @@ namespace Cosmos.I18N
         /// <param name="text"></param>
         /// <param name="formatProvider"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -372,10 +335,8 @@ namespace Cosmos.I18N
         /// <param name="formatProvider"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, parameters)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, params object[] parameters) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -387,10 +348,8 @@ namespace Cosmos.I18N
         /// <param name="formatProvider"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -403,10 +362,8 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, string languageTag, params object[] parameters) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -418,10 +375,8 @@ namespace Cosmos.I18N
         /// <param name="formatProvider"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -434,10 +389,8 @@ namespace Cosmos.I18N
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, ILanguageTag languageTag, params object[] parameters) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, languageTag, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -449,10 +402,8 @@ namespace Cosmos.I18N
         /// <param name="formatProvider"></param>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale) {
                 CustomFormatProvider = formatProvider
             };
         }
@@ -465,10 +416,8 @@ namespace Cosmos.I18N
         /// <param name="locale"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale, params object[] parameters)
-        {
-            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale, parameters)
-            {
+        public IText Anonymous(string text, Func<string, ILanguageTag, string, object[], string> formatProvider, Locale locale, params object[] parameters) {
+            return new Text(_translationProcessor, text, TranslationManager.ANONYMOUS_PACKAGE_KEY, locale, parameters) {
                 CustomFormatProvider = formatProvider
             };
         }

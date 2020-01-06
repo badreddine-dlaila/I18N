@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 挪威（The Kingdom of Norway，欧洲，NO，NOR，578），挪威王国 <br />
     /// Cosmos i18n code: i18n_country_nuowei
     /// </summary>
-    public static class Norway
-    {
+    public static class Norway {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Norway()
-        {
-            _country = new CountryInfo
-            {
+        static Norway() {
+            _country = new CountryInfo {
                 Country = Country.Norway,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Norway,

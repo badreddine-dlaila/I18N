@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// Brazil Regions
     /// </summary>
-    public static class BrazilRegions
-    {
+    public static class BrazilRegions {
 
         #region Gets regions
 
@@ -88,229 +86,228 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         public static EnumValues Paraíba => EnumValues.Paraíba;
 
-            /// <summary>
-            /// Pernambuco
-            /// </summary>
-            public static EnumValues Pernambuco => EnumValues.Pernambuco;
+        /// <summary>
+        /// Pernambuco
+        /// </summary>
+        public static EnumValues Pernambuco => EnumValues.Pernambuco;
 
-            /// <summary>
-            /// Piauí
-            /// </summary>
-            public static EnumValues Piauí => EnumValues.Piauí;
+        /// <summary>
+        /// Piauí
+        /// </summary>
+        public static EnumValues Piauí => EnumValues.Piauí;
 
-            /// <summary>
-            /// Paraná
-            /// </summary>
-            public static EnumValues Paraná => EnumValues.Paraná;
+        /// <summary>
+        /// Paraná
+        /// </summary>
+        public static EnumValues Paraná => EnumValues.Paraná;
 
-            /// <summary>
-            /// Rio de Janeiro
-            /// </summary>
-            public static EnumValues RioDeJaneiro => EnumValues.RioDeJaneiro;
+        /// <summary>
+        /// Rio de Janeiro
+        /// </summary>
+        public static EnumValues RioDeJaneiro => EnumValues.RioDeJaneiro;
 
-            /// <summary>
-            /// Rio Grande do Norte
-            /// </summary>
-            public static EnumValues RioGrandeDoNorte => EnumValues.RioGrandeDoNorte;
+        /// <summary>
+        /// Rio Grande do Norte
+        /// </summary>
+        public static EnumValues RioGrandeDoNorte => EnumValues.RioGrandeDoNorte;
 
-            /// <summary>
-            /// Rondônia
-            /// </summary>
-            public static EnumValues Rondônia => EnumValues.Rondônia;
+        /// <summary>
+        /// Rondônia
+        /// </summary>
+        public static EnumValues Rondônia => EnumValues.Rondônia;
 
-            /// <summary>
-            /// Roraima
-            /// </summary>
-            public static EnumValues Roraima => EnumValues.Roraima;
+        /// <summary>
+        /// Roraima
+        /// </summary>
+        public static EnumValues Roraima => EnumValues.Roraima;
 
-            /// <summary>
-            /// Rio Grande do Sul
-            /// </summary>
-            public static EnumValues RioGrandeDoSul => EnumValues.RioGrandeDoSul;
+        /// <summary>
+        /// Rio Grande do Sul
+        /// </summary>
+        public static EnumValues RioGrandeDoSul => EnumValues.RioGrandeDoSul;
 
-            /// <summary>
-            /// Santa Catarina
-            /// </summary>
-            public static EnumValues SantaCatarina => EnumValues.SantaCatarina;
+        /// <summary>
+        /// Santa Catarina
+        /// </summary>
+        public static EnumValues SantaCatarina => EnumValues.SantaCatarina;
 
-            /// <summary>
-            /// Sergipe
-            /// </summary>
-            public static EnumValues Sergipe => EnumValues.Sergipe;
+        /// <summary>
+        /// Sergipe
+        /// </summary>
+        public static EnumValues Sergipe => EnumValues.Sergipe;
 
-            /// <summary>
-            /// São Paulo
-            /// </summary>
-            public static EnumValues SãoPaulo => EnumValues.SãoPaulo;
+        /// <summary>
+        /// São Paulo
+        /// </summary>
+        public static EnumValues SãoPaulo => EnumValues.SãoPaulo;
 
-            /// <summary>
-            /// Tocantins
-            /// </summary>
-            public static EnumValues Tocantins => EnumValues.Tocantins;
+        /// <summary>
+        /// Tocantins
+        /// </summary>
+        public static EnumValues Tocantins => EnumValues.Tocantins;
 
         #endregion
 
         /// <summary>
         /// Enum values for Brazil regions
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Acre
             /// </summary>
             [AliasInShort("AC")]
             Acre,
-            
+
             /// <summary>
             /// Alagoas
             /// </summary>
             [AliasInShort("AL")]
             Alagoas,
-            
+
             /// <summary>
             /// Amazonas
             /// </summary>
             [AliasInShort("AM")]
             Amazonas,
-            
+
             /// <summary>
             /// Amapá
             /// </summary>
             [AliasInShort("AP")]
             Amapá,
-            
+
             /// <summary>
             /// Bahia
             /// </summary>
             [AliasInShort("BA")]
             Bahia,
-            
+
             /// <summary>
             /// Ceará
             /// </summary>
             [AliasInShort("CE")]
             Ceará,
-            
+
             /// <summary>
             /// Distrito Federal
             /// </summary>
             [AliasInShort("DF")]
             DistritoFederal,
-            
+
             /// <summary>
             /// Espírito Santo
             /// </summary>
             [AliasInShort("ES")]
             EspíritoSanto,
-            
+
             /// <summary>
             /// Goiás
             /// </summary>
             [AliasInShort("GO")]
             Goiás,
-            
+
             /// <summary>
             /// Maranhão
             /// </summary>
             [AliasInShort("MA")]
             Maranhão,
-            
+
             /// <summary>
             /// Minas Gerais
             /// </summary>
             [AliasInShort("MG")]
             MinasGerais,
-            
+
             /// <summary>
             /// Mato Grosso do Sul
             /// </summary>
             [AliasInShort("MS")]
             MatoGrossoDoSul,
-            
+
             /// <summary>
             /// Mato Grosso
             /// </summary>
             [AliasInShort("MT")]
             MatoGrosso,
-            
+
             /// <summary>
             /// Pará
             /// </summary>
             [AliasInShort("PA")]
             Pará,
-            
+
             /// <summary>
             /// Paraíba
             /// </summary>
             [AliasInShort("PB")]
             Paraíba,
-            
+
             /// <summary>
             /// Pernambuco
             /// </summary>
             [AliasInShort("PE")]
             Pernambuco,
-            
+
             /// <summary>
             /// Piauí
             /// </summary>
             [AliasInShort("PI")]
             Piauí,
-            
+
             /// <summary>
             /// Paraná
             /// </summary>
             [AliasInShort("PR")]
             Paraná,
-            
+
             /// <summary>
             /// Rio de Janeiro
             /// </summary>
             [AliasInShort("RJ")]
             RioDeJaneiro,
-            
+
             /// <summary>
             /// Rio Grande do Norte
             /// </summary>
             [AliasInShort("RN")]
             RioGrandeDoNorte,
-            
+
             /// <summary>
             /// Rondônia
             /// </summary>
             [AliasInShort("RO")]
             Rondônia,
-            
+
             /// <summary>
             /// Roraima
             /// </summary>
             [AliasInShort("RR")]
             Roraima,
-            
+
             /// <summary>
             /// Rio Grande do Sul
             /// </summary>
             [AliasInShort("RS")]
             RioGrandeDoSul,
-            
+
             /// <summary>
             /// Santa Catarina
             /// </summary>
             [AliasInShort("SC")]
             SantaCatarina,
-            
+
             /// <summary>
             /// Sergipe
             /// </summary>
             [AliasInShort("SE")]
             Sergipe,
-            
+
             /// <summary>
             /// São Paulo
             /// </summary>
             [AliasInShort("SP")]
             SãoPaulo,
-            
+
             /// <summary>
             /// Tocantins
             /// </summary>
@@ -324,7 +321,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
             [AliasInShort("??")]
             Unknown,
         }
-        
+
         #region Extension methods
 
         /// <summary>
@@ -332,8 +329,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -342,8 +338,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"BR-{values.ToRegionCode()}";
         }
 
@@ -353,17 +348,17 @@ namespace Cosmos.I18N.Countries.SouthAmerica
 
         private static List<EnumMember<EnumValues>> InternalEnumMembersCache { get; }
             = Enums.GetMembers<EnumValues>().Where(x => !x.Attributes.Has<IgnoreRegionAttribute>()).ToList();
-        
+
         /// <summary>
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }
 
         #endregion
+
     }
 }

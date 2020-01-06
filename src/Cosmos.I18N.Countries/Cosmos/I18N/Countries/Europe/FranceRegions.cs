@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// France Regions
     /// </summary>
-    public static class FranceRegions
-    {
+    public static class FranceRegions {
 
         #region Gets regions
 
@@ -539,8 +537,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// <summary>
         /// Special regions
         /// </summary>
-        public static class Special
-        {
+        public static class Special {
             /// <summary>
             /// Mayotte
             /// </summary>
@@ -611,8 +608,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// <summary>
         /// Enum values for France regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Département et région d'outre-mer Mayotte
             /// </summary>
@@ -1358,8 +1354,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -1368,8 +1363,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"FR-{values.ToRegionCode()}";
         }
 
@@ -1378,10 +1372,8 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
-            switch (value)
-            {
+        public static Country ToCountry(this EnumValues value) {
+            switch (value) {
                 case EnumValues.Mayotte:
                     return Country.Mayotte;
                 case EnumValues.Martinique:
@@ -1408,10 +1400,8 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
-            switch (value)
-            {
+        public static CountryCode ToCountryCode(this EnumValues value) {
+            switch (value) {
                 case EnumValues.Mayotte:
                     return CountryCode.YT;
                 case EnumValues.Martinique:
@@ -1442,10 +1432,8 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static EnumValues FromSpecialRegions(Country country)
-        {
-            switch (country)
-            {
+        public static EnumValues FromSpecialRegions(Country country) {
+            switch (country) {
                 case Country.Mayotte:
                     return EnumValues.Mayotte;
                 case Country.Martinique:
@@ -1472,10 +1460,8 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static EnumValues FromSpecialRegions(CountryCode code)
-        {
-            switch (code)
-            {
+        public static EnumValues FromSpecialRegions(CountryCode code) {
+            switch (code) {
                 case CountryCode.YT:
                     return EnumValues.Mayotte;
                 case CountryCode.MQ:
@@ -1511,8 +1497,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }
@@ -1521,8 +1506,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// 获得本土地区的地区代号
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetMainRegionCodes()
-        {
+        public static IEnumerable<string> GetMainRegionCodes() {
             foreach (var member in Filter("mainland"))
                 yield return member.Value.ToFullRegionCode();
         }
@@ -1531,8 +1515,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// 获得海外地区的地区代号
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetOverseasRegionCodes()
-        {
+        public static IEnumerable<string> GetOverseasRegionCodes() {
             foreach (var member in Filter("overseas"))
                 yield return member.Value.ToFullRegionCode();
         }

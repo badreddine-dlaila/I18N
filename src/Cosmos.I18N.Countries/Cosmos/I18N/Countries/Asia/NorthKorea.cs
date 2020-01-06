@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 朝鲜（Democratic People's Republic of Korea，亚洲，KP，PRK，408），朝鲜民主主义人民共和国 <br />
     /// Cosmos i18n code: i18n_country_chaoxian
     /// </summary>
-    public static class NorthKorea
-    {
+    public static class NorthKorea {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static NorthKorea()
-        {
-            _country = new CountryInfo
-            {
+        static NorthKorea() {
+            _country = new CountryInfo {
                 Country = Country.NorthKorea,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.NorthKorea,

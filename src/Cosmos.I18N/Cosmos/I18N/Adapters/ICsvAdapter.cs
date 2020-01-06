@@ -1,3 +1,6 @@
 ﻿namespace Cosmos.I18N.Adapters {
-    public interface ICsvAdapter:IAdapterProcess { }
+    /// <summary>
+    /// Csv adapter interface
+    /// </summary>
+    public interface ICsvAdapter : IAdapterProcess { }
 }

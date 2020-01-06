@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 索马里（The Federal Republic of Somalia，非洲，SO，SOM，706），索马里联邦共和国 <br />
     /// Cosmos i18n code: i18n_country_suomali
     /// </summary>
-    public static class Somalia
-    {
+    public static class Somalia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Somalia()
-        {
-            _country = new CountryInfo
-            {
+        static Somalia() {
+            _country = new CountryInfo {
                 Country = Country.Somalia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Somalia,

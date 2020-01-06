@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 塞浦路斯（The Republic of Cyprus，亚洲，CY，CYP，196），塞浦路斯共和国 <br />
     /// Cosmos i18n code: i18n_country_saipulusi
     /// </summary>
-    public static class Cyprus
-    {
+    public static class Cyprus {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Cyprus()
-        {
-            _country = new CountryInfo
-            {
+        static Cyprus() {
+            _country = new CountryInfo {
                 Country = Country.Cyprus,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Cyprus,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 印度尼西亚（The Republic of Indonesia，亚洲，ID，IDN，360），印度尼西亚共和国 <br />
     /// Cosmos i18n code: i18n_country_yindunixiya
     /// </summary>
-    public static class Indonesia
-    {
+    public static class Indonesia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Indonesia()
-        {
-            _country = new CountryInfo
-            {
+        static Indonesia() {
+            _country = new CountryInfo {
                 Country = Country.Indonesia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Indonesia,

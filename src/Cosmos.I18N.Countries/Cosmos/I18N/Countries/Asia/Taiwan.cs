@@ -1,20 +1,16 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 台湾（Taiwan, China，亚洲，TW，TWN，158），中华人民共和国台湾省 <br />
     /// 台湾，中华人民共和国的一部分 <br />
     /// Taiwan, a part of China <br />
     /// Cosmos i18n code: i18n_country_cnhtaiwan
     /// </summary>
-    public static class Taiwan
-    {
+    public static class Taiwan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Taiwan()
-        {
-            _country = new CountryInfo
-            {
+        static Taiwan() {
+            _country = new CountryInfo {
                 Country = Country.Taiwan,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.China,

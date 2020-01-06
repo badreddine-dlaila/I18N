@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 中国（People's Republic of China，亚洲，CN，CNH，156），中华人民共和国 <br />
     /// Cosmos i18n code: i18n_country_china
     /// </summary>
-    public static class China
-    {
+    public static class China {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static China()
-        {
-            _country = new CountryInfo
-            {
+        static China() {
+            _country = new CountryInfo {
                 Country = Country.China,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.China,

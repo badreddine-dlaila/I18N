@@ -7,12 +7,19 @@ using Cosmos.I18N.Extensions.DependencyInjection;
 using Cosmos.I18N.Extensions.DependencyInjection.Core;
 using Cosmos.I18N.Translation;
 
-namespace Microsoft.Extensions.DependencyInjection
-{
-    public static class ServiceCollectionExtensions
-    {
-        public static IServiceCollection AddCosmosLocalization(this IServiceCollection services, Action<I18NOptions> optionAct)
-        {
+namespace Microsoft.Extensions.DependencyInjection {
+    /// <summary>
+    /// Extensions for service collection
+    /// </summary>
+    public static class ServiceCollectionExtensions {
+        /// <summary>
+        /// Add Cosmos.I18N
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="optionAct"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static IServiceCollection AddCosmosLocalization(this IServiceCollection services, Action<I18NOptions> optionAct) {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
             var options = new I18NOptions();
@@ -21,8 +28,7 @@ namespace Microsoft.Extensions.DependencyInjection
             var translationManager = new TranslationManager();
             var translationSetter = translationManager as ITranslationManSetter;
 
-            foreach (var package in options.TranslationPackages)
-            {
+            foreach (var package in options.TranslationPackages) {
                 var translationPackage = package.Value;
                 translationSetter.RegisterPackage(translationPackage);
                 services.AddSingleton(translationPackage);

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 特克斯和凯科斯群岛（The Turks and Caicos Islands，北美洲，TC，TCA，796） <br />
     /// Cosmos i18n code: i18n_country_tekesikks
     /// </summary>
-    public static class TurksAndCaicosIslands
-    {
+    public static class TurksAndCaicosIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static TurksAndCaicosIslands()
-        {
-            _country = new CountryInfo
-            {
+        static TurksAndCaicosIslands() {
+            _country = new CountryInfo {
                 Country = Country.TurksAndCaicosIslands,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.TurksAndCaicosIslands,

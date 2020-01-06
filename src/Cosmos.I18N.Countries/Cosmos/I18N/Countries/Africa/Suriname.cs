@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 苏里南（The Republic of Suriname，非洲，SR，SUR，740），苏里南共和国 <br />
     /// Cosmos i18n code: i18n_country_sulinan
     /// </summary>
-    public static class Suriname
-    {
+    public static class Suriname {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Suriname()
-        {
-            _country = new CountryInfo
-            {
+        static Suriname() {
+            _country = new CountryInfo {
                 Country = Country.Suriname,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Suriname,

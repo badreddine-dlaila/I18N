@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 巴拉圭（Republic Of Paraguay，南美洲，PY，PRY，600），巴拉圭共和国 <br />
     /// Cosmos i18n code: i18n_country_balagui
     /// </summary>
-    public static class Paraguay
-    {
+    public static class Paraguay {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Paraguay()
-        {
-            _country = new CountryInfo
-            {
+        static Paraguay() {
+            _country = new CountryInfo {
                 Country = Country.Paraguay,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Paraguay,

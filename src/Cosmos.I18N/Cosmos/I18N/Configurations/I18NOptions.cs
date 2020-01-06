@@ -4,13 +4,11 @@ using System.Threading;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Configurations
-{
+namespace Cosmos.I18N.Configurations {
     /// <summary>
     /// Cosmos i18n options
     /// </summary>
-    public class I18NOptions
-    {
+    public class I18NOptions {
         // ReSharper disable once InconsistentNaming
         private readonly Dictionary<int, ITranslatePackage> __translationPackages;
 
@@ -25,10 +23,8 @@ namespace Cosmos.I18N.Configurations
         /// <summary>
         /// Create a new instance of <see cref="I18NOptions"/>
         /// </summary>
-        public I18NOptions()
-        {
-            __translationPackages = new Dictionary<int, ITranslatePackage>
-            {
+        public I18NOptions() {
+            __translationPackages = new Dictionary<int, ITranslatePackage> {
                 {TranslationManager.HashOfAnonymousPackageKey, new TranslatePackage(TranslationManager.ANONYMOUS_PACKAGE_KEY, _fallbackExperimenter)}
             };
         }
@@ -43,8 +39,7 @@ namespace Cosmos.I18N.Configurations
         /// <param name="customMergeProvider"></param>
         /// <returns></returns>
         public I18NOptions AddPackage(Func<ITranslatePackage> packageProvider, MergeLevel level = MergeLevel.Level_1,
-            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null)
-        {
+            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null) {
             return AddPackage(packageProvider(), level, customMergeProvider);
         }
 
@@ -57,20 +52,16 @@ namespace Cosmos.I18N.Configurations
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public I18NOptions AddPackage(ITranslatePackage package, MergeLevel level = MergeLevel.Level_1,
-            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null)
-        {
+            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null) {
             if (package == null)
                 throw new ArgumentNullException(nameof(package));
-            lock (__lock_package)
-            {
+            lock (__lock_package) {
                 var hashOfPackageKey = package.PackageKey.GetHashCode();
-                if (__translationPackages.TryGetValue(hashOfPackageKey, out var packageInstance))
-                {
+                if (__translationPackages.TryGetValue(hashOfPackageKey, out var packageInstance)) {
                     var template = TranslatePackageMerger.Merge(packageInstance, package, level, customMergeProvider);
                     __translationPackages[hashOfPackageKey] = template;
                 }
-                else
-                {
+                else {
                     AddPackageInternal(package);
                 }
             }
@@ -78,8 +69,7 @@ namespace Cosmos.I18N.Configurations
             return this;
         }
 
-        private void AddPackageInternal(ITranslatePackage package)
-        {
+        private void AddPackageInternal(ITranslatePackage package) {
             __translationPackages.Add(package.PackageKey.GetHashCode(), package);
         }
 
@@ -93,8 +83,7 @@ namespace Cosmos.I18N.Configurations
         /// <param name="packageKey"></param>
         /// <param name="resourceProvider"></param>
         /// <returns></returns>
-        public I18NOptions AddResource(string packageKey, Func<ITranslateResource> resourceProvider)
-        {
+        public I18NOptions AddResource(string packageKey, Func<ITranslateResource> resourceProvider) {
             return AddResource(packageKey, resourceProvider());
         }
 
@@ -106,8 +95,7 @@ namespace Cosmos.I18N.Configurations
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="InvalidOperationException"></exception>
-        public I18NOptions AddResource(string packageKey, ITranslateResource resource)
-        {
+        public I18NOptions AddResource(string packageKey, ITranslateResource resource) {
             if (resource == null)
                 throw new ArgumentNullException(nameof(resource));
             if (string.IsNullOrWhiteSpace(packageKey))
@@ -115,24 +103,19 @@ namespace Cosmos.I18N.Configurations
             if (resource.IsAnonymous)
                 throw new ArgumentException($"Anonymous translation resource should use method '{nameof(AddAnonymousResource)}'.");
 
-            lock (__lock_resource)
-            {
+            lock (__lock_resource) {
                 var hashOfPackageKey = packageKey.GetHashCode();
-                if (TryRegisterLanguageTagOnce(resource.Binding))
-                {
-                    if (__translationPackages.TryGetValue(hashOfPackageKey, out var package))
-                    {
+                if (TryRegisterLanguageTagOnce(resource.Binding)) {
+                    if (__translationPackages.TryGetValue(hashOfPackageKey, out var package)) {
                         package.AddResource(resource);
                     }
-                    else
-                    {
+                    else {
                         var future = new TranslatePackage(packageKey, _fallbackExperimenter);
                         future.AddResource(resource);
                         AddPackageInternal(future);
                     }
                 }
-                else
-                {
+                else {
                     throw new InvalidOperationException($"Something broken when add new resource '{resource.Name}'.");
                 }
             }
@@ -147,27 +130,23 @@ namespace Cosmos.I18N.Configurations
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
-        public I18NOptions AddAnonymousResource(ITranslateResource resource)
-        {
+        public I18NOptions AddAnonymousResource(ITranslateResource resource) {
             if (resource == null)
                 throw new ArgumentNullException(nameof(resource));
             if (!resource.IsAnonymous)
                 throw new ArgumentException($"Non-anonymous translation resource should use method '{nameof(AddResource)}'.");
 
-            lock (__lock_resource)
-            {
-                if (TryRegisterLanguageTagOnce(resource.Binding))
-                {
+            lock (__lock_resource) {
+                if (TryRegisterLanguageTagOnce(resource.Binding)) {
                     var anonymousPackage = __translationPackages[TranslationManager.HashOfAnonymousPackageKey];
                     anonymousPackage.AddResource(resource);
                 }
             }
-            
+
             return this;
         }
 
-        private bool TryRegisterLanguageTagOnce(LanguageTag languageTag)
-        {
+        private bool TryRegisterLanguageTagOnce(LanguageTag languageTag) {
             if (languageTag == null)
                 return false;
 
@@ -209,8 +188,7 @@ namespace Cosmos.I18N.Configurations
         /// <param name="path"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public I18NOptions SetPathBase(string path)
-        {
+        public I18NOptions SetPathBase(string path) {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
             PathBase = path;
             return this;
@@ -222,8 +200,7 @@ namespace Cosmos.I18N.Configurations
         /// <param name="path"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public I18NOptions SetPathSegment(string path)
-        {
+        public I18NOptions SetPathSegment(string path) {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
             PathSegment = path;
             return this;
@@ -236,8 +213,7 @@ namespace Cosmos.I18N.Configurations
         /// <summary>
         /// Gets or sets default locale
         /// </summary>
-        public Locale DefaultLocale
-        {
+        public Locale DefaultLocale {
             get => LanguageTag.DefaultLocale;
             set => LanguageTag.SetDefaultLocale(value);
         }
@@ -247,8 +223,7 @@ namespace Cosmos.I18N.Configurations
         /// </summary>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public I18NOptions SetDefaultLocale(Locale locale)
-        {
+        public I18NOptions SetDefaultLocale(Locale locale) {
             DefaultLocale = locale;
             return this;
         }
@@ -257,17 +232,15 @@ namespace Cosmos.I18N.Configurations
 
         #region Set CurrentLanguageTag Changed Handler
 
-        internal Action<AsyncLocalValueChangedArgs<string>> LanguageTagChangedHandler { get; private set; } = null;
+        internal Action<AsyncLocalValueChangedArgs<string>> LanguageTagChangedHandler { get; private set; }
 
         /// <summary>
         /// Set LanguageTag changed handler
         /// </summary>
         /// <param name="languageTagChangedHandler"></param>
         /// <returns></returns>
-        public I18NOptions SetLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler)
-        {
-            if (languageTagChangedHandler != null)
-            {
+        public I18NOptions SetLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler) {
+            if (languageTagChangedHandler != null) {
                 LanguageTagChangedHandler = languageTagChangedHandler;
             }
 
@@ -279,10 +252,8 @@ namespace Cosmos.I18N.Configurations
         /// </summary>
         /// <param name="languageTagChangedHandler"></param>
         /// <returns></returns>
-        public I18NOptions AppendLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler)
-        {
-            if (languageTagChangedHandler != null)
-            {
+        public I18NOptions AppendLanguageTagChangedHandler(Action<AsyncLocalValueChangedArgs<string>> languageTagChangedHandler) {
+            if (languageTagChangedHandler != null) {
                 LanguageTagChangedHandler += languageTagChangedHandler;
             }
 
@@ -293,8 +264,7 @@ namespace Cosmos.I18N.Configurations
         /// Remove all LanguageTag changed handler
         /// </summary>
         /// <returns></returns>
-        public I18NOptions RemoveLanguageTagChangedHandler()
-        {
+        public I18NOptions RemoveLanguageTagChangedHandler() {
             LanguageTagChangedHandler = null;
             return this;
         }

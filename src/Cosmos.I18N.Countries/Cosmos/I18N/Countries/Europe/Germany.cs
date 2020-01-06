@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 德国（The Federal Republic of Germany，欧洲，DE，DEU，276），德意志联邦共和国 <br />
     /// Cosmos i18n code: i18n_country_deguo
     /// </summary>
-    public static class Germany
-    {
+    public static class Germany {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Germany()
-        {
-            _country = new CountryInfo
-            {
+        static Germany() {
+            _country = new CountryInfo {
                 Country = Country.Germany,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Germany,

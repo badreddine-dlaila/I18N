@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 波黑（Bosnia and Herzegovina，欧洲，BA，BIH，070），波斯尼亚和黑塞哥维那 <br />
     /// Cosmos i18n code: i18n_country_bohei
     /// </summary>
-    public static class BosniaAndHerzegovina
-    {
+    public static class BosniaAndHerzegovina {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static BosniaAndHerzegovina()
-        {
-            _country = new CountryInfo
-            {
+        static BosniaAndHerzegovina() {
+            _country = new CountryInfo {
                 Country = Country.BosniaAndHerzegovina,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.BosniaAndHerzegovina,
@@ -20,7 +16,7 @@ namespace Cosmos.I18N.Countries.Europe
                 Alpha2Code = "BA",
                 Alpha3Code = "BIH",
                 Name = "Bosnia and Herzegovina",
-                ShorterForm="Azerbaijan",
+                ShorterForm = "Azerbaijan",
                 ChineseName = "波斯尼亚和黑塞哥维那",
                 ChineseShorterForm = "波黑",
                 Continent = Continent.Europe,

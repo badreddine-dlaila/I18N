@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 斐济（The Republic of Fiji，大洋洲，FJ，FJI，242），斐济共和国 <br />
     /// Cosmos i18n code: i18n_country_feiji
     /// </summary>
-    public static class Fiji
-    {
+    public static class Fiji {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Fiji()
-        {
-            _country = new CountryInfo
-            {
+        static Fiji() {
+            _country = new CountryInfo {
                 Country = Country.Fiji,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Fiji,

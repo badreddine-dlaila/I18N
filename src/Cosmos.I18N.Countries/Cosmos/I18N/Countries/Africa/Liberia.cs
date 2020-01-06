@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 利比里亚（Republic Of Liberia，非洲，LR，LBR，430），利比里亚共和国 <br />
     /// Cosmos i18n code: i18n_country_libiliya
     /// </summary>
-    public static class Liberia
-    {
+    public static class Liberia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Liberia()
-        {
-            _country = new CountryInfo
-            {
+        static Liberia() {
+            _country = new CountryInfo {
                 Country = Country.Liberia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Liberia,

@@ -1,21 +1,18 @@
 using System;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Templates
-{
+namespace Cosmos.I18N.Templates {
     /// <summary>
     /// Extensions for Localization Template
     /// </summary>
-    public static class LocalizationTemplateExtensions
-    {
+    public static class LocalizationTemplateExtensions {
         /// <summary>
         /// Is such template an anonymous template
         /// </summary>
         /// <param name="template"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public static bool IsAnonymousTemplate(this ILocalizationTemplate template)
-        {
+        public static bool IsAnonymousTemplate(this ILocalizationTemplate template) {
             if (template == null)
                 throw new ArgumentNullException(nameof(template));
 

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 巴勒斯坦（The State of Palestine，亚洲，PS，PSE，275），巴勒斯坦国 <br />
     /// Cosmos i18n code: i18n_country_balesitan
     /// </summary>
-    public static class Palestine
-    {
+    public static class Palestine {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Palestine()
-        {
-            _country = new CountryInfo
-            {
+        static Palestine() {
+            _country = new CountryInfo {
                 Country = Country.Palestine,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Palestine,

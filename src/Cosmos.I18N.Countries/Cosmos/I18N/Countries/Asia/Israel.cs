@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 以色列（The State of Israel，亚洲，IL，ISR，376），以色列国 <br />
     /// Cosmos i18n code: i18n_country_yiselie
     /// </summary>
-    public static class Israel
-    {
+    public static class Israel {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Israel()
-        {
-            _country = new CountryInfo
-            {
+        static Israel() {
+            _country = new CountryInfo {
                 Country = Country.Israel,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Israel,

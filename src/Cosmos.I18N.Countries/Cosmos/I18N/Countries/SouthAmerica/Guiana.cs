@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 法属圭亚那（Guyane Francaise，南美洲，GF，GUF，254） <br />
     /// Cosmos i18n code: i18n_country_guiyana
     /// </summary>
-    public static class Guiana
-    {
+    public static class Guiana {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Guiana()
-        {
-            _country = new CountryInfo
-            {
+        static Guiana() {
+            _country = new CountryInfo {
                 Country = Country.Guiana,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

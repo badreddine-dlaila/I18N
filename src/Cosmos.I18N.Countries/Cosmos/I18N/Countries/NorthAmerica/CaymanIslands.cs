@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 开曼群岛（Cayman Islands，北美洲，KY，CYM，136） <br />
     /// Cosmos i18n code: i18n_country_kaiman
     /// </summary>
-    public static class CaymanIslands
-    {
+    public static class CaymanIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static CaymanIslands()
-        {
-            _country = new CountryInfo
-            {
+        static CaymanIslands() {
+            _country = new CountryInfo {
                 Country = Country.CaymanIslands,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 法属南部领地（French Southern Territories，非洲，TF，ATF，260） <br />
     /// Cosmos i18n code: i18n_country_faguonanbulingdi
     /// </summary>
-    public static class FrenchSouthernTerritories
-    {
+    public static class FrenchSouthernTerritories {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static FrenchSouthernTerritories()
-        {
-            _country = new CountryInfo
-            {
+        static FrenchSouthernTerritories() {
+            _country = new CountryInfo {
                 Country = Country.FrenchSouthernTerritories,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

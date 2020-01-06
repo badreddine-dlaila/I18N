@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 洪都拉斯（The Republic of Honduras，南美洲，HN，HND，340），洪都拉斯共和国 <br />
     /// Cosmos i18n code: i18n_country_hongdulasi
     /// </summary>
-    public static class Honduras
-    {
+    public static class Honduras {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Honduras()
-        {
-            _country = new CountryInfo
-            {
+        static Honduras() {
+            _country = new CountryInfo {
                 Country = Country.Honduras,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Honduras,

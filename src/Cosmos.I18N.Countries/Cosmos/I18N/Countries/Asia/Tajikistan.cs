@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 塔吉克斯坦（The Republic of Tajikistan，亚洲，TJ，TJK，762），塔吉克斯坦共和国 <br />
     /// Cosmos i18n code: i18n_country_tajikesitan
     /// </summary>
-    public static class Tajikistan
-    {
+    public static class Tajikistan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Tajikistan()
-        {
-            _country = new CountryInfo
-            {
+        static Tajikistan() {
+            _country = new CountryInfo {
                 Country = Country.Tajikistan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Tajikistan,

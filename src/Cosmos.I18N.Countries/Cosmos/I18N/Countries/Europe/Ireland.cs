@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 爱尔兰（Republic of Ireland，欧洲，IE，IRL，372），爱尔兰共和国 <br />
     /// Cosmos i18n code: i18n_country_aierlan
     /// </summary>
-    public static class Ireland
-    {
+    public static class Ireland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Ireland()
-        {
-            _country = new CountryInfo
-            {
+        static Ireland() {
+            _country = new CountryInfo {
                 Country = Country.Ireland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Ireland,

@@ -1,12 +1,16 @@
 ﻿using Cosmos.I18N.Core;
 using Cosmos.I18N.Extensions.Console.Core;
 
-namespace Cosmos.I18N
-{
-    public static class DoneExtensions
-    {
-        public static void AllDone(this II18NServiceCollection services)
-        {
+namespace Cosmos.I18N {
+    /// <summary>
+    /// Extensions for done
+    /// </summary>
+    public static class DoneExtensions {
+        /// <summary>
+        /// ALl done
+        /// </summary>
+        /// <param name="services"></param>
+        public static void AllDone(this II18NServiceCollection services) {
             SoloDependencyContainer.AllDone(services);
         }
     }

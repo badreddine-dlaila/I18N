@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 法罗群岛（Faroe Islands，欧洲，FO，FRO，234） <br />
     /// Cosmos i18n code: i18n_country_faluo
     /// </summary>
-    public static class Faroe
-    {
+    public static class Faroe {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Faroe()
-        {
-            _country = new CountryInfo
-            {
+        static Faroe() {
+            _country = new CountryInfo {
                 Country = Country.Faroe,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Denmark,

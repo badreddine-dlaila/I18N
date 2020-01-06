@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 北马其顿（The Republic of North Macedonia，欧洲，MK，MKD，807），北马其顿共和国 <br />
     /// Cosmos i18n code: i18n_country_maqidun
     /// </summary>
-    public static class Macedonia
-    {
+    public static class Macedonia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Macedonia()
-        {
-            _country = new CountryInfo
-            {
+        static Macedonia() {
+            _country = new CountryInfo {
                 Country = Country.Macedonia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Macedonia,

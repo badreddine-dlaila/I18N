@@ -6,20 +6,17 @@ using Cosmos.I18N.Adapters.Formats;
 using Cosmos.I18N.Templates;
 using Newtonsoft.Json;
 
-namespace Cosmos.I18N.Adapters.Json
-{
+namespace Cosmos.I18N.Adapters.Json {
     /// <summary>
     /// Abp Json file adapter
     /// </summary>
-    public class AbpJsonFileAdapter : IFileAdapter, ISpeakAsJson<AnonymousLocalizationTemplate>, IDisposable
-    {
+    public class AbpJsonFileAdapter : IFileAdapter, ISpeakAsJson<AnonymousLocalizationTemplate>, IDisposable {
         /// <summary>
         /// Create a new instance of <see cref="AbpJsonFileAdapter"/>
         /// </summary>
         /// <param name="path"></param>
         /// <exception cref="ArgumentNullException"></exception>
-        public AbpJsonFileAdapter(string path)
-        {
+        public AbpJsonFileAdapter(string path) {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException(nameof(path));
             Path = path;
         }
@@ -34,10 +31,8 @@ namespace Cosmos.I18N.Adapters.Json
         /// </summary>
         /// <returns></returns>
         /// <exception cref="InvalidOperationException"></exception>
-        public bool Process()
-        {
-            try
-            {
+        public bool Process() {
+            try {
                 if (!File.Exists(Path))
                     throw new InvalidOperationException($"Failed to read file '{Path}'.");
 
@@ -48,8 +43,7 @@ namespace Cosmos.I18N.Adapters.Json
                 var abpVirtualJson = JsonConvert.DeserializeObject<AbpFormatResource>(text);
                 SpeakCache = abpVirtualJson.SpeakInCosmos() as AnonymousLocalizationTemplate;
             }
-            catch
-            {
+            catch {
                 return false;
             }
 
@@ -60,13 +54,11 @@ namespace Cosmos.I18N.Adapters.Json
         /// Process async
         /// </summary>
         /// <returns></returns>
-        public Task<bool> ProcessAsync()
-        {
+        public Task<bool> ProcessAsync() {
             return Task.FromResult(Process());
         }
 
-        private static bool CanParseFile(string filePath)
-        {
+        private static bool CanParseFile(string filePath) {
             var file = new FileInfo(filePath);
             return file.Name.EndsWith(".json", StringComparison.OrdinalIgnoreCase);
         }
@@ -77,8 +69,7 @@ namespace Cosmos.I18N.Adapters.Json
         /// Speak
         /// </summary>
         /// <returns></returns>
-        public AnonymousLocalizationTemplate Speak()
-        {
+        public AnonymousLocalizationTemplate Speak() {
             return SpeakCache ?? throw new InvalidOperationException($"Failed to read file '{Path}'.");
         }
 
@@ -88,8 +79,7 @@ namespace Cosmos.I18N.Adapters.Json
         /// <summary>
         /// Dispose
         /// </summary>
-        public void Dispose()
-        {
+        public void Dispose() {
             if (_disposed) return;
 
             Path = null;

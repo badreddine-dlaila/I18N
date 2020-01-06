@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 纽埃（Niue，大洋洲，NU，NIU，570） <br />
     /// Cosmos i18n code: i18n_country_niuai
     /// </summary>
-    public static class Niue
-    {
+    public static class Niue {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Niue()
-        {
-            _country = new CountryInfo
-            {
+        static Niue() {
+            _country = new CountryInfo {
                 Country = Country.Niue,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Niue,

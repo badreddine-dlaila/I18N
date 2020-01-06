@@ -1,13 +1,11 @@
 using System;
 
-namespace Cosmos.I18N.Core
-{
+namespace Cosmos.I18N.Core {
     /// <summary>
     /// Region Flag Attribute
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = true, Inherited = false)]
-    public class RegionFlagAttribute : Attribute
-    {
+    public class RegionFlagAttribute : Attribute {
         /// <summary>
         /// Flag
         /// </summary>

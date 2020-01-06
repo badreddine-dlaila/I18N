@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 瑙鲁（The Republic of Nauru，大洋洲，NR，NRU，520），瑙鲁共和国 <br />
     /// Cosmos i18n code: i18n_country_manu
     /// </summary>
-    public static class Nauru
-    {
+    public static class Nauru {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Nauru()
-        {
-            _country = new CountryInfo
-            {
+        static Nauru() {
+            _country = new CountryInfo {
                 Country = Country.Nauru,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Nauru,

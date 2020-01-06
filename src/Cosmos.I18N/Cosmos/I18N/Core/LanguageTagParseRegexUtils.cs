@@ -12,10 +12,8 @@ using System.Text.RegularExpressions;
 //    region      opt, 2 alphachars(alpha2 code) or 3 decdigits, see Cosmos.I18N.Countries
 //    private use opt, -x- followed by 4 or more alphanumeric chars
 
-namespace Cosmos.I18N.Core
-{
-    internal static class LanguageTagParseRegexUtils
-    {
+namespace Cosmos.I18N.Core {
+    internal static class LanguageTagParseRegexUtils {
         // ([a-zA-Z]{2,3})
         //      Matches language.
         // (?:-([a-zA-Z]{4,5}))?

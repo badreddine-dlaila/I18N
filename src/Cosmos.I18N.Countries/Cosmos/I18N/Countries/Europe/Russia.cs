@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 俄罗斯（Russian Federation，欧洲，BI，BDI，108），俄罗斯联邦 <br />
     /// Cosmos i18n code: i18n_country_eluosi
     /// </summary>
-    public static class Russia
-    {
+    public static class Russia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Russia()
-        {
-            _country = new CountryInfo
-            {
+        static Russia() {
+            _country = new CountryInfo {
                 Country = Country.Russia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Russia,

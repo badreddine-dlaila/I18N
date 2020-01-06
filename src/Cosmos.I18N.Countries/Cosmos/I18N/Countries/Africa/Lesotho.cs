@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 莱索托（Kingdom of Lesotho，非洲，LS，LSO，426），莱索托王国 <br />
     /// Cosmos i18n code: i18n_country_laisuotuo
     /// </summary>
-    public static class Lesotho
-    {
+    public static class Lesotho {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Lesotho()
-        {
-            _country = new CountryInfo
-            {
+        static Lesotho() {
+            _country = new CountryInfo {
                 Country = Country.Lesotho,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Lesotho,

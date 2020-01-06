@@ -6,51 +6,55 @@ using System.Xml.Serialization;
 using Cosmos.I18N.Adapters.Formats;
 using Cosmos.I18N.Templates;
 
-namespace Cosmos.I18N.Adapters.Xml.Core
-{
+namespace Cosmos.I18N.Adapters.Xml.Core {
+    /// <summary>
+    /// Base file adapter for Xml adapter
+    /// </summary>
+    /// <typeparam name="TTemplate"></typeparam>
     public abstract class BaseFileAdapter<TTemplate> : IFileAdapter, ISpeakAsXml<TTemplate>, IDisposable
-        where TTemplate : class, ILocalizationTemplate, new()
-    {
+        where TTemplate : class, ILocalizationTemplate, new() {
+        /// <inheritdoc />
         public string Path { get; protected set; }
+
+        /// <summary>
+        /// Speak cache
+        /// </summary>
         protected TTemplate SpeakCache { get; set; }
 
-        public virtual bool Process()
-        {
-            try
-            {
+        /// <inheritdoc />
+        public virtual bool Process() {
+            try {
                 CheckFile();
                 using var reader = XmlReader.Create(Path);
                 var xs = new XmlSerializer(typeof(StandardLocalizationTemplate));
                 SpeakCache = (TTemplate) xs.Deserialize(reader);
             }
-            catch
-            {
+            catch {
                 return false;
             }
 
             return true;
         }
 
-        public virtual Task<bool> ProcessAsync()
-        {
+        /// <inheritdoc />
+        public virtual Task<bool> ProcessAsync() {
             return Task.FromResult(Process());
         }
 
-        private void CheckFile()
-        {
+        private void CheckFile() {
             if (!File.Exists(Path))
                 throw new InvalidOperationException($"Failed to read file '{Path}'.");
         }
 
-        public TTemplate Speak()
-        {
+        /// <inheritdoc />
+        public TTemplate Speak() {
             return SpeakCache ?? throw new InvalidOperationException($"Failed to read file '{Path}'.");
         }
 
         private bool _disposed;
 
-        public void Dispose()
-        {
+        /// <inheritdoc />
+        public void Dispose() {
             if (_disposed) return;
 
             Path = null;

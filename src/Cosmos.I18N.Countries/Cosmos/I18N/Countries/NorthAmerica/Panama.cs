@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 巴拿马（The Republic of Panama，北美洲，PA，PAN，591），巴拿马共和国 <br />
     /// Cosmos i18n code: i18n_country_banama
     /// </summary>
-    public static class Panama
-    {
+    public static class Panama {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Panama()
-        {
-            _country = new CountryInfo
-            {
+        static Panama() {
+            _country = new CountryInfo {
                 Country = Country.Panama,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Panama,

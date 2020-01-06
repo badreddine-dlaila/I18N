@@ -1,13 +1,9 @@
 using System.Collections.Generic;
 
-namespace Cosmos.I18N.Countries
-{
-    public static partial class CountryManager
-    {
-        private static partial class InitOpts
-        {
-            public static Dictionary<Country, CountryCode> Map1 = new Dictionary<Country, CountryCode>
-            {
+namespace Cosmos.I18N.Countries {
+    public static partial class CountryManager {
+        private static partial class InitOpts {
+            public static Dictionary<Country, CountryCode> Map1 = new Dictionary<Country, CountryCode> {
                 {Country.Andorra, CountryCode.AD},
                 {Country.Afghanistan, CountryCode.AF},
                 {Country.Algeria, CountryCode.DZ},

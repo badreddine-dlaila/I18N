@@ -1,19 +1,15 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 香港（Hong Kong, SAR China，亚洲，HK，HKG，344），中华人民共和国香港特别行政区 <br />
     /// 香港，中华人民共和国的一部分 <br />
     /// Hong Kong, a part of China <br />
     /// Cosmos i18n code: i18n_country_xianggang
     /// </summary>
-    public static class HongKong
-    {
+    public static class HongKong {
         private static readonly CountryInfo _country;
 
-        static HongKong()
-        {
-            _country = new CountryInfo
-            {
+        static HongKong() {
+            _country = new CountryInfo {
                 Country = Country.HongKong,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.China,

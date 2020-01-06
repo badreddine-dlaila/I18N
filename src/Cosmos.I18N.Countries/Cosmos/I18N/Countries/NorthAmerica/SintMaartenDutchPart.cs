@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 荷兰属圣马丁（Sint Maarten (Dutch part)，北美洲，SX，SXM，534） <br />
     /// Cosmos i18n code: i18n_country_shengmadingdp
     /// </summary>
-    public static class SintMaartenDutchPart
-    {
+    public static class SintMaartenDutchPart {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SintMaartenDutchPart()
-        {
-            _country = new CountryInfo
-            {
+        static SintMaartenDutchPart() {
+            _country = new CountryInfo {
                 Country = Country.SintMaartenDutchPart,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Netherlands,

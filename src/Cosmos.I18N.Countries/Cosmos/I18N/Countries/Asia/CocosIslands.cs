@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 科科斯群岛（Cocos Islands，亚洲，CC，CCK，166） <br />
     /// Cosmos i18n code: i18n_country_kekesi
     /// </summary>
-    public static class CocosIslands
-    {
+    public static class CocosIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static CocosIslands()
-        {
-            _country = new CountryInfo
-            {
+        static CocosIslands() {
+            _country = new CountryInfo {
                 Country = Country.CocosIslands,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Australia,

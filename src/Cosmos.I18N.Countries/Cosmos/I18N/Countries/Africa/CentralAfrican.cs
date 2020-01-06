@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 中非（Central African Republic，非洲，CF，COD，180），中非共和国 <br />
     /// Cosmos i18n code: i18n_country_zhongfei
     /// </summary>
-    public static class CentralAfrican
-    {
+    public static class CentralAfrican {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static CentralAfrican()
-        {
-            _country = new CountryInfo
-            {
+        static CentralAfrican() {
+            _country = new CountryInfo {
                 Country = Country.CentralAfrican,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.CentralAfrican,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 澳大利亚（The Commonwealth of Australia，大洋洲，AU，AUS，036），澳大利亚联邦 <br />
     /// Cosmos i18n code: i18n_country_aodaliya
     /// </summary>
-    public static class Australia
-    {
+    public static class Australia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Australia()
-        {
-            _country = new CountryInfo
-            {
+        static Australia() {
+            _country = new CountryInfo {
                 Country = Country.Australia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Australia,

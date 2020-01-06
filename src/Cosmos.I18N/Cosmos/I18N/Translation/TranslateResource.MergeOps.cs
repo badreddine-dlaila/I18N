@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translate resource
     /// </summary>
-    public partial class TranslateResource : ITranslateResourceMergeOps
-    {
+    public partial class TranslateResource : ITranslateResourceMergeOps {
 
         #region Internal Merge Opts
 
@@ -21,8 +19,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="resourceKey"></param>
         /// <param name="resourceTargetValue"></param>
-        void ITranslateResourceMergeOps.Merge(string resourceKey, string resourceTargetValue)
-        {
+        void ITranslateResourceMergeOps.Merge(string resourceKey, string resourceTargetValue) {
             if (string.IsNullOrWhiteSpace(resourceKey))
                 return;
 
@@ -40,8 +37,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="hashOfResourceKey"></param>
         /// <param name="resourceTargetValue"></param>
-        void ITranslateResourceMergeOps.Merge(int hashOfResourceKey, string resourceTargetValue)
-        {
+        void ITranslateResourceMergeOps.Merge(int hashOfResourceKey, string resourceTargetValue) {
             if (Contains(hashOfResourceKey))
                 return;
 

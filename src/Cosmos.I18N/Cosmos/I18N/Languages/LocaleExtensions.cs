@@ -1,20 +1,17 @@
 ﻿using Cosmos.I18N.Core.Extensions;
 using EnumsNET;
 
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Locale extensions
     /// </summary>
-    public static class LocaleExtensions
-    {
+    public static class LocaleExtensions {
         /// <summary>
         /// Convert <see cref="Locale"/> to <see cref="LanguageTag"/>.
         /// </summary>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public static LanguageTag AsLanguageTag(this Locale locale)
-        {
+        public static LanguageTag AsLanguageTag(this Locale locale) {
             return LanguageTagManager.Create(locale.GetLanguageTagText());
         }
 
@@ -23,18 +20,15 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public static Locale AsLocale(this LanguageTag languageTag)
-        {
+        public static Locale AsLocale(this LanguageTag languageTag) {
             if (languageTag == null)
                 languageTag = LanguageTag.Current;
 
-            if (languageTag.Region.IsSet())
-            {
+            if (languageTag.Region.IsSet()) {
                 if (EnumsNET.Enums.TryParse(
                     $"{languageTag.Language}_{languageTag.Region.ToUpperInvariant()}",
                     true,
-                    out Locale locale1))
-                {
+                    out Locale locale1)) {
                     return locale1;
                 }
             }
@@ -44,8 +38,7 @@ namespace Cosmos.I18N.Languages
                 : LanguageTag.DefaultLocale;
         }
 
-        internal static string GetLanguageTagText(this Locale locale)
-        {
+        internal static string GetLanguageTagText(this Locale locale) {
             return locale.GetName().Replace("_", "-");
         }
     }

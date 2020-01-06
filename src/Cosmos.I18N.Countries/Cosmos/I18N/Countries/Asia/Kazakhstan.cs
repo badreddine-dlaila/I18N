@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 哈萨克斯坦（ The Republic of Kazakhstan，亚洲，KZ，KAZ，398），哈萨克斯坦共和国 <br />
     /// Cosmos i18n code: i18n_country_hasakesitan
     /// </summary>
-    public static class Kazakhstan
-    {
+    public static class Kazakhstan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Kazakhstan()
-        {
-            _country = new CountryInfo
-            {
+        static Kazakhstan() {
+            _country = new CountryInfo {
                 Country = Country.Kazakhstan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Kazakhstan,

@@ -1,5 +1,6 @@
 ﻿namespace Cosmos.I18N.Adapters {
-    public interface IRemoteCallingAdapter:IAdapterProcess {
-        
-    }
+    /// <summary>
+    /// Remote calling adapter interface
+    /// </summary>
+    public interface IRemoteCallingAdapter : IAdapterProcess { }
 }

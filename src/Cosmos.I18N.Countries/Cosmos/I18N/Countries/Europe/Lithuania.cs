@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 立陶宛（The Republic of Lithuania，欧洲，LT，LTU，440），立陶宛共和国 <br />
     /// Cosmos i18n code: i18n_country_litaowan
     /// </summary>
-    public static class Lithuania
-    {
+    public static class Lithuania {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Lithuania()
-        {
-            _country = new CountryInfo
-            {
+        static Lithuania() {
+            _country = new CountryInfo {
                 Country = Country.Lithuania,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Lithuania,

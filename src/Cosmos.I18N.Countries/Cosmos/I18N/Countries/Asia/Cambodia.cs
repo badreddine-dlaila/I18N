@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 柬埔寨（The Kingdom of Cambodia，亚洲，KH，KHM，116），柬埔寨王国 <br />
     /// Cosmos i18n code: i18n_country_jipuzhai
     /// </summary>
-    public static class Cambodia
-    {
+    public static class Cambodia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Cambodia()
-        {
-            _country = new CountryInfo
-            {
+        static Cambodia() {
+            _country = new CountryInfo {
                 Country = Country.Cambodia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Cambodia,

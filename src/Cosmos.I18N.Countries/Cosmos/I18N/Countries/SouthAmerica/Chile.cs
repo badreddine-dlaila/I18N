@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 智利（Republic of Chile，南美洲，CL，CHL，152），智利共和国 <br />
     /// Cosmos i18n code: i18n_country_zhili
     /// </summary>
-    public static class Chile
-    {
+    public static class Chile {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Chile()
-        {
-            _country = new CountryInfo
-            {
+        static Chile() {
+            _country = new CountryInfo {
                 Country = Country.Chile,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Chile,

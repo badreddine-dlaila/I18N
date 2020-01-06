@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 刚果（布）（The Republic of Congo，非洲，CG，COG，178），刚果共和国 <br />
     /// Cosmos i18n code: i18n_country_gangguobu
     /// </summary>
-    public static class CongoBrazzaville
-    {
+    public static class CongoBrazzaville {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static CongoBrazzaville()
-        {
-            _country = new CountryInfo
-            {
+        static CongoBrazzaville() {
+            _country = new CountryInfo {
                 Country = Country.CongoBrazzaville,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.CongoBrazzaville,

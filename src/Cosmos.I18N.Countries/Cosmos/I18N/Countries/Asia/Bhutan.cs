@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 不丹（Kingdom of Bhutan，亚洲，BT，BTN，064），不丹王国 <br />
     /// Cosmos i18n code: i18n_country_budan
     /// </summary>
-    public static class Bhutan
-    {
+    public static class Bhutan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Bhutan()
-        {
-            _country = new CountryInfo
-            {
+        static Bhutan() {
+            _country = new CountryInfo {
                 Country = Country.Bhutan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Bhutan,

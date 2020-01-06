@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Interface for Translate Package
     /// </summary>
-    public interface ITranslatePackage
-    {
+    public interface ITranslatePackage {
         /// <summary>
         /// Gets package key
         /// </summary>

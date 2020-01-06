@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 马拉维（The Republic of Malawi，非洲，MW，MWI，454），马拉维共和国 <br />
     /// Cosmos i18n code: i18n_country_malawei
     /// </summary>
-    public static class Malawi
-    {
+    public static class Malawi {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Malawi()
-        {
-            _country = new CountryInfo
-            {
+        static Malawi() {
+            _country = new CountryInfo {
                 Country = Country.Malawi,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Malawi,

@@ -1,20 +1,16 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 赫德岛和麦克唐纳群岛（Heard Island and McDonald Islands，亚洲，HM，HMD，334） <br />
     /// Cosmos i18n code: i18n_country_hedemaiketang
     /// </summary>
     // ReSharper disable once InconsistentNaming
-    public static class HIMI
-    {
+    public static class HIMI {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
         // ReSharper disable once IdentifierTypo
-        static HIMI()
-        {
-            _country = new CountryInfo
-            {
+        static HIMI() {
+            _country = new CountryInfo {
                 Country = Country.HIMI,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Australia,

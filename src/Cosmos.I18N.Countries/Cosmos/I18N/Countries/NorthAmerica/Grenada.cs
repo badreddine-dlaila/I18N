@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 格林纳达（Grenada，北美洲，GD，GRD，308） <br />
     /// Cosmos i18n code: i18n_country_gelinnada
     /// </summary>
-    public static class Grenada
-    {
+    public static class Grenada {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Grenada()
-        {
-            _country = new CountryInfo
-            {
+        static Grenada() {
+            _country = new CountryInfo {
                 Country = Country.Grenada,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Grenada,

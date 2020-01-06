@@ -1,12 +1,10 @@
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Interface for TranslateResource
     /// </summary>
-    public interface ITranslateResource
-    {
+    public interface ITranslateResource {
         /// <summary>
         /// Binding to language tag
         /// </summary>

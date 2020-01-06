@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 阿曼（Sultanate of Oman，亚洲，OM，OMN，512），阿曼苏丹国 <br />
     /// Cosmos i18n code: i18n_country_aman
     /// </summary>
-    public static class Oman
-    {
+    public static class Oman {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Oman()
-        {
-            _country = new CountryInfo
-            {
+        static Oman() {
+            _country = new CountryInfo {
                 Country = Country.Oman,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Oman,

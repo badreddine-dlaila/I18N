@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 马里（The Republic of Mali，非洲，ML，MLI，466），马里共和国 <br />
     /// Cosmos i18n code: i18n_country_mali
     /// </summary>
-    public static class Mali
-    {
+    public static class Mali {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Mali()
-        {
-            _country = new CountryInfo
-            {
+        static Mali() {
+            _country = new CountryInfo {
                 Country = Country.Mali,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Mali,

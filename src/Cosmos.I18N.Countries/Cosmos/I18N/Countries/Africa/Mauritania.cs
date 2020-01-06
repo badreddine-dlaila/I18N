@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 毛里塔尼亚（The Islamic Republic of Mauritania，非洲，MR，MR，478），毛里塔尼亚伊斯兰共和国 <br />
     /// Cosmos i18n code: i18n_country_maolitaniya
     /// </summary>
-    public static class Mauritania
-    {
+    public static class Mauritania {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Mauritania()
-        {
-            _country = new CountryInfo
-            {
+        static Mauritania() {
+            _country = new CountryInfo {
                 Country = Country.Mauritania,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Mauritania,

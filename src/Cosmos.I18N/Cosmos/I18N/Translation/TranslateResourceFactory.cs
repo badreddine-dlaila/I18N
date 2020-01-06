@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Templates;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translate resource factory
     /// </summary>
-    public static class TranslateResourceFactory
-    {
+    public static class TranslateResourceFactory {
         /// <summary>
         /// Create translate resource
         /// </summary>
@@ -24,8 +22,7 @@ namespace Cosmos.I18N.Translation
         /// <typeparam name="TTemplate"></typeparam>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public static ITranslateResource Create<TTemplate>(TTemplate template) where TTemplate : StandardLocalizationTemplate, ILocalizationTemplate, new()
-        {
+        public static ITranslateResource Create<TTemplate>(TTemplate template) where TTemplate : StandardLocalizationTemplate, ILocalizationTemplate, new() {
             if (template == null)
                 throw new ArgumentNullException(nameof(template));
 
@@ -58,8 +55,7 @@ namespace Cosmos.I18N.Translation
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="InvalidOperationException"></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static ITranslateResource Create(AnonymousLocalizationTemplate template)
-        {
+        public static ITranslateResource Create(AnonymousLocalizationTemplate template) {
             if (template == null)
                 throw new ArgumentNullException(nameof(template));
 

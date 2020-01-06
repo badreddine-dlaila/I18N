@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 巴哈马（Commonwealth of the Bahamas，北美洲，BS，BHS，044），巴哈马国 <br />
     /// Cosmos i18n code: i18n_country_bahama
     /// </summary>
-    public static class Bahamas
-    {
+    public static class Bahamas {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Bahamas()
-        {
-            _country = new CountryInfo
-            {
+        static Bahamas() {
+            _country = new CountryInfo {
                 Country = Country.Bahamas,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Bahamas,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 几内亚（The Republic of Guinea，非洲，GN，GIN，324），几内亚共和国 <br />
     /// Cosmos i18n code: i18n_country_jineiya
     /// </summary>
-    public static class Guinea
-    {
+    public static class Guinea {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Guinea()
-        {
-            _country = new CountryInfo
-            {
+        static Guinea() {
+            _country = new CountryInfo {
                 Country = Country.Guinea,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Guinea,

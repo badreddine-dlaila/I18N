@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace Cosmos.I18N.Core
-{
+namespace Cosmos.I18N.Core {
     /// <summary>
     /// Static instance for language service provider
     /// </summary>
-    public static class StaticInstanceForILanguageServiceProvider
-    {
+    public static class StaticInstanceForILanguageServiceProvider {
         /// <summary>
         /// Instance
         /// </summary>
@@ -17,8 +15,7 @@ namespace Cosmos.I18N.Core
         /// Sets instance
         /// </summary>
         /// <param name="languageServiceProvider"></param>
-        public static void SetInstance(ILanguageServiceProvider languageServiceProvider)
-        {
+        public static void SetInstance(ILanguageServiceProvider languageServiceProvider) {
             _instance = languageServiceProvider ?? throw new ArgumentNullException(nameof(languageServiceProvider));
         }
 

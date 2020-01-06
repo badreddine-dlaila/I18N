@@ -3,18 +3,16 @@ using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Translation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Cosmos.I18N.Core
-{
+namespace Cosmos.I18N.Core {
     /// <summary>
     /// Interface of i18n service collection
     /// </summary>
-    public interface II18NServiceCollection
-    {
+    public interface II18NServiceCollection {
         /// <summary>
         /// Exposes options
         /// </summary>
         I18NOptions ExposeOptions { get; }
-        
+
         /// <summary>
         /// Exposed translation manager
         /// </summary>

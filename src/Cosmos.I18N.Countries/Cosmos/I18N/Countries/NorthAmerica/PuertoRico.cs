@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 波多黎各（The Commonwealth of Puerto Rico，北美洲，PR，PRI，630），波多黎各自治邦 <br />
     /// Cosmos i18n code: i18n_country_boduolige
     /// </summary>
-    public static class PuertoRico
-    {
+    public static class PuertoRico {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static PuertoRico()
-        {
-            _country = new CountryInfo
-            {
+        static PuertoRico() {
+            _country = new CountryInfo {
                 Country = Country.PuertoRico,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedStates,

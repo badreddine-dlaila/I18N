@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 圣巴托洛缪岛（Collectivitéde Saint-Barthélemy，北美洲，BL，BLM，652），法兰西共和国圣巴托洛缪行政区 <br />
     /// Cosmos i18n code: i18n_country_shengbatuo
     /// </summary>
-    public static class SaintBarts
-    {
+    public static class SaintBarts {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaintBarts()
-        {
-            _country = new CountryInfo
-            {
+        static SaintBarts() {
+            _country = new CountryInfo {
                 Country = Country.SaintBarts,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

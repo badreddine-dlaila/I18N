@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 摩洛哥（The Kingdom of Morocco，非洲，MA，MAR，504），摩洛哥王国 <br />
     /// Cosmos i18n code: i18n_country_moluoge
     /// </summary>
-    public static class Morocco
-    {
+    public static class Morocco {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Morocco()
-        {
-            _country = new CountryInfo
-            {
+        static Morocco() {
+            _country = new CountryInfo {
                 Country = Country.Morocco,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Morocco,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 圣赫勒拿、阿森松与特里斯坦达库尼亚（Saint Helena, Ascension and Tristan da Cunha，非洲，SH，SHN，654） <br />
     /// Cosmos i18n code: i18n_country_shenghelena
     /// </summary>
-    public static class SaintHelena
-    {
+    public static class SaintHelena {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaintHelena()
-        {
-            _country = new CountryInfo
-            {
+        static SaintHelena() {
+            _country = new CountryInfo {
                 Country = Country.SaintHelena,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

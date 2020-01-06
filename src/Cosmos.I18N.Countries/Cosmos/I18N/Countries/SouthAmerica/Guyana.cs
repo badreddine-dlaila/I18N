@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 圭亚那（Cooperative Republic of Guyana，南美洲，GY，GUY，328），圭亚那合作共和国 <br />
     /// Cosmos i18n code: i18n_country_guiyana
     /// </summary>
-    public static class Guyana
-    {
+    public static class Guyana {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Guyana()
-        {
-            _country = new CountryInfo
-            {
+        static Guyana() {
+            _country = new CountryInfo {
                 Country = Country.Guyana,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Guyana,

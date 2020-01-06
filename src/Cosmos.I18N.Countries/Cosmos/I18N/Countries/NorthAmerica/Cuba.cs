@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 古巴（The Republic of Cuba，北美洲，CU，CUB，192），古巴共和国 <br />
     /// Cosmos i18n code: i18n_country_guba
     /// </summary>
-    public static class Cuba
-    {
+    public static class Cuba {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Cuba()
-        {
-            _country = new CountryInfo
-            {
+        static Cuba() {
+            _country = new CountryInfo {
                 Country = Country.Cuba,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Cuba,

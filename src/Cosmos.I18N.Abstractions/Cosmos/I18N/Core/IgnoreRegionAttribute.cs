@@ -1,7 +1,6 @@
 using System;
 
-namespace Cosmos.I18N.Core
-{
+namespace Cosmos.I18N.Core {
     /// <summary>
     /// Ignore Region Attribute
     /// </summary>

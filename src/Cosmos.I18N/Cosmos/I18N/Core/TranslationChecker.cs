@@ -3,13 +3,10 @@ using System.Linq;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Core
-{
-    internal static class TranslationChecker
-    {
+namespace Cosmos.I18N.Core {
+    internal static class TranslationChecker {
         public static bool FallbackMode(LanguageTag languageTagInstance, string resourceKey,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources, FallbackExperimenter experimenter)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources, FallbackExperimenter experimenter) {
             if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
                 return true;
 
@@ -26,8 +23,7 @@ namespace Cosmos.I18N.Core
         }
 
         public static bool SequenceMode(LanguageTag languageTagInstance, string resourceKey,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources) {
             if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
                 return true;
 
@@ -39,8 +35,7 @@ namespace Cosmos.I18N.Core
         }
 
         public static bool StrictMode(LanguageTag languageTagInstance, string resourceKey,
-            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources)
-        {
+            IReadOnlyDictionary<LanguageTag, ITranslateResource> resources) {
             if (resources.TryGetValue(languageTagInstance, out var resource) && resource.CanTranslate(resourceKey))
                 return true;
             return false;

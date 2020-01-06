@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 玻利维亚（Plurinational State of Bolivia，南美洲，BO，BOL，068），多民族玻利维亚国 <br />
     /// Cosmos i18n code: i18n_country_boliweiya
     /// </summary>
-    public static class Bolivia
-    {
+    public static class Bolivia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Bolivia()
-        {
-            _country = new CountryInfo
-            {
+        static Bolivia() {
+            _country = new CountryInfo {
                 Country = Country.Bolivia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Bolivia,

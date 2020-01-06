@@ -1,17 +1,14 @@
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Manager for LanguageTag
     /// </summary>
-    public static class LanguageTagManager
-    {
+    public static class LanguageTagManager {
         /// <summary>
         /// Create a new instance of <see cref="LanguageTag"/>
         /// </summary>
         /// <param name="langTag"></param>
         /// <returns></returns>
-        public static LanguageTag Create(string langTag)
-        {
+        public static LanguageTag Create(string langTag) {
             if (string.IsNullOrWhiteSpace(langTag))
                 return default;
 
@@ -30,8 +27,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public static LanguageTag Create(Locale locale)
-        {
+        public static LanguageTag Create(Locale locale) {
             return Create(locale.GetLanguageTagText());
         }
 
@@ -40,8 +36,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="langTag"></param>
         /// <returns></returns>
-        public static LanguageTag Get(string langTag)
-        {
+        public static LanguageTag Get(string langTag) {
             return TryGet(langTag, out var result) ? result : default;
         }
 
@@ -50,8 +45,7 @@ namespace Cosmos.I18N.Languages
         /// </summary>
         /// <param name="locale"></param>
         /// <returns></returns>
-        public static LanguageTag Get(Locale locale)
-        {
+        public static LanguageTag Get(Locale locale) {
             return TryGet(locale, out var result) ? result : default;
         }
 
@@ -61,8 +55,7 @@ namespace Cosmos.I18N.Languages
         /// <param name="langTag"></param>
         /// <param name="result"></param>
         /// <returns></returns>
-        public static bool TryGet(string langTag, out LanguageTag result)
-        {
+        public static bool TryGet(string langTag, out LanguageTag result) {
             result = default;
 
             if (string.IsNullOrWhiteSpace(langTag))
@@ -81,8 +74,7 @@ namespace Cosmos.I18N.Languages
         /// <param name="locale"></param>
         /// <param name="result"></param>
         /// <returns></returns>
-        public static bool TryGet(Locale locale, out LanguageTag result)
-        {
+        public static bool TryGet(Locale locale, out LanguageTag result) {
             return TryGet(locale.GetLanguageTagText(), out result);
         }
     }

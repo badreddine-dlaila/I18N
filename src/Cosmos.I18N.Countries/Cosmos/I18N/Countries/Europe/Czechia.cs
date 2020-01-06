@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 捷克（The Czech Republic，欧洲，CZ，CZE，203），捷克共和国 <br />
     /// Cosmos i18n code: i18n_country_jieke
     /// </summary>
-    public static class Czechia
-    {
+    public static class Czechia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Czechia()
-        {
-            _country = new CountryInfo
-            {
+        static Czechia() {
+            _country = new CountryInfo {
                 Country = Country.Czechia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Czechia,

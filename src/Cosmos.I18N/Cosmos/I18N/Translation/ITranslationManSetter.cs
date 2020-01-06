@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translation manager setter
     /// </summary>
-    public interface ITranslationManSetter
-    {
+    public interface ITranslationManSetter {
         /// <summary>
         /// Register translation package
         /// </summary>

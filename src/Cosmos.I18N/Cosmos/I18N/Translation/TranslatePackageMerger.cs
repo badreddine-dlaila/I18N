@@ -2,13 +2,11 @@ using System;
 using System.Linq;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translation package merger
     /// </summary>
-    public static class TranslatePackageMerger
-    {
+    public static class TranslatePackageMerger {
         /// <summary>
         /// Merge
         /// </summary>
@@ -22,8 +20,7 @@ namespace Cosmos.I18N.Translation
             ITranslatePackage source,
             ITranslatePackage other,
             MergeLevel level = MergeLevel.Level_1,
-            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null)
-        {
+            Func<ITranslatePackageMergeOps, ITranslatePackageMergeOps, ITranslatePackage> customMergeProvider = null) {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
 
@@ -41,8 +38,7 @@ namespace Cosmos.I18N.Translation
 
             var ret = source;
 
-            switch (level)
-            {
+            switch (level) {
                 case MergeLevel.Level_1:
                     MergeInLevel1(left, right);
                     break;
@@ -71,8 +67,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="left"></param>
         /// <param name="right"></param>
-        private static void MergeInLevel1(ITranslatePackageMergeOps left, ITranslatePackageMergeOps right)
-        {
+        private static void MergeInLevel1(ITranslatePackageMergeOps left, ITranslatePackageMergeOps right) {
             if (left == null || right == null) //(1)
                 return;
 
@@ -99,8 +94,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="left"></param>
         /// <param name="right"></param>
-        private static void MergeInLevel2(ITranslatePackageMergeOps left, ITranslatePackageMergeOps right)
-        {
+        private static void MergeInLevel2(ITranslatePackageMergeOps left, ITranslatePackageMergeOps right) {
             if (left == null || right == null) //(1)
                 return;
 
@@ -120,10 +114,9 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="otherResource"></param>
         /// <returns></returns>
-        private static Func<ITranslateResourceMergeOps, (bool, ITranslateResource)> MergeLevel1CoreFunc(ITranslateResource otherResource) => resource =>
-        {
+        private static Func<ITranslateResourceMergeOps, (bool, ITranslateResource)> MergeLevel1CoreFunc(ITranslateResource otherResource) => resource => {
             return resource == null
-                ? (true, otherResource) //(1)
+                ? (true, otherResource)                    //(1)
                 : (false, resource as ITranslateResource); //(2)
         };
 
@@ -135,17 +128,14 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="otherResource"></param>
         /// <returns></returns>
-        private static Func<ITranslateResourceMergeOps, (bool, ITranslateResource)> MergeLevel2CoreFunc(ITranslateResource otherResource) => resource =>
-        {
-            if (resource == null)
-            {
+        private static Func<ITranslateResourceMergeOps, (bool, ITranslateResource)> MergeLevel2CoreFunc(ITranslateResource otherResource) => resource => {
+            if (resource == null) {
                 return (true, otherResource); //(1)
             }
 
             if (otherResource is ITranslateResourceMergeOps otherMergeOps) //(*) 如果 other 不支持合并操作，则跳过 Merge
             {
-                foreach (var l in otherMergeOps.ExposeLibrary())
-                {
+                foreach (var l in otherMergeOps.ExposeLibrary()) {
                     resource.Merge(l.Key, l.Value);
                 }
             }
@@ -167,8 +157,7 @@ namespace Cosmos.I18N.Translation
     /// <summary>
     /// Merge level for translation package
     /// </summary>
-    public enum MergeLevel
-    {
+    public enum MergeLevel {
         /// <summary>
         /// Level 1
         /// <br />

@@ -3,14 +3,13 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// Switzerland regions
     /// </summary>
-    public static class SwitzerlandRegions
-    {
-           #region Gets regions
+    public static class SwitzerlandRegions {
+
+        #region Gets regions
 
         /// <summary>
         /// Canton of Zürich
@@ -141,164 +140,163 @@ namespace Cosmos.I18N.Countries.Europe
         /// Canton of Jura => EnumValues. JU
         /// </summary>
         public static EnumValues CantonOfJura => EnumValues.CantonOfJura;
-        
+
         #endregion
 
         /// <summary>
         /// Enum values for Switzerland regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Canton of Zürich
             /// </summary>
             [AliasInShort("ZH")]
             CantonOfZürich,
-            
+
             /// <summary>
             /// Canton of Bern
             /// </summary>
             [AliasInShort("BE")]
             CantonOfBern,
-            
+
             /// <summary>
             /// Massana
             /// </summary>
             [AliasInShort("LO")]
             CantonOfLucerne,
-            
+
             /// <summary>
             /// Canton of Uri
             /// </summary>
             [AliasInShort("UR")]
             CantonOfUri,
-            
+
             /// <summary>
             /// Canton of Schwyz
             /// </summary>
             [AliasInShort("SZ")]
             CantonOfSchwyz,
-            
+
             /// <summary>
             /// Canton of Obwalden
             /// </summary>
             [AliasInShort("OW")]
             CantonOfObwalden,
-            
+
             /// <summary>
             /// Canton of Nidwalden
             /// </summary>
             [AliasInShort("NW")]
             CantonOfNidwalden,
-            
+
             /// <summary>
             /// Canton of Glarus, GL
             /// </summary>
             [AliasInShort("GL")]
             CantonOfGlarus,
-            
+
             /// <summary>
             /// Canton of Zug, ZG
             /// </summary>
             [AliasInShort("ZG")]
             CantonOfZug,
-            
+
             /// <summary>
             /// Canton of Fribourg, FR
             /// </summary>
             [AliasInShort("FR")]
             CantonOfFribourg,
-            
+
             /// <summary>
             /// Canton of Solothurn, SO
             /// </summary>
             [AliasInShort("SO")]
             CantonOfSolothurn,
-            
+
             /// <summary>
             /// Canton of Basel-City, BS
             /// </summary>
             [AliasInShort("BS")]
             CantonOfBaselCity,
-            
+
             /// <summary>
             /// Canton of Basel-Country, BL
             /// </summary>
             [AliasInShort("BL")]
             CantonOfBaselCountry,
-            
+
             /// <summary>
             /// Canton of Schaffhausen, SH
             /// </summary>
             [AliasInShort("SH")]
             CantonOfSchaffhausen,
-            
+
             /// <summary>
             /// Canton of Appenzell Outer Rhodes, AR
             /// </summary>
             [AliasInShort("AR")]
             CantonOfAppenzellOuterRhodes,
-            
+
             /// <summary>
             /// Canton of Appenzell Inner-Rhodes, AI
             /// </summary>
             [AliasInShort("AI")]
             CantonOfAppenzellInnerRhodes,
-            
+
             /// <summary>
             /// Canton of St. Gallen, SG
             /// </summary>
             [AliasInShort("SG")]
             CantonOfStGallen,
-            
+
             /// <summary>
             /// Canton of Grisons, GR
             /// </summary>
             [AliasInShort("GR")]
             CantonOfGrisons,
-            
+
             /// <summary>
             /// Canton of Aargau, AG
             /// </summary>
             [AliasInShort("AG")]
             CantonOfAargau,
-            
+
             /// <summary>
             /// Canton of Thurgau, TG
             /// </summary>
             [AliasInShort("TG")]
             CantonOfThurgau,
-            
+
             /// <summary>
             /// Canton of Ticino, TI
             /// </summary>
             [AliasInShort("TI")]
             CantonOfTicino,
-            
+
             /// <summary>
             /// Canton of Vaud, VD
             /// </summary>
             [AliasInShort("VD")]
             CantonOfVaud,
-            
+
             /// <summary>
             /// Canton of Valais, VS
             /// </summary>
             [AliasInShort("VS")]
             CantonOfValais,
-            
+
             /// <summary>
             /// Canton of Neuchâtel, NE
             /// </summary>
             [AliasInShort("NE")]
             CantonOfNeuchâtel,
-            
+
             /// <summary>
             /// Canton of Geneva, GE
             /// </summary>
             [AliasInShort("GE")]
             CantonOfGeneva,
-            
+
             /// <summary>
             /// Canton of Jura, JU
             /// </summary>
@@ -320,8 +318,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -330,18 +327,16 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"CH-{values.ToRegionCode()}";
         }
-        
+
         /// <summary>
         /// Convert to <see cref="Country"/>
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
+        public static Country ToCountry(this EnumValues value) {
             return Country.Switzerland;
         }
 
@@ -350,8 +345,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
+        public static CountryCode ToCountryCode(this EnumValues value) {
             return CountryCode.CH;
         }
 
@@ -366,12 +360,12 @@ namespace Cosmos.I18N.Countries.Europe
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }
 
         #endregion
+
     }
 }

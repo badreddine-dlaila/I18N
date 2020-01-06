@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 摩纳哥（The Principality of Monaco，欧洲，MC，MCO，492），摩纳哥公国 <br />
     /// Cosmos i18n code: i18n_country_monage
     /// </summary>
-    public static class Monaco
-    {
+    public static class Monaco {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Monaco()
-        {
-            _country = new CountryInfo
-            {
+        static Monaco() {
+            _country = new CountryInfo {
                 Country = Country.Monaco,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Monaco,

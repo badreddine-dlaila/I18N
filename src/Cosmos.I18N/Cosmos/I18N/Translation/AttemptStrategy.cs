@@ -1,20 +1,18 @@
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Attempt strategy
     /// </summary>
-    public enum AttemptStrategy
-    {
+    public enum AttemptStrategy {
         /// <summary>
         /// Fallback
         /// </summary>
         Fallback,
-        
+
         /// <summary>
         /// Sequence
         /// </summary>
         Sequence,
-        
+
         /// <summary>
         /// Strict
         /// </summary>

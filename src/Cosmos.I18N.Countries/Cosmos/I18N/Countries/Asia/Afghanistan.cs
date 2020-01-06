@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 阿富汗（Afghanistan，亚洲，AF，AFG，004），阿富汗伊斯兰国 <br />
     /// Cosmos i18n code: i18n_country_afuhan
     /// </summary>
-    public static class Afghanistan
-    {
+    public static class Afghanistan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Afghanistan()
-        {
-            _country = new CountryInfo
-            {
+        static Afghanistan() {
+            _country = new CountryInfo {
                 Country = Country.Afghanistan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Afghanistan,

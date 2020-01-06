@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 塞尔维亚（The Republic of Serbia，欧洲，RS，SRB，688），塞尔维亚共和国 <br />
     /// Cosmos i18n code: i18n_country_saierweiya
     /// </summary>
-    public static class Serbia
-    {
+    public static class Serbia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Serbia()
-        {
-            _country = new CountryInfo
-            {
+        static Serbia() {
+            _country = new CountryInfo {
                 Country = Country.Serbia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Serbia,

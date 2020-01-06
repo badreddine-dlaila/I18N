@@ -3,15 +3,13 @@
 
 using Cosmos.I18N.Core;
 
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// 国家和地区编号
     /// Country And Regions Code (ISO 3166-1 ALPHA-2)
     /// https://www.nationsonline.org/oneworld/country_code_list.htm
     /// </summary>
-    public enum CountryCode
-    {
+    public enum CountryCode {
         /// <summary>
         /// 安道尔（Andorra，欧洲，AD，AND，020），安道尔共和国 <br />
         /// Cosmos i18n code: i18n_country_andaoer

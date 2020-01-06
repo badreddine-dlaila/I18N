@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 加蓬（The Gabonese Republic，非洲，GA，GAB，266），加蓬共和国 <br />
     /// Cosmos i18n code: i18n_country_jiapeng
     /// </summary>
-    public static class Gabon
-    {
+    public static class Gabon {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Gabon()
-        {
-            _country = new CountryInfo
-            {
+        static Gabon() {
+            _country = new CountryInfo {
                 Country = Country.Gabon,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Gabon,

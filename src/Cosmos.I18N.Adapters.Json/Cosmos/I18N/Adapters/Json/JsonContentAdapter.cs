@@ -2,14 +2,15 @@
 using Cosmos.I18N.Adapters.Json.Core;
 using Cosmos.I18N.Templates;
 
-namespace Cosmos.I18N.Adapters.Json
-{
-    public class JsonContentAdapter : BaseContentAdapter<StandardLocalizationTemplate>
-    {
-        public JsonContentAdapter(string content)
-        {
+namespace Cosmos.I18N.Adapters.Json {
+    /// <summary>
+    /// Json content adapter
+    /// </summary>
+    public class JsonContentAdapter : BaseContentAdapter<StandardLocalizationTemplate> {
+        /// <inheritdoc />
+        public JsonContentAdapter(string content) {
             if (string.IsNullOrWhiteSpace(content)) throw new ArgumentNullException(nameof(content));
-            OriginContent = content;
+            OriginalContent = content;
         }
     }
 }

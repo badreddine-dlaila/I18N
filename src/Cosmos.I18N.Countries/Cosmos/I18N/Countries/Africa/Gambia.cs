@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 冈比亚（Republic of The Gambia，非洲，GM，GMB，270），冈比亚共和国 <br />
     /// Cosmos i18n code: i18n_country_gangbiya
     /// </summary>
-    public static class Gambia
-    {
+    public static class Gambia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Gambia()
-        {
-            _country = new CountryInfo
-            {
+        static Gambia() {
+            _country = new CountryInfo {
                 Country = Country.Gambia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Gambia,

@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Country Manager
     /// </summary>
-    public static partial class CountryManager
-    {
+    public static partial class CountryManager {
         // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryCode> _nameAndCodeMap;
 
@@ -17,8 +15,7 @@ namespace Cosmos.I18N.Countries
         // ReSharper disable once InconsistentNaming
         private static readonly Dictionary<Country, CountryInfo> _countryInfoCache;
 
-        static CountryManager()
-        {
+        static CountryManager() {
             _nameAndCodeMap = InitOpts.Map1;
             _codeAndNameMap = InitOpts.Map2;
             _countryInfoCache = InitOpts.Map3;
@@ -29,8 +26,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static CountryInfo GetCountryInfo(Country country)
-        {
+        public static CountryInfo GetCountryInfo(Country country) {
             return _countryInfoCache[country];
         }
 
@@ -39,8 +35,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static CountryInfo GetCountryInfo(CountryCode code)
-        {
+        public static CountryInfo GetCountryInfo(CountryCode code) {
             var country = _codeAndNameMap[code];
             return _countryInfoCache[country];
         }
@@ -50,21 +45,17 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="alphaCode"></param>
         /// <returns></returns>
-        public static CountryInfo GetCountryInfo(string alphaCode)
-        {
-            if (string.IsNullOrWhiteSpace(alphaCode))
-            {
+        public static CountryInfo GetCountryInfo(string alphaCode) {
+            if (string.IsNullOrWhiteSpace(alphaCode)) {
                 return null;
             }
 
-            if (alphaCode.Length == 2)
-            {
+            if (alphaCode.Length == 2) {
                 var alpha2Code = alphaCode.ToUpper();
                 return _countryInfoCache.Values.FirstOrDefault(x => x.Alpha2Code == alpha2Code);
             }
 
-            if (alphaCode.Length == 3)
-            {
+            if (alphaCode.Length == 3) {
                 var alpha3Code = alphaCode.ToUpper();
                 return _countryInfoCache.Values.FirstOrDefault(x => x.Alpha3Code == alpha3Code);
             }
@@ -77,8 +68,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static Country GetCountryEnum(CountryCode code)
-        {
+        public static Country GetCountryEnum(CountryCode code) {
             return _codeAndNameMap[code];
         }
 
@@ -87,8 +77,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static CountryCode GetCountryCode(Country country)
-        {
+        public static CountryCode GetCountryCode(Country country) {
             return _nameAndCodeMap[country];
         }
 
@@ -97,8 +86,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static Continent GetContinent(Country country)
-        {
+        public static Continent GetContinent(Country country) {
             return GetCountryInfo(country).Continent;
         }
 
@@ -107,8 +95,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static Continent GetContinent(CountryCode code)
-        {
+        public static Continent GetContinent(CountryCode code) {
             return GetCountryInfo(code).Continent;
         }
     }

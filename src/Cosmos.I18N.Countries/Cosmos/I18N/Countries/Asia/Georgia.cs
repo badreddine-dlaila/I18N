@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 格鲁吉亚（Georgia，亚洲，GE，GEO，268） <br />
     /// Cosmos i18n code: i18n_country_gelujiya
     /// </summary>
-    public static class Georgia
-    {
+    public static class Georgia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Georgia()
-        {
-            _country = new CountryInfo
-            {
+        static Georgia() {
+            _country = new CountryInfo {
                 Country = Country.Georgia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Georgia,

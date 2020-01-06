@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 基里巴斯（The Republic of Kiribati，大洋洲，KI，KIR，296），基里巴斯共和国 <br />
     /// Cosmos i18n code: i18n_country_jilibasi
     /// </summary>
-    public static class Kiribati
-    {
+    public static class Kiribati {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Kiribati()
-        {
-            _country = new CountryInfo
-            {
+        static Kiribati() {
+            _country = new CountryInfo {
                 Country = Country.Kiribati,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Kiribati,

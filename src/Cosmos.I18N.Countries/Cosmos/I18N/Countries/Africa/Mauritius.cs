@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 毛里求斯（The Republic of Mauritius，非洲，MU，MUS，480），毛里求斯共和国 <br />
     /// Cosmos i18n code: i18n_country_maoliqiusi
     /// </summary>
-    public static class Mauritius
-    {
+    public static class Mauritius {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Mauritius()
-        {
-            _country = new CountryInfo
-            {
+        static Mauritius() {
+            _country = new CountryInfo {
                 Country = Country.Mauritius,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Mauritius,

@@ -2,13 +2,11 @@ using System;
 using System.Collections.Generic;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translate resource
     /// </summary>
-    public partial class TranslateResource : ITranslateResource
-    {
+    public partial class TranslateResource : ITranslateResource {
         private readonly LanguageTag _languageTag;
 
         private readonly Dictionary<int, string> _l;
@@ -31,8 +29,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="resourceName"></param>
         /// <param name="dictionary"></param>
         /// <exception cref="ArgumentNullException"></exception>
-        public TranslateResource(LanguageTag languageTag, string resourceName, Dictionary<int, string> dictionary)
-        {
+        public TranslateResource(LanguageTag languageTag, string resourceName, Dictionary<int, string> dictionary) {
             if (resourceName.IsNullOrWhiteSpace())
                 throw new ArgumentNullException(nameof(resourceName));
 
@@ -59,13 +56,11 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="resourceKey"></param>
         /// <param name="resourceTargetValue"></param>
-        protected internal void Add(string resourceKey, string resourceTargetValue)
-        {
+        protected internal void Add(string resourceKey, string resourceTargetValue) {
             if (string.IsNullOrWhiteSpace(resourceKey))
                 return;
 
-            lock (_l_lock)
-            {
+            lock (_l_lock) {
                 var k = Key(resourceKey);
 
                 if (Contains(k))
@@ -79,10 +74,8 @@ namespace Cosmos.I18N.Translation
         /// Remove...
         /// </summary>
         /// <param name="resourceKey"></param>
-        protected internal void Remove(string resourceKey)
-        {
-            lock (_l_lock)
-            {
+        protected internal void Remove(string resourceKey) {
+            lock (_l_lock) {
                 var k = Key(resourceKey);
 
                 if (Contains(k))

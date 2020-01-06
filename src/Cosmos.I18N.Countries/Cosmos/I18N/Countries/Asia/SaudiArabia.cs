@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 沙特（Kingdom of Saudi Arabia，亚洲，SA，SAU，682），沙特阿拉伯王国 <br />
     /// Cosmos i18n code: i18n_country_shate
     /// </summary>
-    public static class SaudiArabia
-    {
+    public static class SaudiArabia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaudiArabia()
-        {
-            _country = new CountryInfo
-            {
+        static SaudiArabia() {
+            _country = new CountryInfo {
                 Country = Country.SaudiArabia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.SaudiArabia,

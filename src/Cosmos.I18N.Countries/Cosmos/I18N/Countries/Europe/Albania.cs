@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 阿尔巴尼亚（Albania，欧洲，AL，ALB，008），阿尔巴尼亚共和国 <br />
     /// Cosmos i18n code: i18n_country_aerbaniya
     /// </summary>
-    public static class Albania
-    {
+    public static class Albania {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Albania()
-        {
-            _country = new CountryInfo
-            {
+        static Albania() {
+            _country = new CountryInfo {
                 Country = Country.Albania,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Albania,

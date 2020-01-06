@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 罗马尼亚（Romania，欧洲，RO，ROU，642） <br />
     /// Cosmos i18n code: i18n_country_luomaniya
     /// </summary>
-    public static class Romania
-    {
+    public static class Romania {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Romania()
-        {
-            _country = new CountryInfo
-            {
+        static Romania() {
+            _country = new CountryInfo {
                 Country = Country.Romania,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Romania,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 维尔京群岛（The British Virgin Islands，北美洲，VG，VGB，092），英属维尔京群岛 <br />
     /// Cosmos i18n code: i18n_country_yingshuweierjing
     /// </summary>
-    public static class VirginIslandsBritish
-    {
+    public static class VirginIslandsBritish {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static VirginIslandsBritish()
-        {
-            _country = new CountryInfo
-            {
+        static VirginIslandsBritish() {
+            _country = new CountryInfo {
                 Country = Country.VirginIslandsBritish,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

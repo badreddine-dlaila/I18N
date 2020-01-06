@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 埃塞俄比亚（The Federal Democratic Republic of Ethiopia，非洲，ET，ETH，231），埃塞俄比亚联邦民主共和国 <br />
     /// Cosmos i18n code: i18n_country_aisaiebiya
     /// </summary>
-    public static class Ethiopia
-    {
+    public static class Ethiopia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Ethiopia()
-        {
-            _country = new CountryInfo
-            {
+        static Ethiopia() {
+            _country = new CountryInfo {
                 Country = Country.Ethiopia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Ethiopia,

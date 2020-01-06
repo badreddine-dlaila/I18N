@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 荷兰（The Kingdom of the Netherlands，欧洲，NL，NLD，528），荷兰王国 <br />
     /// Cosmos i18n code: i18n_country_helan
     /// </summary>
-    public static class Netherlands
-    {
+    public static class Netherlands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Netherlands()
-        {
-            _country = new CountryInfo
-            {
+        static Netherlands() {
+            _country = new CountryInfo {
                 Country = Country.Netherlands,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Netherlands,

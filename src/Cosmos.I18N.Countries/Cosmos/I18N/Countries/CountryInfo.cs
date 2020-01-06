@@ -1,10 +1,8 @@
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Country info
     /// </summary>
-    public class CountryInfo
-    {
+    public class CountryInfo {
         /// <summary>
         /// Country
         /// </summary>

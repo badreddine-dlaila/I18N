@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 直布罗陀（Gibraltar，欧洲，GI，GIB，292） <br />
     /// Cosmos i18n code: i18n_country_zhibuluotuo
     /// </summary>
-    public static class Gibraltar
-    {
+    public static class Gibraltar {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Gibraltar()
-        {
-            _country = new CountryInfo
-            {
+        static Gibraltar() {
+            _country = new CountryInfo {
                 Country = Country.Gibraltar,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

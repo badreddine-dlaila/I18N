@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 塞舌尔（Republic of Seychelles，非洲，SC，SYC，690），塞舌尔共和国 <br />
     /// Cosmos i18n code: i18n_country_saisheer
     /// </summary>
-    public static class Seychelles
-    {
+    public static class Seychelles {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Seychelles()
-        {
-            _country = new CountryInfo
-            {
+        static Seychelles() {
+            _country = new CountryInfo {
                 Country = Country.Seychelles,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Seychelles,

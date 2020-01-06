@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 厄立特里亚（The State of Eritrea，非洲，ER，ERI，232），厄立特里亚国 <br />
     /// Cosmos i18n code: i18n_country_aliteliya
     /// </summary>
-    public static class Eritrea
-    {
+    public static class Eritrea {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Eritrea()
-        {
-            _country = new CountryInfo
-            {
+        static Eritrea() {
+            _country = new CountryInfo {
                 Country = Country.Eritrea,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Eritrea,

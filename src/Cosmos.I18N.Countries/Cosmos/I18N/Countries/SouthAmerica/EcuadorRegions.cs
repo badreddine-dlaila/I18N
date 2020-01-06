@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// Ecuador Regions
     /// </summary>
-    public static class EcuadorRegions
-    {
+    public static class EcuadorRegions {
 
         #region Gets regions
 
@@ -138,8 +136,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// <summary>
         /// Enum values for Ecuador regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Azuay
             /// </summary>
@@ -217,7 +214,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
             /// </summary>
             [AliasInShort("O")]
             ElOro,
-            
+
             /// <summary>
             /// Pichincha
             /// </summary>
@@ -247,37 +244,37 @@ namespace Cosmos.I18N.Countries.SouthAmerica
             /// </summary>
             [AliasInShort("SE")]
             SantaElena,
-            
+
             /// <summary>
             /// Tungurahua
             /// </summary>
             [AliasInShort("T")]
             Tungurahua,
-            
+
             /// <summary>
             /// Sucumbíos
             /// </summary>
             [AliasInShort("U")]
             Sucumbíos,
-            
+
             /// <summary>
             /// Galápagos
             /// </summary>
             [AliasInShort("W")]
             Galápagos,
-            
+
             /// <summary>
             /// Cotopaxi
             /// </summary>
             [AliasInShort("X")]
             Cotopaxi,
-            
+
             /// <summary>
             /// Pastaza
             /// </summary>
             [AliasInShort("Y")]
             Pastaza,
-            
+
             /// <summary>
             /// Zamora-Chinchipe
             /// </summary>
@@ -299,8 +296,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -309,8 +305,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"EC-{values.ToRegionCode()}";
         }
 
@@ -319,8 +314,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
+        public static Country ToCountry(this EnumValues value) {
             return Country.Ecuador;
         }
 
@@ -329,8 +323,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
+        public static CountryCode ToCountryCode(this EnumValues value) {
             return CountryCode.EC;
         }
 
@@ -345,8 +338,7 @@ namespace Cosmos.I18N.Countries.SouthAmerica
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }

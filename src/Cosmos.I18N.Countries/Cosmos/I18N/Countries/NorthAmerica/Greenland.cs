@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 格陵兰岛（Greenland，北美洲，GL，GRL，304） <br />
     /// Cosmos i18n code: i18n_country_gelinlan
     /// </summary>
-    public static class Greenland
-    {
+    public static class Greenland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Greenland()
-        {
-            _country = new CountryInfo
-            {
+        static Greenland() {
+            _country = new CountryInfo {
                 Country = Country.Greenland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Greenland,

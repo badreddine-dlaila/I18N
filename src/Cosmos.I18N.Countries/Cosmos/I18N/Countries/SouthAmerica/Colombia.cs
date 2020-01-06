@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 哥伦比亚（The Republic of Colombia，南美洲，CO，COL，170），哥伦比亚共和国 <br />
     /// Cosmos i18n code: i18n_country_gelunbiya
     /// </summary>
-    public static class Colombia
-    {
+    public static class Colombia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Colombia()
-        {
-            _country = new CountryInfo
-            {
+        static Colombia() {
+            _country = new CountryInfo {
                 Country = Country.Colombia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Colombia,

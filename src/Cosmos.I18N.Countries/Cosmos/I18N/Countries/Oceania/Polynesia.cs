@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 波利尼西亚（French Polynesia，大洋洲，PF，PYF，258），法属波利尼西亚 <br />
     /// Cosmos i18n code: i18n_country_bolinixiya
     /// </summary>
-    public static class Polynesia
-    {
+    public static class Polynesia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Polynesia()
-        {
-            _country = new CountryInfo
-            {
+        static Polynesia() {
+            _country = new CountryInfo {
                 Country = Country.Polynesia,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

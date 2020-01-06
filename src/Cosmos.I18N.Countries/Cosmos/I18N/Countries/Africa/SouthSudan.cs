@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 南苏丹（The Republic of South Sudan，非洲，SS，SSD，728），南苏丹共和国 <br />
     /// Cosmos i18n code: i18n_country_nansudan
     /// </summary>
-    public static class SouthSudan
-    {
+    public static class SouthSudan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SouthSudan()
-        {
-            _country = new CountryInfo
-            {
+        static SouthSudan() {
+            _country = new CountryInfo {
                 Country = Country.SouthSudan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.SouthSudan,

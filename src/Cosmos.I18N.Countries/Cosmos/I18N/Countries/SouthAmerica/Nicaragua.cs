@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 尼加拉瓜（The Republic of Nicaragua，南美洲，NI，NIC，558），尼加拉瓜共和国 <br />
     /// Cosmos i18n code: i18n_country_nijialagua
     /// </summary>
-    public static class Nicaragua
-    {
+    public static class Nicaragua {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Nicaragua()
-        {
-            _country = new CountryInfo
-            {
+        static Nicaragua() {
+            _country = new CountryInfo {
                 Country = Country.Nicaragua,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Nicaragua,

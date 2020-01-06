@@ -1,12 +1,10 @@
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translation manager
     /// </summary>
-    public interface ITranslationManager
-    {
+    public interface ITranslationManager {
 
         /// <summary>
         /// Contains

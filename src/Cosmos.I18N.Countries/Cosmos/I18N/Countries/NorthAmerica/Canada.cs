@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 加拿大（Canada，北美洲，CA，CAN，124），英联邦成员国 <br />
     /// Cosmos i18n code: i18n_country_jianada
     /// </summary>
-    public static class Canada
-    {
+    public static class Canada {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Canada()
-        {
-            _country = new CountryInfo
-            {
+        static Canada() {
+            _country = new CountryInfo {
                 Country = Country.Canada,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Canada,

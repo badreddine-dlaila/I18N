@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 日本（Japan，亚洲，JP，JPN，392），日本国 <br />
     /// Cosmos i18n code: i18n_country_riben
     /// </summary>
-    public static class Japan
-    {
+    public static class Japan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Japan()
-        {
-            _country = new CountryInfo
-            {
+        static Japan() {
+            _country = new CountryInfo {
                 Country = Country.Japan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Japan,

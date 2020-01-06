@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 斯威士兰（The Kingdom of Swaziland，非洲，SZ，SWZ，748），斯威士兰王国 <br />
     /// Cosmos i18n code: i18n_country_siweishilan
     /// </summary>
-    public static class Swaziland
-    {
+    public static class Swaziland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Swaziland()
-        {
-            _country = new CountryInfo
-            {
+        static Swaziland() {
+            _country = new CountryInfo {
                 Country = Country.Swaziland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Swaziland,

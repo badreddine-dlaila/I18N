@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 尼日利亚（The Republic of Madagascar，非洲，NG，NGA，566，尼日利亚联邦共和国 <br />
     /// Cosmos i18n code: i18n_country_niriliya
     /// </summary>
-    public static class Nigeria
-    {
+    public static class Nigeria {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Nigeria()
-        {
-            _country = new CountryInfo
-            {
+        static Nigeria() {
+            _country = new CountryInfo {
                 Country = Country.Nigeria,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Nigeria,

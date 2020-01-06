@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 马尔维纳斯群岛（Falkland Islands，南美洲，FK，FLK，238） <br />
     /// Cosmos i18n code: i18n_country_fukelan
     /// </summary>
-    public static class FalklandIslands
-    {
+    public static class FalklandIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static FalklandIslands()
-        {
-            _country = new CountryInfo
-            {
+        static FalklandIslands() {
+            _country = new CountryInfo {
                 Country = Country.FalklandIslands,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.FalklandIslands,

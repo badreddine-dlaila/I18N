@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 尼日尔（The Republic of Niger，非洲，NE，NER，562），尼日尔共和国 <br />
     /// Cosmos i18n code: i18n_country_nirier
     /// </summary>
-    public static class Niger
-    {
+    public static class Niger {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Niger()
-        {
-            _country = new CountryInfo
-            {
+        static Niger() {
+            _country = new CountryInfo {
                 Country = Country.Niger,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Niger,

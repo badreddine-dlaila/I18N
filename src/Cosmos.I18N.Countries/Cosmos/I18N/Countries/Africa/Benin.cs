@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 贝宁（The Republic of Benin，非洲，BJ，BEN，204），贝宁共和国 <br />
     /// Cosmos i18n code: i18n_country_beining
     /// </summary>
-    public static class Benin
-    {
+    public static class Benin {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Benin()
-        {
-            _country = new CountryInfo
-            {
+        static Benin() {
+            _country = new CountryInfo {
                 Country = Country.Benin,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Benin,

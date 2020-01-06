@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 马尔代夫（The Republic of Maldives，亚洲，MV，MDV，462），马尔代夫共和国 <br />
     /// Cosmos i18n code: i18n_country_maerdaifu
     /// </summary>
-    public static class Maldives
-    {
+    public static class Maldives {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Maldives()
-        {
-            _country = new CountryInfo
-            {
+        static Maldives() {
+            _country = new CountryInfo {
                 Country = Country.Maldives,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Maldives,

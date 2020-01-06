@@ -1,12 +1,10 @@
 using System.Globalization;
 
-namespace Cosmos.I18N.Languages
-{
+namespace Cosmos.I18N.Languages {
     /// <summary>
     /// Interface for language tag
     /// </summary>
-    public interface ILanguageTag
-    {
+    public interface ILanguageTag {
         /// <summary>
         /// Returns the mandatory 2 character language subtag.
         /// </summary>

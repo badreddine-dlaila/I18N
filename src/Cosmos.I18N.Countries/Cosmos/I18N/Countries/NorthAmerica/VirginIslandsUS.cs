@@ -1,19 +1,15 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 美属维尔京群岛（The United States Virgin Islands，北美洲，VI，VIR，850） <br />
     /// Cosmos i18n code: i18n_country_meishuweierjing
     /// </summary>
     // ReSharper disable once InconsistentNaming
-    public static class VirginIslandsUS
-    {
+    public static class VirginIslandsUS {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static VirginIslandsUS()
-        {
-            _country = new CountryInfo
-            {
+        static VirginIslandsUS() {
+            _country = new CountryInfo {
                 Country = Country.VirginIslandsUS,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedStates,

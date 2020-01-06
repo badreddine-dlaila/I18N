@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 乌干达（The Republic of Uganda，非洲，UG，UGA，800），乌干达共和国 <br />
     /// Cosmos i18n code: i18n_country_wuganda
     /// </summary>
-    public static class Uganda
-    {
+    public static class Uganda {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Uganda()
-        {
-            _country = new CountryInfo
-            {
+        static Uganda() {
+            _country = new CountryInfo {
                 Country = Country.Uganda,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Uganda,

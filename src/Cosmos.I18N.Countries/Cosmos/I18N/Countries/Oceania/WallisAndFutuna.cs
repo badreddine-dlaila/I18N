@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 瓦利斯和富图纳群岛（Wallis and Futuna Islands，大洋洲，WF，WLF，876） <br />
     /// Cosmos i18n code: i18n_country_walisi
     /// </summary>
-    public static class WallisAndFutuna
-    {
+    public static class WallisAndFutuna {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static WallisAndFutuna()
-        {
-            _country = new CountryInfo
-            {
+        static WallisAndFutuna() {
+            _country = new CountryInfo {
                 Country = Country.WallisAndFutuna,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

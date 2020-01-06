@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 亚美尼亚（Armenia，亚洲，AM，ARM，051），亚美尼亚共和国<br />
     /// Cosmos i18n code: i18n_country_yameiniya
     /// </summary>
-    public static class Armenia
-    {
+    public static class Armenia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Armenia()
-        {
-            _country = new CountryInfo
-            {
+        static Armenia() {
+            _country = new CountryInfo {
                 Country = Country.Armenia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Armenia,

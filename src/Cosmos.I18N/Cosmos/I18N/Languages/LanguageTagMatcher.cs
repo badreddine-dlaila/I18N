@@ -14,10 +14,8 @@ using System;
 //    region      opt, 2 alphachars(alpha2 code) or 3 decdigits, see Cosmos.I18N.Countries
 //    private use opt, -x- followed by 4 or more alphanumeric chars
 
-namespace Cosmos.I18N.Languages
-{
-    internal static class LanguageTagMatcher
-    {
+namespace Cosmos.I18N.Languages {
+    internal static class LanguageTagMatcher {
         /// <summary>
         /// Performs 'language matching' between lang described by this (A)
         /// and language decibed by i_rhs (B). Essentially, returns an assessment of
@@ -78,8 +76,7 @@ namespace Cosmos.I18N.Languages
         ///     Language doesn't match.
         /// </remarks>
         /// <seealso href="http://msdn.microsoft.com/en-us/library/windows/apps/jj673578.aspx"/>
-        public static int Match(LanguageTag leftLanguageTag, LanguageTag rightLanguageTag, MatchLevel matchLevel = MatchLevel.LanguageMatch)
-        {
+        public static int Match(LanguageTag leftLanguageTag, LanguageTag rightLanguageTag, MatchLevel matchLevel = MatchLevel.LanguageMatch) {
             if (leftLanguageTag == null)
                 throw new ArgumentNullException(nameof(leftLanguageTag));
 
@@ -109,42 +106,34 @@ namespace Cosmos.I18N.Languages
                 return 0;
 
             // A.
-            if (S[0] && R[0] && P[0])
-            {
+            if (S[0] && R[0] && P[0]) {
                 return score;
             }
 
             --score;
-            if (matchLevel != MatchLevel.ExactMatch)
-            {
+            if (matchLevel != MatchLevel.ExactMatch) {
                 // B.
-                if (S[0] && !R[0] && R[1] != R[2])
-                {
+                if (S[0] && !R[0] && R[1] != R[2]) {
                     return score;
                 }
 
                 --score;
-                if (matchLevel != MatchLevel.DefaultRegion)
-                {
+                if (matchLevel != MatchLevel.DefaultRegion) {
                     // C.
-                    if (S[0] && !R[0] && R[1] == R[2])
-                    {
+                    if (S[0] && !R[0] && R[1] == R[2]) {
                         return score;
                     }
 
                     --score;
-                    if (matchLevel != MatchLevel.ScriptMatch)
-                    {
+                    if (matchLevel != MatchLevel.ScriptMatch) {
                         // D.
-                        if (!S[0] && S[1] != S[2])
-                        {
+                        if (!S[0] && S[1] != S[2]) {
                             return score;
                         }
 
                         --score;
                         // E.
-                        if (!S[0] && S[1] == S[2])
-                        {
+                        if (!S[0] && S[1] == S[2]) {
                             return score;
                         }
                     }
@@ -168,19 +157,15 @@ namespace Cosmos.I18N.Languages
         /// <param name="matchedTag"></param>
         /// <param name="matchLevel"></param>
         /// <returns>Selected CultureInfoEx instance from the AppLanguages collection or null if there was no match.</returns>
-        public static int Match(LanguageTag leftLanguageTag, LanguageTag[] rightLanguageTags, out LanguageTag matchedTag, MatchLevel matchLevel = MatchLevel.LanguageMatch)
-        {
+        public static int Match(LanguageTag leftLanguageTag, LanguageTag[] rightLanguageTags, out LanguageTag matchedTag, MatchLevel matchLevel = MatchLevel.LanguageMatch) {
             int matchedScore = 0;
             matchedTag = null;
-            foreach (LanguageTag rightLanguageTag in rightLanguageTags)
-            {
+            foreach (LanguageTag rightLanguageTag in rightLanguageTags) {
                 int score = Match(leftLanguageTag, rightLanguageTag, matchLevel);
-                if (score > matchedScore)
-                {
+                if (score > matchedScore) {
                     matchedScore = score;
                     matchedTag = rightLanguageTag;
-                    if (matchedScore == 100)
-                    {
+                    if (matchedScore == 100) {
                         // Can't beat an exact match.
                         break;
                     }

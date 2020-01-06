@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 安哥拉（Angola，非洲，AO，AGO，024），安哥拉共和国 <br />
     /// Cosmos i18n code: i18n_country_angela
     /// </summary>
-    public static class Angola
-    {
+    public static class Angola {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Angola()
-        {
-            _country = new CountryInfo
-            {
+        static Angola() {
+            _country = new CountryInfo {
                 Country = Country.Angola,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Angola,

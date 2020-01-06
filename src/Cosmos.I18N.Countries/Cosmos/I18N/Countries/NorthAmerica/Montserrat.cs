@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 蒙特塞拉特（Montserrat，北美洲，MS，MSR，500） <br />
     /// Cosmos i18n code: i18n_country_mengtesailate
     /// </summary>
-    public static class Montserrat
-    {
+    public static class Montserrat {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Montserrat()
-        {
-            _country = new CountryInfo
-            {
+        static Montserrat() {
+            _country = new CountryInfo {
                 Country = Country.Montserrat,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

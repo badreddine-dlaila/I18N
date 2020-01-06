@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Templates
-{
+namespace Cosmos.I18N.Templates {
     /// <summary>
     /// Anonymous Localization Template
     /// </summary>
-    public class AnonymousLocalizationTemplate : ILocalizationTemplate
-    {
+    public class AnonymousLocalizationTemplate : ILocalizationTemplate {
         /// <summary>
         /// Create a new instance of <see cref="AnonymousLocalizationTemplate"/>
         /// </summary>
@@ -18,8 +16,7 @@ namespace Cosmos.I18N.Templates
         /// </summary>
         /// <param name="language"></param>
         /// <param name="contents"></param>
-        public AnonymousLocalizationTemplate(string language, Dictionary<string, string> contents)
-        {
+        public AnonymousLocalizationTemplate(string language, Dictionary<string, string> contents) {
             Language = language;
             Contents = contents;
         }
@@ -44,8 +41,7 @@ namespace Cosmos.I18N.Templates
         /// </summary>
         public Dictionary<string, string> Contents { get; set; } = new Dictionary<string, string>();
 
-        internal bool CheckMySelf()
-        {
+        internal bool CheckMySelf() {
             if (string.IsNullOrWhiteSpace(PackageKey) || PackageKey != TranslationManager.ANONYMOUS_PACKAGE_KEY)
                 return false;
 

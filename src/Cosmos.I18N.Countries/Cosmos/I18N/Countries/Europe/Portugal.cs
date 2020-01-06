@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 葡萄牙（The Portuguese Republic，欧洲，PT，PRT，620），葡萄牙共和国 <br />
     /// Cosmos i18n code: i18n_country_putapya
     /// </summary>
-    public static class Portugal
-    {
+    public static class Portugal {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Portugal()
-        {
-            _country = new CountryInfo
-            {
+        static Portugal() {
+            _country = new CountryInfo {
                 Country = Country.Portugal,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Portugal,
@@ -23,7 +19,7 @@ namespace Cosmos.I18N.Countries.Europe
                 ShorterForm = "Portugal",
                 ChineseName = "葡萄牙共和国",
                 ChineseShorterForm = "葡萄牙",
-                Continent = Continent.Europe ,
+                Continent = Continent.Europe,
                 I18NIdentityCode = I18N_IDENTITY_CODE,
             };
         }

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 图瓦卢（Tuvalu，大洋洲，TV，TUV，798） <br />
     /// Cosmos i18n code: i18n_country_tuwalu
     /// </summary>
-    public static class Tuvalu
-    {
+    public static class Tuvalu {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Tuvalu()
-        {
-            _country = new CountryInfo
-            {
+        static Tuvalu() {
+            _country = new CountryInfo {
                 Country = Country.Tuvalu,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Tuvalu,

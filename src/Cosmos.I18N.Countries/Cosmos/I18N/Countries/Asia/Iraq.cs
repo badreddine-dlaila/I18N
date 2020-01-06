@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 伊拉克（Republic Of Iraq，亚洲，IQ，IRQ，368），伊拉克共和国 <br />
     /// Cosmos i18n code: i18n_country_yilake
     /// </summary>
-    public static class Iraq
-    {
+    public static class Iraq {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Iraq()
-        {
-            _country = new CountryInfo
-            {
+        static Iraq() {
+            _country = new CountryInfo {
                 Country = Country.Iraq,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Iraq,

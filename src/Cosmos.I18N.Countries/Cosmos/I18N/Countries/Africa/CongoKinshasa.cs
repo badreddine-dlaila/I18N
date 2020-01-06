@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 刚果（金）（The Democratic Republic of the Congo，非洲，CD，CAF，140），刚果民主共和国 <br />
     /// Cosmos i18n code: i18n_country_gangguojin
     /// </summary>
-    public static class CongoKinshasa
-    {
+    public static class CongoKinshasa {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static CongoKinshasa()
-        {
-            _country = new CountryInfo
-            {
+        static CongoKinshasa() {
+            _country = new CountryInfo {
                 Country = Country.CongoKinshasa,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.CongoKinshasa,

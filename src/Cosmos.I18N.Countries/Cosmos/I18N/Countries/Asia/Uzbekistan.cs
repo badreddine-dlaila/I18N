@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 乌兹别克斯坦（The Republic Of Uzbekistan，亚洲，UZ，UZB，860），乌兹别克斯坦共和国 <br />
     /// Cosmos i18n code: i18n_country_wuzibiekesitan
     /// </summary>
-    public static class Uzbekistan
-    {
+    public static class Uzbekistan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Uzbekistan()
-        {
-            _country = new CountryInfo
-            {
+        static Uzbekistan() {
+            _country = new CountryInfo {
                 Country = Country.Uzbekistan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Uzbekistan,

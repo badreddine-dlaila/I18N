@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 瓦努阿图（The Republic of Vanuatu，大洋洲，VU，VUT，548），瓦努阿图共和国 <br />
     /// Cosmos i18n code: i18n_country_wanuatu
     /// </summary>
-    public static class Vanuatu
-    {
+    public static class Vanuatu {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Vanuatu()
-        {
-            _country = new CountryInfo
-            {
+        static Vanuatu() {
+            _country = new CountryInfo {
                 Country = Country.Vanuatu,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Vanuatu,

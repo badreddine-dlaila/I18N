@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 厄瓜多尔（The Republic of Ecuador，南美洲，EC，ECU，218），厄瓜多尔共和国 <br />
     /// Cosmos i18n code: i18n_country_eguaduoer
     /// </summary>
-    public static class Ecuador
-    {
+    public static class Ecuador {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Ecuador()
-        {
-            _country = new CountryInfo
-            {
+        static Ecuador() {
+            _country = new CountryInfo {
                 Country = Country.Ecuador,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Ecuador,

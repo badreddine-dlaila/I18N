@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 巴林（The Kingdom of Bahrain ，亚洲，BH，BHR，048），巴林王国 <br />
     /// Cosmos i18n code: i18n_country_balin
     /// </summary>
-    public static class Bahrain
-    {
+    public static class Bahrain {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Bahrain()
-        {
-            _country = new CountryInfo
-            {
+        static Bahrain() {
+            _country = new CountryInfo {
                 Country = Country.Bahrain,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Bahrain,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 拉脱维亚（The Republic of Latvia，欧洲，LV，LVA，428），拉脱维亚共和国 <br />
     /// Cosmos i18n code: i18n_country_latuoweiya
     /// </summary>
-    public static class Latvia
-    {
+    public static class Latvia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Latvia()
-        {
-            _country = new CountryInfo
-            {
+        static Latvia() {
+            _country = new CountryInfo {
                 Country = Country.Latvia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Latvia,

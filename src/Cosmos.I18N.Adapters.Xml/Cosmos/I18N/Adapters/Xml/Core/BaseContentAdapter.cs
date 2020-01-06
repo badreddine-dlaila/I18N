@@ -4,37 +4,39 @@ using Cosmos.I18N.Adapters.Formats;
 using Cosmos.I18N.Templates;
 using Cosmos.Serialization.Xml;
 
-namespace Cosmos.I18N.Adapters.Xml.Core
-{
+namespace Cosmos.I18N.Adapters.Xml.Core {
+    /// <summary>
+    /// Base content adapter for Xml adapter
+    /// </summary>
+    /// <typeparam name="TTemplate"></typeparam>
     public class BaseContentAdapter<TTemplate> : IContentAdapter<string>, ISpeakAsXml<TTemplate>, IDisposable
-        where TTemplate : class, ILocalizationTemplate, new()
-    {
-        public string OriginContent { get; protected set; }
+        where TTemplate : class, ILocalizationTemplate, new() {
+        /// <inheritdoc />
+        public string OriginalContent { get; protected set; }
 
+        /// <summary>
+        /// Speak cache
+        /// </summary>
         protected TTemplate SpeakCache { get; set; }
 
-        public virtual bool Process()
-        {
-            try
-            {
-                SpeakCache = OriginContent.FromXml<TTemplate>();
+        /// <inheritdoc />
+        public virtual bool Process() {
+            try {
+                SpeakCache = OriginalContent.FromXml<TTemplate>();
             }
-            catch
-            {
+            catch {
                 return false;
             }
 
             return true;
         }
 
-        public virtual async Task<bool> ProcessAsync()
-        {
-            try
-            {
-                SpeakCache = await OriginContent.FromXmlAsync<TTemplate>();
+        /// <inheritdoc />
+        public virtual async Task<bool> ProcessAsync() {
+            try {
+                SpeakCache = await OriginalContent.FromXmlAsync<TTemplate>();
             }
-            catch
-            {
+            catch {
                 return false;
             }
 
@@ -42,18 +44,18 @@ namespace Cosmos.I18N.Adapters.Xml.Core
         }
 
 
-        public TTemplate Speak()
-        {
+        /// <inheritdoc />
+        public TTemplate Speak() {
             return SpeakCache ?? throw new InvalidOperationException("Failed to deserialize origin context.");
         }
 
         private bool _disposed;
 
-        public void Dispose()
-        {
+        /// <inheritdoc />
+        public void Dispose() {
             if (_disposed) return;
 
-            OriginContent = null;
+            OriginalContent = null;
             SpeakCache = null;
 
             _disposed = true;

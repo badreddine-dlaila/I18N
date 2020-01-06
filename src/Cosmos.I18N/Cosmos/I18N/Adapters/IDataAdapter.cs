@@ -1,5 +1,6 @@
 ﻿namespace Cosmos.I18N.Adapters {
-    public interface IDataAdapter:IAdapterProcess {
-        
-    }
+    /// <summary>
+    /// Data adapter interface
+    /// </summary>
+    public interface IDataAdapter : IAdapterProcess { }
 }

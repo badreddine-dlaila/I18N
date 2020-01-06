@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 纳米比亚（The Republic of Namibia，非洲，NA，NAM，516），纳米比亚共和国 <br />
     /// Cosmos i18n code: i18n_country_manibiya
     /// </summary>
-    public static class Namibia
-    {
+    public static class Namibia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Namibia()
-        {
-            _country = new CountryInfo
-            {
+        static Namibia() {
+            _country = new CountryInfo {
                 Country = Country.Namibia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Namibia,

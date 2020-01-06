@@ -4,13 +4,11 @@ using Cosmos.I18N.Core.Extensions;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N
-{
+namespace Cosmos.I18N {
     /// <summary>
     /// Text
     /// </summary>
-    public struct Text : IText, IEquatable<Text>
-    {
+    public struct Text : IText, IEquatable<Text> {
         private LanguageTag LanguageTag { get; set; }
 
         private string PackageKey { get; set; }
@@ -80,8 +78,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
-        public Text(string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
-        {
+        public Text(string text, string packageKey, ILanguageTag languageTag, params object[] parameters) {
             LanguageTag = languageTag as LanguageTag ?? LanguageTag.Current;
             PackageKey = packageKey;
             OriginText = text;
@@ -169,8 +166,7 @@ namespace Cosmos.I18N
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <param name="parameters"></param>
-        public Text(TranslationProcessor processor, string text, string packageKey, ILanguageTag languageTag, params object[] parameters)
-        {
+        public Text(TranslationProcessor processor, string text, string packageKey, ILanguageTag languageTag, params object[] parameters) {
             LanguageTag = languageTag as LanguageTag ?? LanguageTag.Current;
             PackageKey = packageKey;
             OriginText = text;
@@ -207,8 +203,7 @@ namespace Cosmos.I18N
         /// To String.
         /// </summary>
         /// <returns></returns>
-        public override string ToString()
-        {
+        public override string ToString() {
             var text = PackageKey == TranslationManager.ANONYMOUS_PACKAGE_KEY
                 ? _translationProcessor.AnonymousTranslate(LanguageTag, OriginText)
                 : _translationProcessor.Translate(LanguageTag, PackageKey, OriginText);
@@ -230,8 +225,7 @@ namespace Cosmos.I18N
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
-        public bool Equals(Text other)
-        {
+        public bool Equals(Text other) {
             return LanguageTag != null && other.LanguageTag != null &&
                    LanguageTag.Equals(other.LanguageTag) &&
                    PackageKey == other.PackageKey &&

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 西班牙（The Kingdom of Spain，南美洲，ES，ESP，724），西班牙王国 <br />
     /// Cosmos i18n code: i18n_country_xibanya
     /// </summary>
-    public static class Spain
-    {
+    public static class Spain {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Spain()
-        {
-            _country = new CountryInfo
-            {
+        static Spain() {
+            _country = new CountryInfo {
                 Country = Country.Spain,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Spain,

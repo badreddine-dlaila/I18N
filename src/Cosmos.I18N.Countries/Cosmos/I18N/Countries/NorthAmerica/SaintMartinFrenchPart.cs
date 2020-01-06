@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 法属圣马丁（Saint Martin (French part)，北美洲，MF，MAF，663），圣马丁行政区 <br />
     /// Cosmos i18n code: i18n_country_shengmading
     /// </summary>
-    public static class SaintMartinFrenchPart
-    {
+    public static class SaintMartinFrenchPart {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaintMartinFrenchPart()
-        {
-            _country = new CountryInfo
-            {
+        static SaintMartinFrenchPart() {
+            _country = new CountryInfo {
                 Country = Country.SaintMartinFrenchPart,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,

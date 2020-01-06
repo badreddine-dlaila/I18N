@@ -3,15 +3,13 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// Taiwan Regions <br />
     /// 台湾，中华人民共和国的一部分 <br />
     /// Taiwan, a part of China <br />
     /// </summary>
-    public static class TaiwanRegions
-    {
+    public static class TaiwanRegions {
 
         #region Gets regions
 
@@ -130,8 +128,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// <summary>
         /// Enum values for Iraq regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Changhua
             /// </summary>
@@ -295,8 +292,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -305,8 +301,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"CN-TW-{values.ToRegionCode()}";
         }
 
@@ -315,8 +310,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
+        public static Country ToCountry(this EnumValues value) {
             return Country.China;
         }
 
@@ -325,8 +319,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
+        public static CountryCode ToCountryCode(this EnumValues value) {
             return CountryCode.CN;
         }
 
@@ -341,8 +334,7 @@ namespace Cosmos.I18N.Countries.Asia
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 马奥霍（Territorial Collectivity of Mayotte ，非洲，AF，AFG，004），马约特岛 <br />
     /// Cosmos i18n code: i18n_country_mayuete
     /// </summary>
-    public static class Mayotte
-    {
+    public static class Mayotte {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Mayotte()
-        {
-            _country = new CountryInfo
-            {
+        static Mayotte() {
+            _country = new CountryInfo {
                 Country = Country.Mayotte,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.France,

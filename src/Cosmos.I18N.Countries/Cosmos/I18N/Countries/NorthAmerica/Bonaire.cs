@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 波内赫、圣尤斯特歇斯和萨巴（Bonaire, Sint Eustatius and Saba，北美洲，BQ，BES，535） <br />
     /// Cosmos i18n code: i18n_country_boneihe
     /// </summary>
-    public static class Bonaire
-    {
+    public static class Bonaire {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Bonaire()
-        {
-            _country = new CountryInfo
-            {
+        static Bonaire() {
+            _country = new CountryInfo {
                 Country = Country.Bonaire,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Netherlands,

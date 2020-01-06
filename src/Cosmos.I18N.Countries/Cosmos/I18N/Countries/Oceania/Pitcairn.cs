@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 皮特肯岛（Pitcairn Islands，大洋洲，PN，PCN，612），皮特凯恩群岛 <br />
     /// Cosmos i18n code: i18n_country_piteken
     /// </summary>
-    public static class Pitcairn
-    {
+    public static class Pitcairn {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Pitcairn()
-        {
-            _country = new CountryInfo
-            {
+        static Pitcairn() {
+            _country = new CountryInfo {
                 Country = Country.Pitcairn,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

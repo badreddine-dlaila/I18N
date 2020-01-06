@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 圣多美和普林西比（The Democratic Republic of Sao Tome and Principe，非洲，ST，STP，678），圣多美和普林西比民主共和国 <br />
     /// Cosmos i18n code: i18n_country_shengduomeiplxb
     /// </summary>
-    public static class SaoTomeAndPrincipe
-    {
+    public static class SaoTomeAndPrincipe {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SaoTomeAndPrincipe()
-        {
-            _country = new CountryInfo
-            {
+        static SaoTomeAndPrincipe() {
+            _country = new CountryInfo {
                 Country = Country.SaoTomeAndPrincipe,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.SaoTomeAndPrincipe,

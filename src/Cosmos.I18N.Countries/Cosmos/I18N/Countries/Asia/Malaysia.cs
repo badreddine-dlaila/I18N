@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 大马（Malaysia，亚洲，MY，MYS，458），马来西亚 <br />
     /// Cosmos i18n code: i18n_country_malaixiya
     /// </summary>
-    public static class Malaysia
-    {
+    public static class Malaysia {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Malaysia()
-        {
-            _country = new CountryInfo
-            {
+        static Malaysia() {
+            _country = new CountryInfo {
                 Country = Country.Malaysia,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Malaysia,

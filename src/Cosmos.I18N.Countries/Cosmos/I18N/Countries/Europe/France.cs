@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 法国（French Republic，欧洲，FR，FRA，250），法兰西共和国 <br />
     /// Cosmos i18n code: i18n_country_faguo
     /// </summary>
-    public static class France
-    {
+    public static class France {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static France()
-        {
-            _country = new CountryInfo
-            {
+        static France() {
+            _country = new CountryInfo {
                 Country = Country.France,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.France,

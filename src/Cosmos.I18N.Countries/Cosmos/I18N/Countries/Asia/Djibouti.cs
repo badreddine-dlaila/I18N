@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 吉布提（The Republic of Djibouti，亚洲，BI，BDI，108），吉布提共和国 <br />
     /// Cosmos i18n code: i18n_country_balin
     /// </summary>
-    public static class Djibouti
-    {
+    public static class Djibouti {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Djibouti()
-        {
-            _country = new CountryInfo
-            {
+        static Djibouti() {
+            _country = new CountryInfo {
                 Country = Country.Djibouti,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Djibouti,

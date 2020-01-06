@@ -1,19 +1,15 @@
-namespace Cosmos.I18N.Countries.SouthAmerica
-{
+namespace Cosmos.I18N.Countries.SouthAmerica {
     /// <summary>
     /// 南乔治亚岛和南桑威奇群岛（South Georgia and The South Sandwich Islands，南美洲，GS，SGS，239） <br />
     /// Cosmos i18n code: i18n_country_nanqiaozhiya
     /// </summary>
     // ReSharper disable once InconsistentNaming
-    public static class SGSSI
-    {
+    public static class SGSSI {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SGSSI()
-        {
-            _country = new CountryInfo
-            {
+        static SGSSI() {
+            _country = new CountryInfo {
                 Country = Country.SGSSI,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

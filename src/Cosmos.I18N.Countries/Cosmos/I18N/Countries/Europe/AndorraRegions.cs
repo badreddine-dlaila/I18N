@@ -3,13 +3,11 @@ using System.Linq;
 using Cosmos.I18N.Core;
 using EnumsNET;
 
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// Andorra Regions
     /// </summary>
-    public static class AndorraRegions
-    {
+    public static class AndorraRegions {
 
         #region Gets regions
 
@@ -53,44 +51,43 @@ namespace Cosmos.I18N.Countries.Europe
         /// <summary>
         /// Enum values for Andorra regions.
         /// </summary>
-        public enum EnumValues
-        {
+        public enum EnumValues {
             /// <summary>
             /// Andorra la Vella
             /// </summary>
             [AliasInShort("07")]
             AndorraLaVella,
-            
+
             /// <summary>
             /// Canillo
             /// </summary>
             [AliasInShort("02")]
             Canillo,
-            
+
             /// <summary>
             /// Massana
             /// </summary>
             [AliasInShort("04")]
             Massana,
-            
+
             /// <summary>
             /// Sant Julia de Loria
             /// </summary>
             [AliasInShort("06")]
             SantJuliaDeLoria,
-            
+
             /// <summary>
             /// Encamp
             /// </summary>
             [AliasInShort("03")]
             Encamp,
-            
+
             /// <summary>
             /// Les Escaldes-Engordany
             /// </summary>
             [AliasInShort("01")]
             LesEscaldesEngordany,
-            
+
             /// <summary>
             /// Ordino
             /// </summary>
@@ -112,8 +109,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToRegionCode(this EnumValues values)
-        {
+        public static string ToRegionCode(this EnumValues values) {
             return values.GetAttributes().Get<AliasInShortAttribute>().Alias;
         }
 
@@ -122,18 +118,16 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="values"></param>
         /// <returns></returns>
-        public static string ToFullRegionCode(this EnumValues values)
-        {
+        public static string ToFullRegionCode(this EnumValues values) {
             return $"AD-{values.ToRegionCode()}";
         }
-        
+
         /// <summary>
         /// Convert to <see cref="Country"/>
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static Country ToCountry(this EnumValues value)
-        {
+        public static Country ToCountry(this EnumValues value) {
             return Country.Andorra;
         }
 
@@ -142,8 +136,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static CountryCode ToCountryCode(this EnumValues value)
-        {
+        public static CountryCode ToCountryCode(this EnumValues value) {
             return CountryCode.AD;
         }
 
@@ -158,8 +151,7 @@ namespace Cosmos.I18N.Countries.Europe
         /// Get all region code
         /// </summary>
         /// <returns></returns>
-        public static IEnumerable<string> GetAllRegonCodes()
-        {
+        public static IEnumerable<string> GetAllRegonCodes() {
             foreach (var member in InternalEnumMembersCache)
                 yield return member.Value.ToFullRegionCode();
         }

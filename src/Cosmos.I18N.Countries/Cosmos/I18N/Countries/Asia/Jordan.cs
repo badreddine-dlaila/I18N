@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 约旦（The Hashemite Kingdom of Jordan，亚洲，JO，JOR，400），约旦哈希姆王国 <br />
     /// Cosmos i18n code: i18n_country_yuedan
     /// </summary>
-    public static class Jordan
-    {
+    public static class Jordan {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Jordan()
-        {
-            _country = new CountryInfo
-            {
+        static Jordan() {
+            _country = new CountryInfo {
                 Country = Country.Jordan,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Jordan,

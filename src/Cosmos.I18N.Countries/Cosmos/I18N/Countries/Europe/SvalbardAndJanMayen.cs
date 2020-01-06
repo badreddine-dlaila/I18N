@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 斯瓦尔巴群岛（The Svalbard archipelago，欧洲，SJ，SJM，744） <br />
     /// Cosmos i18n code: i18n_country_siwaerba
     /// </summary>
-    public static class SvalbardAndJanMayen
-    {
+    public static class SvalbardAndJanMayen {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static SvalbardAndJanMayen()
-        {
-            _country = new CountryInfo
-            {
+        static SvalbardAndJanMayen() {
+            _country = new CountryInfo {
                 Country = Country.SvalbardAndJanMayen,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Norway,

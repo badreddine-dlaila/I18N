@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 肯尼亚（The Republic Of Kenya，非洲，KE，KEN，404），肯尼亚共和国 <br />
     /// Cosmos i18n code: i18n_country_kenniya
     /// </summary>
-    public static class Kenya
-    {
+    public static class Kenya {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Kenya()
-        {
-            _country = new CountryInfo
-            {
+        static Kenya() {
+            _country = new CountryInfo {
                 Country = Country.Kenya,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Kenya,

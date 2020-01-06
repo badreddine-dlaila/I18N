@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
-using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Templates
-{
+namespace Cosmos.I18N.Templates {
     /// <summary>
     /// Interface for localization template
     /// </summary>
-    public interface ILocalizationTemplate
-    {
+    public interface ILocalizationTemplate {
         /// <summary>
         /// Belongs to package key
         /// </summary>

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 北马里亚那群岛（Commonwealth of the Northern Mariana Islands，大洋洲，MP，MNP，580），北马里亚纳群岛自由邦 <br />
     /// Cosmos i18n code: i18n_country_beimaliyana
     /// </summary>
-    public static class NorthernMarianaIslands
-    {
+    public static class NorthernMarianaIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static NorthernMarianaIslands()
-        {
-            _country = new CountryInfo
-            {
+        static NorthernMarianaIslands() {
+            _country = new CountryInfo {
                 Country = Country.NorthernMarianaIslands,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedStates,

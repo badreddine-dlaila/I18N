@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 多哥（French Southern Territories，非洲，TG，TGO，768），多哥共和国 <br />
     /// Cosmos i18n code: i18n_country_duoge
     /// </summary>
-    public static class Togo
-    {
+    public static class Togo {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Togo()
-        {
-            _country = new CountryInfo
-            {
+        static Togo() {
+            _country = new CountryInfo {
                 Country = Country.Togo,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Togo,

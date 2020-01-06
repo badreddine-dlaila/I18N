@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 托克劳群岛（Tokelau，大洋洲，TK，TKL，772） <br />
     /// Cosmos i18n code: i18n_country_tuokelao
     /// </summary>
-    public static class Tokelau
-    {
+    public static class Tokelau {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Tokelau()
-        {
-            _country = new CountryInfo
-            {
+        static Tokelau() {
+            _country = new CountryInfo {
                 Country = Country.Tokelau,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.NewZealand,

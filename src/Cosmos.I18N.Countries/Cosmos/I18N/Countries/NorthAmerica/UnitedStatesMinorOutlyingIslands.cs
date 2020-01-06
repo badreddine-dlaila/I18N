@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 美国本土外小岛屿（United States Minor Outlying Islands，北美洲，UM，UMI，581） <br />
     /// Cosmos i18n code: i18n_country_meiguoum
     /// </summary>
-    public static class UnitedStatesMinorOutlyingIslands
-    {
+    public static class UnitedStatesMinorOutlyingIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static UnitedStatesMinorOutlyingIslands()
-        {
-            _country = new CountryInfo
-            {
+        static UnitedStatesMinorOutlyingIslands() {
+            _country = new CountryInfo {
                 Country = Country.UnitedStatesMinorOutlyingIslands,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedStates,

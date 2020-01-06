@@ -1,12 +1,9 @@
-namespace Cosmos.I18N.Countries
-{
-    public static partial class CountryManager
-    {
+namespace Cosmos.I18N.Countries {
+    public static partial class CountryManager {
         /// <summary>
         /// Expose information
         /// </summary>
-        public static class Expose
-        {
+        public static class Expose {
             /// <summary>
             /// To count the Country-CountryCode mapping
             /// </summary>

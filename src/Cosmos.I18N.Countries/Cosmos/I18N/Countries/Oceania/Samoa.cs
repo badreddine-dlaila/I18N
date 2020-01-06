@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 萨摩亚（The Independent State of Samoa，大洋洲，WS，WSM，882），萨摩亚独立国 <br />
     /// Cosmos i18n code: i18n_country_samoya
     /// </summary>
-    public static class Samoa
-    {
+    public static class Samoa {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Samoa()
-        {
-            _country = new CountryInfo
-            {
+        static Samoa() {
+            _country = new CountryInfo {
                 Country = Country.Samoa,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Samoa,

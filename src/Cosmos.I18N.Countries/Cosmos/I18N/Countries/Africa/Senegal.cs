@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 塞内加尔（The Republic of Senegal，非洲，SN，SEN，686），塞内加尔共和国 <br />
     /// Cosmos i18n code: i18n_country_saineijiaer
     /// </summary>
-    public static class Senegal
-    {
+    public static class Senegal {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Senegal()
-        {
-            _country = new CountryInfo
-            {
+        static Senegal() {
+            _country = new CountryInfo {
                 Country = Country.Senegal,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Senegal,

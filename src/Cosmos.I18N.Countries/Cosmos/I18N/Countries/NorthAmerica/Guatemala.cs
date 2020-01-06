@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 危地马拉（The Republic of Guatemala，北美洲，GT，GTM，320），危地马拉共和国 <br />
     /// Cosmos i18n code: i18n_country_weidimala
     /// </summary>
-    public static class Guatemala
-    {
+    public static class Guatemala {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Guatemala()
-        {
-            _country = new CountryInfo
-            {
+        static Guatemala() {
+            _country = new CountryInfo {
                 Country = Country.Guatemala,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Guatemala,

@@ -1,17 +1,14 @@
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Countries Extensions
     /// </summary>
-    public static class CountriesExtensions
-    {
+    public static class CountriesExtensions {
         /// <summary>
         /// Convert <see cref="Country"/> to <see cref="CountryInfo"/>.
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static CountryInfo ToInfo(this Country country)
-        {
+        public static CountryInfo ToInfo(this Country country) {
             return CountryManager.GetCountryInfo(country);
         }
 
@@ -20,8 +17,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static CountryInfo ToInfo(this CountryCode code)
-        {
+        public static CountryInfo ToInfo(this CountryCode code) {
             return CountryManager.GetCountryInfo(code);
         }
 
@@ -30,8 +26,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static Country ToCountry(this CountryCode code)
-        {
+        public static Country ToCountry(this CountryCode code) {
             return CountryManager.GetCountryEnum(code);
         }
 
@@ -40,8 +35,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static CountryCode ToCode(this Country country)
-        {
+        public static CountryCode ToCode(this Country country) {
             return CountryManager.GetCountryCode(country);
         }
 
@@ -50,8 +44,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static string ToCodeString(this CountryCode code)
-        {
+        public static string ToCodeString(this CountryCode code) {
             return EnumsNET.Enums.GetName(code);
         }
 
@@ -60,8 +53,7 @@ namespace Cosmos.I18N.Countries
         /// </summary>
         /// <param name="country"></param>
         /// <returns></returns>
-        public static string ToCodeString(this Country country)
-        {
+        public static string ToCodeString(this Country country) {
             return country.ToCode().ToCodeString();
         }
 

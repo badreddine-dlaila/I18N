@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Asia
-{
+namespace Cosmos.I18N.Countries.Asia {
     /// <summary>
     /// 印度（Republic of India，亚洲，IN，IND，356），印度共和国 <br />
     /// Cosmos i18n code: i18n_country_yindu
     /// </summary>
-    public static class India
-    {
+    public static class India {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static India()
-        {
-            _country = new CountryInfo
-            {
+        static India() {
+            _country = new CountryInfo {
                 Country = Country.India,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.India,

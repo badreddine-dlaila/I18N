@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 波兰（The Republic Of Poland，欧洲，PL，POL，61），波兰共和国 <br />
     /// Cosmos i18n code: i18n_country_bolan
     /// </summary>
-    public static class Poland
-    {
+    public static class Poland {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Poland()
-        {
-            _country = new CountryInfo
-            {
+        static Poland() {
+            _country = new CountryInfo {
                 Country = Country.Poland,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Poland,

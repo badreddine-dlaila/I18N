@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using Cosmos.I18N.Languages;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translation manager
     /// </summary>
-    public class TranslationManager : ITranslationManager, ITranslationManSetter
-    {
+    public class TranslationManager : ITranslationManager, ITranslationManSetter {
         private readonly Dictionary<int, ITranslatePackage> _translatePackages;
         private static readonly int _hashOfAnonymousPackageKey = ANONYMOUS_PACKAGE_KEY.GetHashCode();
         private readonly object _translateLockObj = new object();
@@ -32,10 +30,8 @@ namespace Cosmos.I18N.Translation
         /// <summary>
         /// Create a new instance of <see cref="TranslationManager"/>
         /// </summary>
-        public TranslationManager()
-        {
-            _translatePackages = new Dictionary<int, ITranslatePackage>
-            {
+        public TranslationManager() {
+            _translatePackages = new Dictionary<int, ITranslatePackage> {
                 {_hashOfAnonymousPackageKey, new TranslatePackage(ANONYMOUS_PACKAGE_KEY, FallbackExperimenter.Default)}
             };
         }
@@ -56,8 +52,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="packageKey"></param>
         /// <returns></returns>
-        public bool Contains(string packageKey)
-        {
+        public bool Contains(string packageKey) {
             // ReSharper disable once InconsistentlySynchronizedField
             return !string.IsNullOrWhiteSpace(packageKey) && _translatePackages.ContainsKey(packageKey.GetHashCode());
         }
@@ -70,13 +65,11 @@ namespace Cosmos.I18N.Translation
         /// Register translation package
         /// </summary>
         /// <param name="translatePackage"></param>
-        void ITranslationManSetter.RegisterPackage(ITranslatePackage translatePackage)
-        {
+        void ITranslationManSetter.RegisterPackage(ITranslatePackage translatePackage) {
             if (translatePackage == null)
                 return;
 
-            if (translatePackage.IsAnonymous)
-            {
+            if (translatePackage.IsAnonymous) {
                 var left = _translatePackages[_hashOfAnonymousPackageKey];
                 var right = translatePackage;
                 TranslatePackageMerger.Merge(left, right, MergeLevel.Level_2);
@@ -86,8 +79,7 @@ namespace Cosmos.I18N.Translation
             if (Contains(translatePackage.PackageKey))
                 return;
 
-            lock (_translateLockObj)
-            {
+            lock (_translateLockObj) {
                 if (Contains(translatePackage.PackageKey))
                     return;
 
@@ -99,8 +91,7 @@ namespace Cosmos.I18N.Translation
         /// Register translation packages
         /// </summary>
         /// <param name="translatePackages"></param>
-        void ITranslationManSetter.RegisterPackages(IEnumerable<ITranslatePackage> translatePackages)
-        {
+        void ITranslationManSetter.RegisterPackages(IEnumerable<ITranslatePackage> translatePackages) {
             if (translatePackages == null)
                 return;
 
@@ -119,8 +110,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="packageKey"></param>
         /// <returns></returns>
-        public ITranslatePackage GetPackage(string packageKey)
-        {
+        public ITranslatePackage GetPackage(string packageKey) {
             if (string.IsNullOrWhiteSpace(packageKey))
                 return default;
             return _translatePackages.TryGetValue(packageKey.GetHashCode(), out var package) ? package : default;
@@ -130,8 +120,7 @@ namespace Cosmos.I18N.Translation
         /// Get anonymous translation package
         /// </summary>
         /// <returns></returns>
-        public ITranslatePackage GetAnonymousPackage()
-        {
+        public ITranslatePackage GetAnonymousPackage() {
             return _translatePackages[_hashOfAnonymousPackageKey];
         }
 
@@ -144,8 +133,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="packageKey"></param>
         /// <param name="translateResource"></param>
-        void ITranslationManSetter.RegisterResource(string packageKey, ITranslateResource translateResource)
-        {
+        void ITranslationManSetter.RegisterResource(string packageKey, ITranslateResource translateResource) {
             if (string.IsNullOrWhiteSpace(packageKey))
                 return;
 
@@ -165,8 +153,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="packageKey"></param>
         /// <param name="translateResources"></param>
-        void ITranslationManSetter.RegisterResources(string packageKey, IEnumerable<ITranslateResource> translateResources)
-        {
+        void ITranslationManSetter.RegisterResources(string packageKey, IEnumerable<ITranslateResource> translateResources) {
             if (string.IsNullOrWhiteSpace(packageKey))
                 return;
 
@@ -191,8 +178,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public ITranslateResource GetResource(string packageKey, string languageTag)
-        {
+        public ITranslateResource GetResource(string packageKey, string languageTag) {
             return GetPackage(packageKey)?.GetResource(languageTag);
         }
 
@@ -202,8 +188,7 @@ namespace Cosmos.I18N.Translation
         /// <param name="packageKey"></param>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public ITranslateResource GetResource(string packageKey, LanguageTag languageTag)
-        {
+        public ITranslateResource GetResource(string packageKey, LanguageTag languageTag) {
             return GetPackage(packageKey)?.GetResource(languageTag);
         }
 
@@ -212,8 +197,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public ITranslateResource GetAnonymousResource(string languageTag)
-        {
+        public ITranslateResource GetAnonymousResource(string languageTag) {
             return GetAnonymousPackage()?.GetResource(languageTag);
         }
 
@@ -222,8 +206,7 @@ namespace Cosmos.I18N.Translation
         /// </summary>
         /// <param name="languageTag"></param>
         /// <returns></returns>
-        public ITranslateResource GetAnonymousResource(LanguageTag languageTag)
-        {
+        public ITranslateResource GetAnonymousResource(LanguageTag languageTag) {
             return GetAnonymousPackage()?.GetResource(languageTag);
         }
 

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 意大利（The Republic of Italy，欧洲，IT，ITA，380），意大利共和国 <br />
     /// Cosmos i18n code: i18n_country_yidali
     /// </summary>
-    public static class Italy
-    {
+    public static class Italy {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Italy()
-        {
-            _country = new CountryInfo
-            {
+        static Italy() {
+            _country = new CountryInfo {
                 Country = Country.Italy,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Italy,

@@ -1,12 +1,10 @@
 using Cosmos.I18N.Core;
 
-namespace Cosmos.I18N.Countries
-{
+namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Country
     /// </summary>
-    public enum Country
-    {
+    public enum Country {
         /// <summary>
         /// 安道尔（Andorra，欧洲，AD，AND，020），安道尔共和国 <br />
         /// Cosmos i18n code: i18n_country_andaoer

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 墨西哥（The United Mexican States，北美洲，MX，MEX，484），墨西哥合众国 <br />
     /// Cosmos i18n code: i18n_country_moxige
     /// </summary>
-    public static class Mexico
-    {
+    public static class Mexico {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Mexico()
-        {
-            _country = new CountryInfo
-            {
+        static Mexico() {
+            _country = new CountryInfo {
                 Country = Country.Mexico,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Mexico,

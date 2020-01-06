@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Oceania
-{
+namespace Cosmos.I18N.Countries.Oceania {
     /// <summary>
     /// 马绍尔群岛（The Republic of Marshall Islands，大洋洲，MH，MHL，584），马绍尔群岛共和国 <br />
     /// Cosmos i18n code: i18n_country_mashaoer
     /// </summary>
-    public static class MarshallIslands
-    {
+    public static class MarshallIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static MarshallIslands()
-        {
-            _country = new CountryInfo
-            {
+        static MarshallIslands() {
+            _country = new CountryInfo {
                 Country = Country.MarshallIslands,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.MarshallIslands,

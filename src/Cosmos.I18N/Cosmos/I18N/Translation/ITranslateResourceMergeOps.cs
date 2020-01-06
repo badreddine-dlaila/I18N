@@ -1,25 +1,23 @@
 using System.Collections.Generic;
 
-namespace Cosmos.I18N.Translation
-{
+namespace Cosmos.I18N.Translation {
     /// <summary>
     /// Translate resource merge ops
     /// </summary>
-    public interface ITranslateResourceMergeOps
-    {
+    public interface ITranslateResourceMergeOps {
         /// <summary>
         /// Expose library of translation resource
         /// </summary>
         /// <returns></returns>
         IEnumerable<KeyValuePair<int, string>> ExposeLibrary();
-        
+
         /// <summary>
         /// Merge translate resource
         /// </summary>
         /// <param name="resourceKey"></param>
         /// <param name="resourceTargetValue"></param>
         void Merge(string resourceKey, string resourceTargetValue);
-        
+
         /// <summary>
         /// Merge translate resource
         /// </summary>

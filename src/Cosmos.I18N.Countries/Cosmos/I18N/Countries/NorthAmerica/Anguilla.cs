@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 安圭拉（Anguilla，北美洲，AI，AIA，660），英国海外领土 <br />
     /// Cosmos i18n code: i18n_country_anguila
     /// </summary>
-    public static class Anguilla
-    {
+    public static class Anguilla {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Anguilla()
-        {
-            _country = new CountryInfo
-            {
+        static Anguilla() {
+            _country = new CountryInfo {
                 Country = Country.Anguilla,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.UnitedKingdom,

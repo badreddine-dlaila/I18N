@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Europe
-{
+namespace Cosmos.I18N.Countries.Europe {
     /// <summary>
     /// 奥兰群岛（Aland Island，欧洲，AX，ALA，248），奥兰自治省 <br />
     /// Cosmos i18n code: i18n_country_aolanqundao
     /// </summary>
-    public static class AlandIslands
-    {
+    public static class AlandIslands {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static AlandIslands()
-        {
-            _country = new CountryInfo
-            {
+        static AlandIslands() {
+            _country = new CountryInfo {
                 Country = Country.AlandIslands,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.Finland,

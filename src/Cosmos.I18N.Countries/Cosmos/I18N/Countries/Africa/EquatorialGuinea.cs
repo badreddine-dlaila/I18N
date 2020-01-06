@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 赤道几内亚（The Republic of Equatorial Guinea，非洲，GQ，GNQ，226），赤道几内亚共和国 <br />
     /// Cosmos i18n code: i18n_country_chidaojineiya
     /// </summary>
-    public static class EquatorialGuinea
-    {
+    public static class EquatorialGuinea {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static EquatorialGuinea()
-        {
-            _country = new CountryInfo
-            {
+        static EquatorialGuinea() {
+            _country = new CountryInfo {
                 Country = Country.EquatorialGuinea,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.EquatorialGuinea,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 海地（The Republic of Haiti，北美洲，HT，HTI，332），海地共和国 <br />
     /// Cosmos i18n code: i18n_country_haidi
     /// </summary>
-    public static class Haiti
-    {
+    public static class Haiti {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Haiti()
-        {
-            _country = new CountryInfo
-            {
+        static Haiti() {
+            _country = new CountryInfo {
                 Country = Country.Haiti,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.Haiti,

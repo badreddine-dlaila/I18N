@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.NorthAmerica
-{
+namespace Cosmos.I18N.Countries.NorthAmerica {
     /// <summary>
     /// 美国（United States of America，北美洲，US，USA，840），美利坚合众国 <br />
     /// Cosmos i18n code: i18n_country_meiguo
     /// </summary>
-    public static class UnitedStates
-    {
+    public static class UnitedStates {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static UnitedStates()
-        {
-            _country = new CountryInfo
-            {
+        static UnitedStates() {
+            _country = new CountryInfo {
                 Country = Country.UnitedStates,
                 CountryType = CountryType.Country,
                 BeongsToCountry = Country.UnitedStates,

@@ -1,18 +1,14 @@
-namespace Cosmos.I18N.Countries.Africa
-{
+namespace Cosmos.I18N.Countries.Africa {
     /// <summary>
     /// 留尼汪（Reunion Island，非洲，RE，REU，638），留尼旺岛 <br />
     /// Cosmos i18n code: i18n_country_liuniwang
     /// </summary>
-    public static class Réunion
-    {
+    public static class Réunion {
         // ReSharper disable once InconsistentNaming
         private static readonly CountryInfo _country;
 
-        static Réunion()
-        {
-            _country = new CountryInfo
-            {
+        static Réunion() {
+            _country = new CountryInfo {
                 Country = Country.Réunion,
                 CountryType = CountryType.Region,
                 BeongsToCountry = Country.France,
