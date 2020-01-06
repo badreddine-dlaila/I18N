@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Extensions.Console</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.DoneExtensions">
+            <summary>
+            Extensions for done
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.DoneExtensions.AllDone(Cosmos.I18N.Core.II18NServiceCollection)">
+            <summary>
+            ALl done
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider">
+            <summary>
+            Console language service provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.GetTranslationPackage">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.GetTranslationPackage(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.GetTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.GetTranslationProcessor">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection">
+            <summary>
+            I18N service collection
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Cosmos.I18N.Configurations.I18NOptions)">
+            <summary>
+            I18N service collection
+            </summary>
+            <param name="services"></param>
+            <param name="options"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AppendOptionsAction(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AddDependency(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.Build">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.BeforeBuild(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AfterBuild(System.Action{System.IServiceProvider})">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.ExposeOptions">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.ExposeTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.Console.CosmosLocalization">
+            <summary>
+            Cosmos localization helper
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.CosmosLocalization.Initialize">
+            <summary>
+            Initialize
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.Console.GlobalConfigurationExtensions">
+            <summary>
+            Global configuration extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Console.GlobalConfigurationExtensions.ToGlobal(Cosmos.I18N.Core.II18NServiceCollection,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Options to global
+            </summary>
+            <param name="services"></param>
+            <param name="optionsAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

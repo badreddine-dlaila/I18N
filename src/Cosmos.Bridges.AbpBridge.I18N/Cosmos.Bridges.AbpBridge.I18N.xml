@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Bridges.AbpBridge.I18N</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.Bridges.AbpBridge.I18N.AbpFormatResource">
+            <summary>
+            AbpFx format resource
+            </summary>
+        </member>
+        <member name="P:Cosmos.Bridges.AbpBridge.I18N.AbpFormatResource.Culture">
+            <summary>
+            Gets or sets Culture name; eg : en , en-us, zh-CN
+            </summary>
+        </member>
+        <member name="P:Cosmos.Bridges.AbpBridge.I18N.AbpFormatResource.Texts">
+            <summary>
+            Texts
+            </summary>
+        </member>
+        <member name="T:Cosmos.Bridges.AbpBridge.I18N.JsonLocalizationFileExtensions">
+            <summary>
+            Extensions for AbpFx JsonLocalizationFile
+            </summary>
+        </member>
+        <member name="M:Cosmos.Bridges.AbpBridge.I18N.JsonLocalizationFileExtensions.SpeakInCosmos(Volo.Abp.Localization.Json.JsonLocalizationFile)">
+            <summary>
+            Make AbpFx Json Localization file speak in Cosmos.I18N way.
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.Bridges.AbpBridge.I18N.JsonLocalizationFileExtensions.SpeakInCosmos(Cosmos.Bridges.AbpBridge.I18N.AbpFormatResource)">
+            <summary>
+            Make AbpFx Json Localization file speak in Cosmos.I18N way.
+            </summary>
+            <param name="resource"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter">
+            <summary>
+            Abp Json file adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.#ctor(System.String)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter"/>
+            </summary>
+            <param name="path"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.Path">
+            <summary>
+            Path
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.Process">
+            <summary>
+            Process
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.ProcessAsync">
+            <summary>
+            Process async
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.Speak">
+            <summary>
+            Speak
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFileAdapter.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Json.AbpJsonFormattingAdapterExtensions">
+            <summary>
+            Json formatting adapter for AbpFx
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Json.AbpJsonFormattingAdapterExtensions.AddAbpResourceFrom(Cosmos.I18N.Core.II18NServiceCollection,System.String)">
+            <summary>
+            Add AbpFx Resource
+            </summary>
+            <param name="services"></param>
+            <param name="virtualPath"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

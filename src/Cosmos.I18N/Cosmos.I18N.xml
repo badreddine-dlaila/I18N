@@ -4,6 +4,98 @@
         <name>Cosmos.I18N</name>
     </assembly>
     <members>
+        <member name="T:Cosmos.I18N.Adapters.Formats.ISpeakAsCustomDialect">
+            <summary>
+            Speak as custom dialect interface
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Formats.ISpeakAsJson`1">
+            <summary>
+            Speak as json interface
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Formats.ISpeakAsJson`1.Speak">
+            <summary>
+            Speak
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Formats.ISpeakAsLinedText">
+            <summary>
+            Speak as lined text interface
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Formats.ISpeakAsXml`1">
+            <summary>
+            Speak as xml interface
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Formats.ISpeakAsXml`1.Speak">
+            <summary>
+            Speak
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IAdapterProcess">
+            <summary>
+            Adapter process interface
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.IAdapterProcess.Process">
+            <summary>
+            Process
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.IAdapterProcess.ProcessAsync">
+            <summary>
+            Process async
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IContentAdapter`1">
+            <summary>
+            Content adapter interface
+            </summary>
+            <typeparam name="TContentFormatting"></typeparam>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.IContentAdapter`1.OriginalContent">
+            <summary>
+            Original content
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.ICsvAdapter">
+            <summary>
+            Csv adapter interface
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IDataAdapter">
+            <summary>
+            Data adapter interface
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IFileAdapter">
+            <summary>
+            File adapter interface
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.IFileAdapter.Path">
+            <summary>
+            Gets path
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IRemoteCallingAdapter">
+            <summary>
+            Remote calling adapter interface
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.IResourceAdapter">
+            <summary>
+            Resource adapter interface
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Configurations.I18NOptions">
             <summary>
             Cosmos i18n options
@@ -726,6 +818,18 @@
             <summary>
             LanguageTag Cache manager
             </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Languages.LanguageTagChecker">
+            <summary>
+            Language tag checker
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Languages.LanguageTagChecker.IsValid(System.String)">
+            <summary>
+            Is valid
+            </summary>
+            <param name="languageTag"></param>
+            <returns></returns>
         </member>
         <member name="T:Cosmos.I18N.Languages.LanguageTagManager">
             <summary>

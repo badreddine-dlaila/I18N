@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F5D42EBE
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
 		build\version.props = build\version.props
+		build\package.props = build\package.props
+		build\misc.props = build\misc.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Tests", "tests\Cosmos.I18N.Tests\Cosmos.I18N.Tests.csproj", "{D2D3AC65-B202-4ADC-B925-FA107B9CE3AB}"
@@ -46,6 +48,18 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridges", "Bridges", "{691F123F-69C3-4459-9D8C-73EA15BE3957}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Bridges.AbpBridge.I18N", "src\Cosmos.Bridges.AbpBridge.I18N\Cosmos.Bridges.AbpBridge.I18N.csproj", "{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderers", "Renderers", "{47668EF9-AAD0-4869-B1AE-87F92D792B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Extensions.Handlebars", "src\Cosmos.I18N.Extensions.Handlebars\Cosmos.I18N.Extensions.Handlebars.csproj", "{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Extensions.Autofac", "src\Cosmos.I18N.Extensions.Autofac\Cosmos.I18N.Extensions.Autofac.csproj", "{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Tests.HandlebarsTest", "tests\Cosmos.I18N.Tests.HandlebarsTest\Cosmos.I18N.Tests.HandlebarsTest.csproj", "{33711163-1BCD-44C7-AF14-89A5C058D499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Extensions.AspNetCore.TagHelpers", "src\Cosmos.I18N.Extensions.AspNetCore.TagHelpers\Cosmos.I18N.Extensions.AspNetCore.TagHelpers.csproj", "{B1D04AB0-106D-48E3-989F-79A548B6CC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.I18N.Adapters.Yaml", "src\Cosmos.I18N.Adapters.Yaml\Cosmos.I18N.Adapters.Yaml.csproj", "{29F8130E-39FE-4269-8A36-84B026F96380}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +107,26 @@ Global
 		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33711163-1BCD-44C7-AF14-89A5C058D499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33711163-1BCD-44C7-AF14-89A5C058D499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33711163-1BCD-44C7-AF14-89A5C058D499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33711163-1BCD-44C7-AF14-89A5C058D499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D04AB0-106D-48E3-989F-79A548B6CC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D04AB0-106D-48E3-989F-79A548B6CC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D04AB0-106D-48E3-989F-79A548B6CC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D04AB0-106D-48E3-989F-79A548B6CC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F8130E-39FE-4269-8A36-84B026F96380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F8130E-39FE-4269-8A36-84B026F96380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F8130E-39FE-4269-8A36-84B026F96380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F8130E-39FE-4269-8A36-84B026F96380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +146,12 @@ Global
 		{3D541B57-5DB1-47F6-8AFA-A6A93B06115E} = {1AE7F370-6A21-4183-8ECA-610EF191BEC3}
 		{691F123F-69C3-4459-9D8C-73EA15BE3957} = {433A7648-49A2-4200-BF02-B59998B987A3}
 		{9F513A16-B9BC-4AA3-89D4-95FBE993A5E9} = {691F123F-69C3-4459-9D8C-73EA15BE3957}
+		{47668EF9-AAD0-4869-B1AE-87F92D792B13} = {433A7648-49A2-4200-BF02-B59998B987A3}
+		{EC12729D-E66E-4BCE-B2CB-4AA245AE60AC} = {47668EF9-AAD0-4869-B1AE-87F92D792B13}
+		{0DDE6CD5-0BE5-4ED9-8A1B-A2B24A063ED3} = {1AE7F370-6A21-4183-8ECA-610EF191BEC3}
+		{33711163-1BCD-44C7-AF14-89A5C058D499} = {3D96F661-F0F3-4CA9-9066-0B1A752584B1}
+		{B1D04AB0-106D-48E3-989F-79A548B6CC62} = {47668EF9-AAD0-4869-B1AE-87F92D792B13}
+		{29F8130E-39FE-4269-8A36-84B026F96380} = {C0CF1732-E917-4FC6-8CDD-6E972DE0B04F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B9488C4-C201-471B-A20A-A376048032AD}

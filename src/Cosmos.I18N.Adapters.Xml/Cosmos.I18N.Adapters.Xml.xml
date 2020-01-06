@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Adapters.Xml</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.Adapters.Xml.AnonymousXmlContentAdapter">
+            <summary>
+            Anonymous xml content adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.AnonymousXmlContentAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.AnonymousXmlFileAdapter">
+            <summary>
+            Anonymous xml file adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.AnonymousXmlFileAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1">
+            <summary>
+            Base content adapter for Xml adapter
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.OriginalContent">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.SpeakCache">
+            <summary>
+            Speak cache
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.Process">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.ProcessAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.Speak">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseContentAdapter`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1">
+            <summary>
+            Base file adapter for Xml adapter
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.Path">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.SpeakCache">
+            <summary>
+            Speak cache
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.Process">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.ProcessAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.Speak">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.Core.BaseFileAdapter`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.XmlContentAdapter">
+            <summary>
+            Xml content adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlContentAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.XmlFileAdapter">
+            <summary>
+            Xml file adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlFileAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Xml.XmlFormattingAdapterExtensions">
+            <summary>
+            Extensions for xml formatting adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlFormattingAdapterExtensions.AddXmlAnonymousResourceFrom(Cosmos.I18N.Core.II18NServiceCollection,System.String,System.Boolean)">
+            <summary>
+            Add xml format anonymous resource from path...
+            </summary>
+            <param name="services"></param>
+            <param name="path"></param>
+            <param name="referenceToBasePath"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlFormattingAdapterExtensions.AddXmlAnonymousResource(Cosmos.I18N.Core.II18NServiceCollection,System.String)">
+            <summary>
+            Add xml format anonymous resource
+            </summary>
+            <param name="services"></param>
+            <param name="originContext"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlFormattingAdapterExtensions.AddXmlResourceFrom(Cosmos.I18N.Core.II18NServiceCollection,System.String,System.Boolean)">
+            <summary>
+            Add xml format resource from path...
+            </summary>
+            <param name="services"></param>
+            <param name="path"></param>
+            <param name="referenceToBasePath"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Xml.XmlFormattingAdapterExtensions.AddXmlResource(Cosmos.I18N.Core.II18NServiceCollection,System.String)">
+            <summary>
+            Add xml format resource
+            </summary>
+            <param name="services"></param>
+            <param name="originContext"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Extensions.Autofac</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.AutofacRegisterExtensions">
+            <summary>
+            Extensions for Autofac register
+            </summary>
+        </member>
+        <member name="M:Cosmos.AutofacRegisterExtensions.RegisterCosmosLocalization(Autofac.ContainerBuilder,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Register Cosmos.I18N for autofac
+            </summary>
+            <param name="services"></param>
+            <param name="optionAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider">
+            <summary>
+            Autofac language service provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationProcessor">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

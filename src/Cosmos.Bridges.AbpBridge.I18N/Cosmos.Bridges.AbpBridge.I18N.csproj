@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\build\common.ns20.props" />
+    <Import Project="..\..\build\common.props" />
 
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>netcoreapp3.1;netstandard2.1;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -11,17 +11,9 @@
         <PackageId>Cosmos.Bridges.AbpBridge.I18N</PackageId>
         <Description>Bridge between Cosmos.I18N and AbpFramework.Localization.</Description>
     </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-        <DocumentationFile>Cosmos.Bridges.AbpBridge.I18N.xml</DocumentationFile>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-        <DocumentationFile>Cosmos.Bridges.AbpBridge.I18N.xml</DocumentationFile>
-    </PropertyGroup>
     
     <ItemGroup>
-      <PackageReference Include="Volo.Abp.Localization" Version="1.0.2" />
+      <PackageReference Include="Volo.Abp.Localization" Version="1.1.2" />
     </ItemGroup>
 
     <ItemGroup>

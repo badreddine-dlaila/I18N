@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Extensions.DependencyInjection</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider">
+            <summary>
+            Msdi language service provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationPackage">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationPackage(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationProcessor">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions">
+            <summary>
+            Extensions for service collection
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddCosmosLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Add Cosmos.I18N
+            </summary>
+            <param name="services"></param>
+            <param name="optionAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

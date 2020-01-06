@@ -10,12 +10,16 @@ for /R "nuget_pub" %%s in (*) do (
     del %%s
 )
 
-dotnet pack src/Cosmos.I18N.Abstractions -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.I18N.Countries -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.I18N -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.I18N.Adapters.Json -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.I18N.Adapters.Xml -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.I18N.Extensions.Console -c Release -o ../../nuget_pub
+dotnet pack src/Cosmos.I18N.Abstractions -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Countries -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Adapters.Json -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Adapters.Xml -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.Console -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.Autofac -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.DependencyInjection -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.Handlebars -c Release -o nuget_pub
+dotnet pack src/Cosmos.Bridges.AbpBridge.I18N -c Release -o nuget_pub
 
 for /R "nuget_pub" %%s in (*symbols.nupkg) do (
     del %%s
