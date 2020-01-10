@@ -11,16 +11,16 @@ namespace Cosmos.I18N.Handlebars {
     /// <summary>
     /// Translate helper register
     /// </summary>
-    public static class TranslateHelperRegister {
+    public static class AnonymousHelperRegister {
         /// <summary>
-        /// I18N translate helper Register
+        /// Anonymous helper Register
         /// </summary>
         /// <param name="writer"></param>
         /// <param name="context"></param>
         /// <param name="arguments"></param>
         public static void Register(TextWriter writer, object context, params object[] arguments) {
             var textProvider = StaticInstanceForTextProvider.Instance;
-            var (originalText, packageKey, languageTag) = GetMetadata(arguments);
+            var (originalText, languageTag) = GetMetadata(arguments);
 
             var members = context.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
 
@@ -30,56 +30,37 @@ namespace Cosmos.I18N.Handlebars {
                 select context.GetPropertyValue(property.Name)
             ).ToArray();
 
-            var text = textProvider.Create(originalText, packageKey, languageTag, parameters);
+            var text = textProvider.Anonymous(originalText, languageTag, parameters);
 
             writer.WriteSafeString(text);
         }
 
         [SuppressMessage("ReSharper", "InconsistentNaming")]
-        private static (string OriginalText, string PackageKey, string LanguageTag) GetMetadata(object[] arguments) {
+        private static (string OriginalText, string LanguageTag) GetMetadata(object[] arguments) {
             var length = arguments.Length;
-            string o, p, l;
+            string o, l;
             if (length == 0) {
                 o = null;
-                p = null;
                 l = null;
             } else if (length == 1) {
                 o = GetOriginalText(arguments);
-                p = null;
                 l = null;
-            } else if (length == 2) {
+            } else {
+                // length >= 2
                 o = GetOriginalText(arguments);
                 var a1 = arguments[1] as string;
                 if (LanguageTagCheckingCache.IsValid(a1)) {
-                    p = TranslationManager.ANONYMOUS_PACKAGE_KEY;
                     l = a1;
                 } else {
-                    p = a1;
                     l = null;
                 }
-            } else {
-                // length >= 3
-                o = GetOriginalText(arguments);
-                p = GetPackageKey(arguments);
-                l = GetLanguageTag(arguments);
             }
 
-            return (o, p, l);
+            return (o, l);
 
             string GetOriginalText(object[] _arguments, int expectIndex = 0) {
                 if (_arguments is null)
                     return null;
-                return GetExpectArg(_arguments, expectIndex);
-            }
-
-            string GetPackageKey(object[] _arguments, int expectIndex = 1) {
-                string packageKey = GetExpectArg(_arguments, expectIndex);
-                if (string.IsNullOrWhiteSpace(packageKey))
-                    packageKey = TranslationManager.ANONYMOUS_PACKAGE_KEY;
-                return packageKey;
-            }
-
-            string GetLanguageTag(object[] _arguments, int expectIndex = 2) {
                 return GetExpectArg(_arguments, expectIndex);
             }
 
@@ -91,5 +72,6 @@ namespace Cosmos.I18N.Handlebars {
                 return null;
             }
         }
+
     }
 }

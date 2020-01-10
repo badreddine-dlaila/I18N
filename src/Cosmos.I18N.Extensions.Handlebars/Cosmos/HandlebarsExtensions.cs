@@ -13,10 +13,10 @@ namespace Cosmos {
         /// <param name="services"></param>
         /// <returns></returns>
         public static II18NServiceCollection AddHandlebars(this II18NServiceCollection services) {
+            Handlebars.RegisterHelper("A", AnonymousHelperRegister.Register);
             Handlebars.RegisterHelper("T", TranslateHelperRegister.Register);
 
             return services;
         }
     }
 }
-
