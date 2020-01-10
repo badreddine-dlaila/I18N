@@ -15,9 +15,11 @@ dotnet pack src/Cosmos.I18N.Countries -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N.Adapters.Json -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N.Adapters.Xml -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.Host -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.AspNetCore -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N.Extensions.Console -c Release -o nuget_pub
-dotnet pack src/Cosmos.I18N.Extensions.Autofac -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N.Extensions.DependencyInjection -c Release -o nuget_pub
+dotnet pack src/Cosmos.I18N.Extensions.Autofac -c Release -o nuget_pub
 dotnet pack src/Cosmos.I18N.Extensions.Handlebars -c Release -o nuget_pub
 dotnet pack src/Cosmos.Bridges.AbpBridge.I18N -c Release -o nuget_pub
 
