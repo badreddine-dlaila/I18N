@@ -32,10 +32,8 @@ namespace Cosmos.I18N.Extensions.Console.Core {
                     s.AddSingleton(provider => new TranslationProcessor(provider.GetServices<ITranslatePackage>().ToDictionary(package => package.PackageKey.GetHashCode())));
                 });
 
-
+                SetResolver(serviceImpl.Build());
             }
-
-            SetResolver(services.Build());
         }
 
         public static IServiceProvider GetServiceResolver() => ServiceResolver ?? throw new NullReferenceException(nameof(ServiceResolver));

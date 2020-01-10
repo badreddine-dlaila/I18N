@@ -31,23 +31,5 @@ namespace Cosmos.I18N.Core {
         /// <param name="servicesAction"></param>
         /// <returns></returns>
         II18NServiceCollection AddDependency(Action<IServiceCollection> servicesAction);
-
-        /// <summary>
-        /// Build
-        /// </summary>
-        /// <returns></returns>
-        IServiceProvider Build();
-
-        /// <summary>
-        /// Before build
-        /// </summary>
-        /// <param name="serviceAct"></param>
-        void BeforeBuild(Action<IServiceCollection> serviceAct);
-
-        /// <summary>
-        /// After build
-        /// </summary>
-        /// <param name="providerAct"></param>
-        void AfterBuild(Action<IServiceProvider> providerAct);
     }
 }
