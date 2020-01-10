@@ -6,12 +6,16 @@ namespace Cosmos.I18N.Extensions.DependencyInjection {
     /// <summary>
     /// Msdi language service provider
     /// </summary>
-    public class MsdiLanguageServiceProvider : ILanguageServiceProvider {
+    public class StandardLanguageServiceProvider : ILanguageServiceProvider {
         private readonly ITranslationManager _translationManager;
         private readonly TranslationProcessor _translationProcessor;
 
-        /// <inheritdoc />
-        public MsdiLanguageServiceProvider(ITranslationManager manager, TranslationProcessor processor) {
+        /// <summary>
+        /// Create a new instance of <see cref="StandardLanguageServiceProvider"/>.
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <param name="processor"></param>
+        public StandardLanguageServiceProvider(ITranslationManager manager, TranslationProcessor processor) {
             _translationManager = manager ?? throw new ArgumentNullException(nameof(manager));
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
         }
