@@ -24,7 +24,7 @@ namespace Cosmos.I18N.Extensions.Console.Core {
         /// <param name="options"></param>
         public I18NServiceCollection(IServiceCollection services = null, I18NOptions options = null) {
             _services = services ?? new ServiceCollection();
-            _options = options ?? new I18NOptions();
+            _options = I18NOptions.Create(options);
             _translationManager = new TranslationManager();
 
             AfterBuild(UpdateStaticResolver);
@@ -50,7 +50,11 @@ namespace Cosmos.I18N.Extensions.Console.Core {
             return this;
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Build
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         public IServiceProvider Build() {
             if (_hasBuild) {
                 throw new InvalidOperationException("Only can be built once.");

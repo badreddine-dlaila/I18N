@@ -28,7 +28,7 @@ namespace Cosmos {
             optionAct?.Invoke(options);
 
             var translationManager = new TranslationManager();
-            var translationSetter = translationManager as ITranslationManSetter;
+            var translationSetter = (ITranslationManSetter) translationManager;
 
             foreach (var package in options.TranslationPackages) {
                 var translationPackage = package.Value;

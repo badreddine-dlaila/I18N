@@ -60,8 +60,7 @@ namespace Cosmos.I18N.Configurations {
                 if (__translationPackages.TryGetValue(hashOfPackageKey, out var packageInstance)) {
                     var template = TranslatePackageMerger.Merge(packageInstance, package, level, customMergeProvider);
                     __translationPackages[hashOfPackageKey] = template;
-                }
-                else {
+                } else {
                     AddPackageInternal(package);
                 }
             }
@@ -108,14 +107,12 @@ namespace Cosmos.I18N.Configurations {
                 if (TryRegisterLanguageTagOnce(resource.Binding)) {
                     if (__translationPackages.TryGetValue(hashOfPackageKey, out var package)) {
                         package.AddResource(resource);
-                    }
-                    else {
+                    } else {
                         var future = new TranslatePackage(packageKey, _fallbackExperimenter);
                         future.AddResource(resource);
                         AddPackageInternal(future);
                     }
-                }
-                else {
+                } else {
                     throw new InvalidOperationException($"Something broken when add new resource '{resource.Name}'.");
                 }
             }
@@ -271,5 +268,24 @@ namespace Cosmos.I18N.Configurations {
 
         #endregion
 
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="optionAct"></param>
+        /// <returns></returns>
+        public static I18NOptions Create(Action<I18NOptions> optionAct = null) {
+            var options = new I18NOptions();
+            optionAct?.Invoke(options);
+            return options;
+        }
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns></returns>
+        public static I18NOptions Create(I18NOptions options) {
+            return options ?? new I18NOptions();
+        }
     }
 }

@@ -15,8 +15,10 @@ namespace Cosmos.I18N.Extensions.Console {
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static II18NServiceCollection ToGlobal(this II18NServiceCollection services, Action<I18NOptions> optionsAct) {
-            if (services == null) throw new ArgumentNullException(nameof(services));
-            if (optionsAct == null) throw new ArgumentNullException(nameof(optionsAct));
+            if (services is null)
+                throw new ArgumentNullException(nameof(services));
+            if (optionsAct is null)
+                throw new ArgumentNullException(nameof(optionsAct));
 
             services.AppendOptionsAction(optionsAct);
 

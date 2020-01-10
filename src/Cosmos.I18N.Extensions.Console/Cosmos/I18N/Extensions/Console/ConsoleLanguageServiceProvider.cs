@@ -11,7 +11,11 @@ namespace Cosmos.I18N.Extensions.Console {
 
         private readonly TranslationProcessor _translationProcessor;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Create a new instance of <see cref="ConsoleLanguageServiceProvider"/>.
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <param name="processor"></param>
         public ConsoleLanguageServiceProvider(ITranslationManager manager, TranslationProcessor processor) {
             _translationManager = manager ?? throw new ArgumentNullException(nameof(manager));
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
