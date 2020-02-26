@@ -17,7 +17,7 @@ namespace Cosmos.I18N.Adapters.Xml {
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static II18NServiceCollection AddXmlAnonymousResourceFrom(this II18NServiceCollection services, string path = "Anonymous.*", bool referenceToBasePath = true) {
-            if (services == null)
+            if (services is null)
                 throw new ArgumentNullException(nameof(services));
 
             if (string.IsNullOrWhiteSpace(path))
@@ -61,7 +61,7 @@ namespace Cosmos.I18N.Adapters.Xml {
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static II18NServiceCollection AddXmlAnonymousResource(this II18NServiceCollection services, string originContext) {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services is null) throw new ArgumentNullException(nameof(services));
             if (string.IsNullOrWhiteSpace(originContext)) throw new ArgumentNullException(nameof(originContext));
 
             using (var adapter = new AnonymousXmlContentAdapter(originContext)) {

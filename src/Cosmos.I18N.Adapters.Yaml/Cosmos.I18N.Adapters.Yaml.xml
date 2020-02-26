@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Adapters.Yaml</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.AnonymousYamlContentAdapter">
+            <summary>
+            Anonymous Yaml content adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.AnonymousYamlContentAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.AnonymousYamlFileAdapter">
+            <summary>
+            Anonymous json file adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.AnonymousYamlFileAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1">
+            <summary>
+            Base content adapter for Yaml adapter
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.OriginalContent">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.SpeakCache">
+            <summary>
+            Speak cache
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.Process">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.ProcessAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.Speak">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseContentAdapter`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1">
+            <summary>
+            Base file adapter for Yaml adapter
+            </summary>
+            <typeparam name="TTemplate"></typeparam>
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.Path">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.SpeakCache">
+            <summary>
+            Speak cache
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.Process">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.ProcessAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.Speak">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.Core.BaseFileAdapter`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.YamlContentAdapter">
+            <summary>
+            Yaml content adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlContentAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.YamlFileAdapter">
+            <summary>
+            Yaml file adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlFileAdapter.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Adapters.Yaml.YamlFormattingAdapterExtensions">
+            <summary>
+            Extensions for Yaml formatting adapter
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlFormattingAdapterExtensions.AddYamlAnonymousResourceFrom(Cosmos.I18N.Core.II18NServiceCollection,System.String,System.Boolean)">
+            <summary>
+            Add json format anonymous resource from path...
+            </summary>
+            <param name="services"></param>
+            <param name="path"></param>
+            <param name="referenceToBasePath"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlFormattingAdapterExtensions.AddYamlAnonymousResource(Cosmos.I18N.Core.II18NServiceCollection,System.String)">
+            <summary>
+            Add Yaml format anonymous resource
+            </summary>
+            <param name="services"></param>
+            <param name="originContext"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlFormattingAdapterExtensions.AddYamlResourceFrom(Cosmos.I18N.Core.II18NServiceCollection,System.String,System.Boolean)">
+            <summary>
+            Add json format resource from path...
+            </summary>
+            <param name="services"></param>
+            <param name="path"></param>
+            <param name="referenceToBasePath"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Adapters.Yaml.YamlFormattingAdapterExtensions.AddYamlResource(Cosmos.I18N.Core.II18NServiceCollection,System.String)">
+            <summary>
+            Add json format resource
+            </summary>
+            <param name="services"></param>
+            <param name="originContext"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

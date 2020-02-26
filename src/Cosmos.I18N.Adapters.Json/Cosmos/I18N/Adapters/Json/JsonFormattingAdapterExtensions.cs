@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Adapters.Json {
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static II18NServiceCollection AddJsonResourceFrom(this II18NServiceCollection services, string path, bool referenceToBasePath = true) {
-            if (services == null)
+            if (services is null)
                 throw new ArgumentNullException(nameof(services));
 
             if (string.IsNullOrWhiteSpace(path))
@@ -58,7 +58,7 @@ namespace Cosmos.I18N.Adapters.Json {
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static II18NServiceCollection AddJsonResource(this II18NServiceCollection services, string originContext) {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services is null) throw new ArgumentNullException(nameof(services));
             if (string.IsNullOrWhiteSpace(originContext)) throw new ArgumentNullException(nameof(originContext));
 
             using (var adapter = new JsonContentAdapter(originContext)) {
