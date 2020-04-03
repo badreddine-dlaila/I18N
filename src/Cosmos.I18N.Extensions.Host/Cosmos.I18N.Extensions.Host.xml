@@ -4,6 +4,90 @@
         <name>Cosmos.I18N.Extensions.Host</name>
     </assembly>
     <members>
+        <member name="T:Cosmos.I18N.Ant">
+            <summary>
+            Language tag ant, a wrapper of Language tag getter
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Ant.From">
+            <summary>
+            Get language tag from
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Ant.AntPosNames">
+            <summary>
+            Get readonly body names
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Ant.#ctor(Cosmos.I18N.AntFrom,System.String[])">
+            <summary>
+            Language tag ant
+            </summary>
+            <param name="from"></param>
+            <param name="antPosNames"></param>
+        </member>
+        <member name="T:Cosmos.I18N.AntFrom">
+            <summary>
+            Load language tag from...
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntFrom.Route">
+            <summary>
+            Route
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntFrom.QueryString">
+            <summary>
+            Query string
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntFrom.Cookie">
+            <summary>
+            Cookie
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntFrom.Forms">
+            <summary>
+            Forms
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntFrom.Headers">
+            <summary>
+            Headers
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.AntHooks">
+            <summary>
+            Lang tag ant maker, a update helper for Language Tag Ant Manager
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.AntHooks.Insert(System.ValueTuple{Cosmos.I18N.AntFrom,System.String[]})">
+            <summary>
+            Make
+            </summary>
+            <param name="antResource"></param>
+        </member>
+        <member name="M:Cosmos.I18N.AntHooks.Insert(System.Collections.Generic.List{System.ValueTuple{Cosmos.I18N.AntFrom,System.String[]}})">
+            <summary>
+            Make
+            </summary>
+            <param name="antResources"></param>
+        </member>
+        <member name="T:Cosmos.I18N.AntPosNameConstants">
+            <summary>
+            Language tag body name constants
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntPosNameConstants.LANGUAGE_TAG">
+            <summary>
+            Language Tag, 'langTag', used in cookie
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.AntPosNameConstants.CULTURE">
+            <summary>
+            Culture, 'culture', used in ASP.NET Core route
+            </summary>
+        </member>
         <member name="T:Cosmos.I18N.Core.HostedLanguageTagFactory">
             <summary>
             Hosted language tag factory
@@ -15,7 +99,7 @@
             </summary>
             <param name="requestedAccessor"></param>
         </member>
-        <member name="M:Cosmos.I18N.Core.HostedLanguageTagFactory.Get">
+        <member name="M:Cosmos.I18N.Core.HostedLanguageTagFactory.Get(System.String)">
             <inheritdoc />
         </member>
         <member name="T:Cosmos.I18N.Core.RequestedLanguageTagAccessor">
@@ -29,7 +113,7 @@
             </summary>
             <param name="accessor"></param>
         </member>
-        <member name="M:Cosmos.I18N.Core.RequestedLanguageTagAccessor.Get">
+        <member name="M:Cosmos.I18N.Core.RequestedLanguageTagAccessor.Get(System.String)">
             <inheritdoc />
         </member>
         <member name="P:Cosmos.I18N.Core.RequestedLanguageTagAccessor.HasContext">
@@ -59,7 +143,7 @@
             Interface for current request language tag accessor
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.IRequestedLanguageTagAccessor.Get">
+        <member name="M:Cosmos.I18N.IRequestedLanguageTagAccessor.Get(System.String)">
             <summary>
             Get language tag from current request.
             </summary>

@@ -17,6 +17,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Cosmos.Serialization.Xml" Version="0.1.3-beta2-130522" />
+    <PackageReference Include="Cosmos.Serialization.Xml" Version="0.1.3" />
   </ItemGroup>
 </Project>

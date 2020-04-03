@@ -52,7 +52,7 @@
             </summary>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
-        <member name="M:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.GetLanguageTag">
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.GetLanguageTag(System.String)">
             <summary>
             Get language tag
             </summary>

@@ -240,7 +240,7 @@
             </summary>
             <param name="factoryImpl"></param>
         </member>
-        <member name="M:Cosmos.I18N.Core.DefaultLanguageTagFactory.Get">
+        <member name="M:Cosmos.I18N.Core.DefaultLanguageTagFactory.Get(System.String)">
             <summary>
             Get language tag
             </summary>
@@ -308,7 +308,7 @@
             Interface for getting scoped language tag
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Core.ICoreScopedLanguageTagFactory.Get">
+        <member name="M:Cosmos.I18N.Core.ICoreScopedLanguageTagFactory.Get(System.String)">
             <summary>
             Get
             </summary>

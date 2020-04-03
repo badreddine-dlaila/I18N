@@ -4,17 +4,42 @@
         <name>Cosmos.I18N.Extensions.AspNetCore</name>
     </assembly>
     <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.AntConfig">
+            <summary>
+            Language tag touch from
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AntConfig.For(Cosmos.I18N.AntFrom,System.String[])">
+            <summary>
+            Detect
+            </summary>
+            <param name="from"></param>
+            <param name="antPosNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AntConfig.FromCookie">
+            <summary>
+            Configure the LanguageTag read from cookie
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AntConfig.FromRoute">
+            <summary>
+            Configure the LanguageTag read from route
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions">
             <summary>
             Application builder extensions
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseCosmosLocalization(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Nullable{System.Boolean})">
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseCosmosLocalization(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.Extensions.DependencyInjection.AntConfig})">
             <summary>
             Use Cosmos I18N
             </summary>
             <param name="builder"></param>
-            <param name="withoutMiddleware"></param>
+            <param name="antConfigure"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
