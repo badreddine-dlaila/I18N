@@ -2,7 +2,7 @@
     /// <summary>
     /// Object extensions
     /// </summary>
-    public static class ObjectExtensions {
+    internal static class ObjectExtensions {
         /// <summary>
         /// Equals support null
         /// </summary>

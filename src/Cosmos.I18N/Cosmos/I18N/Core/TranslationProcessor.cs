@@ -13,9 +13,14 @@ namespace Cosmos.I18N.Core {
         /// <summary>
         /// Create a new instance of <see cref="TranslationProcessor"/>
         /// </summary>
-        /// <param name="dictionary"></param>
-        public TranslationProcessor(Dictionary<int, ITranslatePackage> dictionary) {
-            _translatePackages = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
+        /// <param name="packages"></param>
+        public TranslationProcessor(IEnumerable<ITranslatePackage> packages) {
+            if (packages is null)
+                throw new ArgumentNullException(nameof(packages));
+            _translatePackages = new Dictionary<int, ITranslatePackage>();
+            foreach (var package in packages) {
+                _translatePackages.Add(package.PackageKey.GetHashCode(), package);
+            }
         }
 
         /// <summary>

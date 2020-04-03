@@ -1,7 +1,7 @@
 ﻿using System;
+using Cosmos.Extensions.Dependency.Core;
 using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Translation;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Core {
     /// <summary>
@@ -28,8 +28,8 @@ namespace Cosmos.I18N.Core {
         /// <summary>
         /// Append dependency
         /// </summary>
-        /// <param name="servicesAction"></param>
+        /// <param name="dependencyAction"></param>
         /// <returns></returns>
-        II18NServiceCollection AddDependency(Action<IServiceCollection> servicesAction);
+        II18NServiceCollection AddDependency(Action<DependencyProxyRegister> dependencyAction);
     }
 }

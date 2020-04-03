@@ -7,21 +7,17 @@ using Cosmos.I18N.Extensions.Console;
 using Cosmos.I18N.Languages;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.I18N.Tests.ConsoleTest
-{
-    class Program
-    {
+namespace Cosmos.I18N.Tests.ConsoleTest {
+    class Program {
         // ReSharper disable once UnusedParameter.Local
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
 
-            try
-            {
+            try {
                 CosmosLocalization.Initialize()
-                    .ToGlobal(c => c.SetPathBase(Directory.GetCurrentDirectory()).SetPathSegment("Resources/I18N"))
-                    .AddJsonResourceFrom("Main.*")
-                    .AddJsonAnonymousResourceFrom()
-                    .AllDone();
+                                  .ToGlobal(c => c.SetPathBase(Directory.GetCurrentDirectory()).SetPathSegment("Resources/I18N"))
+                                  .AddJsonResourceFrom("Main.*")
+                                  .AddJsonAnonymousResourceFrom()
+                                  .AllDone();
 
                 Console.WriteLine("Basic =========================");
 
@@ -52,9 +48,7 @@ namespace Cosmos.I18N.Tests.ConsoleTest
                 Console.WriteLine("Anonymous ==============================");
                 LanguageTagCoreManager.UpdateTag("zh-CN");
                 Console.WriteLine(new Text("Hello anonymous world {0}", TranslationManager.ANONYMOUS_PACKAGE_KEY, DateTime.Now)); //zn-CN
-            }
-            catch (Exception exception)
-            {
+            } catch (Exception exception) {
                 Console.WriteLine(exception.Message);
                 Console.WriteLine(exception.Source);
                 Console.WriteLine(exception.StackTrace);
@@ -64,14 +58,12 @@ namespace Cosmos.I18N.Tests.ConsoleTest
             Console.ReadLine();
         }
 
-        static void DisplayNewLanguageTag(AsyncLocalValueChangedArgs<string> handle)
-        {
+        static void DisplayNewLanguageTag(AsyncLocalValueChangedArgs<string> handle) {
             Console.WriteLine($"before: {handle.PreviousValue}"); //zh-CN
-            Console.WriteLine($"after: {handle.CurrentValue}"); //zh-TW
+            Console.WriteLine($"after: {handle.CurrentValue}");   //zh-TW
         }
 
-        static string CustomFormatProvider(string packageKey, ILanguageTag languageTag, string text, object[] parameters)
-        {
+        static string CustomFormatProvider(string packageKey, ILanguageTag languageTag, string text, object[] parameters) {
             return $"Custom format result: {string.Format(text, parameters)}, LangTag: {languageTag}";
         }
     }
