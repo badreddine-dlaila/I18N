@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.I18N.Extensions.AspectCoreInjector</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.I18N.GlobalConfigurationExtensions">
+            <summary>
+            Global configuration extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.GlobalConfigurationExtensions.ToGlobal(Cosmos.I18N.Core.II18NServiceCollection,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Options to global
+            </summary>
+            <param name="services"></param>
+            <param name="optionsAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.AspectCoreRegisterExtensions">
+            <summary>
+            Extensions for AspectCore register
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.AspectCoreRegisterExtensions.RegisterCosmosLocalization(AspectCore.DependencyInjection.IServiceContext,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Register Cosmos.I18N for NCC AspectCore
+            </summary>
+            <param name="services"></param>
+            <param name="optionAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.AspectCoreRegisterExtensions.Done(Cosmos.I18N.Core.II18NServiceCollection)">
+            <summary>
+            Done
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection">
+            <summary>
+            I18N service collection for NCC AspectCore Framework
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.#ctor(AspectCore.DependencyInjection.IServiceContext,Cosmos.I18N.Configurations.I18NOptions)">
+            <summary>
+            I18N service collection
+            </summary>
+            <param name="services"></param>
+            <param name="options"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.ExposeOptions">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.ExposeTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.AppendOptionsAction(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.AddDependency(System.Action{Cosmos.Extensions.Dependency.Core.DependencyProxyRegister})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.AddPostRegisterAction(System.String,System.Action{AspectCore.DependencyInjection.IServiceContext})">
+            <summary>
+            Add post action
+            </summary>
+            <param name="key"></param>
+            <param name="postAction"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.OriginalServices">
+            <summary>
+            Gets original services
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreI18NServiceCollection.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider">
+            <summary>
+            AspectCore Injector language service provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider"/>.
+            </summary>
+            <param name="manager"></param>
+            <param name="processor"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider.GetTranslationPackage">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider.GetTranslationPackage(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider.GetTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspectCoreInjector.AspectCoreLanguageServiceProvider.GetTranslationProcessor">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
