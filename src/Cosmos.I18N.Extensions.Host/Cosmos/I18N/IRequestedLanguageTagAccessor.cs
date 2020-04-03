@@ -7,7 +7,7 @@ namespace Cosmos.I18N {
         /// Get language tag from current request.
         /// </summary>
         /// <returns></returns>
-        string Get();
+        string Get(string antPosName = null);
 
         /// <summary>
         /// Has HttpContext

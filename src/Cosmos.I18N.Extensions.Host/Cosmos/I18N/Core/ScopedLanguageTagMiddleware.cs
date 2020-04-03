@@ -28,10 +28,7 @@ namespace Cosmos.I18N.Core {
 
             //Set current LanguageTag in LanguageTagCoreManager.
             //If the value is null, empty or whitespace, will be used 'DefaultLocaleStr' - 'en_US'.
-
-            var languageTag = accessor is null || !accessor.HasContext
-                ? context.Request.Cookies["langTag"]
-                : accessor.Get();
+            var languageTag = AntManager.Get(context, accessor);
 
             LanguageTagCoreManager.UpdateTag(languageTag);
 

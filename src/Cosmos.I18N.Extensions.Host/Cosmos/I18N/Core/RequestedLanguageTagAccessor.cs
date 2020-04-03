@@ -18,8 +18,10 @@ namespace Cosmos.I18N.Core {
         }
 
         /// <inheritdoc />
-        public string Get() {
-            return _httpContext is null ? string.Empty : _httpContext.Request.Cookies["langTag"];
+        public string Get(string antPosName = null) {
+            if (string.IsNullOrWhiteSpace(antPosName))
+                antPosName = AntPosNameConstants.LANGUAGE_TAG;
+            return _httpContext is null ? string.Empty : _httpContext.Request.Cookies[antPosName];
         }
 
         /// <inheritdoc />

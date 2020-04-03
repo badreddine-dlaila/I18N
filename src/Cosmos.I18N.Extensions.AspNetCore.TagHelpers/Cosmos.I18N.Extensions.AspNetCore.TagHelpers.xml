@@ -4,5 +4,120 @@
         <name>Cosmos.I18N.Extensions.AspNetCore.TagHelpers</name>
     </assembly>
     <members>
+        <member name="T:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper">
+            <summary>
+            Base tag helper
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper._accessor">
+            <summary>
+            Accessor
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper._textProvider">
+            <summary>
+            Text provider
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.#ctor(Cosmos.I18N.IRequestedLanguageTagAccessor,Cosmos.I18N.ITextProvider)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper"/>.
+            </summary>
+            <param name="accessor"></param>
+            <param name="textProvider"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.LanguageTag">
+            <summary>
+            Language tag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.Text">
+            <summary>
+            Original text
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.Params">
+            <summary>
+            Parameters
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.OutputHtml">
+            <summary>
+            Output html or not
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.Check">
+            <summary>
+            Check
+            </summary>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.Core.Internals.BaseTagHelper.GetLanguageTag">
+            <summary>
+            Get language tag
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.AnonymousTagHelper">
+            <summary>
+            Anonymous translate tag helper<br />
+            You should type '@addTagHelper *, Cosmos.I18N.Extensions.AspNetCore.TagHelpers' in 'ViewImports.cshtml' first.
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.AnonymousTagHelper.#ctor(Cosmos.I18N.IRequestedLanguageTagAccessor,Cosmos.I18N.ITextProvider)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.AnonymousTagHelper"/>.
+            </summary>
+            <param name="accessor"></param>
+            <param name="textProvider"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.AnonymousTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.AnonymousTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process async
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper">
+            <summary>
+            Translate tag helper
+            You should type '@addTagHelper *, Cosmos.I18N.Extensions.AspNetCore.TagHelpers' in 'ViewImports.cshtml' first.
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper.#ctor(Cosmos.I18N.IRequestedLanguageTagAccessor,Cosmos.I18N.ITextProvider)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper"/>.
+            </summary>
+            <param name="accessor"></param>
+            <param name="textProvider"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper.Namespace">
+            <summary>
+            Package Namespace, also means PackageKey
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.AspNetCore.TagHelpers.TranslateTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process async
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
