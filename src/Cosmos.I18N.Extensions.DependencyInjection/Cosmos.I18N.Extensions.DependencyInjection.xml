@@ -4,24 +4,81 @@
         <name>Cosmos.I18N.Extensions.DependencyInjection</name>
     </assembly>
     <members>
-        <member name="T:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider">
+        <member name="T:Cosmos.I18N.GlobalConfigurationExtensions">
+            <summary>
+            Global configuration extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.GlobalConfigurationExtensions.ToGlobal(Cosmos.I18N.Core.II18NServiceCollection,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Options to global
+            </summary>
+            <param name="services"></param>
+            <param name="optionsAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection">
+            <summary>
+            I18N service collection for Microsoft Dependency Injection
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Cosmos.I18N.Configurations.I18NOptions)">
+            <summary>
+            I18N service collection
+            </summary>
+            <param name="services"></param>
+            <param name="options"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.ExposeOptions">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.ExposeTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.AppendOptionsAction(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.AddDependency(System.Action{Cosmos.Extensions.Dependency.Core.DependencyProxyRegister})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.AddPostRegisterAction(System.String,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>
+            Add post action
+            </summary>
+            <param name="key"></param>
+            <param name="postAction"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.OriginalServices">
+            <summary>
+            Gets original services
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardI18NServiceCollection.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider">
             <summary>
             Msdi language service provider
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider"/>.
+            </summary>
+            <param name="manager"></param>
+            <param name="processor"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider.GetTranslationPackage">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationPackage">
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider.GetTranslationPackage(System.String)">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationPackage(System.String)">
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider.GetTranslationManager">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationManager">
-            <inheritdoc />
-        </member>
-        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.MsdiLanguageServiceProvider.GetTranslationProcessor">
+        <member name="M:Cosmos.I18N.Extensions.DependencyInjection.StandardLanguageServiceProvider.GetTranslationProcessor">
             <inheritdoc />
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions">
@@ -35,6 +92,14 @@
             </summary>
             <param name="services"></param>
             <param name="optionAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.Done(Cosmos.I18N.Core.II18NServiceCollection)">
+            <summary>
+            Done
+            </summary>
+            <param name="services"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
