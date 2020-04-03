@@ -4,38 +4,103 @@
         <name>Cosmos.I18N.Extensions.Autofac</name>
     </assembly>
     <members>
-        <member name="T:Cosmos.AutofacRegisterExtensions">
+        <member name="T:Cosmos.I18N.GlobalConfigurationExtensions">
+            <summary>
+            Global configuration extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.GlobalConfigurationExtensions.ToGlobal(Cosmos.I18N.Core.II18NServiceCollection,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Options to global
+            </summary>
+            <param name="services"></param>
+            <param name="optionsAct"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.AutofacRegisterExtensions">
             <summary>
             Extensions for Autofac register
             </summary>
         </member>
-        <member name="M:Cosmos.AutofacRegisterExtensions.RegisterCosmosLocalization(Autofac.ContainerBuilder,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+        <member name="M:Cosmos.I18N.AutofacRegisterExtensions.RegisterCosmosLocalization(Autofac.ContainerBuilder,System.Action{Cosmos.I18N.Configurations.I18NOptions})">
             <summary>
-            Register Cosmos.I18N for autofac
+            Register Cosmos.I18N for Autofac
             </summary>
-            <param name="services"></param>
+            <param name="builder"></param>
             <param name="optionAct"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
         </member>
-        <member name="T:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider">
+        <member name="M:Cosmos.I18N.AutofacRegisterExtensions.Done(Cosmos.I18N.Core.II18NServiceCollection)">
+            <summary>
+            Done
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider">
             <summary>
             Autofac language service provider
             </summary>
         </member>
-        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider"/>.
+            </summary>
+            <param name="manager"></param>
+            <param name="processor"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage">
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage(System.String)">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationPackage(System.String)">
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationManager">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationManager">
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationProcessor">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.Extensions.Autofac.AutofacLanguageServiceProvider.GetTranslationProcessor">
+        <member name="T:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection">
+            <summary>
+            I18n service collection for Autofac
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.#ctor(Autofac.ContainerBuilder,Cosmos.I18N.Configurations.I18NOptions)">
+            <summary>
+            I18N service collection
+            </summary>
+            <param name="services"></param>
+            <param name="options"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.ExposeOptions">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.ExposeTranslationManager">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.AppendOptionsAction(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.AddDependency(System.Action{Cosmos.Extensions.Dependency.Core.DependencyProxyRegister})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.AddPostRegisterAction(System.String,System.Action{Autofac.ContainerBuilder})">
+            <summary>
+            Add post action
+            </summary>
+            <param name="key"></param>
+            <param name="postAction"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.OriginalServices">
+            <summary>
+            Gets original services
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Extensions.Autofac.AutofacServiceCollection.Dispose">
             <inheritdoc />
         </member>
     </members>

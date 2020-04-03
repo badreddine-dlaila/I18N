@@ -1,9 +1,8 @@
 using System;
-using Cosmos.I18N;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Translation;
 
-namespace Cosmos.Extensions.Autofac {
+namespace Cosmos.I18N.Extensions.Autofac {
     /// <summary>
     /// Autofac language service provider
     /// </summary>
@@ -11,7 +10,11 @@ namespace Cosmos.Extensions.Autofac {
         private readonly ITranslationManager _translationManager;
         private readonly TranslationProcessor _translationProcessor;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Create a new instance of <see cref="AutofacLanguageServiceProvider"/>.
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <param name="processor"></param>
         public AutofacLanguageServiceProvider(ITranslationManager manager, TranslationProcessor processor) {
             _translationManager = manager ?? throw new ArgumentNullException(nameof(manager));
             _translationProcessor = processor ?? throw new ArgumentNullException(nameof(processor));
