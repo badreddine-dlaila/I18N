@@ -215,6 +215,59 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.Create(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
+            <summary>
+            Create
+            </summary>
+            <param name="optionAct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.I18N.Configurations.I18NOptions.Create(Cosmos.I18N.Configurations.I18NOptions)">
+            <summary>
+            Create
+            </summary>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Core.DefaultLanguageTagFactory">
+            <summary>
+            Default language tag factory
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.DefaultLanguageTagFactory.#ctor(System.Func{System.String})">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Core.DefaultLanguageTagFactory"/>.
+            </summary>
+            <param name="factoryImpl"></param>
+        </member>
+        <member name="M:Cosmos.I18N.Core.DefaultLanguageTagFactory.Get">
+            <summary>
+            Get language tag
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.Core.DefaultTranslationAccessor">
+            <summary>
+            Default translation accessor
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.DefaultTranslationAccessor.#ctor(Cosmos.I18N.ITextProvider,Cosmos.I18N.ILanguageServiceProvider,Cosmos.I18N.Core.ICoreScopedLanguageTagFactory)">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Core.DefaultTranslationAccessor"/>.
+            </summary>
+            <param name="textProvider"></param>
+            <param name="languageServiceProvider"></param>
+            <param name="currentLanguageTagFactory"></param>
+        </member>
+        <member name="P:Cosmos.I18N.Core.DefaultTranslationAccessor.Text">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Core.DefaultTranslationAccessor.ServiceProvider">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Core.DefaultTranslationAccessor.CurrentLanguageTag">
+            <inheritdoc />
+        </member>
         <member name="T:Cosmos.I18N.Core.Extensions.ObjectExtensions">
             <summary>
             Object extensions
@@ -250,6 +303,17 @@
             </para>
             </remarks>
         </member>
+        <member name="T:Cosmos.I18N.Core.ICoreScopedLanguageTagFactory">
+            <summary>
+            Interface for getting scoped language tag
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Core.ICoreScopedLanguageTagFactory.Get">
+            <summary>
+            Get
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Cosmos.I18N.Core.II18NServiceCollection">
             <summary>
             Interface of i18n service collection
@@ -272,30 +336,12 @@
             <param name="optionsAct"></param>
             <returns></returns>
         </member>
-        <member name="M:Cosmos.I18N.Core.II18NServiceCollection.AddDependency(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+        <member name="M:Cosmos.I18N.Core.II18NServiceCollection.AddDependency(System.Action{Cosmos.Extensions.Dependency.Core.DependencyProxyRegister})">
             <summary>
             Append dependency
             </summary>
-            <param name="servicesAction"></param>
+            <param name="dependencyAction"></param>
             <returns></returns>
-        </member>
-        <member name="M:Cosmos.I18N.Core.II18NServiceCollection.Build">
-            <summary>
-            Build
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Cosmos.I18N.Core.II18NServiceCollection.BeforeBuild(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
-            <summary>
-            Before build
-            </summary>
-            <param name="serviceAct"></param>
-        </member>
-        <member name="M:Cosmos.I18N.Core.II18NServiceCollection.AfterBuild(System.Action{System.IServiceProvider})">
-            <summary>
-            After build
-            </summary>
-            <param name="providerAct"></param>
         </member>
         <member name="T:Cosmos.I18N.Core.LanguageTagCoreManager">
             <summary>
@@ -313,6 +359,21 @@
             Update Current LanguageTag
             </summary>
             <param name="languageTag"></param>
+        </member>
+        <member name="T:Cosmos.I18N.Core.StaticFlag">
+            <summary>
+            Static flag
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Core.StaticFlag.HasInit">
+            <summary>
+            Has init
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Core.StaticFlag.ExpectedServiceName">
+            <summary>
+            Expected service name
+            </summary>
         </member>
         <member name="T:Cosmos.I18N.Core.StaticInstanceForILanguageServiceProvider">
             <summary>
@@ -361,11 +422,11 @@
             Translation processor
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Core.TranslationProcessor.#ctor(System.Collections.Generic.Dictionary{System.Int32,Cosmos.I18N.Translation.ITranslatePackage})">
+        <member name="M:Cosmos.I18N.Core.TranslationProcessor.#ctor(System.Collections.Generic.IEnumerable{Cosmos.I18N.Translation.ITranslatePackage})">
             <summary>
             Create a new instance of <see cref="T:Cosmos.I18N.Core.TranslationProcessor"/>
             </summary>
-            <param name="dictionary"></param>
+            <param name="packages"></param>
         </member>
         <member name="M:Cosmos.I18N.Core.TranslationProcessor.Translate(System.String,System.String,Cosmos.I18N.Translation.AttemptStrategy)">
             <summary>
@@ -451,6 +512,26 @@
             Get translation processor
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Cosmos.I18N.ITranslationAccessor">
+            <summary>
+            Interface for translation accessor  ITranslationAccessor
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.ITranslationAccessor.Text">
+            <summary>
+            Gets Text provider
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.ITranslationAccessor.ServiceProvider">
+            <summary>
+            Gets language service provider
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.ITranslationAccessor.CurrentLanguageTag">
+            <summary>
+            Gets current language tag
+            </summary>
         </member>
         <member name="T:Cosmos.I18N.Languages.LanguageTag">
             <summary>
