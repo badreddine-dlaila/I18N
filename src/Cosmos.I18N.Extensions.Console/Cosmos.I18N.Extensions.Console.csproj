@@ -13,14 +13,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Cosmos.I18N\Cosmos.I18N.csproj" />
+        <ProjectReference Include="..\Cosmos.I18N.Extensions.AspectCoreInjector\Cosmos.I18N.Extensions.AspectCoreInjector.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="AspectCore.Core" Version="2.0.0" />
     </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1' OR &#xD;&#xA;                          '$(TargetFramework)'=='netstandard2.1' OR &#xD;&#xA;                          '$(TargetFramework)'=='netstandard2.0' OR &#xD;&#xA;                          '$(TargetFramework)'=='net461'">
+    
+    <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1' OR '$(TargetFramework)'=='netstandard2.1' OR '$(TargetFramework)'=='netstandard2.0' OR '$(TargetFramework)'=='net461'">
         <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="2.0.0" />
     </ItemGroup>
     

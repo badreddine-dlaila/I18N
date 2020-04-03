@@ -1,6 +1,7 @@
 ﻿using System;
 using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Core;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Extensions.Console {
     /// <summary>

@@ -1,53 +1,44 @@
 ﻿using System;
 using AspectCore.DependencyInjection;
-using AspectCore.Extensions.DependencyInjection;
+using Cosmos.Extensions.Dependency.Core;
 using Cosmos.I18N.Configurations;
 using Cosmos.I18N.Core;
-using Cosmos.I18N.Translation;
+using Cosmos.I18N.Extensions.AspectCoreInjector;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N.Extensions.Console.Core {
     /// <summary>
     /// I18N service collection
     /// </summary>
-    public class I18NServiceCollection : II18NServiceCollection {
+    public class I18NServiceCollection : AspectCoreI18NServiceCollection {
         private bool _hasBuild;
-        private readonly IServiceCollection _services;
-
-        private readonly I18NOptions _options;
-        private readonly TranslationManager _translationManager;
 
         /// <summary>
         /// I18N service collection
         /// </summary>
         /// <param name="services"></param>
         /// <param name="options"></param>
-        public I18NServiceCollection(IServiceCollection services = null, I18NOptions options = null) {
-            _services = services ?? new ServiceCollection();
-            _options = I18NOptions.Create(options);
-            _translationManager = new TranslationManager();
-
+        public I18NServiceCollection(IServiceContext services = null, I18NOptions options = null)
+            : base(services ?? new ServiceContext(), options) {
             AfterBuild(UpdateStaticResolver);
         }
 
         /// <inheritdoc />
-        public II18NServiceCollection AppendOptionsAction(Action<I18NOptions> optionsAct) {
+        public override II18NServiceCollection AppendOptionsAction(Action<I18NOptions> optionsAct) {
             if (_hasBuild) {
                 throw new InvalidOperationException("Cannot update options after building.");
             }
 
-            optionsAct?.Invoke(_options);
-            return this;
+            return base.AppendOptionsAction(optionsAct);
         }
 
         /// <inheritdoc />
-        public II18NServiceCollection AddDependency(Action<IServiceCollection> servicesAction) {
+        public override II18NServiceCollection AddDependency(Action<DependencyProxyRegister> dependencyAction) {
             if (_hasBuild) {
                 throw new InvalidOperationException("Cannot add dependency after building.");
             }
 
-            servicesAction?.Invoke(_services);
-            return this;
+            return base.AddDependency(dependencyAction);
         }
 
         /// <summary>
@@ -60,9 +51,9 @@ namespace Cosmos.I18N.Extensions.Console.Core {
                 throw new InvalidOperationException("Only can be built once.");
             }
 
-            BeforeBuildAction?.Invoke(_services);
+            BeforeBuildAction?.Invoke(OriginalServices);
 
-            var resolver = _services.ToServiceContext().Build();
+            var resolver = OriginalServices.Build();
 
             AfterBuildAction?.Invoke(resolver);
 
@@ -71,28 +62,28 @@ namespace Cosmos.I18N.Extensions.Console.Core {
             return resolver;
         }
 
-        private Action<IServiceCollection> BeforeBuildAction { get; set; }
+        private Action<IServiceContext> BeforeBuildAction { get; set; }
         private Action<IServiceProvider> AfterBuildAction { get; set; }
 
-        /// <inheritdoc />
-        public void BeforeBuild(Action<IServiceCollection> serviceAct) {
+        /// <summary>
+        /// Before build
+        /// </summary>
+        /// <param name="serviceAct"></param>
+        public void BeforeBuild(Action<IServiceContext> serviceAct) {
             if (serviceAct != null) {
                 BeforeBuildAction += serviceAct;
             }
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// After build
+        /// </summary>
+        /// <param name="providerAct"></param>
         public void AfterBuild(Action<IServiceProvider> providerAct) {
             if (providerAct != null) {
                 AfterBuildAction += providerAct;
             }
         }
-
-        /// <inheritdoc />
-        public I18NOptions ExposeOptions => _options;
-
-        /// <inheritdoc />
-        public TranslationManager ExposeTranslationManager => _translationManager;
 
         private static void UpdateStaticResolver(IServiceProvider resolver) {
             StaticInstanceForILanguageServiceProvider.SetInstance(resolver.GetRequiredService<ILanguageServiceProvider>());

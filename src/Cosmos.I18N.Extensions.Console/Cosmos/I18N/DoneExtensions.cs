@@ -1,5 +1,6 @@
 ﻿using Cosmos.I18N.Core;
 using Cosmos.I18N.Extensions.Console.Core;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Cosmos.I18N {
     /// <summary>

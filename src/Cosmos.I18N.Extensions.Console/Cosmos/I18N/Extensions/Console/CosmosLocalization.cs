@@ -1,4 +1,5 @@
-﻿using Cosmos.I18N.Extensions.Console.Core;
+﻿using Cosmos.I18N.Core;
+using Cosmos.I18N.Extensions.Console.Core;
 
 namespace Cosmos.I18N.Extensions.Console {
     /// <summary>
@@ -9,7 +10,7 @@ namespace Cosmos.I18N.Extensions.Console {
         /// Initialize
         /// </summary>
         /// <returns></returns>
-        public static I18NServiceCollection Initialize() {
+        public static II18NServiceCollection Initialize() {
             return SoloDependencyContainer.Initialize(new I18NServiceCollection());
         }
     }

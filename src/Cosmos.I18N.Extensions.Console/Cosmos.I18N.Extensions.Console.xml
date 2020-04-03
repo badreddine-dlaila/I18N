@@ -21,7 +21,11 @@
             </summary>
         </member>
         <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.#ctor(Cosmos.I18N.Translation.ITranslationManager,Cosmos.I18N.Core.TranslationProcessor)">
-            <inheritdoc />
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider"/>.
+            </summary>
+            <param name="manager"></param>
+            <param name="processor"></param>
         </member>
         <member name="M:Cosmos.I18N.Extensions.Console.ConsoleLanguageServiceProvider.GetTranslationPackage">
             <inheritdoc />
@@ -40,7 +44,7 @@
             I18N service collection
             </summary>
         </member>
-        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Cosmos.I18N.Configurations.I18NOptions)">
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.#ctor(AspectCore.DependencyInjection.IServiceContext,Cosmos.I18N.Configurations.I18NOptions)">
             <summary>
             I18N service collection
             </summary>
@@ -50,23 +54,27 @@
         <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AppendOptionsAction(System.Action{Cosmos.I18N.Configurations.I18NOptions})">
             <inheritdoc />
         </member>
-        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AddDependency(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AddDependency(System.Action{Cosmos.Extensions.Dependency.Core.DependencyProxyRegister})">
             <inheritdoc />
         </member>
         <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.Build">
-            <inheritdoc />
+            <summary>
+            Build
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
         </member>
-        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.BeforeBuild(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
-            <inheritdoc />
+        <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.BeforeBuild(System.Action{AspectCore.DependencyInjection.IServiceContext})">
+            <summary>
+            Before build
+            </summary>
+            <param name="serviceAct"></param>
         </member>
         <member name="M:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.AfterBuild(System.Action{System.IServiceProvider})">
-            <inheritdoc />
-        </member>
-        <member name="P:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.ExposeOptions">
-            <inheritdoc />
-        </member>
-        <member name="P:Cosmos.I18N.Extensions.Console.Core.I18NServiceCollection.ExposeTranslationManager">
-            <inheritdoc />
+            <summary>
+            After build
+            </summary>
+            <param name="providerAct"></param>
         </member>
         <member name="T:Cosmos.I18N.Extensions.Console.CosmosLocalization">
             <summary>
