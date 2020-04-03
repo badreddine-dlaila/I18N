@@ -16,6 +16,19 @@
             <param name="services"></param>
             <returns></returns>
         </member>
+        <member name="T:Cosmos.I18N.Handlebars.AnonymousHelperRegister">
+            <summary>
+            Translate helper register
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Handlebars.AnonymousHelperRegister.Register(System.IO.TextWriter,System.Object,System.Object[])">
+            <summary>
+            Anonymous helper Register
+            </summary>
+            <param name="writer"></param>
+            <param name="context"></param>
+            <param name="arguments"></param>
+        </member>
         <member name="T:Cosmos.I18N.Handlebars.TranslateHelperRegister">
             <summary>
             Translate helper register
@@ -23,7 +36,7 @@
         </member>
         <member name="M:Cosmos.I18N.Handlebars.TranslateHelperRegister.Register(System.IO.TextWriter,System.Object,System.Object[])">
             <summary>
-            Register
+            I18N translate helper Register
             </summary>
             <param name="writer"></param>
             <param name="context"></param>

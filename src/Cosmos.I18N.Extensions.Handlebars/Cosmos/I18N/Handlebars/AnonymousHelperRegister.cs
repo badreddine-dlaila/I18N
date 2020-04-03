@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using Cosmos.I18N.Core;
 using Cosmos.I18N.Handlebars.Core;
-using Cosmos.I18N.Translation;
 using HandlebarsDotNet;
 
 namespace Cosmos.I18N.Handlebars {
