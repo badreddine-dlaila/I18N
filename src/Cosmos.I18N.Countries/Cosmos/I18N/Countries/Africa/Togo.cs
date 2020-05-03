@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Countries.Africa {
                 BeongsToCountry = Country.Togo,
                 UNCode = "768",
                 Alpha2Code = "TG",
-                Alpha3Code = "AGO",
+                Alpha3Code = "TGO",
                 Name = "The Republic of Togo",
                 ShorterForm = "Togo",
                 ChineseName = "多哥共和国",
