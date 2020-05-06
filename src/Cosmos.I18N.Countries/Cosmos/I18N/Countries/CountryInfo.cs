@@ -2,16 +2,14 @@ namespace Cosmos.I18N.Countries {
     /// <summary>
     /// Country info
     /// </summary>
-    public class CountryInfo {
+    public class CountryInfo : ICountryInfo {
         /// <summary>
         /// Country
         /// </summary>
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public Country Country { get; internal set; }
 
-        /// <summary>
-        /// Country type
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public CountryType CountryType { get; internal set; }
 
@@ -21,81 +19,61 @@ namespace Cosmos.I18N.Countries {
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public Country BeongsToCountry { get; internal set; }
 
-        /// <summary>
-        /// UnCode
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once InconsistentNaming
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string UNCode { get; internal set; }
 
-        /// <summary>
-        /// Alpha2 code
-        /// </summary>
+        /// <inheritdoc />
         public string Alpha2Code { get; internal set; }
 
-        /// <summary>
-        /// Alpha3 code
-        /// </summary>
+        /// <inheritdoc />
         public string Alpha3Code { get; internal set; }
 
-        /// <summary>
-        /// Name
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string Name { get; internal set; }
 
-        /// <summary>
-        /// Shorter form
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ShorterForm { get; internal set; }
 
-        /// <summary>
-        /// Alias
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string Alias { get; internal set; }
 
-        /// <summary>
-        /// Chinese name
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ChineseName { get; internal set; }
 
-        /// <summary>
-        /// Chinese shorter form
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ChineseShorterForm { get; internal set; }
 
-        /// <summary>
-        /// Chinese alias
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ChineseAlias { get; internal set; }
 
-        /// <summary>
-        /// Chinese alias 2
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ChineseAlias2 { get; internal set; }
 
-        /// <summary>
-        /// Continent
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public Continent Continent { get; internal set; }
 
-        /// <summary>
-        /// I18n Identity code
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string I18NIdentityCode { get; internal set; }
 
-        /// <summary>
-        /// Commonwealth of nations
-        /// </summary>
+        /// <inheritdoc />
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public bool CommonwealthOfNations { get; internal set; }
+
+        /// <inheritdoc />
+        public bool HistoricalCountry { get; internal set; } = false;
+        
+        // /// <inheritdoc />
+        // public HistoricalMetadata HistoricalMetadata { get; internal set; }
     }
 }

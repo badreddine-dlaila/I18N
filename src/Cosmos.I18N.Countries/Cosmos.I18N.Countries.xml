@@ -21957,6 +21957,12 @@
             Cosmos i18n code: i18n_country_yemen
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.Country.Yugoslavia1992">
+            <summary>
+            南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+            Cosmos i18n code: i18n_country_nlm_1992
+            </summary>
+        </member>
         <member name="F:Cosmos.I18N.Countries.Country.Zambia">
             <summary>
             赞比亚（The Republic of Zambia，非洲，ZM，ZMB，894），赞比亚共和国 <br />
@@ -23468,6 +23474,12 @@
             Cosmos i18n code: i18n_country_mayuete
             </summary>
         </member>
+        <member name="F:Cosmos.I18N.Countries.CountryCode.YU">
+            <summary>
+            南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+            Cosmos i18n code: i18n_country_nlm_1992
+            </summary>
+        </member>
         <member name="F:Cosmos.I18N.Countries.CountryCode.ZA">
             <summary>
             南非（The Republic of South Africa，非洲，ZA，ZAF，710），南非共和国 <br />
@@ -23497,9 +23509,7 @@
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryInfo.CountryType">
-            <summary>
-            Country type
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryInfo.BeongsToCountry">
             <summary>
@@ -23507,69 +23517,199 @@
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryInfo.UNCode">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alpha2Code">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alpha3Code">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.ShorterForm">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alias">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseName">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseShorterForm">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseAlias">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseAlias2">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.Continent">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.I18NIdentityCode">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.CommonwealthOfNations">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryInfo.HistoricalCountry">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.I18N.Countries.HistoricalMetadata">
+            <summary>
+            Historical metadata
+            </summary>
+        </member>
+        <member name="M:Cosmos.I18N.Countries.HistoricalMetadata.#ctor(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.I18N.Countries.HistoricalMetadata"/>
+            </summary>
+            <param name="since"></param>
+            <param name="until"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.HistoricalMetadata.Since">
+            <summary>
+            Since
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.HistoricalMetadata.Until">
+            <summary>
+            Until
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.ICountryInfo">
+            <summary>
+            Interface for country info
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.CountryType">
+            <summary>
+            Country type
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.UNCode">
             <summary>
             UnCode
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alpha2Code">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.Alpha2Code">
             <summary>
             Alpha2 code
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alpha3Code">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.Alpha3Code">
             <summary>
             Alpha3 code
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.Name">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.Name">
             <summary>
             Name
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.ShorterForm">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.ShorterForm">
             <summary>
             Shorter form
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.Alias">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.Alias">
             <summary>
             Alias
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseName">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.ChineseName">
             <summary>
             Chinese name
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseShorterForm">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.ChineseShorterForm">
             <summary>
             Chinese shorter form
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseAlias">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.ChineseAlias">
             <summary>
             Chinese alias
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.ChineseAlias2">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.ChineseAlias2">
             <summary>
             Chinese alias 2
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.Continent">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.Continent">
             <summary>
             Continent
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.I18NIdentityCode">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.I18NIdentityCode">
             <summary>
             I18n Identity code
             </summary>
         </member>
-        <member name="P:Cosmos.I18N.Countries.CountryInfo.CommonwealthOfNations">
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.CommonwealthOfNations">
             <summary>
             Commonwealth of nations
             </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.ICountryInfo.HistoricalCountry">
+            <summary>
+            Historical country
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.RuntimeCountryInfo">
+            <summary>
+            Runtime country info for historical counties.
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.CountryType">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.UNCode">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.Alpha2Code">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.Alpha3Code">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.ShorterForm">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.Alias">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.ChineseName">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.ChineseShorterForm">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.ChineseAlias">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.ChineseAlias2">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.Continent">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.I18NIdentityCode">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.CommonwealthOfNations">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.I18N.Countries.RuntimeCountryInfo.HistoricalCountry">
+            <inheritdoc />
         </member>
         <member name="T:Cosmos.I18N.Countries.CountryManager">
             <summary>
@@ -25129,6 +25269,12 @@
             <summary>
             也门（The Republic Of Yemen，亚洲，YE，YEM，887），也门共和国 <br />
             Cosmos i18n code: i18n_country_yemen
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.CountryOf.Yugoslavia1992">
+            <summary>
+            南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+            Cosmos i18n code: i18n_country_nlm_1992
             </summary>
         </member>
         <member name="P:Cosmos.I18N.Countries.CountryOf.Zambia">
@@ -28767,6 +28913,23 @@
         <member name="F:Cosmos.I18N.Countries.Europe.Guernsey.I18N_IDENTITY_CODE">
             <summary>
             I18N
+            </summary>
+        </member>
+        <member name="T:Cosmos.I18N.Countries.Europe.Yugoslavia1992">
+            <summary>
+            南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+            Cosmos i18n code: i18n_country_nlm_1992
+            </summary>
+        </member>
+        <member name="P:Cosmos.I18N.Countries.Europe.Yugoslavia1992.Instance">
+            <summary>
+            南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+            Cosmos i18n code: i18n_country_nlm_1992
+            </summary>
+        </member>
+        <member name="F:Cosmos.I18N.Countries.Europe.Yugoslavia1992.I18N_IDENTITY_CODE">
+            <summary>
+            i18n
             </summary>
         </member>
         <member name="T:Cosmos.I18N.Countries.Europe.Hungary">

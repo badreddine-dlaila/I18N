@@ -250,6 +250,7 @@ namespace Cosmos.I18N.Countries {
                 {Country.WesternSahara, CountryCode.EH},
                 {Country.Kosovo, CountryCode.XK},
                 {Country.Yemen, CountryCode.YE},
+                {Country.Yugoslavia1992, CountryCode.YU},
                 {Country.Zambia, CountryCode.ZM},
                 {Country.Zimbabwe, CountryCode.ZW},
             };

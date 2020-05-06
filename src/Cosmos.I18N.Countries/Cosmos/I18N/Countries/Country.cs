@@ -1763,6 +1763,13 @@ namespace Cosmos.I18N.Countries {
         /// </summary>
         [I18NIdentityCode(Asia.Yemen.I18N_IDENTITY_CODE)]
         Yemen,
+        
+        /// <summary>
+        /// 南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+        /// Cosmos i18n code: i18n_country_nlm_1992
+        /// </summary>
+        [I18NIdentityCode(Europe.Yugoslavia1992.I18N_IDENTITY_CODE)]
+        Yugoslavia1992,
 
         /// <summary>
         /// 赞比亚（The Republic of Zambia，非洲，ZM，ZMB，894），赞比亚共和国 <br />

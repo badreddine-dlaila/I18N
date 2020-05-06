@@ -1507,6 +1507,12 @@ namespace Cosmos.I18N.Countries {
         public static CountryInfo Yemen => Asia.Yemen.Instance;
 
         /// <summary>
+        /// 南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+        /// Cosmos i18n code: i18n_country_nlm_1992
+        /// </summary>
+        public static CountryInfo Yugoslavia1992 => Europe.Yugoslavia1992.Instance;
+
+        /// <summary>
         /// 赞比亚（The Republic of Zambia，非洲，ZM，ZMB，894），赞比亚共和国 <br />
         /// Cosmos i18n code: i18n_country_zanbiya
         /// </summary>

@@ -251,6 +251,7 @@ namespace Cosmos.I18N.Countries {
                 {Country.WesternSahara, Africa.WesternSahara.Instance},
                 {Country.Kosovo, Europe.Kosovo.Instance},
                 {Country.Yemen, Asia.Yemen.Instance},
+                {Country.Yugoslavia1992, Europe.Yugoslavia1992.Instance},
                 {Country.Zambia, Africa.Zambia.Instance},
                 {Country.Zimbabwe, Africa.Zimbabwe.Instance},
             };

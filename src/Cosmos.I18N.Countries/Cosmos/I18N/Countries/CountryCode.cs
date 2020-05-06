@@ -1748,6 +1748,13 @@ namespace Cosmos.I18N.Countries {
         /// </summary>
         [I18NIdentityCode(Africa.Mayotte.I18N_IDENTITY_CODE)]
         YT,
+        
+        /// <summary>
+        /// 南斯拉夫（Yugoslavia，欧洲，YU，YUG，38），南斯拉夫联盟共和国 <br />
+        /// Cosmos i18n code: i18n_country_nlm_1992
+        /// </summary>
+        [I18NIdentityCode(Europe.Yugoslavia1992.I18N_IDENTITY_CODE)]
+        YU,
 
         /// <summary>
         /// 南非（The Republic of South Africa，非洲，ZA，ZAF，710），南非共和国 <br />
