@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Countries.Africa {
                 BeongsToCountry = Country.Cameroun,
                 UNCode = "120",
                 Alpha2Code = "CM",
-                Alpha3Code = "CRM",
+                Alpha3Code = "CMR",
                 Name = "Republic of Cameroon",
                 ShorterForm = "Cameroun",
                 ChineseName = "喀麦隆共和国",
