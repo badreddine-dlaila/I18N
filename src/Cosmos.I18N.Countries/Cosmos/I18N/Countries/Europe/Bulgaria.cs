@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Countries.Europe {
                 BeongsToCountry = Country.Bulgaria,
                 UNCode = "096",
                 Alpha2Code = "BG",
-                Alpha3Code = "BRN",
+                Alpha3Code = "BGR",
                 Name = "The Republic of Bulgaria",
                 ShorterForm = "Bulgaria",
                 ChineseName = "保加利亚共和国",
