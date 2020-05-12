@@ -14,7 +14,7 @@ namespace Cosmos.I18N.Countries.Asia {
                 BeongsToCountry = Country.China,
                 UNCode = "156",
                 Alpha2Code = "CN",
-                Alpha3Code = "CNH",
+                Alpha3Code = "CHN",
                 Name = "People's Republic of China",
                 ShorterForm = "China",
                 ChineseName = "中华人民共和国",
